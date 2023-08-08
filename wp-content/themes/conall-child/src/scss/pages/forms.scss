@@ -1,0 +1,293 @@
+
+#form-container-row {
+  padding: 40px 0;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $drk_blue;
+  }
+
+  p {
+    font-size: 18px;
+    color: $drk_gray;
+    font-weight: 500;
+  }
+
+  form {
+    fieldset {
+      max-width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 20px 0 0;
+
+      > div {
+        width: 100%;
+      }
+
+      .hs-error-msg {
+        color: #f00;
+      }
+
+      .input {
+        margin-right: 0;
+
+        input::-webkit-input-placeholder {
+          font-size: 16px;
+        }
+
+        input::-moz-placeholder {
+          font-size: 16px;
+        }
+
+        input:-ms-input-placeholder {
+          font-size: 16px;
+        }
+
+        input::-ms-input-placeholder {
+          font-size: 16px;
+        }
+
+        input::placeholder {
+          font-size: 16px;
+        }
+
+        input,
+        select {
+          width: 100%;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          padding: 12px 10px;
+          border: 1px solid #707070;
+          border-radius: 4px;
+        }
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        padding: 0 1em 0 0;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+      }
+
+      .hs-dependent-field,
+      .hs_location,
+      .hs_i_would_like_to_request_ {
+        .hs-input {
+          width: 100%;
+          border: 1px solid #707070;
+          border-radius: .25em;
+          padding: 11px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          line-height: 1.1;
+          background-color: #fff;
+          background-image: url(/wp-content/themes/conall-child/dist/images/down_arrow.png);
+          background-repeat: no-repeat;
+          background-position: top 16px right 10px;
+          background-size: 18px 9px;
+        }
+      }
+      .hs_profession__specify__ {
+        .hs-input {
+          width: 98%;
+          background-image: none;
+        }
+      }
+
+    }
+
+    .hs_firstname,
+    .hs_lastname {
+      width: 48%;
+    }
+
+    fieldset:nth-child(1),
+    fieldset:nth-child(2) {
+      width: 97.5%;
+    }
+
+    fieldset:nth-child(3) {
+
+    }
+
+    fieldset:nth-child(4) {
+
+    }
+
+    fieldset:nth-child(5) {
+
+    }
+
+    .hs-dependent-field {
+
+    }
+
+    .hs_email {
+      width: 100%;
+    }
+
+    .hs_phone {
+      width: 30%;
+    }
+
+    .hs_location {
+      width: 12%;
+    }
+
+    .hs_i_would_like_to_request_ {
+      width: 50%;
+    }
+
+    .hs_schedule_a_meeting_with_us_at_asco {
+      background-color:hsla(190,70%,60%,0.3);
+      margin: 0;
+      padding: 0;
+      border-radius: 6px;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+
+          label {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            input[type="checkbox"] {
+              /*              -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;*/
+              width: 34px;
+              height: 34px;
+              margin: 0 20px 0 0;
+              background: $lt_blue;
+              /*background: #fff;*/
+              color: #fff;
+              border: 2px solid $lt_blue;
+              border-radius: 2px;
+            }
+          }
+
+          span {
+            color: #000;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .hs_by_subscribing__you_agree_to_our_terms_and_conditions_and_privacy_policy_and_understand_that_you_ar {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+
+          label {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            input[type="checkbox"] {
+              /*              -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;*/
+              width: 34px;
+              height: 32px;
+              margin: 0 20px 0 0;
+              border: 1px solid #707070;
+              border-radius: 2px;
+            }
+            span {
+              font-size: 18px;
+              color: $drk_gray;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    .hs_recaptcha {
+      margin: 20px 0 0;
+    }
+
+    .hs_submit {
+      margin: 20px 0 0;
+      .actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        .hs-button {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          width: 120px;
+          height: 54px;
+          background: $lt_blue;
+          color: #fff;
+          border: 2px solid $lt_blue;
+          border-radius: 6px;
+          font-size: 20px;
+          &:hover {
+            border: 2px solid $lt_blue;
+            background: #fff;
+            color: $lt_blue;
+          }
+        }
+      }
+    }
+
+  }
+
+  .submitted-message {
+    padding: 40px;
+    background: #caeefa;
+    border-radius: 10px;
+    p:first-child {
+      > span {
+        font-size: 30px !important;
+        color: darkblue !important;
+      }
+    }
+    a {
+      color: darkblue !important;
+      font-weight: 800 !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+
+}
