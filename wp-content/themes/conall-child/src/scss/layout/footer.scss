@@ -1,10 +1,65 @@
 @import "../base/colors";
 
 footer {
-/*   .edgtf-footer-bottom-holder {
-    background-color: $lt_blue !important;
+    position: fixed !important;
+    bottom: -1px;
+    .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+        padding: 0 !important;
+        .edgtf-three-columns>.edgtf-three-columns-inner {
+            margin: 0 !important;
+        }
+    }
+    .edgtf-footer-bottom-holder {
+        background-color: $trans !important;
+        .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+            padding: 0 !important;
+        }
   }
   .widget {
-    color: #fff !important;
-  } */
+        div.footer-block {
+            background-color: $blugrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div#footerblock1 {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+        }
+        div#footerblock3 {
+            clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+        }
+        div#footerblock1,
+        div#footerblock3 {
+            height: 55px;
+            position: relative;
+            top: 30px;
+            a.footer-link {
+                letter-spacing: 3px;
+                position: relative;
+                top: 6px;
+            }
+
+        }
+        div#footerblock2 {
+            height: 85px;
+            background-color: $purple;
+            clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+            -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+            a.footer-link {
+                letter-spacing: 3px;
+                font-size: (32px);
+                position: relative;
+                top: 5px;
+            }
+        }
+        .footer-link {
+            color: $white !important;
+            @include semi-bold($sofia-sans);
+            font-size: (24px);
+            text-transform: capitalize;
+        }
+  }
 }
