@@ -1,25 +1,36 @@
 @import "colors";
 
-@mixin demi-bold($fontf, $size) {
-  font-family: $fontf;
-  font-size: $size + rem !important;
-  font-weight: 600 !important;
-}
+@import 'https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;600;700;800;900&display=swap';
 
-@mixin bold($fontf, $size) {
-  font-family: $fontf;
-  font-size: $size + rem !important;
-  font-weight: 900 !important;
-}
+$sofia-sans: 'Sofia Sans', serif;
 
-@mixin italic($fontf, $size) {
-  font-family: $fontf;
-  font-size: $size + rem !important;
+@mixin light($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
   font-weight: 300 !important;
 }
-
-@mixin regular($fontf, $size) {
-  font-family: $fontf;
-  font-size: $size + rem !important;
+@mixin regular($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
   font-weight: 400 !important;
+}
+@mixin semi-bold($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
+  font-weight: 600 !important;
+}
+@mixin bold($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
+  font-weight: 700 !important;
+}
+@mixin extra-bold($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
+  font-weight: 800 !important;
+}
+@mixin black($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
+  font-weight: 900 !important;
 }

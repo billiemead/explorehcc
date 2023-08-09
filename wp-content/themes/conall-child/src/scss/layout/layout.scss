@@ -1,1 +1,125 @@
 @import "../base/colors";
+
+.edgtf-container-inner {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+header.edgtf-page-header,
+header.edgtf-mobile-header {
+    display: none;
+}
+.vc_column_container>.vc_column-inner {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#hero-column {
+    min-height: 934px;
+}
+/* ************ HERO ************ */
+
+#hero-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#section-hero {
+    min-height: 934px;
+    background-attachment: fixed;
+    div#hero-yellowline {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        z-index: 1;
+        width: 100%;
+    }
+    .wpb_single_image .vc_figure {
+        width: 100%;
+    }
+    div.vc_single_image-wrapper.vc_box_border_grey {
+        width: 100%;
+    }
+    .wpb_single_image img {
+        width: 100%;
+    }
+}
+#hero-subhead {
+    left: 64%;
+    position: relative;
+    top: 118px;
+    .wpb_wrapper {
+        text-align: left !important;
+    }
+}
+#hero-subhead div.head-upper {
+    color: $black !important;
+    @include bold($sofia-sans);
+    font-size: (20px);
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h1#hero-h1-1 {
+    font-size: 69.5px;
+    line-height: 90px;
+}
+h1#hero-h1-2 {
+    @include extra-bold($sofia-sans);
+    font-size: 100px;
+    line-height: 48px;
+    letter-spacing: 4px;
+}
+h1#hero-h1-2 span.comma {
+    @include regular($sofia-sans);
+}
+h1#hero-h1-3 {
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 1.5px;
+    left: 4px;
+    position: relative;
+}
+h1#hero-h1-4 {
+    font-size: 92px;
+    line-height: 50px;
+}
+.hero-h1 {
+    color: $purple !important;
+    @include black($sofia-sans);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* ************ TOP TAB ************ */
+#toptab {
+
+}
+div.toptab-container {
+    transform: rotate(270deg);
+    position: absolute;
+    left: -173px;
+    top: 230px;
+}
+ul.toptab-list {
+
+}
+li.toptab-listitem {
+
+}
+a.toptab-link {
+    color: $white;
+    padding: 8px 15px;
+    @include semi-bold($sofia-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: (18px);
+    background-color: $purple;
+}
+a#toptab-link1 {
+    border-bottom-left-radius: 10px;
+}
+a#toptab-link2 {
+    border-bottom-right-radius: 10px;
+}

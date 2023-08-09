@@ -1,1 +1,29 @@
 $white: #ffffff;
+$black: #000000;
+$copy: #333333;
+$copy2: #373F41;
+$gold: #F5C75D;
+$gold2: #F4C054;
+$purple: #493D7C;
+$darkpurple: #080124;
+$ltgrey1: #E8E8E8;
+$ltgrey2: #DEDCE6;
+$blugrey: #525D66;
+$blugrey2: #5B6770;
+$dkblugrey: #292F33;
+$bordergrey: #707070;
+$orange1: #F98D2A;
+$orange2: #C25131;
+$trans: transparent;
+
+@mixin footer-gradient(){
+    background: linear-gradient($blugrey, $dkblugrey);
+};
+
+@mixin form-gradient(){
+    background: linear-gradient($blugrey, $darkpurple);
+};
+
+@mixin form-section-gradient(){
+    background: linear-gradient($ltgrey1, $ltgrey2);
+};
