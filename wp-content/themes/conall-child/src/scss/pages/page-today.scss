@@ -1,2 +1,88 @@
 @import "../base/colors";
 @import '../base/font.scss';
+
+
+/* ************ HUBSPOT FORM SECTION ************ */
+
+div#section-hsform {
+
+    div#col-hsform {
+            margin: 0 auto !important;
+            max-width: 1300px !important;
+            float: unset;
+        a.hs-button {
+            margin-top: 65px;;
+            padding: 33px 60px 23px 65px;
+            max-width: 684px;
+            @include orange-grad-button;
+            border-radius: 20px;
+            border: none;
+            @include button-shadow;
+            span {
+                @include bold($sofia-sans);
+                text-transform: uppercase;
+                font-size: (28px);
+                line-height: 19px;
+                letter-spacing: 0.5px;
+            }
+        }
+        #hs-heading {
+            padding-top: 100px !important;
+            padding-bottom: 20px !important;
+            h3.section-heading {
+                @include regular($sofia-sans);
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: $copy;
+            }
+        }
+        div#hs-subheading {
+            padding-bottom: 60px !important;
+            p.section-subheading {
+                @include light($sofia-sans);
+                font-size: 24px;
+                line-height: 38px;
+                letter-spacing: 0px;
+                color: $copy;
+            }
+        }
+        div#hs-formcode {
+            width: 1164px;
+            height: 440px;
+            padding: 0 !important;
+            margin: 0 auto !important;
+            div.edh-innerbox.hs-box {
+                min-height: 384px;
+            }
+        }
+    }
+}
+/* ***** Grad Box **** */
+
+
+
+div.edh-box-container {
+    div.edh-outerbox {
+        border: 1px solid $bordergrey;
+        background-color: transparent;
+        border-radius: 18px;
+        padding: 16px;
+        div.edh-innerbox {
+            @include form-gradient;
+            border: 1px solid $bordergrey;
+            border-radius: 13px;
+            padding: 38px 32px 38px 32px;
+            @include inner-box-shadow;
+            h1 {
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+

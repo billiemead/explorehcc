@@ -3,6 +3,7 @@
 footer {
     position: fixed !important;
     bottom: -1px;
+    z-index: 1000 !important;
     .edgtf-footer-inner > .edgtf-footer-bottom-holder {
         padding: 0 !important;
         .edgtf-three-columns>.edgtf-three-columns-inner {
