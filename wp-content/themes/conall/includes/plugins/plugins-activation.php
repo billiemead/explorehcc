@@ -51,13 +51,13 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'force_activation'   => false,
 				'force_deactivation' => false
 			),
-			array(
+/* 			array(
 				'name'         => esc_html__( 'WooCommerce', 'conall' ),
 				'slug'         => 'woocommerce',
 				'external_url' => 'https://wordpress.org/plugins/woocommerce/',
 				'required'     => false
-			),
-			array(
+			), */
+/* 			array(
 				'name'         => esc_html__( 'Contact Form 7', 'conall' ),
 				'slug'         => 'contact-form-7',
 				'external_url' => 'https://wordpress.org/plugins/contact-form-7/',
@@ -68,9 +68,9 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'slug'     => 'envato-market',
 				'source'   => 'https://envato.github.io/wp-envato-market/dist/envato-market.zip',
 				'required' => false
-			)
+			) */
 		);
-		
+
 		$config = array(
 			'domain'       => 'conall',
 			'default_path' => '',
@@ -101,10 +101,10 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'nag_type'                        => 'updated'
 			)
 		);
-		
+
 		tgmpa( $plugins, $config );
 	}
-	
+
 	add_action( 'tgmpa_register', 'conall_edge_register_required_plugins' );
 }
 
