@@ -56,6 +56,12 @@ header.edgtf-mobile-header {
     min-height: 934px;
     background-attachment: fixed;
     z-index: 0;
+    background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
+    margin: 0px;
+    padding: 0px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     div#hero-yellowline {
         position: absolute;
         left: 0;
