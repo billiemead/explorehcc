@@ -117,7 +117,6 @@ class Updraft_Manager_Updater_1_8 {
 	 * @return Void
 	 */
 	public function maybe_force_checking_for_updates() {
-		return;
 		if (!isset($_REQUEST['force_udm_check']) || '' === $_REQUEST['force_udm_check']) return;
 		$slug = sanitize_text_field($_REQUEST['force_udm_check']);
 		if ($this->slug !== $slug) return;
@@ -463,7 +462,8 @@ class Updraft_Manager_Updater_1_8 {
 	 * @return Boolean
 	 */
 	protected function is_connected() {
-		return true;
+		$option = $this->get_option($this->option_name);
+		return empty($option['email']) ? false : true;
 	}
 
 	/**
