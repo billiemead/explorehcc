@@ -43,7 +43,11 @@ $trans: transparent;
     box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.5);
 }
-
+@mixin inner-circle-shadow(){
+    -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
+}
 @mixin flex-col-center() {
     display: flex;
     flex-direction: column;
