@@ -123,7 +123,7 @@ div#section-oas.edh-section { /* section */
 
 /* ************ LIVER CANCER SECTION ************ */
 div#section-livc.edh-section { /* section */
-    height: 3347px;
+    /* height: 3347px; */
     background-color: $white !important;
     div#col-livc { /* section HEADING column */
         margin-top: 125px !important;
@@ -136,7 +136,7 @@ div#section-livc.edh-section { /* section */
             line-height: 40px;
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 2% !important;
+            margin-bottom: 1% !important;
             }
         }
         div#livc-subheading {
@@ -164,32 +164,35 @@ div#section-livc.edh-section { /* section */
             left: 0;
         }
     }
-    div#livc-stats { /* STATS section column */
-        margin: 0 auto !important;
-        padding-top: 80px !important;
-        padding-bottom: 40px !important;
-        h3.section-stats {
-            color: $purple;
-            @include regular($sofia-sans);
-            text-align: center;
-            font-size: 100px;
-            line-height: 96px;
-            letter-spacing: 0px;
-        }
-        p.section-stats-copy {
-            width: 393px;
-            color: $blugrey;
-            @include bold($sofia-sans);
+    div#col-livc-stats {
+        div#livc-stats { /* STATS section column */
             margin: 0 auto !important;
-            font-size: 24px;
-            line-height: 28px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-                sub.subscript {
-                vertical-align: super !important;
-                font-size: 75% !important;
-                top: .005ex !important;
-                }
+            padding-top: 80px !important;
+            padding-bottom: 40px !important;
+            h3.section-stats {
+                color: $purple;
+                @include regular($sofia-sans);
+                text-align: center;
+                font-size: 100px;
+                line-height: 96px;
+                letter-spacing: 0px;
+            }
+            p.section-stats-copy {
+                width: 393px;
+                color: $blugrey;
+                @include bold($sofia-sans);
+                margin: 0 auto !important;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding-top: 25px !important;
+                    sub.subscript {
+                    vertical-align: super !important;
+                    font-size: 75% !important;
+                    top: .005ex !important;
+                    }
+            }
         }
     }
     div#col-tricube { /* TRI-CUBE section column */
@@ -198,7 +201,7 @@ div#section-livc.edh-section { /* section */
                 margin: 0 auto !important;
                 position: relative;
                 left: 14px;
-                bottom: -102px;
+                /* bottom: -102px; */
             }
             div#livc-inrow > div.edgtf-full-section-inner { /* inner row */
                 display: flex;
@@ -283,14 +286,47 @@ div#section-livc.edh-section { /* section */
                 border-radius: 15px;
                 border: 1px solid $purple;
                 background-color: $purple;
-                margin: 0 auto !important
+                margin: 0 auto !important;
+                top: -90px;
+                position: relative;
             }
     }
     div#col-livc-cases {
-        div#html-livccases {
-            div#livc-circle-out.livc-outer-circle {
-                div#livc-circle-in.livc-inner-circle {
-                    img.icon-liver {
+        max-width: 870px !important;
+        padding-bottom: 10.5% !important;
+        padding-top: 7.5% !important;
+        div.wpb_wrapper {
+            height: 365px;
+        }
+        #html-livccases {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            #livc-circle-out {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 347px;
+                    height: 347px;
+                    background-color: $white;
+                    border: 2px solid $bordergreylight;
+                    border-radius: 100%;
+                    padding: 7px !important;
+                    position: relative;
+                    z-index: 210;
+                #livc-circle-in{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 298px;
+                    height: 298px;
+                    background-color: $white;
+                    border: 2px solid $gold;
+                    border-radius: 100%;
+                    @include circle-shadow-light();
+                    img.livc-icon-liver {
 
                     }
 
@@ -298,55 +334,108 @@ div#section-livc.edh-section { /* section */
 
             }
             div#livc-gbox.livc-grey-info-box {
-
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                background-color: $ltgrey1;
+                border-radius: 15px;
+                height: 260px;
+                padding: 0!important;
+                margin-left: 234px!important;
+                position: relative;
+                z-index: 190;
+                top: -313px;
+                padding-left: 158px !important;
+                padding-right: 145px !important;
                 h3.section-stats {
-
+                    @include regular($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    font-size: 100px;
+                    line-height: 98px;
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 1% !important;
                 }
                 p.section-stats-copy {
-
-                    sub.subscript {
-
-                    }
+                    @include bold($sofia-sans);
+                    text-align: left;
+                    color: $blugrey;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    width: 375px;
+                    position: relative;
+                    left: 70px;
+                        sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 75% !important;
+                        top: .005ex !important;
+                        }
                 }
+            }
         }
     }
     div#col-livc-people {
-
-        div#livc-icon-person1 {
-            img {
-
-            }
+        div#livc-icon-people-inrow {
+            margin: 0 auto !important;
         }
-        div#livc-icon-person1 {
-            img {
-
+            div#livc-icon-people-col1,
+            div#livc-icon-people-col2,
+            div#livc-icon-people-col3 {
+                width: 15% !important;
+                margin: 0 auto !important;
+                float: unset !important;
+                display: inline-block;
             }
-        }
-        div#livc-icon-person1 {
-            img {
-
+            div#livc-icon-heading {
+                padding-top: 60px !important;
+                h1.section-heading{
+                    @include semi-bold($sofia-sans);
+                    text-align: center;
+                    color: $purple;
+                    font-size: 44px;
+                    line-height: 96px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                        sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 75% !important;
+                        top: .005ex !important;
+                        }
+                }
             }
-        }
-        div#livc-icon-heading {
-            h1.section-heading{
-
+            #livc-icon-subheading {
+                padding-top: 30px !important;
+                padding-bottom: 35px !important;
+                max-width: 1100px !important;
+                margin: 0 auto !important;
+                h2.section-subheading {
+                    @include semi-bold($sofia-sans);
+                    text-align: center;
+                    color: $copy;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 2px;
+                }
             }
-
-        }
-        div#livc-icon-subheading {
-            h2.section-subheading {
-
+            #livc-icon-footnote {
+                p.footnote {
+                @include regular($sofia-sans);
+                text-align: center;
+                color: $copy;
+                font-size: 20px;
+                line-height: 40px;
+                letter-spacing: 0;
+                }
             }
-
-        }
-        div#livc-icon-footnote {
-            p.footnote {
-
-            }
-        }
     }
     div#col-hepcar { /* HEPATOCELLUALR CARCINOMA section column */
         margin-top: 125px !important;
+        margin-bottom: 10% !important;
         div#livc-heading2 {
             h1.section-heading {
             @include regular($sofia-sans);
@@ -356,7 +445,7 @@ div#section-livc.edh-section { /* section */
             line-height: 40px;
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 2% !important;
+            margin-bottom: 1% !important;
             }
         }
         div#livc-subheading2 {
@@ -376,7 +465,7 @@ div#section-livc.edh-section { /* section */
                 }
             }
         }
-        div#livc-subheading2::after {
+        div#livc-subheading2:after {
             content: "";
             border: 2px solid $gold;
             width: 150px;
@@ -384,26 +473,57 @@ div#section-livc.edh-section { /* section */
             left: 0;
         }
         div.livc-bullet-icons {
-            .icon-top {
+            padding-top: 85px !important;
+            padding-bottom: 99px !important;
+            max-width: 1070px;
+            li {
+                margin-bottom: 50px !important;
+                .icon-top {
 
+                }
+                .icon-middle {
+
+                }
+                .icon-bottom {
+
+                }
+                p.icon-bullet-copy {
+                    color: $copy !important;
+                    @include medium($sofia-sans) ;
+                    text-align: left;
+                    font-size: 32px !important;
+                    line-height: 38px !important;
+                    letter-spacing: 0px;
+                        span.red {
+                            @include extra-bold($sofia-sans);
+                            color: $red;
+                        }
+                        sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 75% !important;
+                        top: .005ex !important;
+                        }
+                }
             }
-            .icon-middle {
-
-            }
-            .icon-bottom {
-
-            }
-            p.icon-bullet-copy {
-
-            }
-
         }
-        div.livc-purple-btn {
-            a {
-
+        a.livc-purple-btn {
+        background-color: $purple;
+        border-radius: 10px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 453px;
+        margin: 0 auto !important;
+            span {
+            @include bold($sofia-sans);
+            color: $white;
+            text-align: center;
+            font-size: 30px;
+            line-height: 19px;
+            letter-spacing: 2px;
             }
         }
-    }
     }
 }
 
@@ -765,7 +885,6 @@ div#section-liverfunct.edh-section {
 
     }
 }
-
 /* ************ HUBSPOT FORM SECTION ************ */
 div#section-hsform.edh-section {
     div#col-hsform-divider {
@@ -845,7 +964,6 @@ div#section-hsform.edh-section {
         }
     }
 }
-
 /* ***** Grad Box **** */
 div.edh-box-container {
     div.edh-outerbox {
@@ -868,7 +986,6 @@ div.edh-box-container {
         }
     }
 }
-
 /* ***** White Circles **** */
 div.edh-circle-container {
     div.edh-outercircle {
@@ -898,7 +1015,6 @@ div.edh-circle-container {
         }
     }
 }
-
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {

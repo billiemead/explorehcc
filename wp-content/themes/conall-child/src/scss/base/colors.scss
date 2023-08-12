@@ -3,6 +3,7 @@ $blugrey: #525D66;
 $blugrey2: #5B6770;
 $blugreyscreen: #5a636d;
 $bordergrey: #707070;
+$bordergreylight: #a0a0a0;
 $copy: #333333;
 $copy2: #373F41;
 $darkpurple: #080124;
@@ -59,6 +60,11 @@ $white: #ffffff;
     -webkit-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
     box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
     -moz-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
+}
+@mixin circle-shadow-light(){
+    -webkit-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.4);
+    box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.4);
+    -moz-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.4);
 }
 @mixin flex-col-center() {
     display: flex;
