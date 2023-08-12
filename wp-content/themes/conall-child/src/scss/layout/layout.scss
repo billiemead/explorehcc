@@ -1,5 +1,7 @@
 @import "../base/colors";
+@import '../base/font.scss';
 
+/* ************ PROJECT SET-UP ************ */
 h1,
 h2,
 h3,
@@ -10,9 +12,12 @@ p {
     margin: 0 !important;
     padding: 0 !important;
 }
-div.edgtf-content {
-    z-index: 999;
+br.line-break {
+
 }
+/* div.edgtf-content {
+    z-index: 999;
+} */
 .edgtf-container-inner {
     width: 100% !important;
     margin: 0 auto;
@@ -40,12 +45,14 @@ header.edgtf-mobile-header {
     right: 35px !important;
     bottom: 35px !important;
 }
+/* ************ SECTION PAGE WIDTH ************ */
 div.edh-col.col1 {
     margin: 0 auto !important;
     max-width: 1300px !important;
     float: unset;
     padding: 0 !important;
 }
+/* ************ FULL PAGE WIDTH ************ */
 div.edh-col.col1.top {
     margin: 0 auto !important;
     max-width: 100% !important;
@@ -55,14 +62,10 @@ div.edh-col.col1.top {
     padding: 0 !important;
 }
 /* ************ COLUMNS ************ */
-
 #hero-column {
     min-height: 934px;
 }
-
-
 /* ************ HERO ************ */
-
 #hero-bottom {
     position: absolute;
     left: 0;
@@ -97,7 +100,6 @@ div.edh-col.col1.top {
         width: 100%;
     }
 }
-
 #hero-subhead {
     left: 64%;
     position: fixed;
@@ -250,4 +252,32 @@ div#section-page-footer {
             }
         }
     }
+}
+
+/*** Responsive Min-Width ***/
+@media all and (min-width: 479px) {
+}
+@media all and (min-width: 575px) {
+}
+@media all and (min-width: 767px) {
+}
+@media all and (min-width: 959px) {
+}
+@media all and (min-width: 1023px) {
+}
+
+/*** Responsive Tablet ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
 }

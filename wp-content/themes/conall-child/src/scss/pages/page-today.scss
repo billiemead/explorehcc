@@ -1,7 +1,436 @@
 @import "../base/colors";
 @import '../base/font.scss';
 
+/* ************ ONLY AS STRONG SECTION ************ */
+div#section-oas.edh-section { /* section */
+    background: linear-gradient(#515c65, #080124);
+    div#col-oas { /* section column */
+        margin-top: 125px !important;
+        div#oas-heading {
+            h1.section-heading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $gold;
+            font-size: 54px;
+            line-height: 40px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+            }
+        }
+        div#oas-subheading {
+            h2.section-subheading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $gold;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+            }
+        }
+        div#oas-bodycopy {
+            p.section-bodycopy {
+                @include regular($sofia-sans);
+                text-align: left;
+                color: $white;
+                font-size: 24px;
+                line-height: 38px;
+                letter-spacing: 0px;
+                padding-bottom: 25px !important;
+            }
+        }
+    }
+    /* ***** STICKY NAV **** */
+    div#col-nav-oas /* section column */ {
+        padding-top: 7% !important;
+        padding-bottom: 9% !important;
+        div#nav-quadbox {
+            div.edh-outerbox.hs-box {
+                border-radius: 35px;
+                border-color: $white;
+                border-width: 2px;
+                div.edh-innerbox.hs-box {
+                    border-radius: 28px;
+                    border: 2px solid $gold;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 0;
+                    div.oas-nav-container {
+                        height: 190px;
+                        border: none;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(#525D66, #080124);
+                        div.oas-nav-circle.hs-circle {
+                            border-radius: 100%;
+                            border: 2px solid $gold;
+                            width: 170px;
+                            height: 170px;
+                            background-color: $white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            top: -100px;
+                            aspect-ratio: 1/1;
+                            @include circle-shadow();
+                            img.oas-icon {
 
+                            }
+                        }
+                        a.oas-nav {
+                            display: flex;
+                            text-align: center;
+                            @include medium($sofia-sans);
+                            color: $white;
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                            font-size: (18px);
+                            line-height: 22px;
+                            margin-top: 80px;
+                            position: absolute;
+                        }
+                    }
+                    div#oas-nav1 {
+                        border-top-left-radius: 27px;
+                        border-bottom-left-radius: 27px;
+                        @include form-gradient-white-screen();
+                    }
+                    div#oas-nav2 {
+                        img.oas-icon {
+                            position: relative;
+                            top: -3px;
+                        }
+                    }
+                    div#oas-nav3 {
+                        @include form-gradient-white-screen();
+                    }
+                    div#oas-nav4 {
+                        border-top-right-radius: 27px;
+                        border-bottom-right-radius: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ************ LIVER CANCER SECTION ************ */
+div#section-livc.edh-section { /* section */
+    height: 3347px;
+    background-color: $white !important;
+    div#col-livc { /* section HEADING column */
+        margin-top: 125px !important;
+        div#livc-heading {
+            h1.section-heading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $purple;
+            font-size: 54px;
+            line-height: 40px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+            }
+        }
+        div#livc-subheading {
+            h2.section-subheading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $purple;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+                sub.subscript {
+                vertical-align: super !important;
+                font-size: 75% !important;
+                top: .005ex !important;
+                }
+            }
+        }
+        div#livc-subheading::after {
+            content: "";
+            border: 2px solid $gold;
+            width: 150px;
+            position: absolute;
+            left: 0;
+        }
+    }
+    div#livc-stats { /* STATS section column */
+        margin: 0 auto !important;
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+        h3.section-stats {
+            color: $purple;
+            @include regular($sofia-sans);
+            text-align: center;
+            font-size: 100px;
+            line-height: 96px;
+            letter-spacing: 0px;
+        }
+        p.section-stats-copy {
+            width: 393px;
+            color: $blugrey;
+            @include bold($sofia-sans);
+            margin: 0 auto !important;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+                sub.subscript {
+                vertical-align: super !important;
+                font-size: 75% !important;
+                top: .005ex !important;
+                }
+        }
+    }
+    div#col-tricube { /* TRI-CUBE section column */
+            div#livc-inrow {
+                width: 911px;
+                margin: 0 auto !important;
+                position: relative;
+                left: 14px;
+                bottom: -102px;
+            }
+            div#livc-inrow > div.edgtf-full-section-inner { /* inner row */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                div.livc-cube {
+                    margin: 0 auto !important;
+                    width: 316px !important;
+                    height: 240px !important;
+                    float: unset;
+                    position: relative;
+                    background-position: center !important;
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
+                    padding-right: 20px !important;
+                    p.cube-copy {
+                        margin-top: 20px !important;
+                        color: $white;
+                        @include bold($sofia-sans);
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 20px;
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                            sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 75% !important;
+                            top: .005ex !important;
+                            }
+                    }
+                }
+                div#livc-cube1 { /* quad column 1 */
+                    background-image: url("/wp-content/themes/conall-child/images/livc-cube-box-316x240.png");
+                    div#cube1-h4 h4 {
+                        margin-top: 62px !important;
+                        color: $white;
+                        @include bold($sofia-sans);
+                        text-align: center;
+                        font-size: 73px;
+                        line-height: 43px;
+                        letter-spacing: 0px;
+                    }
+                }
+                div#livc-cube2 { /* quad column 2 */
+                    background-image: url("/wp-content/themes/conall-child/images/livc-cube-box-316x240.png");
+                    div#cube2-h4 h4 {
+                        margin-top: 40px !important;
+                        color: $white;
+                        @include bold($sofia-sans);
+                        text-align: center;
+                        font-size: 41px;
+                        line-height: 36px;
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                    }
+                    .cube-copy {
+                        margin-top: 7px !important;
+                    }
+                }
+                div#livc-cube3 { /* quad column 3 */
+                    background-image: url("/wp-content/themes/conall-child/images/livc-cube-box-316x240.png");
+                    div#cube3-h4 h4 {
+                        margin-top: 80px !important;
+                        color: $white;
+                        @include bold($sofia-sans);
+                        text-align: center;
+                        font-size: 73px;
+                        line-height: 29px;
+                        letter-spacing: 0px;
+                    }
+                    .cube-copy {
+                        margin-top: 28pxpx !important;
+                    }
+                }
+            }
+            div.livc-purple-box {
+                width: 955px;
+                height: 100px;
+                border-radius: 15px;
+                border: 1px solid $purple;
+                background-color: $purple;
+                margin: 0 auto !important
+            }
+    }
+    div#col-livc-cases {
+        div#html-livccases {
+            div#livc-circle-out.livc-outer-circle {
+                div#livc-circle-in.livc-inner-circle {
+                    img.icon-liver {
+
+                    }
+
+                }
+
+            }
+            div#livc-gbox.livc-grey-info-box {
+
+                h3.section-stats {
+
+                }
+                p.section-stats-copy {
+
+                    sub.subscript {
+
+                    }
+                }
+        }
+    }
+    div#col-livc-people {
+
+        div#livc-icon-person1 {
+            img {
+
+            }
+        }
+        div#livc-icon-person1 {
+            img {
+
+            }
+        }
+        div#livc-icon-person1 {
+            img {
+
+            }
+        }
+        div#livc-icon-heading {
+            h1.section-heading{
+
+            }
+
+        }
+        div#livc-icon-subheading {
+            h2.section-subheading {
+
+            }
+
+        }
+        div#livc-icon-footnote {
+            p.footnote {
+
+            }
+        }
+    }
+    div#col-hepcar { /* HEPATOCELLUALR CARCINOMA section column */
+        margin-top: 125px !important;
+        div#livc-heading2 {
+            h1.section-heading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $purple;
+            font-size: 54px;
+            line-height: 40px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+            }
+        }
+        div#livc-subheading2 {
+            h2.section-subheading {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $purple;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2% !important;
+                sub.subscript {
+                vertical-align: super !important;
+                font-size: 75% !important;
+                top: .005ex !important;
+                }
+            }
+        }
+        div#livc-subheading2::after {
+            content: "";
+            border: 2px solid $gold;
+            width: 150px;
+            position: absolute;
+            left: 0;
+        }
+        div.livc-bullet-icons {
+            .icon-top {
+
+            }
+            .icon-middle {
+
+            }
+            .icon-bottom {
+
+            }
+            p.icon-bullet-copy {
+
+            }
+
+        }
+        div.livc-purple-btn {
+            a {
+
+            }
+        }
+    }
+    }
+}
+
+/* ************ TREATMENT PROGRESS TABLE SECTION ************ */
+div#section-table.edh-section {
+
+}
+/* ************ OVERALL SURVIVAL (OS) ANIIMATION SECTION ************ */
+div#section-os.edh-section {
+
+}
+/* ************ NEEDED SECTION ************ */
+div#section-needed.edh-section {
+
+}
+/* ************ PROGRESSION FREE SECTION ************ */
+div#section-progfree.edh-section {
+
+}
+/* ************ OBJECTIVE RESPONSIVE RATE SECTION ************ */
+div#section-orr.edh-section {
+
+}
+/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+div#section-qol.edh-section {
+
+}
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
     /* height: 2272px; */
@@ -57,7 +486,7 @@ div#section-liverfunct.edh-section {
         margin-bottom: 12% !important;
         div#col-hemrisk-left {
             div#lvf-heading2 {
-                padding-top: 100px !important;
+                padding-top: 11% !important;
                 h3.section-heading {
                 @include regular($sofia-sans);
                 text-align: left;
@@ -89,7 +518,7 @@ div#section-liverfunct.edh-section {
         div#col-hemrisk-right {
             div#lvf-photo {
                 img.vc_single_image-img {
-
+                    max-width: 572px
                 }
             }
 
@@ -189,10 +618,9 @@ div#section-liverfunct.edh-section {
                 div#html-lvf-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 100px;
-                    height: 158px;
+                    height: 147px;
                     position: absolute;
-                    margin-top: 14px;
+                    bottom: -149px;
                 }
                 div#html-lvf-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                     max-width: 171px;
@@ -211,9 +639,9 @@ div#section-liverfunct.edh-section {
                 div#html-lvf-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 111px;
+                    height: 101px;
                     position: absolute;
-                    margin-top: 14px;
+                    bottom: -105px;
                 }
                 div#html-lvf-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                     max-width: 137px;
@@ -232,9 +660,9 @@ div#section-liverfunct.edh-section {
                 div#html-lvf-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 22px;
+                    height: 11px;
                     position: absolute;
-                    margin-top: 14px;
+                    bottom: -15px;
                 }
                 div#html-lvf-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                     max-width: 154px;
@@ -253,9 +681,9 @@ div#section-liverfunct.edh-section {
                 div#html-lvf-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 45px;
+                    height: 35px;
                     position: absolute;
-                    margin-top: 14px;
+                    bottom: -39px;
                 }
             }
         }
@@ -338,7 +766,8 @@ div#section-liverfunct.edh-section {
     }
 }
 
-/* ************ HUBSPOT FORM SECTION ************ */div#section-hsform.edh-section {
+/* ************ HUBSPOT FORM SECTION ************ */
+div#section-hsform.edh-section {
     div#col-hsform-divider {
         margin: 0 auto !important;
         width: 100% !important;
@@ -420,13 +849,13 @@ div#section-liverfunct.edh-section {
 /* ***** Grad Box **** */
 div.edh-box-container {
     div.edh-outerbox {
-        border: 1px solid $bordergrey;
+        border: 2px solid $bordergrey;
         background-color: transparent;
         border-radius: 18px;
         padding: 16px;
         div.edh-innerbox {
             @include form-gradient;
-            border: 1px solid $bordergrey;
+            /* border: 2px solid $bordergrey; */
             border-radius: 13px;
             padding: 38px 32px 38px 32px;
             @include inner-box-shadow;
@@ -444,10 +873,14 @@ div.edh-box-container {
 div.edh-circle-container {
     div.edh-outercircle {
         aspect-ratio: 1/1;
-        border: 1px solid $white;
+        border: 2px solid $white;
         background-color: transparent;
         border-radius: 100%;
-        padding: 13px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         div.edh-innercircle {
             display: flex;
             flex-direction: column;
@@ -455,7 +888,7 @@ div.edh-circle-container {
             justify-content: center;
             aspect-ratio: 1 / 1;
             background-color: $white;
-            border: 1px solid $gold2;
+            border: 2px solid $gold2;
             border-radius: 100%;
             padding: 0 !important;
             @include inner-circle-shadow;
@@ -464,4 +897,33 @@ div.edh-circle-container {
             overflow: hidden;
         }
     }
+}
+
+
+/*** Responsive Min-Width ***/
+@media all and (min-width: 479px) {
+}
+@media all and (min-width: 575px) {
+}
+@media all and (min-width: 767px) {
+}
+@media all and (min-width: 959px) {
+}
+@media all and (min-width: 1023px) {
+}
+
+/*** Responsive Tablet ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
 }

@@ -1,5 +1,35 @@
+@import "../base/colors";
+@import '../base/font.scss';
+
+/* ************ ______________ SECTION ************ */
+
+/* ***** SUB-SECTIONS/NOTES **** */
 
 
-@media all and (max-width: 767px) {
+/*** Responsive Min-Width ***/
+@media all and (min-width: 479px) {
+}
+@media all and (min-width: 575px) {
+}
+@media all and (min-width: 767px) {
+}
+@media all and (min-width: 959px) {
+}
+@media all and (min-width: 1023px) {
+}
 
+/*** Responsive Tablet ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
 }

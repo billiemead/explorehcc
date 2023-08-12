@@ -1,6 +1,6 @@
 @import "colors";
 
-@import 'https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;600;700;800;900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800;900&display=swap';
 
 $sofia-sans: 'Sofia Sans', serif;
 
@@ -13,6 +13,11 @@ $sofia-sans: 'Sofia Sans', serif;
   font-family: $sofia-sans;
   font-style: normal;
   font-weight: 400 !important;
+}
+@mixin medium($sofia-sans) {
+  font-family: $sofia-sans;
+  font-style: normal;
+  font-weight: 500 !important;
 }
 @mixin semi-bold($sofia-sans) {
   font-family: $sofia-sans;

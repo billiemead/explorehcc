@@ -1,20 +1,23 @@
-$white: #ffffff;
 $black: #000000;
-$copy: #333333;
-$copy2: #373F41;
-$gold: #F5C75D;
-$gold2: #F4C054;
-$purple: #493D7C;
-$darkpurple: #080124;
-$ltgrey1: #E8E8E8;
-$ltgrey2: #DEDCE6;
 $blugrey: #525D66;
 $blugrey2: #5B6770;
-$dkblugrey: #292F33;
+$blugreyscreen: #5a636d;
 $bordergrey: #707070;
+$copy: #333333;
+$copy2: #373F41;
+$darkpurple: #080124;
+$darkpurplescreen: #161030;
+$dkblugrey: #292F33;
+$gold: #F5C75D;
+$gold2: #F4C054;
+$ltgrey1: #E8E8E8;
+$ltgrey2: #DEDCE6;
 $orange1: #F98D2A;
 $orange2: #C25131;
+$purple: #493D7C;
+$red: #C45131;
 $trans: transparent;
+$white: #ffffff;
 
 @mixin footer-gradient{
     background: linear-gradient($blugrey, $dkblugrey);
@@ -23,6 +26,10 @@ $trans: transparent;
 @mixin form-gradient(){
     background: linear-gradient($blugrey, $darkpurple);
 };
+@mixin form-gradient-white-screen(){
+    background: linear-gradient($blugreyscreen, $darkpurplescreen);
+};
+
 
 @mixin form-section-gradient(){
     background: linear-gradient($ltgrey1, $ltgrey2);
@@ -47,6 +54,11 @@ $trans: transparent;
     -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
     box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
+}
+@mixin circle-shadow(){
+    -webkit-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
+    box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
+    -moz-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
 }
 @mixin flex-col-center() {
     display: flex;
