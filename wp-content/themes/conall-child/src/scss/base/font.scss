@@ -5,37 +5,37 @@
 $sofia-sans: 'Sofia Sans', serif;
 
 @mixin light($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 300 !important;
 }
 @mixin regular($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 400 !important;
 }
 @mixin medium($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 500 !important;
 }
 @mixin semi-bold($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 600 !important;
 }
 @mixin bold($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 700 !important;
 }
 @mixin extra-bold($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 800 !important;
 }
 @mixin black($sofia-sans) {
-  font-family: $sofia-sans;
-  font-style: normal;
+  font-family: $sofia-sans !important;
+  font-style: normal !important;
   font-weight: 900 !important;
 }
