@@ -1,4 +1,4 @@
-![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//theagency-logo-242x116.png)
+![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//theagency-logo-242x116.png)
 
 # Elevar DA Microsite Local Development Environment Set-up
 
@@ -44,15 +44,15 @@ Dependencies:
 
 3. Make sure you are on the **Dev** environment tab and that the **Development Mode** is set to **GIT**:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//pantheon-dev-tab.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//pantheon-dev-tab.png)
 
 4. Click [Clone with Git](#) button and copy the command line statement:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//gitclone-852x233.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//gitclone-852x233.png)
 
 5. Open your **Terminal**, navigate to the folder where you store your local dev projects and paste the `git clone` statement from above:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//git-clone-terminal.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//git-clone-terminal.png)
 
 6. Move to the newly created directory with the following command `cd elevar-da-microsite`
 
@@ -63,19 +63,19 @@ Dependencies:
 
 1. Return to the **Pantheon Elevar Microsite** site dashboard, and navigate to the [Live](#) environment tab, and then select [Database/Files](#) from right-side menu:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//database-menu.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//database-menu.png)
 
 2. Once the database export is completed, click the top-most button next to your export to download the `database.sql.gz` file to your local computer:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//database-download.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//database-download.png)
 
 3. Open **PHPMyAdmin** on your local machine, create a new blank **MySQL** database and import the newly downloaded `database.sql.gz` file:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//phpmyadmin.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//phpmyadmin.png)
 
 4. Once the import has successfully finished, open **PHPMyAdmin**, navigate and browse to the  `wp-options` table data, and change `siteurl` and `home` to local domain `https://elevar-da-microsite.localdev` or the local development domain you would prefer to use:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//phpmyadmin-wp-options.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//phpmyadmin-wp-options.png)
 
 - - - -
 
@@ -86,11 +86,11 @@ Dependencies:
 
 2. In your editor, change the following section to use the **MySQL** credentials you have set-up locally:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//wp-config-database.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//wp-config-database.png)
 
 3. And edit the following section to use the same development URL you used from **step 2.4.** above `https://elevar-da-microsite.localdev`:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//wp-config-siteurl.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//wp-config-siteurl.png)
 
 - - - -
 
@@ -121,7 +121,7 @@ The remaining plugins are optional, but please do not delete or remove any plugi
 
 3. Go to the menu item [Settings](#) -> [Permalinks](#) and be sure the **Post Name** option is selected:
 
-> ![image](https://dev-elevar-da-microsite.pantheonsite.io/wp-content/themes/conall-child/images/github//wp-permalinks.png)
+> ![image](https://github.com/thewhyse/elevar-da-microsite/blob/master/wp-content/themes/conall-child/images/github//wp-permalinks.png)
 
 - - - -
 
