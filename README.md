@@ -199,6 +199,8 @@ npm install
 
 #### And What NOT To Do... ####
 
+* **Do NOT** use **WordPress Media Folder** for images... instead store & link to images in: `/wp-content/themes/conall-child/images/`
+
 * Every `git push` to the `master` branch will automatically be deployed to both **GitHub** and the **Pantheon** development server at https://dev-elevar-da-microsite.pantheonsite.io/
 
 * **Do NOT** use **SFTP/FTP** to change server files or directory structure
