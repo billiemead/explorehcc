@@ -26,7 +26,7 @@ if (!class_exists('ConallEdgeClassStickyNavigationWalker')) {
 			}
 
 			// build html
-			$output .= "\n" . $indent . $out_div  .'<ul>' . "\n";
+			$output .= "\n" . $indent . $out_div  . '<ul>' . "\n";
 		}
 		function end_lvl( &$output, $depth = 0, $args = array() ) {
 			$indent = str_repeat("\t", $depth);
@@ -94,33 +94,10 @@ if (!class_exists('ConallEdgeClassStickyNavigationWalker')) {
 			// build html
 			$output .= $indent . '<li id="sticky-nav-menu-item-'. $item->ID . '" class="' . $class_names . ' '. $active . $sub . $menu_type . $wide_menu_position .'">';
 
-			$current_a = "";
-			// link attributes
-			$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-			$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-			$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-			$attributes .= ' href="'   . esc_attr( $item->url        ) .$anchor.'"';
-			if (($item->current && $depth == 0) ||  ($item->current_item_ancestor && $depth == 0) ):
-				$current_a .= ' current ';
-			endif;
 
-			$no_link_class = '';
-			if($item->nolink != '') {
-				$no_link_class = ' no_link';
-			}
-
-			$attributes .= ' class="'.$current_a.$no_link_class.'"';
-			$item_output = $args->before;
-			if($item->hide == ""){
-				if($item->nolink == ""){
-					$item_output .= '<a'. $attributes .'><span class="item_outer">';
-				} else{
-					$item_output .= '<a'. $attributes .' style="cursor: default;" onclick="JavaScript: return false;"><span class="item_outer">';
-				}
-
-				$icon = '';
+            /* ==$icon = '';
 				if($item->icon !== "" && $item->icon !== 'null') {
-					$icon = $item->icon; 
+					$icon = $item->icon;
 				}
 
 				$icon_pack = 'font_awesome';
@@ -128,36 +105,71 @@ if (!class_exists('ConallEdgeClassStickyNavigationWalker')) {
 				if(empty($this->icon_pack)) {
 					$item->icon_pack = $icon_pack;
 				}
-				
+
 				if($icon !== '') {
 					if($item->icon_pack == 'font_awesome') {
 						$icon .= ' fa';
 					}
 
 					$item_output .= '<span class="menu_icon_wrapper"><i class="menu_icon '.$icon.'"></i></span>';
-				}
-				
-				$item_output .= '<span class="item_text">';
-				$item_output .= apply_filters('the_title', $item->title, $item->ID);
+				} */
 
-                $featured_icon = '';
-                if($item->featured_icon !== ""){
-                    $featured_icon .= '<i class="edgtf-menu-featured-icon fa '.$item->featured_icon .'"></i>';
+
+
+
+            $current_a = "";
+            // link attributes
+            $attributes  = !empty($item->attr_title) ? ' title="'  . esc_attr($item->attr_title) . '"' : '';
+            $attributes .= !empty($item->target)     ? ' target="' . esc_attr($item->target) . '"' : '';
+            $attributes .= !empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn) . '"' : '';
+            $attributes .= ' href="'   . esc_attr($item->url) . $anchor . '"';
+            if (($item->current && $depth == 0) ||  ($item->current_item_ancestor && $depth == 0)) :
+                $current_a .= ' current ';
+            endif;
+
+            $no_link_class = '';
+            if ($item->nolink != '') {
+                $no_link_class = ' no_link';
+            }
+
+            $attributes .= ' class="' . $current_a . $no_link_class . '"';
+            $item_output = $args->before;
+
+            $item_output .= '<div class="oas-nav-container">';
+            $item_output .= '<div class="oas-nav-circle hs-circle">';
+            /* $item_output .= '<img class="oas-icon"  src="/wp-content/themes/conall-child/images/icon-liver-128x84.png" >'; */
+
+            $featured_icon = '';
+            if($item->featured_icon !== ""){
+                $featured_icon .= '<img class="oas-icon" src='. $item->featured_icon .' />';
+            }
+
+            $item_output .= $featured_icon;
+
+            $item_output .= '</div>';
+
+            if ($item->hide == "") {
+                if ($item->nolink == "") {
+                    $item_output .= '<a class="oas-nav"' . $attributes . ' >';
+                } else {
+                    $item_output .= '<a class="oas-nav"' . $attributes . ' style="cursor: default;" onclick="JavaScript: return false;">';
                 }
 
-                $item_output .= $featured_icon;
+                /* $item_output .= '<a href="#"  class="oas-nav">'; */
+				$item_output .= apply_filters('the_title', $item->title, $item->ID);
 
-				$item_output .= '</span>'; //close span.item_text
-				$item_output .= '<span class="plus"></span>';
+				// $item_output .= '<span class="plus"></span>';
 
 				//append arrow for dropdown
 
-				if($args->has_children && $depth == 0) {
+                /* 	if($args->has_children && $depth == 0) {
 					$item_output .= '<i class="edgtf-menu-arrow fa fa-angle-down"></i>';
-				}
+				} */
 
-				$item_output .= '</span></a>';
+				$item_output .= '</a>';
 			}
+
+            $item_output .= '</div>'; //close div.oas-nav-container
 
 			if($item->sidebar != "" && $depth > 0){
 				ob_start();
