@@ -21,11 +21,17 @@ Dependencies:
 ## Appendix
 
 [1. Git Clone](#1-git-clone)
+
 [2. Set-up Database](#2-setup-database)
+
 [3. Edit Local Files](#3-edit-local-files)
+
 [4. Activate Plugins](#4-activate-plugins)
+
 [5. Git Set-up](#5-git-setup)
+
 [6. NPM](#6-npm-install)
+
 [7. More Info](#7-more-info)
 
 - - - -
