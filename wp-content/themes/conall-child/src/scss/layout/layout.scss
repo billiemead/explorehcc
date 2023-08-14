@@ -12,6 +12,10 @@ p {
     margin: 0 !important;
     padding: 0 !important;
 }
+body {
+    line-height: 0 !important;
+    overflow: unset !important;
+}
 br.line-break {
 
 }
@@ -25,7 +29,17 @@ br.line-break {
 }
 header.edgtf-page-header,
 header.edgtf-mobile-header {
-    display: none;
+    vertical-align: top;
+}
+.edgtf-header-classic .edgtf-page-header {
+    background-color: rgba(221, 51, 51, 0.5) !important;
+    border: none;
+}
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder {
+    background-color: rgba(221, 153, 51, 0.5) !important;
+}
+.edgtf-header-classic .edgtf-page-header .edgtf-menu-area {
+    height: 0 !important;
 }
 .vc_column_container>.vc_column-inner {
     margin: 0 !important;
