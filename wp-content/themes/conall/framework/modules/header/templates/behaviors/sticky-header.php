@@ -15,9 +15,9 @@
                     </div>
                 </div>
                 <div class="edgtf-position-center">
-                    <div class="edgtf-position-center-inner">
+                    <div class="edgtf-position-center-inner"><div class="edh-innerbox hs-box">
                         <?php conall_edge_get_sticky_menu('edgtf-sticky-nav'); ?>
-                    </div>
+                    </div></div>
                 </div>
                 <div class="edgtf-position-right">
                     <div class="edgtf-position-right-inner">
