@@ -126,13 +126,8 @@ div.edh-col.col1.bottom {
     background-position: top center !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
-    div#hero-yellowline {
-        position: absolute;
-        left: 0;
-        bottom: 30px;
-        z-index: 1;
-        width: 100%;
-    }
+    position: relative;
+    margin-bottom: -167px !important;
     .wpb_single_image .vc_figure {
         width: 100%;
     }
