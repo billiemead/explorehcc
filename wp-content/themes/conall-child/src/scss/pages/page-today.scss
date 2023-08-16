@@ -46,14 +46,8 @@ div#oas-section-bottom-row {
 div#section-oas.edh-section { /* section */
     background: linear-gradient(#48505d, #0d0829);
     div.clearfix.edgtf-full-section-inner {
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-    margin-bottom: 0px !important;
-    margin-left: 0px !important;
-    padding-top: 0px !important;
-    padding-right: 0px !important;
-    padding-bottom: 0px !important;
-    padding-left: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
     background-image: url(https://elevar-da-microsite.localdev//wp-content/themes/conall-child/images/oas-section-middle-pattern-1920x943.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -103,7 +97,7 @@ div#section-oas.edh-section { /* section */
             position: relative;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
-                    border-radius: 35px;
+                    border-radius: 30px;
                     border-color: $white;
                     border-width: 2px;
                     div.edh-innerbox.hs-box {
@@ -179,8 +173,16 @@ div#section-oas.edh-section { /* section */
 /* ************ LIVER CANCER SECTION ************ */
 div#section-livc.edh-section { /* section */
     /* height: 3347px; */
+    background-image: url("/wp-content/themes/conall-child/images/livc-backg-pattern-1920x3695.png");
     background-color: $white !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    background-repeat: no-repeat !important;
+    background-position-y: -119px !important;
+    background-position-x: center !important;
     top: -1px;
+    background-size: 100%;
+    margin-bottom: -100px !important;
     div#col-livc { /* section HEADING column */
         margin-top: 125px !important;
         div#livc-heading {
@@ -339,7 +341,7 @@ div#section-livc.edh-section { /* section */
             div.livc-purple-box {
                 width: 955px;
                 height: 100px;
-                border-radius: 15px;
+                border-radius: 20px;
                 border: 1px solid $purple;
                 background-color: $purple;
                 margin: 0 auto !important;
@@ -396,7 +398,7 @@ div#section-livc.edh-section { /* section */
                 align-items: flex-start;
                 flex-wrap: nowrap;
                 background-color: $ltgrey1;
-                border-radius: 15px;
+                border-radius: 20px;
                 height: 260px;
                 padding: 0!important;
                 margin-left: 234px!important;
@@ -596,19 +598,22 @@ div#section-livc.edh-section { /* section */
 /* ************ TREATMENT PROGRESS TABLE SECTION ************ */
 div#section-table.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
-    background-size: cover !important;
-    background-repeat: no-repeat;
+    background-size: 100% !important;
     /* height: 1762px; */
-    padding-top: 200px !important;
+    padding-top: 11.5% !important;
     padding-bottom: 275px !important;
-    background-position-y: top;
-    background-color: #fff;
+    background-position-y: 0px;
+    background-position-x: center !important;
+    background-color: transparent;
     top: -2px;
     width: 101%;
     left: -1px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+   /*  margin-bottom: -100px !important; */
         div.edh-col.col2.table-box {
-        border: 1px solid $gold2;
-        border-radius: 15px;
+        border: 2px solid $gold2;
+        border-radius: 20px;
         background: linear-gradient(#5a636d, #161030);
         padding: 0 !important;
             div.vc_row {
@@ -639,7 +644,7 @@ div#section-table.edh-section {
                                     text-align: left;
                                     color: $orange3;
                                     font-size: 67px;
-                                    line-height: 96px;
+                                    line-height: 80px;
                                     letter-spacing: 0;
                                 }
                             }
@@ -665,7 +670,7 @@ div#section-table.edh-section {
 
                 }
                 p.table-footnote {
-                    @include light($sofia-sans);
+                    @include medium($sofia-sans);
                     text-align: left;
                     color: $white;
                     font-size: 20px;
@@ -688,6 +693,7 @@ div#section-table.edh-section {
             }
             div#table-inrow-2 {
                 height: 256px;
+                background-color: rgba(255,255,255,0.05);
                 div.left {
                     padding-right: 105px;
                 }
@@ -707,7 +713,7 @@ div#section-table.edh-section {
                 }
             }
             div#table-inrow-3 {
-                height: 336px;
+                height: 340px;
                 h3.table-h3 {
                     @include semi-bold($sofia-sans);
                     text-align: left;
@@ -718,12 +724,16 @@ div#section-table.edh-section {
                     padding: 50px 0 50px 0;
                 }
                 div.right {
+                    div.wpb_text_column {
+                        margin-bottom: 3% !important;
+                    }
                     p.table-copy {
                         max-width: 515px
                     }
                 }
             }
             div#table-inrow-4 {
+                background-color: rgba(255,255,255,0.05);
                 height: 232px;
                 h3.table-h3 {
                     @include bold($sofia-sans);
@@ -736,7 +746,7 @@ div#section-table.edh-section {
                     }
             }
             div#table-inrow-5 {
-                height: 238px;
+                height: 262px;
                 h4.table-footer {
                     @include bold($sofia-sans);
                     text-align: left;
@@ -751,6 +761,14 @@ div#section-table.edh-section {
                         font-size: 75% !important;
                         top: .005ex !important;
                         }
+                }
+                h5.table-footer {
+                    margin-top: 40px !important;
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 24px;
                 }
             }
     }
@@ -777,12 +795,13 @@ div#section-needed.edh-section {
     }
     div.needed-outerbox.hs-box {
         border: 1px solid $copy;
-        border-radius: 20px;
-        padding: 16px;
+        border-radius: 30px;
+        padding: 20px;
         div.needed-innerbox.hs-box {
             background-color: $ltgrey1;
-            border-radius: 13px;
+            border-radius: 20px;
             padding: 30px 70px 30px 70px;
+            @include white-box-shadow();
                 h4.needed {
                 @include semi-bold($sofia-sans);
                 text-align: center;
@@ -791,6 +810,7 @@ div#section-needed.edh-section {
                 line-height: 40px;
                 letter-spacing: 3px;
                 text-transform: uppercase;
+                margin-bottom: 25px;
                 }
                 p.needed {
                 @include regular($sofia-sans);
@@ -1148,8 +1168,8 @@ div#section-needed.edh-section {
                 background-color: #fff;
                 border: 1px solid $bordergrey;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                     background-color: $purbox1;
                 }
                 div#qb-2 {
@@ -1210,8 +1230,8 @@ div#section-needed.edh-section {
                 background-color: #fff;
                 border: 1px solid $bordergrey;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                     background-color: $orgbox1;
                 }
                 div#qb-2 {
@@ -1312,7 +1332,7 @@ div#section-qol.edh-section {
                         }
                     }
                 }
-                
+
                 div.grid-right {
                     grid-area: right;
                     display: flex;
@@ -1322,7 +1342,7 @@ div#section-qol.edh-section {
                     div.white-rc-box {
                         width: 1187px;
                         background-color: $white;
-                        border-radius: 16px;
+                        border-radius: 18px;
                         @include white-box-shadow();
                         right: 217px;
                         position: relative;
@@ -1631,12 +1651,12 @@ div#section-liverfunct.edh-section {
             div.edh-outerbox {
                 background-color: #080124;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                 }
                 div#qb-4 {
-                    border-top-right-radius: 13px;
-                    border-bottom-right-radius: 13px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
                 }
                 div.quadbox {
                     min-height: 80px;
@@ -1664,21 +1684,7 @@ div#section-liverfunct.edh-section {
                     }
                 }
             }
-
-            div#qb-1 {
-
-            }
-            div#qb-2 {
-
-            }
-            div#qb-3 {
-
-            }
-            div#qb-4 {
-
-            }
         }
-
     }
     div#lvf-qgb-subcopy {
             margin-top: 5%  !important;
@@ -1731,7 +1737,7 @@ div#section-hsform.edh-section {
             }
         }
         #hs-heading {
-            padding-top: 40px !important;
+            padding-top: 8% !important;
             padding-bottom: 20px !important;
             h3.section-heading {
                 @include regular($sofia-sans);
@@ -1743,7 +1749,9 @@ div#section-hsform.edh-section {
             }
         }
         div#hs-subheading {
-            padding-bottom: 60px !important;
+            padding-bottom: 3% !important;
+            width: 626px;
+            margin: 0 auto !important;
             p.section-subheading {
                 @include light($sofia-sans);
                 font-size: 24px;
@@ -1758,18 +1766,22 @@ div#section-hsform.edh-section {
             padding: 0 !important;
             margin: 0 auto !important;
             div.edh-innerbox.hs-box {
-                /* min-height: 384px; */
+                min-height: 384px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         div#hs-references {
             p.section-references {
-                margin: 85px 0 85px 0 !important;
                 @include regular($sofia-sans);
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0px;
                 color: $copy;
                 text-align: justify;
+                margin-top: 4% !important;
+                margin-bottom: 10% !important;
             }
         }
     }
@@ -1777,9 +1789,9 @@ div#section-hsform.edh-section {
 /* ***** Grad Box **** */
 div.edh-box-container {
     div.edh-outerbox {
-        border: 2px solid $bordergrey;
+        border: 1px solid $bordergrey;
         background-color: transparent;
-        border-radius: 18px;
+        border-radius: 20px;
         padding: 16px;
         div.edh-innerbox {
             @include form-gradient;

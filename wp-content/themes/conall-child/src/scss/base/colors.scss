@@ -16,6 +16,7 @@ $ltgrey2: #DEDCE6;
 $orange1: #F98D2A;
 $orange2: #C25131;
 $orange3: #F98E2C;
+$orange4: #a8462b;
 $purple: #493D7C;
 $red: #C45131;
 $trans: transparent;
@@ -50,6 +51,10 @@ $purbox4:#524689 ;
 
 @mixin orange-grad-button(){
     background: linear-gradient($orange1, $orange2);
+};
+
+@mixin footer-orange-grad-button(){
+    background: linear-gradient($orange2, $orange4);
 };
 
 @mixin button-shadow(){
