@@ -595,10 +595,17 @@ div#section-livc.edh-section { /* section */
 }
 /* ************ TREATMENT PROGRESS TABLE SECTION ************ */
 div#section-table.edh-section {
-    background: linear-gradient(#515c65, #080124);
-    height: 1762px;
+    background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    /* height: 1762px; */
     padding-top: 200px !important;
     padding-bottom: 275px !important;
+    background-position-y: top;
+    background-color: #fff;
+    top: -2px;
+    width: 101%;
+    left: -1px;
         div.edh-col.col2.table-box {
         border: 1px solid $gold2;
         border-radius: 15px;
@@ -757,10 +764,11 @@ div#section-os.edh-section {
     align-items: center;
     color: #fff;
     font-size: 30px;
+    top: -2px;
 }
 /* ************ NEEDED SECTION ************ */
 div#section-needed.edh-section {
-    height: 2920px;
+    /* height: 2920px; */
     background-color: #ffffff;
     div#html-needed {
         padding-top: 20% !important;
@@ -1262,38 +1270,115 @@ div#section-needed.edh-section {
                 line-height: 35px;
             }
     }
-}
-/* ************ PROGRESSION FREE SECTION ************ */
-div#section-progfree.edh-section {
-
-}
-/* ************ OBJECTIVE RESPONSIVE RATE SECTION ************ */
-div#section-orr.edh-section {
-
+    div#col-footnote-2 {
+        padding-bottom: 14% !important;
+    }
 }
 /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
 div#section-qol.edh-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url("/wp-content/themes/conall-child/images/qol-section-background-1920x719.png");
+        margin: 0 auto !important;
+        width: 100% !important;
+        padding: 0px;
+        position: relative;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+        background-size: 102% !important;
+        /* height: 719px; */
+        margin-bottom: -36px !important;
+        background-color: #fff;
+        top: -2px;
+        div.wpb_wrapper {
+            div#html-qol-box {
+                div.grid-container {
+                    display: grid;
+                    grid-template-areas: "left right";
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                }
+                div.grid-left {
+                    grid-area: left;
+                    position: relative;
+                    left: 75px;
+                    z-index: 1;
+                    div.qol-image {
+                        img.vc_single_image-img {
+                            min-width: 808px;
+                        }
+                    }
+                }
+                div.grid-right {
+                    grid-area: right;
+                    display: flex;
+                    align-items: flex-end;
+                    z-index: -1;
+                    margin-bottom: 113px;
+                    div.white-rc-box {
+                        width: 1187px;
+                        background-color: $white;
+                        border-radius: 16px;
+                        @include white-box-shadow();
+                        right: 217px;
+                        position: relative;
+                        width: 1187px;
+                        padding-top: 4.5%;
+                        padding-bottom: 4.5%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                            h1.section-heading {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $purple;
+                            font-size: 32px;
+                            line-height: 38px;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                            margin-bottom: 3% !important;
+                            padding-left: 235px !important;
+                            }
+                            p.section-copy {
+                            @include light($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            font-size: 24px;
+                            line-height: 38px;
+                            letter-spacing: 0;
+                            padding-left: 235px !important;
+                            padding-right: 68px !important;
+                                sub.subscript {
+                                    vertical-align: super !important;
+                                    font-size: 75% !important;
+                                    top: .005ex !important;
+                                }
+                            }
+                    }
+                }
 
+            }
+                }
+}
+/* ************ LIVER FUNCTION TOP DIVIDER  ************ */
+div#lvf-section-top-row {
+    background-image: url("/wp-content/themes/conall-child/images/lvf-section-top-1920x36.png");
+    height: 36px;
+    position: relative;
+    top: 2px;
+    z-index: 20;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
     /* height: 2272px; */
     background: linear-gradient(#515c65, #080124);
-    div#col-liverfunct-divider {
-        margin: 0 auto !important;
-        width: 100% !important;
-        float: unset;
-        position: relative;
-        top: -35px;
-        left: 0;
-        background-image: url("/wp-content/themes/conall-child/images/lvf-section-top-1920x36.png");
-        margin: 0px;
-        padding: 0px;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 36px;
-    }
     div#col-liverfunct {
         margin-top: 125px !important;
         div#lvf-heading1 {
