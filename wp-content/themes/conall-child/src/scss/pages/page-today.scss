@@ -18,6 +18,15 @@ div#hero-yellowline {
         bottom: 30px;
         z-index: 1;
         width: 100%;
+        figure.wpb_wrapper.vc_figure {
+            width: 100% !important;
+            div.vc_single_image-wrapper.vc_box_border_grey {
+                width: 100% !important;
+                img.vc_single_image-img {
+                    width: 100% !important;
+                }
+            }
+        }
 }
 div#oas-section-bottom-row {
     background-color: #fff;
@@ -33,7 +42,6 @@ div#oas-section-bottom-row {
         }
     }
 }
-
 /* ************ ONLY AS STRONG SECTION ************ */
 div#section-oas.edh-section { /* section */
     background: linear-gradient(#48505d, #0d0829);
@@ -168,7 +176,6 @@ div#section-oas.edh-section { /* section */
         }
     }
 }
-
 /* ************ LIVER CANCER SECTION ************ */
 div#section-livc.edh-section { /* section */
     /* height: 3347px; */
@@ -586,7 +593,6 @@ div#section-livc.edh-section { /* section */
         }
     }
 }
-
 /* ************ TREATMENT PROGRESS TABLE SECTION ************ */
 div#section-table.edh-section {
     background: linear-gradient(#515c65, #080124);
@@ -1136,10 +1142,18 @@ div#section-needed.edh-section {
                 div#qb-1 {
                     border-top-left-radius: 13px;
                     border-bottom-left-radius: 13px;
+                    background-color: $purbox1;
+                }
+                div#qb-2 {
+                    background-color: $purbox2;
+                }
+                div#qb-3 {
+                    background-color: $purbox3;
                 }
                 div#qb-4 {
                     border-top-right-radius: 13px;
                     border-bottom-right-radius: 13px;
+                    background-color: $purbox4;
                 }
                 div.quadbox {
                     min-height: 80px;
@@ -1149,7 +1163,7 @@ div#section-needed.edh-section {
                     width: 100%;
                     justify-content: center;
                     align-items: center;
-                    @include form-gradient();
+                    /* @include form-gradient(); */
 
                     h4.qb-year {
                     @include extra-bold($sofia-sans);
@@ -1190,10 +1204,18 @@ div#section-needed.edh-section {
                 div#qb-1 {
                     border-top-left-radius: 13px;
                     border-bottom-left-radius: 13px;
+                    background-color: $orgbox1;
+                }
+                div#qb-2 {
+                    background-color: $orgbox2;
+                }
+                div#qb-3 {
+                    background-color: $orgbox3;
                 }
                 div#qb-4 {
                     border-top-right-radius: 13px;
                     border-bottom-right-radius: 13px;
+                    background-color: $orgbox4;
                 }
                 div.quadbox {
                     min-height: 80px;
@@ -1203,7 +1225,7 @@ div#section-needed.edh-section {
                     width: 100%;
                     justify-content: center;
                     align-items: center;
-                    @include form-gradient();
+                    /* @include form-gradient(); */
 
                     h4.qb-year {
                     @include extra-bold($sofia-sans);
