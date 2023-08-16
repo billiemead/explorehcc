@@ -120,12 +120,13 @@ div.edh-col.col1.bottom {
     width: 100%;
 }
 #section-hero {
-    min-height: 934px;
+    padding-top: 24% !important;
+    padding-bottom: 24% !important;
+    /* min-height: 934px; */
     background-attachment: fixed;
     z-index: 0;
     background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
     margin: 0px !important;
-    padding: 0px  !important;
     background-position: top center !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
@@ -152,34 +153,34 @@ div.edh-col.col1.bottom {
 #hero-subhead div.head-upper {
     color: $black !important;
     @include bold($sofia-sans);
-    font-size: (20px);
-    line-height: 28px;
+    font-size: 1.04vw;
+    line-height: 2.85vh;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 h1#hero-h1-1 {
-    font-size: 69.5px;
-    line-height: 90px;
+    font-size: 3.63vw;
+    line-height: 4.2vw;
 }
 h1#hero-h1-2 {
     @include extra-bold($sofia-sans);
-    font-size: 100px;
-    line-height: 48px;
+    font-size: 5.21vw;
+    line-height: 2.25vw;
     letter-spacing: 4px;
 }
 h1#hero-h1-2 span.comma {
     @include regular($sofia-sans);
 }
 h1#hero-h1-3 {
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 2.60vw;
+    line-height: 3.35vw;
     letter-spacing: 1.5px;
     left: 4px;
     position: relative;
 }
 h1#hero-h1-4 {
-    font-size: 92px;
-    line-height: 50px;
+    font-size: 4.8vw;
+    line-height: 5vh;
 }
 .hero-h1 {
     color: $purple !important;
@@ -195,7 +196,7 @@ h1#hero-h1-4 {
 }
 div.toptab-container {
     transform: rotate(270deg);
-    position: absolute;
+    position: fixed;
     left: -173px;
     top: 235px;
 }
