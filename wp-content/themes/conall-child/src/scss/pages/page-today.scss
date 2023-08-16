@@ -786,7 +786,14 @@ div#section-os.edh-section {
 }
 /* ************ NEEDED SECTION ************ */
 div#section-needed.edh-section {
-    /* height: 2920px; */
+    background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
+    background-size: 100% !important;
+    background-position-y: 30px;
+    background-position-x: center !important;
+    top: -2px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    height: 2807px;
     background-color: #ffffff;
     div#html-needed {
         padding-top: 20% !important;
@@ -831,7 +838,7 @@ div#section-needed.edh-section {
         font-size: 32px;
         line-height: 38px;
         letter-spacing: 3px;
-        margin-top: 10% !important;
+        margin-top: 12% !important;
             span.light {
             @include bold($sofia-sans);
             }
@@ -844,8 +851,8 @@ div#section-needed.edh-section {
     }
     div#col-needed-heading1 {
         div#needed-heading1 {
-        padding-top: 80px !important;
-        padding-bottom: 50px !important;
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
             h3.section-heading {
                 @include regular($sofia-sans);
                 text-align: center;
@@ -886,7 +893,7 @@ div#section-needed.edh-section {
         font-size: 32px;
         line-height: 38px;
         letter-spacing: 3px;
-        margin-top: 200px !important;
+        margin-top: 15%!important;
             span.light {
             @include light($sofia-sans);
             }
@@ -899,8 +906,8 @@ div#section-needed.edh-section {
     }
     div#col-needed-heading2 {
         div#needed-heading2 {
-        padding-top: 80px !important;
-        padding-bottom: 50px !important;
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
             h3.section-heading {
                 @include regular($sofia-sans);
                 text-align: center;
@@ -939,6 +946,12 @@ div#section-needed.edh-section {
         div.quad-circle-row {
             min-height: 360px;
             div.quadcircle-col-inner {
+                p.circle-month {
+                    @include regular($sofia-sans);
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $copy;
+                }
                 .wpb_wrapper {
                     display: flex;
                     flex-direction: column;
@@ -952,92 +965,94 @@ div#section-needed.edh-section {
                     color: $copy;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 75% !important;
+                            font-size: 55% !important;
                             top: .005ex !important;
                         }
                     }
                 }
                 div#html-needed-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 201px;
-                    max-height: 201px;
+                    max-width: 164px;
+                    max-height: 164px;
+                    top: 103px;
+                    position: relative;
                     margin: 0 auto !important;
                     p.circle-percentage {
-                        font-size: 42px;
-                        line-height: 39px;
+                        font-size: 34px;
+                        line-height: 32px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 171px;
+                        height: 141px;
                     }
                 }
                 div#html-needed-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 147px;
+                    height: 76px;
                     position: absolute;
-                    bottom: -149px;
+                    bottom: -79px;
                 }
                 div#html-needed-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 171px;
-                    max-height: 171px;
+                    max-width: 201px;
+                    max-height: 201px;
                     margin: 0 auto !important;
-                    top: 70px;
+                    top: 0px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 36px;
-                        line-height: 33px;
+                        font-size: 42px;
+                        line-height: 39px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 147px;
+                        height: 173px;
                     }
                 }
                 div#html-needed-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 101px;
+                    height: 148px;
                     position: absolute;
-                    bottom: -105px;
+                    bottom: -151px;
                 }
                 div#html-needed-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 137px;
-                    max-height: 137px;
+                    max-width: 176px;
+                    max-height: 173px;
                     margin: 0 auto !important;
-                    top: 190px;
+                    top: 46px;
                     position: relative;
                         p.circle-percentage {
-                            font-size: 27px;
-                            line-height: 24px;
+                            font-size: 36px;
+                            line-height: 33px;
                         }
                     div.edh-innercircle.hs-circle {
-                        height: 117px;
+                        height: 151px;
                     }
                 }
                 div#html-needed-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 11px;
+                    height: 124px;
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -127px;
                 }
                 div#html-needed-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                     max-width: 154px;
                     max-height: 154px;
                     margin: 0 auto !important;
-                    top: 150px;
+                    top: 164px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 31px;
-                        line-height: 29px;
+                        font-size: 34px;
+                        line-height: 32px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 133px;
+                        height: 132px;
                     }
                 }
                 div#html-needed-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 35px;
+                    height: 24px;
                     position: absolute;
-                    bottom: -39px;
+                    bottom: -27px;
                 }
             }
         }
@@ -1061,92 +1076,94 @@ div#section-needed.edh-section {
                     color: $copy;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 75% !important;
+                            font-size: 55% !important;
                             top: .005ex !important;
                         }
                     }
                 }
                 div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 201px;
-                    max-height: 201px;
+                    max-width: 131px;
+                    max-height: 131px;
                     margin: 0 auto !important;
+                    top: 195px;
+                    position: relative;
                     p.circle-percentage {
-                        font-size: 42px;
-                        line-height: 39px;
+                        font-size: 26px;
+                        line-height: 24px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 171px;
+                        height: 112px;
                     }
                 }
                 div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 147px;
+                    height: 14px;
                     position: absolute;
-                    bottom: -149px;
+                    bottom: -16px;
                 }
                 div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 171px;
-                    max-height: 171px;
+                    max-width: 215px;
+                    max-height: 215px;
                     margin: 0 auto !important;
-                    top: 70px;
+                    top: 0px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 36px;
-                        line-height: 33px;
+                        font-size: 46px;
+                        line-height: 39px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 147px;
+                        height: 185px;
                     }
                 }
                 div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 101px;
+                    height: 136px;
                     position: absolute;
-                    bottom: -105px;
+                    bottom: -139px;
                 }
                 div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 137px;
-                    max-height: 137px;
+                    max-width: 183px;
+                    max-height: 183px;
                     margin: 0 auto !important;
-                    top: 190px;
+                    top: 128px;
                     position: relative;
                         p.circle-percentage {
-                            font-size: 27px;
-                            line-height: 24px;
+                            font-size: 34px;
+                            line-height: 34px;
                         }
                     div.edh-innercircle.hs-circle {
-                        height: 117px;
+                        height: 157px;
                     }
                 }
                 div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 11px;
+                    height: 36px;
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -38px;
                 }
                 div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 154px;
-                    max-height: 154px;
+                    max-width: 173px;
+                    max-height: 173px;
                     margin: 0 auto !important;
-                    top: 150px;
+                    top: 140px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 31px;
-                        line-height: 29px;
+                        font-size: 33px;
+                        line-height: 33px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 133px;
+                        height: 148px;
                     }
                 }
                 div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 35px;
+                    height: 33px;
                     position: absolute;
-                    bottom: -39px;
+                    bottom: -36px;
                 }
             }
         }
@@ -1199,7 +1216,8 @@ div#section-needed.edh-section {
                     font-size: 24px;
                     line-height: 24px;
                     text-align: center;
-                    text-transform: uppercase
+                    text-transform: uppercase;
+                    letter-spacing: -0.25px;
                     }
                     p.qb-program {
                     @include regular($sofia-sans);
@@ -1261,7 +1279,8 @@ div#section-needed.edh-section {
                     font-size: 24px;
                     line-height: 24px;
                     text-align: center;
-                    text-transform: uppercase
+                    text-transform: uppercase;
+                    letter-spacing: -0.25px;
                     }
                     p.qb-program {
                     @include regular($sofia-sans);
@@ -1291,7 +1310,7 @@ div#section-needed.edh-section {
             }
     }
     div#col-footnote-2 {
-        padding-bottom: 14% !important;
+        padding-bottom: 18% !important;
     }
 }
 /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
@@ -1299,18 +1318,19 @@ div#section-qol.edh-section {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        background-image: url("/wp-content/themes/conall-child/images/qol-section-background-1920x719.png");
+        background-image: url("/wp-content/themes/conall-child/images/qof-background-1920x719.png");
         margin: 0 auto !important;
         width: 100% !important;
         padding: 0px;
         position: relative;
         background-position: center bottom !important;
         background-repeat: no-repeat !important;
-        background-size: 102% !important;
-        /* height: 719px; */
+        background-size: 100% !important;
+        height: 719px;
         margin-bottom: -36px !important;
         background-color: #fff;
         top: -2px;
+        left: -2px;
         div.wpb_wrapper {
             div#html-qol-box {
                 div.grid-container {
