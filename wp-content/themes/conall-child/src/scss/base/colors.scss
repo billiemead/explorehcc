@@ -57,7 +57,11 @@ $purbox4:#524689 ;
     box-shadow: 14px 14px 14px -4px rgba(0,0,0,0.65);
     -moz-box-shadow: 14px 14px 14px -4px rgba(0,0,0,0.65);
 }
-
+@mixin white-box-shadow(){
+    -webkit-box-shadow: 16px 16px 23px -5px rgba(0, 0, 0, 0.35);
+    box-shadow: 16px 16px 23px -5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 16px 16px 23px -5px rgba(0, 0, 0, 0.35);
+}
 @mixin inner-box-shadow(){
     -webkit-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.5);
     box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.5);
