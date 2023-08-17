@@ -6,9 +6,180 @@
 /* ************ ______________ SECTION ************ */
 
 /* ***** SUB-SECTIONS/NOTES **** */
+#section-hero {
+   // display:none !important;
+}
+
+.info-wrap {
+    max-width: 1114px;
+    padding: 20px 40px 20px 240px;
+    color:$white;
+    background:linear-gradient($blugrey, $darkpurple);
+    border:2px solid $blugrey;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+}
+.stats-data {
+    p {
+        font-size: 36px;
+        line-height: 33px;
+    }
+}
+.stats-info {
+    p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+}
+.wpb-content-wrapper {
+    position: relative;
+    background-color: gray;
+    background-image: url(/wp-content/themes/conall-child/images/background-texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+   // &::before {
+   //     
+   //     content: "";
+   //     top: 0;
+   //     height: 100%;
+   //     width: 100%;
+   //     max-width: 100%;
+   //     background-image: url(/wp-content/themes/conall-child/images/background-texture.png);
+   //     background-size: contain;
+   //     background-repeat: no-repeat;
+   //     background-position: center;
+   //     transform: rotate(180deg);
+   //     position: absolute;
+   //     background-color: gray;
+   // }
+}
+//background-texture.png
+#vbc-section {
+
+    &-top-row {
+     /* #vbc-section-top-row */
+
+    }
+    /* #vbc-section */
+    &-intro
+    {
+        max-width: 1114px;
+        margin:0 auto;
+        color:$copy;
+        @include light($sofia-sans);
+        h1, h2, h3, h4, h5, h6 {
+            @include semi-bold($sofia-sans);
+            color:$purple;
+        }
+        &::after {
+            content: "";
+            border: 2px solid $gold;
+            width: 150px;
+            margin-top: 10px;
+            position: absolute;
+            left: 0;
+        }
+
+    }
+    &-os {
+        max-width: 1320px;
+        margin:0 auto;
+        .vc_col-sm-3 {
+            left: -120px;
+            bottom: -150px;
+        }
+    }
+    &-pfs,
+    &-orr {
+        max-width: 1320px;
+        margin:0 auto;
+    }
+    &-references {
+        //display:none !important;
+    }
+    &-risk-info {
+        position: relative;
+        max-width: 100%;
+        margin:0 auto;
+        padding-bottom:100px;
+        color:$white;
+        background:  linear-gradient($blugrey, $darkpurple);
+        // add background image overlayed on linear gradient
+        
+
+       // background:url('/wp-content/themes/conall-child/images/background-texture.png') cover;
+        --pattern-height: 29px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            max-width: 100%;
+            height: var(--pattern-height);
+
+            background:  $black;
+            -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+            filter: invert(100%);
+
+            -webkit-mask-image: url('/wp-content/themes/conall-child/images/risk-top-new.svg');
+            -webkit-mask-size: 100% var(--pattern-height);
+            /* -webkit-mask-repeat: repeat-x; */
+            mask-image: url('/wp-content/themes/conall-child/images/risk-top-new.svg');
+            mask-size: 100% var(--pattern-height);
+            /* mask-repeat: repeat-x; */
+        }
 
 
+        &::before {
+            top: -3px;
+            min-height:29px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top:0;
+            height:100%;
+            width: 100%;
+            max-width: 100%;
+            background-image:url("/wp-content/themes/conall-child/images/background-texture.png");
+            background-size: cover;
+            //rotate 180deg
+            transform: rotate(180deg);
+        }
 
+       &-inner {
+            max-width: 1085px;
+            margin:60px auto;
+            padding: 0 40px;
+            background:linear-gradient($blugrey, $darkpurple);
+            border:2px solid $gold;
+            border-radius: 20px;
+            
+        }
+        .wpb_content_element {
+            margin-bottom:35px !important;
+        }
+        p {
+            margin-bottom:35px !important;
+            display:block;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color:$gold;
+        }
+        .em-footer {
+            color:$gold;
+            @include semi-bold($sofia-sans);
+        }
+    }
+    
+}
+//::after {
+//    content: "";
+//    border: 2px solid $gold;
+//    width: 150px;
+//    position: absolute;
+//    left: 0;
+//}
 
 
 
