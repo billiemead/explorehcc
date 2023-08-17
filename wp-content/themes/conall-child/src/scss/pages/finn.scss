@@ -1,14 +1,52 @@
 @import "../base/colors";
 @import '../base/font.scss';
 
-/* Lauren, font families are set up in font.scss, colors & gradients in colors.scss. Pls. see page-today.scss for examples if you need. All project colors should already be defined, but if you need an element that will be used repeately (drop shadow, gradient, etc.), feel free to add a mixin for it. */
+/* * font families are set up in font.scss
+   * colors & gradients in colors.scss.Pls.
+   * see page-today.scss for examples if you need
+   * All project colors should already be defined
+   * but if you need an element that will be
+   * used repeately (drop shadow, gradient, etc.)
+   * feel free to add a mixin for it.
+   * */
 
 /* ************ ______________ SECTION ************ */
 
 /* ***** SUB-SECTIONS/NOTES **** */
+
+// naming convention login (can be changed)
+// prefix for page elements: vbc- = View BaseCamp
+// .info_wrap = wrapper for blue gradient border that tucks behind the images
+// .stats-data = wrapper for the Value
+// .stats-info = wrapper for the Info/ contenxt of value
+
+// hide durng dev to avoid collisions on page
 #section-hero {
    // display:none !important;
 }
+
+
+
+.wpb-content-wrapper {
+    position: relative;
+    background-color: $white;
+    background-image: url("/wp-content/themes/conall-child/dist/images/vbc-bg-lft.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    &::before {
+        content: "";
+        top: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        background-image: url("/wp-content/themes/conall-child/dist/images/vbc-bg-rht.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        transform: rotate(135deg);
+        position: absolute;
+    }
+}
+
 
 .info-wrap {
     max-width: 1114px;
@@ -31,37 +69,15 @@
         line-height: 38px;
     }
 }
-.wpb-content-wrapper {
-    position: relative;
-    background-color: gray;
-    background-image: url(/wp-content/themes/conall-child/images/background-texture.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-   // &::before {
-   //     
-   //     content: "";
-   //     top: 0;
-   //     height: 100%;
-   //     width: 100%;
-   //     max-width: 100%;
-   //     background-image: url(/wp-content/themes/conall-child/images/background-texture.png);
-   //     background-size: contain;
-   //     background-repeat: no-repeat;
-   //     background-position: center;
-   //     transform: rotate(180deg);
-   //     position: absolute;
-   //     background-color: gray;
-   // }
-}
 //background-texture.png
+    /* #vbc-section */
 #vbc-section {
 
     &-top-row {
      /* #vbc-section-top-row */
 
     }
-    /* #vbc-section */
+    /* #vbc-section-intro */
     &-intro
     {
         max-width: 1114px;
@@ -82,6 +98,7 @@
         }
 
     }
+    /* #vbc-section-os */
     &-os {
         max-width: 1320px;
         margin:0 auto;
@@ -90,14 +107,18 @@
             bottom: -150px;
         }
     }
+    /* #vbc-section-pfs */
+    /* #vbc-section-orr */
     &-pfs,
     &-orr {
         max-width: 1320px;
         margin:0 auto;
     }
+    /* #vbc-section-references */
     &-references {
         //display:none !important;
     }
+    /* #vbc-section-risk-info */
     &-risk-info {
         position: relative;
         max-width: 100%;
@@ -146,7 +167,7 @@
             //rotate 180deg
             transform: rotate(180deg);
         }
-
+        /* #vbc-section-risk-info-inner */
        &-inner {
             max-width: 1085px;
             margin:60px auto;

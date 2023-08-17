@@ -37,7 +37,8 @@ export const clean = () => del(['dist']);
 
 export const images = () => {
   return src('src/images/**/*.{jpg,jpeg,png,svg,gif}')
-    .pipe(gulpif(PRODUCTION, imagemin()))
+    //.pipe(gulpif(PRODUCTION, imagemin()))
+    .pipe(imagemin()) // <<-- testing minify on dev
     .pipe(dest('dist/images'));
 }
 
