@@ -101,7 +101,7 @@ div#section-oas.edh-section { /* section */
                     border-color: $white;
                     border-width: 2px;
                     div.edh-innerbox.hs-box {
-                        border-radius: 28px;
+                        border-radius: 20px;
                         border: 2px solid $gold;
                         display: flex;
                         flex-direction: row;
@@ -783,6 +783,55 @@ div#section-os.edh-section {
     color: #fff;
     font-size: 30px;
     top: -2px;
+        div#col-os {
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
+            h2.section-sub-heading {
+            @include regular($sofia-sans);
+            color: $white;
+            font-size: 32px;
+            line-height: 0.5;
+            letter-spacing: 3px;
+            }
+            h1.section-heading {
+                @include regular($sofia-sans);
+                text-align: center;
+                text-transform: uppercase;
+                color: $gold;
+                font-size: 32px;
+                line-height: 0.5;
+                letter-spacing: 3px;
+            }
+            h2.section-subheading.lines {
+                @include regular($sofia-sans);
+                text-align: center;
+                color: $white;
+                font-size: 32px;
+                line-height: 0.5;
+                letter-spacing: 3px;
+                span {
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+            h2.section-subheading.lines span:before,
+            h2.section-subheading.lines span:after {
+            content: "";
+            position: absolute;
+            height: 8px;
+            border-bottom: 1px solid $orange2;
+            top: 0;
+            width: 150px;
+            }
+            h2.section-subheading.lines span:before {
+            right: 100%;
+            margin-right: 40px;
+            }
+            h2.section-subheading.lines span:after {
+            left: 100%;
+            margin-left: 40px;
+            }
+    }
 }
 /* ************ NEEDED SECTION ************ */
 div#section-needed.edh-section {
@@ -1087,6 +1136,7 @@ div#section-needed.edh-section {
                     margin: 0 auto !important;
                     top: 195px;
                     position: relative;
+                    text-transform: uppercase;
                     p.circle-percentage {
                         font-size: 26px;
                         line-height: 24px;
@@ -1344,7 +1394,7 @@ div#section-qol.edh-section {
                 div.grid-left {
                     grid-area: left;
                     position: relative;
-                    left: 75px;
+                    left: 18px;
                     z-index: 1;
                     div.qol-image {
                         img.vc_single_image-img {
@@ -1364,7 +1414,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border-radius: 18px;
                         @include white-box-shadow();
-                        right: 217px;
+                        right: 240px;
                         position: relative;
                         width: 1187px;
                         padding-top: 4.5%;
@@ -1373,6 +1423,7 @@ div#section-qol.edh-section {
                         justify-content: center;
                         align-items: flex-start;
                         flex-direction: column;
+                        margin-bottom: 25px !important;
                             h1.section-heading {
                             @include bold($sofia-sans);
                             text-align: left;
@@ -1405,21 +1456,18 @@ div#section-qol.edh-section {
             }
                 }
 }
-/* ************ LIVER FUNCTION TOP DIVIDER  ************ */
-div#lvf-section-top-row {
-    background-image: url("/wp-content/themes/conall-child/images/lvf-section-top-1920x36.png");
-    height: 36px;
-    position: relative;
-    top: 2px;
-    z-index: 20;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
-    /* height: 2272px; */
-    background: linear-gradient(#515c65, #080124);
+    height: 2352px;
+    background-image: url("/wp-content/themes/conall-child/images/lvf-section-background-1920x2357.png");
+    background-size: 100% !important;
+    background-position-y: 0px;
+    background-position-x: center !important;
+    top: -2px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    z-index: 22;
     div#col-liverfunct {
         margin-top: 125px !important;
         div#lvf-heading1 {
@@ -1453,7 +1501,7 @@ div#section-liverfunct.edh-section {
     }
     div#col-hemrisk {
         margin-top: 5% !important;
-        margin-bottom: 12% !important;
+        margin-bottom: 15% !important;
         div#col-hemrisk-left {
             div#lvf-heading2 {
                 padding-top: 11% !important;
@@ -1494,7 +1542,6 @@ div#section-liverfunct.edh-section {
 
         }
     }
-
     div#col-disrate {
         div#lvf-heading3 {
             h3.section-heading {
@@ -1548,7 +1595,6 @@ div#section-liverfunct.edh-section {
             }
         }
     }
-
     div#col-quadcircle {
         padding-left: 45px !important;
         padding-right: 45px !important;
@@ -1723,23 +1769,9 @@ div#section-liverfunct.edh-section {
 }
 /* ************ HUBSPOT FORM SECTION ************ */
 div#section-hsform.edh-section {
-    div#col-hsform-divider {
-        margin: 0 auto !important;
-        width: 100% !important;
-        float: unset;
-        position: relative;
-        top: -80px;
-        left: 0;
-        background-image: url("/wp-content/themes/conall-child/images/hs-section-top-1920x81.png");
-        margin: 0px;
-        padding: 0px;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 81px;
-    }
+    position: relative;
+    top: -3px;
     div#col-hsform {
-
         a.hs-button {
             /* margin-top: 65px; */
             padding: 33px 60px 23px 65px;
@@ -1757,7 +1789,7 @@ div#section-hsform.edh-section {
             }
         }
         #hs-heading {
-            padding-top: 8% !important;
+            padding-top: 18% !important;
             padding-bottom: 20px !important;
             h3.section-heading {
                 @include regular($sofia-sans);
@@ -1781,7 +1813,7 @@ div#section-hsform.edh-section {
             }
         }
         div#html-hs-formcode {
-            width: 100%;
+            width: 1164px;
             height: 100%;
             padding: 0 !important;
             margin: 0 auto !important;

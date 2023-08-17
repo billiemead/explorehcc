@@ -1,0 +1,143 @@
+@import "../base/colors";
+@import "../base/font";
+@import "../base/colors";
+
+/* ************ MAIN 4 ICON STICKY NAV SET-UP ************ */
+
+div.edgtf-sticky-header.header-appear {
+    div.edh-innerbox.hs-box {
+        min-width: 1260px;
+        position: relative;
+        left: -2px;
+        border-radius: 20px;
+        border: 2px solid #F5C75D;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        padding: 0;
+        ul {
+            display: flex;
+            li.nav-main-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 33.33%;
+                div.oas-nav-container {
+                    height: 190px;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background: linear-gradient(#525D66, #080124);
+                    padding-bottom: 30px !important;
+                    a.oas-nav {
+                        text-align: center;
+                        @include medium($sofia-sans);
+                        color: $white;
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        font-size: (18px);
+                        line-height: 22px;
+                    }
+                }
+            }
+            li.nav-main-links.one div.oas-nav-container {
+                border-top-left-radius: 27px;
+                border-bottom-left-radius: 27px;
+                background: linear-gradient(#5a636d, #161030);
+            }
+            li.nav-main-links.three div.oas-nav-container {
+                background: linear-gradient(#5a636d, #161030);
+            }
+            li.nav-main-links.four div.oas-nav-container {
+                border-top-right-radius: 27px;
+                border-bottom-right-radius: 27px;
+            }
+        }
+    }
+}
+
+/* ************ MAIN 2 ICON STICKY NAV SET-UP ************ */
+body.page-id-6,
+body.page-id-10 {
+div.edgtf-sticky-header.header-appear
+    div.edh-innerbox.hs-box {
+        min-width: 730px;
+        position: relative;
+        left: -2px;
+        border-radius: 20px;
+        border: 2px solid #F5C75D;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        padding: 0;
+        ul {
+            display: flex;
+            li.nav-main-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 50%;
+                div.oas-nav-container {
+                    height: 190px;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background: linear-gradient(#525D66, #080124);
+                    padding-bottom: 30px !important;
+                    a.oas-nav {
+                        text-align: center;
+                        @include medium($sofia-sans);
+                        color: $white;
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        font-size: (18px);
+                        line-height: 22px;
+                    }
+                }
+            }
+            li.nav-main-links.one div.oas-nav-container {
+                border-top-left-radius: 17px;
+                border-bottom-left-radius: 17px;
+                background: linear-gradient(#5a636d, #161030);
+            }
+            li.nav-main-links.two div.oas-nav-container {
+                border-top-right-radius: 17px;
+                border-bottom-right-radius: 17px;
+            }
+        }
+    }
+}
+
+/*** Responsive Min-Width ***/
+@media all and (min-width: 479px) {
+}
+@media all and (min-width: 575px) {
+}
+@media all and (min-width: 767px) {
+}
+@media all and (min-width: 959px) {
+}
+@media all and (min-width: 1023px) {
+}
+
+/*** Responsive Tablet ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+}
+
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
