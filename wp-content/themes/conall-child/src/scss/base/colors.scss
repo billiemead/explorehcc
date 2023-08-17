@@ -31,32 +31,27 @@ $purbox2:#746ba0 ;
 $purbox3:#625894 ;
 $purbox4:#524689 ;
 
-
-
+@mixin os-anim-text-gradient(){
+    text-shadow: 0px 3px 6px rgba(0,0,0,1);
+}
 @mixin footer-gradient{
     background: linear-gradient($blugrey, $dkblugrey);
 };
-
 @mixin form-gradient(){
     background: linear-gradient($blugrey, $darkpurple);
 };
 @mixin form-gradient-white-screen(){
     background: linear-gradient($blugreyscreen, $darkpurplescreen);
 };
-
-
 @mixin form-section-gradient(){
     background: linear-gradient($ltgrey1, $ltgrey2);
 };
-
 @mixin orange-grad-button(){
     background: linear-gradient($orange1, $orange2);
 };
-
 @mixin footer-orange-grad-button(){
     background: linear-gradient($orange2, $orange4);
 };
-
 @mixin button-shadow(){
     -webkit-box-shadow: 14px 14px 14px -4px rgba(0,0,0,0.65);
     box-shadow: 14px 14px 14px -4px rgba(0,0,0,0.65);
