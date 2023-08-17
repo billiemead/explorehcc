@@ -5,7 +5,7 @@
 
 footer {
     position: fixed !important;
-    bottom: -1px;
+    bottom: -2px;
     z-index: 1000 !important;
     .edgtf-footer-inner > .edgtf-footer-bottom-holder {
         padding: 0 !important;
@@ -49,7 +49,7 @@ footer {
         }
         div#footerblock2 {
             height: 85px;
-            background-color: $purple;
+            @include footer-orange-grad-button();
             clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             a.footer-link {
