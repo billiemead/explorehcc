@@ -1,6 +1,7 @@
 @import "../base/colors";
 @import '../base/font.scss';
 
+/* ************ POST HERO SECTION INTO OS SECTION BELOW ************ */
 div#oas-section-top-image {
     figure.wpb_wrapper.vc_figure {
         width: 100% !important;
@@ -775,62 +776,104 @@ div#section-table.edh-section {
 }
 /* ************ OVERALL SURVIVAL (OS) ANIIMATION SECTION ************ */
 div#section-os.edh-section {
-    height: 600px;
-    display: flex;
-    background-color: #161030;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 30px;
-    top: -2px;
-        div#col-os {
-        padding-top: 8% !important;
-        padding-bottom: 5% !important;
-            h2.section-sub-heading {
+    background-image: url("/wp-content/themes/conall-child/images/os-animation-background-1920x1484.png");
+    background-size: 100% !important;
+    height: 1484px;
+    background-position-y: 0px;
+    background-position-x: center !important;
+    background-color: transparent;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    top: -80px;
+    position: relative;
+    div.edh-col {
+        h2.section-subhead {
             @include regular($sofia-sans);
+            @include os-anim-text-gradient();
             color: $white;
             font-size: 32px;
-            line-height: 0.5;
+            line-height: 38px;
+            text-align: center;
             letter-spacing: 3px;
-            }
-            h1.section-heading {
-                @include regular($sofia-sans);
-                text-align: center;
-                text-transform: uppercase;
-                color: $gold;
-                font-size: 32px;
-                line-height: 0.5;
-                letter-spacing: 3px;
-            }
-            h2.section-subheading.lines {
-                @include regular($sofia-sans);
-                text-align: center;
-                color: $white;
-                font-size: 32px;
-                line-height: 0.5;
-                letter-spacing: 3px;
-                span {
-                    display: inline-block;
-                    position: relative;
+                sub.subscript {
+                    vertical-align: super !important;
+                    font-size: 55% !important;
+                    top: .005ex !important;
                 }
             }
-            h2.section-subheading.lines span:before,
-            h2.section-subheading.lines span:after {
-            content: "";
-            position: absolute;
-            height: 8px;
-            border-bottom: 1px solid $orange2;
-            top: 0;
-            width: 150px;
+    }
+    div#col-os {
+        padding-top: 7% !important;
+        padding-bottom: 3% !important;
+        max-width: 1217px !important;
+        margin: 0 auto !important;
+    }
+    div#col-os-heading {
+        max-width: 870px !important;
+        margin: 0 auto !important;
+        h1.section-heading {
+            @include semi-bold($sofia-sans);
+            @include os-anim-text-gradient();
+            text-transform: uppercase;
+            color: $gold;
+            font-size: 44px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: 4px;
+        }
+        h2.section-subhead.lineheight {
+            line-height: 60px;
+        }
+    }
+    div#col-os-animation {
+        height: 905px;
+    }
+    div#col-os-buttons {
+        div.vc_column-inner {
+            div.wpb_wrapper {
+            margin: 0 auto !important;
+                a.os-button-orange {
+                    border: none;
+                    max-width: 774px;
+                    padding-top: 39px !important;
+                    padding-bottom: 39px !important;
+                    display: block;
+                    @include orange-grad-button();
+                    @include button-shadow();
+                    border-radius: 10px;
+                    text-align: center;
+                    margin: 0 auto !important;
+                        span.edgtf-btn-text {
+                            @include extra-bold($sofia-sans);
+                            font-size: 32px;
+                            line-height: 38px;
+                            text-align: center;
+                            letter-spacing: 2.5px;
+                        }
+                }
+                a.os-button-purple {
+                    border: none;
+                    max-width: 454px;
+                    padding-top: 18px !important;
+                    padding-bottom: 18px !important;
+                    display: block;
+                    background-color: $purbox4;
+                    @include button-shadow();
+                    border-radius: 10px;
+                    text-align: center;
+                    margin: 0 auto !important;
+                    position: relative;
+                    top: -21px;
+                        span.edgtf-btn-text {
+                            @include extra-bold($sofia-sans);
+                            font-size: 30px;
+                            line-height: 19px;
+                            text-align: center;
+                            letter-spacing: 2.5px;
+                        }
+                }
             }
-            h2.section-subheading.lines span:before {
-            right: 100%;
-            margin-right: 40px;
-            }
-            h2.section-subheading.lines span:after {
-            left: 100%;
-            margin-left: 40px;
-            }
+        }
     }
 }
 /* ************ NEEDED SECTION ************ */
@@ -839,13 +882,14 @@ div#section-needed.edh-section {
     background-size: 100% !important;
     background-position-y: 30px;
     background-position-x: center !important;
-    top: -2px;
+    top: -81px;
     margin: 0px !important;
     background-repeat: no-repeat !important;
     height: 2807px;
     background-color: #ffffff;
+    margin-bottom: -80px !important;
     div#html-needed {
-        padding-top: 20% !important;
+        padding-top: 22.5% !important;
         max-width: 1072px;
         margin: 0 auto !important;
     }
@@ -1456,7 +1500,6 @@ div#section-qol.edh-section {
             }
                 }
 }
-
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
     height: 2352px;
@@ -1771,6 +1814,7 @@ div#section-liverfunct.edh-section {
 div#section-hsform.edh-section {
     position: relative;
     top: -3px;
+    margin-bottom: -3px !important;
     div#col-hsform {
         a.hs-button {
             /* margin-top: 65px; */

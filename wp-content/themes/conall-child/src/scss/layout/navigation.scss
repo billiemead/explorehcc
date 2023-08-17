@@ -11,9 +11,6 @@ div.edgtf-sticky-header.header-appear {
         left: -2px;
         border-radius: 20px;
         border: 2px solid #F5C75D;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-around; */
         padding: 0;
         ul {
             display: flex;
@@ -60,7 +57,7 @@ div.edgtf-sticky-header.header-appear {
 }
 
 /* ************ MAIN 2 ICON STICKY NAV SET-UP ************ */
-body.page-id-6,
+/* body.page-id-6,
 body.page-id-10 {
 div.edgtf-sticky-header.header-appear
     div.edh-innerbox.hs-box {
@@ -69,9 +66,6 @@ div.edgtf-sticky-header.header-appear
         left: -2px;
         border-radius: 20px;
         border: 2px solid #F5C75D;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-around; */
         padding: 0;
         ul {
             display: flex;
@@ -112,7 +106,7 @@ div.edgtf-sticky-header.header-appear
             }
         }
     }
-}
+} */
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
