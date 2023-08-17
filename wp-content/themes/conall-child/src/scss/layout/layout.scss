@@ -114,41 +114,37 @@ div.edh-col.col1.bottom {
     padding: 0 !important;
     top: -1px;
 }
-/* ************ COLUMNS ************ */
-/* #hero-column {
-    min-height: 934px;
-} */
 /* ************ HERO ************ */
-#hero-bottom {
+div#hero-bottom {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
 }
-#section-hero {
-    padding-top: 24% !important;
-    padding-bottom: 24% !important;
-    /* min-height: 934px; */
-    background-attachment: fixed;
-    z-index: 0;
-    background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
-    margin: 0px !important;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    background-size: 100% !important;
-    position: relative;
-    margin-bottom: -167px !important;
-    .wpb_single_image .vc_figure {
-        width: 100%;
-    }
-    div.vc_single_image-wrapper.vc_box_border_grey {
-        width: 100%;
-    }
-    .wpb_single_image img {
-        width: 100%;
-    }
+div#section-hero-outer {
+        padding-top: 24% !important;
+        padding-bottom: 24% !important;
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
+        margin: 0px !important;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+        position: relative;
+        margin-bottom: -167px !important;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
 }
-#hero-subhead {
+
+div#hero-subhead {
     left: 64%;
     position: fixed;
     top: 118px;
@@ -156,7 +152,7 @@ div.edh-col.col1.bottom {
         text-align: left !important;
     }
 }
-#hero-subhead div.head-upper {
+div#hero-subhead div.head-upper {
     color: $black !important;
     @include bold($sofia-sans);
     font-size: 1.04vw;
@@ -195,22 +191,12 @@ h1#hero-h1-4 {
     letter-spacing: 3px;
     margin: 0;
 }
-
 /* ************ TOP TAB ************ */
-#toptab {
-
-}
 div.toptab-container {
     transform: rotate(270deg);
     position: fixed;
     left: -173px;
     top: 235px;
-}
-ul.toptab-list {
-
-}
-li.toptab-listitem {
-
 }
 a.toptab-link {
     color: $white;
@@ -227,95 +213,98 @@ a#toptab-link1 {
 a#toptab-link2 {
     border-bottom-right-radius: 10px;
 }
-
 /* ************ PAGE FOOTER ************ */
-
-div#section-page-footer {
-    @include semi-bold($sofia-sans);
-    @include footer-gradient;
-    color: $white;
+div#section-outer-page-footer {
     height: 260px;
-    padding: 0 75px 0 75px !important;
-    margin: 0 auto !important;
-    div.clearfix.edgtf-full-section-inner {
-        margin-top: 56px;
-        div#col-pagefooter-left {
-            div.wpb_wrapper {
-                display: flex;
-                div#pg-footer-twitter {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding-top: 4px !important;
-                    img {
-                        width: 40px;
-                        height: 38px;
-                    }
-                }
-                div#pg-footer-linkedin {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 25px !important;
-                }
-            }
-        }
-        div#col-pagefooter-center {
-            div#pg-footer-address {
-                p.pg-footer-paragraph {
-                    font-size: (20px);
-                    text-align: center;
-                    margin: 0 0 18px 0 !important;
-                    span.divider {
-                        padding: 0 10px 0 10px;
-                    }
-                }
+    div#section-page-footer {
+        @include semi-bold($sofia-sans);
+        @include footer-gradient;
+        color: $white;
+        height: 260px;
+        padding: 56px 75px 0 75px!important;
+        margin: 0 auto !important;
+        div.clearfix.edgtf-full-section-inner {
 
-            }
-            div#pg-footer-menu {
-                text-align: center;
-                div.widget.widget_nav_menu {
-                    margin: 0 !important;
-                        ul#menu-page-footer-menu {
-                            margin: 0 !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            div#col-pagefooter-left {
+                div.wpb_wrapper {
+                    display: flex;
+                    div#pg-footer-twitter {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 4px !important;
+                        img {
+                            width: 40px;
+                            height: 38px;
                         }
-                        ul > li {
-                            display: inline-block;
-                        a {
-                            color: $white;
-                            text-decoration: underline;
-                            font-size: (12px);
-                            line-height: 24px;
-                        }
-                        }
-                        ul > li:not(:last-child):after {
-                            content: "|";
-                            color: $white;
-                            padding: 0 8px 0 8px;
-                        }
+                    }
+                    div#pg-footer-linkedin {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 25px !important;
+                    }
                 }
             }
-            div#pg-footer-copyright {
-                text-align: center;
-                p {
-                    font-size: (12px);
-                    line-height: 24px;
-                    margin: 0 !important;
+            div#col-pagefooter-center {
+                div#pg-footer-address {
+                    p.pg-footer-paragraph {
+                        font-size: (20px);
+                        text-align: center;
+                        margin: 0 0 18px 0 !important;
+                        span.divider {
+                            padding: 0 10px 0 10px;
+                        }
+                    }
+
+                }
+                div#pg-footer-menu {
+                    text-align: center;
+                    div.widget.widget_nav_menu {
+                        margin: 0 !important;
+                            ul#menu-page-footer-menu {
+                                margin: 0 !important;
+                            }
+                            ul > li {
+                                display: inline-block;
+                            a {
+                                color: $white;
+                                text-decoration: underline;
+                                font-size: (12px);
+                                line-height: 24px;
+                            }
+                            }
+                            ul > li:not(:last-child):after {
+                                content: "|";
+                                color: $white;
+                                padding: 0 8px 0 8px;
+                            }
+                    }
+                }
+                div#pg-footer-copyright {
+                    text-align: center;
+                    p {
+                        font-size: (12px);
+                        line-height: 24px;
+                        margin: 0 !important;
+                    }
                 }
             }
-        }
-        div#col-pagefooter-right {
-            div#pg-footer-logo {
-                img {
-                    aspect-ratio: 104/53;
-                    position: relative;
-                    top: -26px;
+            div#col-pagefooter-right {
+                div#pg-footer-logo {
+                    img {
+                        aspect-ratio: 104/53;
+                        position: relative;
+                        top: -26px;
+                    }
                 }
             }
         }
     }
 }
-
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }
