@@ -63,18 +63,18 @@ header.edgtf-mobile-header {
     padding: 0 !important;
 }
 #edgtf-back-to-top>span {
-    width: 50px !important;
-    height: 50px !important;
-    line-height: 46px !important;
-    font-size: 20px !important;
-    background-color: #10c9c3;
-    border: 1px solid #10c9c3;
+    width: 80px !important;
+    height: 80px !important;
+    line-height:75px !important;
+    font-size: 30px !important;
+    background-color: $purple !important;
+    border: 1px solid $purple !important;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 #edgtf-back-to-top {
     width: 50px !important;
-    right: 35px !important;
-    bottom: 35px !important;
+    right: 66px !important;
+    bottom: 94px !important;
 }
 /* ************ SECTION PAGE WIDTH ************ */
 div.edh-col.col1 {
@@ -86,6 +86,12 @@ div.edh-col.col1 {
 div.edh-col.col2 {
     margin: 0 auto !important;
     max-width: 1485px !important;
+    float: unset;
+    padding: 0 !important;
+}
+div.edh-col.col-hs {
+    margin: 0 auto !important;
+    max-width: 1330px !important;
     float: unset;
     padding: 0 !important;
 }
@@ -228,18 +234,30 @@ div#section-page-footer {
     @include semi-bold($sofia-sans);
     @include footer-gradient;
     color: $white;
-    height: 261px;
+    height: 260px;
     padding: 0 75px 0 75px !important;
     margin: 0 auto !important;
     div.clearfix.edgtf-full-section-inner {
         margin-top: 56px;
-        #col-pagefooter-left {
-            div#pg-footer-twitter {
-                display: inline-block;
-            }
-            div#pg-footer-linkedin {
-                display: inline-block;
-                margin-left: 25px !important;
+        div#col-pagefooter-left {
+            div.wpb_wrapper {
+                display: flex;
+                div#pg-footer-twitter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 4px !important;
+                    img {
+                        width: 40px;
+                        height: 38px;
+                    }
+                }
+                div#pg-footer-linkedin {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 25px !important;
+                }
             }
         }
         div#col-pagefooter-center {
@@ -290,6 +308,8 @@ div#section-page-footer {
             div#pg-footer-logo {
                 img {
                     aspect-ratio: 104/53;
+                    position: relative;
+                    top: -26px;
                 }
             }
         }

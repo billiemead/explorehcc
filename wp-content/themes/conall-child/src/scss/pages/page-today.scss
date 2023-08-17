@@ -46,15 +46,9 @@ div#oas-section-bottom-row {
 div#section-oas.edh-section { /* section */
     background: linear-gradient(#48505d, #0d0829);
     div.clearfix.edgtf-full-section-inner {
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-    margin-bottom: 0px !important;
-    margin-left: 0px !important;
-    padding-top: 0px !important;
-    padding-right: 0px !important;
-    padding-bottom: 0px !important;
-    padding-left: 0px !important;
-    background-image: url(/wp-content/themes/conall-child/images/oas-section-middle-pattern-1920x943.png) !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url(https://elevar-da-microsite.localdev//wp-content/themes/conall-child/images/oas-section-middle-pattern-1920x943.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 100% 100%!important;
@@ -103,11 +97,11 @@ div#section-oas.edh-section { /* section */
             position: relative;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
-                    border-radius: 35px;
+                    border-radius: 30px;
                     border-color: $white;
                     border-width: 2px;
                     div.edh-innerbox.hs-box {
-                        border-radius: 28px;
+                        border-radius: 20px;
                         border: 2px solid $gold;
                         display: flex;
                         flex-direction: row;
@@ -179,8 +173,16 @@ div#section-oas.edh-section { /* section */
 /* ************ LIVER CANCER SECTION ************ */
 div#section-livc.edh-section { /* section */
     /* height: 3347px; */
+    background-image: url("/wp-content/themes/conall-child/images/livc-backg-pattern-1920x3695.png");
     background-color: $white !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    background-repeat: no-repeat !important;
+    background-position-y: -119px !important;
+    background-position-x: center !important;
     top: -1px;
+    background-size: 100%;
+    margin-bottom: -100px !important;
     div#col-livc { /* section HEADING column */
         margin-top: 125px !important;
         div#livc-heading {
@@ -339,7 +341,7 @@ div#section-livc.edh-section { /* section */
             div.livc-purple-box {
                 width: 955px;
                 height: 100px;
-                border-radius: 15px;
+                border-radius: 20px;
                 border: 1px solid $purple;
                 background-color: $purple;
                 margin: 0 auto !important;
@@ -396,7 +398,7 @@ div#section-livc.edh-section { /* section */
                 align-items: flex-start;
                 flex-wrap: nowrap;
                 background-color: $ltgrey1;
-                border-radius: 15px;
+                border-radius: 20px;
                 height: 260px;
                 padding: 0!important;
                 margin-left: 234px!important;
@@ -595,13 +597,23 @@ div#section-livc.edh-section { /* section */
 }
 /* ************ TREATMENT PROGRESS TABLE SECTION ************ */
 div#section-table.edh-section {
-    background: linear-gradient(#515c65, #080124);
-    height: 1762px;
-    padding-top: 200px !important;
+    background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
+    background-size: 100% !important;
+    /* height: 1762px; */
+    padding-top: 11.5% !important;
     padding-bottom: 275px !important;
+    background-position-y: 0px;
+    background-position-x: center !important;
+    background-color: transparent;
+    top: -2px;
+    width: 101%;
+    left: -1px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+   /*  margin-bottom: -100px !important; */
         div.edh-col.col2.table-box {
-        border: 1px solid $gold2;
-        border-radius: 15px;
+        border: 2px solid $gold2;
+        border-radius: 20px;
         background: linear-gradient(#5a636d, #161030);
         padding: 0 !important;
             div.vc_row {
@@ -632,7 +644,7 @@ div#section-table.edh-section {
                                     text-align: left;
                                     color: $orange3;
                                     font-size: 67px;
-                                    line-height: 96px;
+                                    line-height: 80px;
                                     letter-spacing: 0;
                                 }
                             }
@@ -658,7 +670,7 @@ div#section-table.edh-section {
 
                 }
                 p.table-footnote {
-                    @include light($sofia-sans);
+                    @include medium($sofia-sans);
                     text-align: left;
                     color: $white;
                     font-size: 20px;
@@ -681,6 +693,7 @@ div#section-table.edh-section {
             }
             div#table-inrow-2 {
                 height: 256px;
+                background-color: rgba(255,255,255,0.05);
                 div.left {
                     padding-right: 105px;
                 }
@@ -700,7 +713,7 @@ div#section-table.edh-section {
                 }
             }
             div#table-inrow-3 {
-                height: 336px;
+                height: 340px;
                 h3.table-h3 {
                     @include semi-bold($sofia-sans);
                     text-align: left;
@@ -711,12 +724,16 @@ div#section-table.edh-section {
                     padding: 50px 0 50px 0;
                 }
                 div.right {
+                    div.wpb_text_column {
+                        margin-bottom: 3% !important;
+                    }
                     p.table-copy {
                         max-width: 515px
                     }
                 }
             }
             div#table-inrow-4 {
+                background-color: rgba(255,255,255,0.05);
                 height: 232px;
                 h3.table-h3 {
                     @include bold($sofia-sans);
@@ -729,7 +746,7 @@ div#section-table.edh-section {
                     }
             }
             div#table-inrow-5 {
-                height: 238px;
+                height: 262px;
                 h4.table-footer {
                     @include bold($sofia-sans);
                     text-align: left;
@@ -745,6 +762,14 @@ div#section-table.edh-section {
                         top: .005ex !important;
                         }
                 }
+                h5.table-footer {
+                    margin-top: 40px !important;
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
             }
     }
 }
@@ -757,10 +782,67 @@ div#section-os.edh-section {
     align-items: center;
     color: #fff;
     font-size: 30px;
+    top: -2px;
+        div#col-os {
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
+            h2.section-sub-heading {
+            @include regular($sofia-sans);
+            color: $white;
+            font-size: 32px;
+            line-height: 0.5;
+            letter-spacing: 3px;
+            }
+            h1.section-heading {
+                @include regular($sofia-sans);
+                text-align: center;
+                text-transform: uppercase;
+                color: $gold;
+                font-size: 32px;
+                line-height: 0.5;
+                letter-spacing: 3px;
+            }
+            h2.section-subheading.lines {
+                @include regular($sofia-sans);
+                text-align: center;
+                color: $white;
+                font-size: 32px;
+                line-height: 0.5;
+                letter-spacing: 3px;
+                span {
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+            h2.section-subheading.lines span:before,
+            h2.section-subheading.lines span:after {
+            content: "";
+            position: absolute;
+            height: 8px;
+            border-bottom: 1px solid $orange2;
+            top: 0;
+            width: 150px;
+            }
+            h2.section-subheading.lines span:before {
+            right: 100%;
+            margin-right: 40px;
+            }
+            h2.section-subheading.lines span:after {
+            left: 100%;
+            margin-left: 40px;
+            }
+    }
 }
 /* ************ NEEDED SECTION ************ */
 div#section-needed.edh-section {
-    height: 2920px;
+    background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
+    background-size: 100% !important;
+    background-position-y: 30px;
+    background-position-x: center !important;
+    top: -2px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    height: 2807px;
     background-color: #ffffff;
     div#html-needed {
         padding-top: 20% !important;
@@ -769,12 +851,13 @@ div#section-needed.edh-section {
     }
     div.needed-outerbox.hs-box {
         border: 1px solid $copy;
-        border-radius: 20px;
-        padding: 16px;
+        border-radius: 30px;
+        padding: 20px;
         div.needed-innerbox.hs-box {
             background-color: $ltgrey1;
-            border-radius: 13px;
+            border-radius: 20px;
             padding: 30px 70px 30px 70px;
+            @include white-box-shadow();
                 h4.needed {
                 @include semi-bold($sofia-sans);
                 text-align: center;
@@ -783,6 +866,7 @@ div#section-needed.edh-section {
                 line-height: 40px;
                 letter-spacing: 3px;
                 text-transform: uppercase;
+                margin-bottom: 25px;
                 }
                 p.needed {
                 @include regular($sofia-sans);
@@ -803,7 +887,7 @@ div#section-needed.edh-section {
         font-size: 32px;
         line-height: 38px;
         letter-spacing: 3px;
-        margin-top: 10% !important;
+        margin-top: 12% !important;
             span.light {
             @include bold($sofia-sans);
             }
@@ -816,8 +900,8 @@ div#section-needed.edh-section {
     }
     div#col-needed-heading1 {
         div#needed-heading1 {
-        padding-top: 80px !important;
-        padding-bottom: 50px !important;
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
             h3.section-heading {
                 @include regular($sofia-sans);
                 text-align: center;
@@ -858,7 +942,7 @@ div#section-needed.edh-section {
         font-size: 32px;
         line-height: 38px;
         letter-spacing: 3px;
-        margin-top: 200px !important;
+        margin-top: 15%!important;
             span.light {
             @include light($sofia-sans);
             }
@@ -871,8 +955,8 @@ div#section-needed.edh-section {
     }
     div#col-needed-heading2 {
         div#needed-heading2 {
-        padding-top: 80px !important;
-        padding-bottom: 50px !important;
+        padding-top: 8% !important;
+        padding-bottom: 5% !important;
             h3.section-heading {
                 @include regular($sofia-sans);
                 text-align: center;
@@ -911,6 +995,12 @@ div#section-needed.edh-section {
         div.quad-circle-row {
             min-height: 360px;
             div.quadcircle-col-inner {
+                p.circle-month {
+                    @include regular($sofia-sans);
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $copy;
+                }
                 .wpb_wrapper {
                     display: flex;
                     flex-direction: column;
@@ -924,92 +1014,94 @@ div#section-needed.edh-section {
                     color: $copy;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 75% !important;
+                            font-size: 55% !important;
                             top: .005ex !important;
                         }
                     }
                 }
                 div#html-needed-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 201px;
-                    max-height: 201px;
+                    max-width: 164px;
+                    max-height: 164px;
+                    top: 103px;
+                    position: relative;
                     margin: 0 auto !important;
                     p.circle-percentage {
-                        font-size: 42px;
-                        line-height: 39px;
+                        font-size: 34px;
+                        line-height: 32px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 171px;
+                        height: 141px;
                     }
                 }
                 div#html-needed-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 147px;
+                    height: 76px;
                     position: absolute;
-                    bottom: -149px;
+                    bottom: -79px;
                 }
                 div#html-needed-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 171px;
-                    max-height: 171px;
+                    max-width: 201px;
+                    max-height: 201px;
                     margin: 0 auto !important;
-                    top: 70px;
+                    top: 0px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 36px;
-                        line-height: 33px;
+                        font-size: 42px;
+                        line-height: 39px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 147px;
+                        height: 173px;
                     }
                 }
                 div#html-needed-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 101px;
+                    height: 148px;
                     position: absolute;
-                    bottom: -105px;
+                    bottom: -151px;
                 }
                 div#html-needed-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 137px;
-                    max-height: 137px;
+                    max-width: 176px;
+                    max-height: 173px;
                     margin: 0 auto !important;
-                    top: 190px;
+                    top: 46px;
                     position: relative;
                         p.circle-percentage {
-                            font-size: 27px;
-                            line-height: 24px;
+                            font-size: 36px;
+                            line-height: 33px;
                         }
                     div.edh-innercircle.hs-circle {
-                        height: 117px;
+                        height: 151px;
                     }
                 }
                 div#html-needed-circle3 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 11px;
+                    height: 124px;
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -127px;
                 }
                 div#html-needed-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                     max-width: 154px;
                     max-height: 154px;
                     margin: 0 auto !important;
-                    top: 150px;
+                    top: 164px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 31px;
-                        line-height: 29px;
+                        font-size: 34px;
+                        line-height: 32px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 133px;
+                        height: 132px;
                     }
                 }
                 div#html-needed-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 35px;
+                    height: 24px;
                     position: absolute;
-                    bottom: -39px;
+                    bottom: -27px;
                 }
             }
         }
@@ -1033,92 +1125,95 @@ div#section-needed.edh-section {
                     color: $copy;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 75% !important;
+                            font-size: 55% !important;
                             top: .005ex !important;
                         }
                     }
                 }
                 div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 201px;
-                    max-height: 201px;
+                    max-width: 131px;
+                    max-height: 131px;
                     margin: 0 auto !important;
+                    top: 195px;
+                    position: relative;
+                    text-transform: uppercase;
                     p.circle-percentage {
-                        font-size: 42px;
-                        line-height: 39px;
+                        font-size: 26px;
+                        line-height: 24px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 171px;
+                        height: 112px;
                     }
                 }
                 div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 147px;
+                    height: 14px;
                     position: absolute;
-                    bottom: -149px;
+                    bottom: -16px;
                 }
                 div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 171px;
-                    max-height: 171px;
+                    max-width: 215px;
+                    max-height: 215px;
                     margin: 0 auto !important;
-                    top: 70px;
+                    top: 0px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 36px;
-                        line-height: 33px;
+                        font-size: 46px;
+                        line-height: 39px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 147px;
+                        height: 185px;
                     }
                 }
                 div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 101px;
+                    height: 136px;
                     position: absolute;
-                    bottom: -105px;
+                    bottom: -139px;
                 }
                 div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 137px;
-                    max-height: 137px;
+                    max-width: 183px;
+                    max-height: 183px;
                     margin: 0 auto !important;
-                    top: 190px;
+                    top: 128px;
                     position: relative;
                         p.circle-percentage {
-                            font-size: 27px;
-                            line-height: 24px;
+                            font-size: 34px;
+                            line-height: 34px;
                         }
                     div.edh-innercircle.hs-circle {
-                        height: 117px;
+                        height: 157px;
                     }
                 }
                 div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 11px;
+                    height: 36px;
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -38px;
                 }
                 div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                    max-width: 154px;
-                    max-height: 154px;
+                    max-width: 173px;
+                    max-height: 173px;
                     margin: 0 auto !important;
-                    top: 150px;
+                    top: 140px;
                     position: relative;
                     p.circle-percentage {
-                        font-size: 31px;
-                        line-height: 29px;
+                        font-size: 33px;
+                        line-height: 33px;
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 133px;
+                        height: 148px;
                     }
                 }
                 div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle:after {
                     content: "";
                     border: 1px solid #aaa;
-                    height: 35px;
+                    height: 33px;
                     position: absolute;
-                    bottom: -39px;
+                    bottom: -36px;
                 }
             }
         }
@@ -1140,8 +1235,8 @@ div#section-needed.edh-section {
                 background-color: #fff;
                 border: 1px solid $bordergrey;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                     background-color: $purbox1;
                 }
                 div#qb-2 {
@@ -1171,7 +1266,8 @@ div#section-needed.edh-section {
                     font-size: 24px;
                     line-height: 24px;
                     text-align: center;
-                    text-transform: uppercase
+                    text-transform: uppercase;
+                    letter-spacing: -0.25px;
                     }
                     p.qb-program {
                     @include regular($sofia-sans);
@@ -1202,8 +1298,8 @@ div#section-needed.edh-section {
                 background-color: #fff;
                 border: 1px solid $bordergrey;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                     background-color: $orgbox1;
                 }
                 div#qb-2 {
@@ -1233,7 +1329,8 @@ div#section-needed.edh-section {
                     font-size: 24px;
                     line-height: 24px;
                     text-align: center;
-                    text-transform: uppercase
+                    text-transform: uppercase;
+                    letter-spacing: -0.25px;
                     }
                     p.qb-program {
                     @include regular($sofia-sans);
@@ -1262,38 +1359,115 @@ div#section-needed.edh-section {
                 line-height: 35px;
             }
     }
-}
-/* ************ PROGRESSION FREE SECTION ************ */
-div#section-progfree.edh-section {
-
-}
-/* ************ OBJECTIVE RESPONSIVE RATE SECTION ************ */
-div#section-orr.edh-section {
-
+    div#col-footnote-2 {
+        padding-bottom: 18% !important;
+    }
 }
 /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
 div#section-qol.edh-section {
-
-}
-/* ************ LIVER FUNCTION SECTION ************ */
-div#section-liverfunct.edh-section {
-    /* height: 2272px; */
-    background: linear-gradient(#515c65, #080124);
-    div#col-liverfunct-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url("/wp-content/themes/conall-child/images/qof-background-1920x719.png");
         margin: 0 auto !important;
         width: 100% !important;
-        float: unset;
-        position: relative;
-        top: -35px;
-        left: 0;
-        background-image: url("/wp-content/themes/conall-child/images/lvf-section-top-1920x36.png");
-        margin: 0px;
         padding: 0px;
-        background-position: center !important;
+        position: relative;
+        background-position: center bottom !important;
         background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 36px;
-    }
+        background-size: 100% !important;
+        height: 719px;
+        margin-bottom: -36px !important;
+        background-color: #fff;
+        top: -2px;
+        left: -2px;
+        div.wpb_wrapper {
+            div#html-qol-box {
+                div.grid-container {
+                    display: grid;
+                    grid-template-areas: "left right";
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                }
+                div.grid-left {
+                    grid-area: left;
+                    position: relative;
+                    left: 18px;
+                    z-index: 1;
+                    div.qol-image {
+                        img.vc_single_image-img {
+                            min-width: 808px;
+                        }
+                    }
+                }
+
+                div.grid-right {
+                    grid-area: right;
+                    display: flex;
+                    align-items: flex-end;
+                    z-index: -1;
+                    margin-bottom: 113px;
+                    div.white-rc-box {
+                        width: 1187px;
+                        background-color: $white;
+                        border-radius: 18px;
+                        @include white-box-shadow();
+                        right: 240px;
+                        position: relative;
+                        width: 1187px;
+                        padding-top: 4.5%;
+                        padding-bottom: 4.5%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        margin-bottom: 25px !important;
+                            h1.section-heading {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $purple;
+                            font-size: 32px;
+                            line-height: 38px;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                            margin-bottom: 3% !important;
+                            padding-left: 235px !important;
+                            }
+                            p.section-copy {
+                            @include light($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            font-size: 24px;
+                            line-height: 38px;
+                            letter-spacing: 0;
+                            padding-left: 235px !important;
+                            padding-right: 68px !important;
+                                sub.subscript {
+                                    vertical-align: super !important;
+                                    font-size: 75% !important;
+                                    top: .005ex !important;
+                                }
+                            }
+                    }
+                }
+
+            }
+                }
+}
+
+/* ************ LIVER FUNCTION SECTION ************ */
+div#section-liverfunct.edh-section {
+    height: 2352px;
+    background-image: url("/wp-content/themes/conall-child/images/lvf-section-background-1920x2357.png");
+    background-size: 100% !important;
+    background-position-y: 0px;
+    background-position-x: center !important;
+    top: -2px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    z-index: 22;
     div#col-liverfunct {
         margin-top: 125px !important;
         div#lvf-heading1 {
@@ -1327,7 +1501,7 @@ div#section-liverfunct.edh-section {
     }
     div#col-hemrisk {
         margin-top: 5% !important;
-        margin-bottom: 12% !important;
+        margin-bottom: 15% !important;
         div#col-hemrisk-left {
             div#lvf-heading2 {
                 padding-top: 11% !important;
@@ -1368,7 +1542,6 @@ div#section-liverfunct.edh-section {
 
         }
     }
-
     div#col-disrate {
         div#lvf-heading3 {
             h3.section-heading {
@@ -1422,7 +1595,6 @@ div#section-liverfunct.edh-section {
             }
         }
     }
-
     div#col-quadcircle {
         padding-left: 45px !important;
         padding-right: 45px !important;
@@ -1545,12 +1717,12 @@ div#section-liverfunct.edh-section {
             div.edh-outerbox {
                 background-color: #080124;
                 div#qb-1 {
-                    border-top-left-radius: 13px;
-                    border-bottom-left-radius: 13px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                 }
                 div#qb-4 {
-                    border-top-right-radius: 13px;
-                    border-bottom-right-radius: 13px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
                 }
                 div.quadbox {
                     min-height: 80px;
@@ -1578,21 +1750,7 @@ div#section-liverfunct.edh-section {
                     }
                 }
             }
-
-            div#qb-1 {
-
-            }
-            div#qb-2 {
-
-            }
-            div#qb-3 {
-
-            }
-            div#qb-4 {
-
-            }
         }
-
     }
     div#lvf-qgb-subcopy {
             margin-top: 5%  !important;
@@ -1611,23 +1769,9 @@ div#section-liverfunct.edh-section {
 }
 /* ************ HUBSPOT FORM SECTION ************ */
 div#section-hsform.edh-section {
-    div#col-hsform-divider {
-        margin: 0 auto !important;
-        width: 100% !important;
-        float: unset;
-        position: relative;
-        top: -80px;
-        left: 0;
-        background-image: url("/wp-content/themes/conall-child/images/hs-section-top-1920x81.png");
-        margin: 0px;
-        padding: 0px;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 81px;
-    }
+    position: relative;
+    top: -3px;
     div#col-hsform {
-
         a.hs-button {
             /* margin-top: 65px; */
             padding: 33px 60px 23px 65px;
@@ -1645,7 +1789,7 @@ div#section-hsform.edh-section {
             }
         }
         #hs-heading {
-            padding-top: 40px !important;
+            padding-top: 18% !important;
             padding-bottom: 20px !important;
             h3.section-heading {
                 @include regular($sofia-sans);
@@ -1657,7 +1801,9 @@ div#section-hsform.edh-section {
             }
         }
         div#hs-subheading {
-            padding-bottom: 60px !important;
+            padding-bottom: 3% !important;
+            width: 626px;
+            margin: 0 auto !important;
             p.section-subheading {
                 @include light($sofia-sans);
                 font-size: 24px;
@@ -1667,23 +1813,27 @@ div#section-hsform.edh-section {
             }
         }
         div#html-hs-formcode {
-            width: 100%;
+            width: 1164px;
             height: 100%;
             padding: 0 !important;
             margin: 0 auto !important;
             div.edh-innerbox.hs-box {
-                /* min-height: 384px; */
+                min-height: 384px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         div#hs-references {
             p.section-references {
-                margin: 85px 0 85px 0 !important;
                 @include regular($sofia-sans);
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0px;
                 color: $copy;
                 text-align: justify;
+                margin-top: 4% !important;
+                margin-bottom: 10% !important;
             }
         }
     }
@@ -1691,9 +1841,9 @@ div#section-hsform.edh-section {
 /* ***** Grad Box **** */
 div.edh-box-container {
     div.edh-outerbox {
-        border: 2px solid $bordergrey;
+        border: 1px solid $bordergrey;
         background-color: transparent;
-        border-radius: 18px;
+        border-radius: 20px;
         padding: 16px;
         div.edh-innerbox {
             @include form-gradient;
