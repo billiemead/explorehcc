@@ -838,11 +838,6 @@ ul.wpb_thumbnails-fluid > li,
   box-sizing: border-box;
 }
 
-.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-left,
-.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-right {
-  width: 25%;
-}
-
 .edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-center {
   width: 50%;
   left: 50%;
@@ -850,15 +845,11 @@ ul.wpb_thumbnails-fluid > li,
   transform: translateX(-50%);
 }
 
-.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-left-inner,
-.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-center-inner,
-.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-right-inner {
+.edgtf-vertical-align-containers.edgtf-25-50-25 .edgtf-position-center-inner {
   width: 98%;
 }
 
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-left,
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-center,
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-right {
+.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-center {
   width: 33.33%;
 }
 
@@ -869,28 +860,12 @@ ul.wpb_thumbnails-fluid > li,
   transform: translateX(-50%);
 }
 
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-left-inner,
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-center-inner,
-.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-right-inner {
+.edgtf-vertical-align-containers.edgtf-33-33-33 .edgtf-position-center-inner {
   width: 98%;
 }
 
-.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-left,
-.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-right {
-  width: 50%;
-}
-
-.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-left-inner,
-.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-center-inner,
-.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-right-inner {
+.edgtf-vertical-align-containers.edgtf-50-50 .edgtf-position-center-inner {
   width: 98%;
-}
-
-.edgtf-vertical-align-containers .edgtf-position-left {
-  position: relative;
-  float: left;
-  z-index: 2;
-  height: 100%;
 }
 
 .edgtf-vertical-align-containers .edgtf-position-center {
@@ -902,28 +877,12 @@ ul.wpb_thumbnails-fluid > li,
   z-index: 1;
 }
 
-.edgtf-vertical-align-containers .edgtf-position-right {
-  position: relative;
-  float: right;
-  z-index: 2;
-  height: 100%;
-  text-align: right;
-}
-
-.edgtf-vertical-align-containers .edgtf-position-left-inner,
-.edgtf-vertical-align-containers .edgtf-position-center-inner,
-.edgtf-vertical-align-containers .edgtf-position-right-inner {
+.edgtf-vertical-align-containers .edgtf-position-center-inner {
   vertical-align: middle;
   display: inline-block;
 }
 
-.edgtf-vertical-align-containers .edgtf-position-right.edgtf-has-widget .edgtf-position-right-inner {
-  height: 100%;
-}
-
-.edgtf-vertical-align-containers .edgtf-position-left:before,
-.edgtf-vertical-align-containers .edgtf-position-center:before,
-.edgtf-vertical-align-containers .edgtf-position-right:before {
+.edgtf-vertical-align-containers .edgtf-position-center:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -5093,21 +5052,7 @@ body.edgtf-dropdown-slide-from-left .edgtf-drop-down .narrow .second .inner ul l
   height: 100%;
 }
 
-.edgtf-header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right {
-  display: table;
-}
-
-.edgtf-header-standard .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right-inner {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-}
-
 .edgtf-header-simple .edgtf-menu-area .edgtf-grid {
-  height: 100%;
-}
-
-.edgtf-header-simple .edgtf-menu-area .edgtf-vertical-align-containers .edgtf-position-right .edgtf-position-right-inner {
   height: 100%;
 }
 
@@ -5129,30 +5074,6 @@ body.edgtf-dropdown-slide-from-left .edgtf-drop-down .narrow .second .inner ul l
 
 .edgtf-header-divided .edgtf-main-menu {
   width: auto;
-}
-
-.edgtf-header-divided .edgtf-vertical-align-containers .edgtf-position-left {
-  text-align: right;
-}
-
-.edgtf-header-divided .edgtf-vertical-align-containers .edgtf-position-left .edgtf-position-left-inner {
-  height: 100%;
-}
-
-.edgtf-header-divided .edgtf-vertical-align-containers .edgtf-position-right {
-  text-align: left;
-}
-
-.edgtf-header-divided .edgtf-vertical-align-containers .edgtf-position-right .edgtf-position-right-inner {
-  height: 100%;
-}
-
-.edgtf-header-divided .edgtf-sticky-header .edgtf-vertical-align-containers .edgtf-position-left .edgtf-position-left-inner {
-  height: auto;
-}
-
-.edgtf-header-divided .edgtf-sticky-header .edgtf-vertical-align-containers .edgtf-position-right .edgtf-position-right-inner {
-  height: auto;
 }
 
 .edgtf-header-divided .edgtf-page-header .edgtf-vertical-align-containers .edgtf-position-center {
@@ -12157,7 +12078,7 @@ button.edgtf-btn {
 }
 
 /* Type with icon - end
-========================================================================== 
+==========================================================================
 /* ==========================================================================
 # Message style - end
 ========================================================================== */
@@ -14884,8 +14805,8 @@ button.edgtf-btn {
   position: absolute;
   margin: 0;
   color: #fff;
-  /* 
-                        Default Text styles 
+  /*
+                        Default Text styles
                     */
 }
 
@@ -17822,7 +17743,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
 /* ==========================================================================
    12. Plugins styles
    ========================================================================== */
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
@@ -17863,7 +17784,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   }
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -17874,7 +17795,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -17982,7 +17903,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -17998,7 +17919,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   transform-style: preserve-3d;
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
@@ -18766,12 +18687,6 @@ body div.pp_default .pp_close:after {
 .edgtf-footer-inner .edgtf-footer-bottom-holder #lang_sel_list,
 .edgtf-side-menu .edgtf-footer-bottom-holder #lang_sel_list {
   line-height: 1.4em;
-}
-
-.edgtf-top-bar .edgtf-position-right-inner .widget_icl_lang_sel_widget,
-.edgtf-page-header .edgtf-menu-area .edgtf-position-right-inner .widget_icl_lang_sel_widget,
-.edgtf-sticky-header .edgtf-position-right-inner .widget_icl_lang_sel_widget {
-  margin: 0 20px;
 }
 
 .edgtf-top-bar #lang_sel .lang_sel_sel,

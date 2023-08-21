@@ -1,10 +1,88 @@
 @import "../base/colors";
 @import '../base/font.scss';
+@import "../../../node_modules/rfs/scss";
 
-/* ************ ______________ SECTION ************ */
-
-/* ***** SUB-SECTIONS/NOTES **** */
-
+/* ************ HUBSPOT FORM SECTION ************ */
+div#section-hsform-outer.edh-section {
+    background-image: url("/wp-content/themes/conall-child/images/hs-form-section-background-1920x1323.png");
+    background-position-y: 0px;
+    background-position-x: center !important;
+    top: 0px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 25;
+}
+div#section-hsform.edh-section {
+    div#col-hsform {
+        a.hs-button {
+            /* margin-top: 65px; */
+            padding: 33px 60px 23px 65px;
+            max-width: 684px;
+            @include orange-grad-button;
+            @include rfs(1.25rem, border-radius);
+            border: none;
+            @include button-shadow;
+            span {
+                @include bold($sofia-sans);
+                text-transform: uppercase;
+                @include font-size(1.75rem);
+                @include rfs(1.188rem, line-height);
+                @include rfs(0.031rem, letter-spacing);
+            }
+        }
+        #hs-heading {
+            padding-top: 18% !important;
+            padding-bottom: 20px !important;
+            h3.section-heading {
+                @include regular($sofia-sans);
+                @include font-size(2rem);
+                @include rfs(2.375rem, line-height);
+                @include rfs(0.188rem, letter-spacing);
+                text-transform: uppercase;
+                color: $copy;
+            }
+        }
+        div#hs-subheading {
+            padding-bottom: 3% !important;
+            width: 626px;
+            margin: 0 auto !important;
+            p.section-subheading {
+                @include light($sofia-sans);
+                @include font-size(1.5rem);
+                @include rfs(2.375rem, line-height);
+                letter-spacing: 0px;
+                color: $copy;
+            }
+        }
+        div#html-hs-formcode {
+            max-width: 1164px;
+            height: 100%;
+            padding: 0 !important;
+            margin: 0 auto !important;
+            div.edh-innerbox.hs-box {
+                min-height: 384px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+            }
+        }
+        div#hs-references {
+            p.section-references {
+                @include regular($sofia-sans);
+                @include font-size(0.75rem);
+                @include rfs(1rem, line-height);
+                letter-spacing: 0px;
+                color: $copy;
+                text-align: left;
+                margin-top: 4% !important;
+                margin-bottom: 10% !important;
+                max-width: 1305px;
+            }
+        }
+    }
+}
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {

@@ -1,20 +1,17 @@
 @import "../base/colors";
 @import '../base/font.scss';
+@import "../../../node_modules/rfs/scss";
 
-
-
-
-/* ************ ______________ SECTION ************ */
-
-/* ***** SUB-SECTIONS/NOTES **** */
-
-
-
-
-
-
-
-
+/* ************ HUBSPOT FORM SECTION ************ */
+div#section-dlb-nav.edh-section {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%!important;
+    height: 763px;
+}
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }

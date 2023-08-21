@@ -5,7 +5,7 @@ Tags: cache, minify, caching, image cache, performance cache, clean, spam, speed
 Requires PHP: 5.6
 Requires at least: 4.5
 Tested up to: 6.3
-Stable tag: 3.2.17
+Stable tag: 3.2.18
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -367,6 +367,11 @@ If none of the above works, disable processing of JavaScript files in the minify
 
 == Changelog ==
 
+
+= 3.2.18 - 11/Aug/2023 =
+
+* FIX: A bug in the v3.2.17 release that caused certain database optimization buttons to be disabled has been fixed
+* TWEAK: Reset WebP serving method upon updating to version 3.2.18
 
 = 3.2.17 - 08/Aug/2023 =
 
@@ -1408,4 +1413,4 @@ If none of the above works, disable processing of JavaScript files in the minify
 * Fix Interface
 
 == Upgrade Notice ==
-* 3.2.17: Htaccess capability tester dependency removed, various fixes and tweaks - a recommended update for all
+* 3.2.18: Fixed couple of bugs in 3.2.17 release - a recommended update for all
