@@ -1,26 +1,31 @@
 @import "../base/colors";
 @import "../base/font";
-//@import "../base/colors";
+@import "../../../node_modules/rfs/scss";
 
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder .edgtf-vertical-align-containers {
+    padding: 0 !important;
+}
+.edgtf-page-header .edgtf-sticky-header .edgtf-grid {
+    height: 100%!important;
+    width: 100% !important;
+}
 /* ************ MAIN 4 ICON STICKY NAV SET-UP ************ */
-
-div.edgtf-sticky-header.header-appear {
+div.edgtf-sticky-header {
     div.edh-innerbox.hs-box {
-        min-width: 1260px;
         position: relative;
-        left: -2px;
-        border-radius: 20px;
+        @include rfs(1.25rem, border-radius);
         border: 2px solid #F5C75D;
         padding: 0;
-        ul {
+        ul#menu-main-navigation-4-icon-today-1 {
+            min-width: 1260px;
             display: flex;
             li.nav-main-links {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                width: 33.33%;
+                width: 25%;
                 div.oas-nav-container {
-                    height: 190px;
+                    height: 170px;
                     border: none;
                     display: flex;
                     flex-direction: column;
@@ -35,39 +40,37 @@ div.edgtf-sticky-header.header-appear {
                         color: $white;
                         text-decoration: underline;
                         text-transform: uppercase;
-                        font-size: (18px);
-                        line-height: 22px;
+                        @include font-size(1.125rem);
+                        @include rfs(1.375rem, line-height);
                     }
                 }
             }
             li.nav-main-links.one div.oas-nav-container {
-                border-top-left-radius: 27px;
-                border-bottom-left-radius: 27px;
+                @include rfs(1.688rem, border-top-left-radius);
+                @include rfs(1.688rem, border-bottom-left-radius);
                 background: linear-gradient(#5a636d, #161030);
             }
             li.nav-main-links.three div.oas-nav-container {
                 background: linear-gradient(#5a636d, #161030);
             }
             li.nav-main-links.four div.oas-nav-container {
-                border-top-right-radius: 27px;
-                border-bottom-right-radius: 27px;
+                @include rfs(1.688rem, border-top-right-radius);
+                @include rfs(1.688rem, border-bottom-right-radius);
             }
         }
     }
 }
 
 /* ************ MAIN 2 ICON STICKY NAV SET-UP ************ */
-/* body.page-id-6,
-body.page-id-10 {
-div.edgtf-sticky-header.header-appear
+
+div.edgtf-sticky-header
     div.edh-innerbox.hs-box {
-        min-width: 730px;
         position: relative;
-        left: -2px;
-        border-radius: 20px;
+        @include rfs(1.25rem, border-radius);
         border: 2px solid #F5C75D;
         padding: 0;
-        ul {
+        ul#menu-main-navigation-2-icon-yesterday-1 {
+            min-width: 730px;
             display: flex;
             li.nav-main-links {
                 display: flex;
@@ -75,7 +78,7 @@ div.edgtf-sticky-header.header-appear
                 justify-content: space-around;
                 width: 50%;
                 div.oas-nav-container {
-                    height: 190px;
+                    height: 170px;
                     border: none;
                     display: flex;
                     flex-direction: column;
@@ -89,24 +92,23 @@ div.edgtf-sticky-header.header-appear
                         @include medium($sofia-sans);
                         color: $white;
                         text-decoration: underline;
-                        text-transform: uppercase;
-                        font-size: (18px);
-                        line-height: 22px;
+                        /* text-transform: uppercase; */
+                        @include font-size(1.125rem);
+                        @include rfs(1.375rem, line-height);
                     }
                 }
             }
             li.nav-main-links.one div.oas-nav-container {
-                border-top-left-radius: 17px;
-                border-bottom-left-radius: 17px;
+                @include rfs(1.063rem, border-top-left-radius);
+                @include rfs(1.063rem, border-bottom-left-radius);
                 background: linear-gradient(#5a636d, #161030);
             }
             li.nav-main-links.two div.oas-nav-container {
-                border-top-right-radius: 17px;
-                border-bottom-right-radius: 17px;
+                @include rfs(1.063rem, border-top-right-radius);
+                @include rfs(1.063rem, border-bottom-right-radius);
             }
         }
-    }
-} */
+}
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
@@ -125,6 +127,25 @@ div.edgtf-sticky-header.header-appear
 }
 
 /*** Responsive Max-Width ***/
+@media all and (max-width: 1260px) {
+    div.edgtf-sticky-header div.edh-innerbox.hs-box ul#menu-main-navigation-4-icon-today-1 {
+        min-width: 100%;
+        display: flex;
+    }
+    div.edgtf-sticky-header .edgtf-vertical-align-containers .edgtf-position-center .edgtf-position-center-inner {
+    width: 100%;
+    }
+}
+@media all and (max-width: 1267px) {
+    div.edgtf-sticky-header div.edh-innerbox.hs-box ul#menu-main-navigation-4-icon-today-1 li.nav-main-links div.oas-nav-container {
+    height: 70px;
+    }
+}
+@media all and (max-width: 1200px) {
+    .edgtf-page-header .edgtf-sticky-header .edgtf-vertical-align-containers .edgtf-position-center {
+        width: 100% !important;
+    }
+}
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 960px) {

@@ -12,45 +12,6 @@
         width: auto;
     }
 
-    .edgtf-vertical-align-containers {
-
-        .edgtf-position-left {
-            text-align: right;
-
-            .edgtf-position-left-inner {
-                height: 100%;
-            }
-        }
-
-        .edgtf-position-right {
-            text-align: left;
-            
-            .edgtf-position-right-inner {
-                height: 100%;
-            }
-        }
-    }
-
-    .edgtf-sticky-header {
-
-        .edgtf-vertical-align-containers {
-
-            .edgtf-position-left {
-
-                .edgtf-position-left-inner {
-                    height: auto;
-                }
-            }
-
-            .edgtf-position-right {
-
-                .edgtf-position-right-inner {
-                    height: auto;
-                }
-            }
-        }
-    }
-
     .edgtf-page-header .edgtf-vertical-align-containers .edgtf-position-center {
         position: absolute;
         width: 100%;

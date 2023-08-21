@@ -3,7 +3,7 @@
         'name' => 'updraftplus/wp-optimize',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'd7914f5e4bc7f3ab4b9fbc92bb41a8e1fff41daf',
+        'reference' => '2fa061f010c29b3cd91a460c370bd4c88f8174bf',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'davidanderson684/simba-plugin-manager-updater' => array(
-            'pretty_version' => 'v1.8.17',
-            'version' => '1.8.17.0',
-            'reference' => 'a522a960324466ac3babbe28af50cf8c7b4ddc11',
+            'pretty_version' => 'v1.8.19',
+            'version' => '1.8.19.0',
+            'reference' => '6fb8da138167d5a59273836d27e227bd668e805f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../davidanderson684/simba-plugin-manager-updater',
             'aliases' => array(),
@@ -214,7 +214,7 @@
         'updraftplus/wp-optimize' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd7914f5e4bc7f3ab4b9fbc92bb41a8e1fff41daf',
+            'reference' => '2fa061f010c29b3cd91a460c370bd4c88f8174bf',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

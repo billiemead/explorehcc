@@ -7,24 +7,10 @@
         <div class="edgtf-grid">
             <?php endif; ?>
             <div class=" edgtf-vertical-align-containers">
-                <div class="edgtf-position-left">
-                    <div class="edgtf-position-left-inner">
-                        <?php if(!$hide_logo) {
-                            conall_edge_get_logo('sticky');
-                        } ?>
-                    </div>
-                </div>
                 <div class="edgtf-position-center">
                     <div class="edgtf-position-center-inner"><div class="edh-innerbox hs-box">
                         <?php conall_edge_get_sticky_menu('edgtf-sticky-nav'); ?>
                     </div></div>
-                </div>
-                <div class="edgtf-position-right">
-                    <div class="edgtf-position-right-inner">
-                        <?php if(is_active_sidebar('edgtf-sticky-right')) : ?>
-                            <?php dynamic_sidebar('edgtf-sticky-right'); ?>
-                        <?php endif; ?>
-                    </div>
                 </div>
             </div>
             <?php if($sticky_header_in_grid) : ?>

@@ -1,5 +1,6 @@
 @import "../base/colors";
 @import '../base/font.scss';
+@import "../../../node_modules/rfs/scss";
 
 /* ************ STICKY FOOTER SECTION ************ */
 
@@ -41,7 +42,7 @@ footer {
             position: relative;
             top: 30px;
             a.footer-link {
-                letter-spacing: 3px;
+                @include rfs(0.188rem, letter-spacing);
                 position: relative;
                 top: 6px;
             }
@@ -53,8 +54,8 @@ footer {
             clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             a.footer-link {
-                letter-spacing: 3px;
-                font-size: (32px);
+                @include rfs(0.188rem, letter-spacing);
+                @include font-size(2rem);
                 position: relative;
                 top: 5px;
             }
@@ -62,7 +63,7 @@ footer {
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
-            font-size: (24px);
+            @include font-size(1.5rem);
             text-transform: capitalize;
         }
   }
@@ -87,6 +88,9 @@ footer {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    footer {
+        display: none !important;
+    }
 }
 @media all and (max-width: 960px) {
 }

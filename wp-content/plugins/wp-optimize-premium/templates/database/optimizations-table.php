@@ -20,6 +20,7 @@
 		// This is an array, with attributes dom_id, activated, settings_label, info; all values are strings.
 		$use_ajax = defined('WP_OPTIMIZE_DEBUG_OPTIMIZATIONS') && WP_OPTIMIZE_DEBUG_OPTIMIZATIONS ? false : true;
 		$html = $optimization->get_settings_html($use_ajax);
+		$disable_optimization_button = false;
 
 		// Check if the DOM is optimize-db to generate a list of tables.
 		if ('optimize-db' == $html['dom_id']) {
@@ -27,6 +28,7 @@
 
 			// Make sure that optimization_table_inno_db is set.
 			if ($table_list['inno_db_tables'] > 0 && 0 == $table_list['is_optimizable'] && 0 == $table_list['non_inno_db_tables']) {
+				$disable_optimization_button = true;
 				$html['activated'] = '';
 			}
 		}
@@ -48,7 +50,7 @@
 			?>
 
 			<th class="wp-optimize-settings-optimization-checkbox check-column">
-				<input name="<?php echo esc_attr($html['dom_id']); ?>" id="optimization_checkbox_<?php echo esc_attr($id); ?>" class="optimization_checkbox" type="checkbox" value="true" <?php echo (!empty($html['activated'])) ? 'checked="checked"' : 'data-disabled="1" disabled'; ?> >
+				<input name="<?php echo esc_attr($html['dom_id']); ?>" id="optimization_checkbox_<?php echo esc_attr($id); ?>" class="optimization_checkbox" type="checkbox" value="true" <?php echo ($html['activated']) ? 'checked="checked"' : ''; ?> <?php echo $disable_optimization_button ? 'data-disabled="1" disabled' : ''; ?> >
 
 				<img id="optimization_spinner_<?php echo esc_attr($id); ?>" class="optimization_spinner display-none" src="<?php echo esc_url(admin_url('images/spinner-2x.gif')); ?>" alt="...">
 			</th>
@@ -73,9 +75,9 @@
 			</td>
 
 			<td class="wp-optimize-settings-optimization-run">
-				<button id="optimization_button_<?php echo esc_attr($id); ?>_big" class="button button-secondary wp-optimize-settings-optimization-run-button show_on_default_sizes optimization_button_<?php echo esc_attr($id); ?>" type="button" <?php echo ('' == $html['activated']) ? 'data-disabled="1" disabled' : ''; ?> ><?php esc_html_e('Run optimization', 'wp-optimize'); ?></button>
+				<button id="optimization_button_<?php echo esc_attr($id); ?>_big" class="button button-secondary wp-optimize-settings-optimization-run-button show_on_default_sizes optimization_button_<?php echo esc_attr($id); ?>" type="button" <?php echo $disable_optimization_button ? 'data-disabled="1" disabled' : ''; ?> ><?php esc_html_e('Run optimization', 'wp-optimize'); ?></button>
 
-				<button id="optimization_button_<?php echo esc_attr($id); ?>_small" class="button button-secondary wp-optimize-settings-optimization-run-button show_on_mobile_sizes optimization_button_<?php echo esc_attr($id); ?>" type="button" <?php echo ('' == $html['activated']) ? 'data-disabled="1" disabled' : ''; ?> ><?php esc_html_e('Go', 'wp-optimize'); ?></button>
+				<button id="optimization_button_<?php echo esc_attr($id); ?>_small" class="button button-secondary wp-optimize-settings-optimization-run-button show_on_mobile_sizes optimization_button_<?php echo esc_attr($id); ?>" type="button" <?php echo $disable_optimization_button ? 'data-disabled="1" disabled' : ''; ?> ><?php esc_html_e('Go', 'wp-optimize'); ?></button>
 			</td>
 
 		<?php } ?>

@@ -41,7 +41,7 @@ class WPO_Uninstall {
 	 * @return array
 	 */
 	private static function get_wpo_sub_folders() {
-		return array(
+		$sub_folders =  array(
 			'add-type',
 			'content-digest',
 			'crash-tester',
@@ -52,6 +52,7 @@ class WPO_Uninstall {
 			'rewrite',
 			'server-signature',
 		);
+		return apply_filters('wpo_uploads_sub_folders', $sub_folders);
 	}
 
 	/**
