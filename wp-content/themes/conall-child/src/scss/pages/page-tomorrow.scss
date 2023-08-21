@@ -89,6 +89,19 @@ div#section-dlb-nav.edh-section {
     }
 }
 
+/* ************ DOUBLE ICON NAV SECTION ************ */
+div#section-dlb-nav.edh-section {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%!important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 32/13;
+}
+
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }
