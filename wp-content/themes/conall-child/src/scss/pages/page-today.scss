@@ -899,7 +899,7 @@ div#section-needed.edh-section {
     background-repeat: no-repeat !important;
     /* height: 2807px; */
     background-color: #ffffff;
-    margin-bottom: -80px !important;
+    margin-bottom: -170px !important;
     div#html-needed {
         padding-top: 22.5% !important;
         max-width: 1072px;
@@ -1425,94 +1425,69 @@ div#section-needed.edh-section {
 div#section-qol.edh-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    background-image: url(/wp-content/themes/conall-child/images/qof-background-1920x719.png);
+    align-items: flex-start;
+    background-image: url(/wp-content/themes/conall-child/images/qol-section-background-2-1920x814.png);
     margin: 0 auto !important;
     width: 100% !important;
     position: relative;
     background-position: center top !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
-    height: 719px;
-    margin-bottom: -211px !important;
-    background-color: #fff;
-    top: -174px;
+    /* height: 719px; */
+    margin-bottom: -294px !important;
+    background-color: transparent;
+    top: -250px;
     left: -1px;
-    aspect-ratio: 1920/719;
-        div.wpb_wrapper {
-            div#html-qol-box {
-                div.grid-container {
-                    display: grid;
-                    grid-template-areas: "left right";
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: 1fr;
-                    grid-column-gap: 0px;
-                    grid-row-gap: 0px;
-                }
-                div.grid-left {
-                    grid-area: left;
-                    position: relative;
-                    left: 18px;
-                    z-index: 1;
-                    div.qol-image {
-                        img.vc_single_image-img {
-                            min-width: 808px;
-                        }
-                    }
-                }
-
-                div.grid-right {
-                    grid-area: right;
-                    display: flex;
-                    align-items: flex-end;
-                    z-index: -1;
-                    margin-bottom: 113px;
-                    div.white-rc-box {
-                        width: 1187px;
-                        background-color: $white;
-                        @include rfs(1.125rem, border-radius);
-                        @include white-box-shadow();
-                        right: 240px;
-                        position: relative;
-                        width: 1187px;
-                        padding-top: 4.5%;
-                        padding-bottom: 4.5%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        flex-direction: column;
-                        margin-bottom: 25px !important;
-                            h1.section-heading {
-                            @include bold($sofia-sans);
-                            text-align: left;
-                            color: $purple;
-                            @include font-size(2rem);
-                            @include rfs(2.375rem, line-height);
-                            @include rfs(0.125rem, letter-spacing);
-                            text-transform: uppercase;
-                            margin-bottom: 3% !important;
-                            padding-left: 235px !important;
-                            }
-                            p.section-copy {
-                            @include light($sofia-sans);
-                            text-align: left;
-                            color: $copy;
-                            @include font-size(1.5rem);
-                            @include rfs(2.375rem, line-height);
-                            letter-spacing: 0px;
-                            padding-left: 235px !important;
-                            padding-right: 68px !important;
-                                sub.subscript {
-                                    vertical-align: super !important;
-                                    font-size: 75% !important;
-                                    top: .005ex !important;
-                                }
-                            }
-                    }
-                }
-
+    aspect-ratio: 960/407;
+    justify-content: center;
+        div.edgtf-full-section-inner {
+        display: flex;
+        padding-right: 11% !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8% !important;
+        margin-top: 8% !important;
+            div#col-qol-left {
+            display: flex;
+            flex-basis: 33.33%;
+            width: 33.33% !important;
+            height: 100%;
             }
+            div#col-qol-right {
+            display: flex;
+            flex-basis: 66.66%;
+            width: 66.66% !important;
+            height: 100%;
+            text-align: left;
+                h1.section-heading {
+                @include bold($sofia-sans);
+                text-align: left;
+                color: $purple;
+                @include font-size(2rem);
+                @include rfs(2.375rem, line-height);
+                @include rfs(0.125rem, letter-spacing);
+                text-transform: uppercase;
+                margin-bottom: 3% !important;
+                padding-left: 185px !important;
                 }
+                p.section-copy {
+                @include light($sofia-sans);
+                text-align: left;
+                color: $copy;
+                @include font-size(1.5rem);
+                @include rfs(2.375rem, line-height);
+                letter-spacing: 0px;
+                padding-left: 185px !important;
+                padding-right: 68px !important;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 75% !important;
+                        top: .005ex !important;
+                    }
+                }
+            }
+        }
 }
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
@@ -1521,14 +1496,14 @@ div#section-liverfunct.edh-section {
     /* background-size: 100% !important; */
     background-position-y: 0px;
     background-position-x: center !important;
-    top: -2px;
+    top: 0px;
     margin: 0px !important;
     background-repeat: no-repeat !important;
     z-index: 22;
     margin-bottom: -65px !important;
     background-size: cover;
     div#col-liverfunct {
-        margin-top: 125px !important;
+        margin-top: 7% !important;
         div#lvf-heading1 {
             h3.section-heading {
             @include regular($sofia-sans);
