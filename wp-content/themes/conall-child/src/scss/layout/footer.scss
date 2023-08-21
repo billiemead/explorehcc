@@ -229,9 +229,9 @@ div#footer-tomorrow {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
-    footer#footer-today,
-    footer#footer-tomorrow,
-    footer#footer-yesterday {
+    div#footer-today,
+    div#footer-tomorrow,
+    div#footer-yesterday {
         display: none !important;
     }
 }
