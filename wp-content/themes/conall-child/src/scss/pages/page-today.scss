@@ -605,7 +605,7 @@ div#section-table.edh-section > div.edgtf-full-section-inner {
 }
 div#section-table.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
-    padding-top: 11.5% !important;
+    padding-top: 15.5% !important;
     padding-bottom: 275px !important;
     background-color: transparent;
     top: -2px;
@@ -616,6 +616,7 @@ div#section-table.edh-section {
     margin-bottom: -120px !important;
     z-index: 2;
     background-size: 100% 100%;
+    aspect-ratio: 960/881;
         div.edh-col.col2.table-box {
         border: 2px solid $gold2;
         @include rfs(1.25rem, border-radius);
@@ -685,8 +686,8 @@ div#section-table.edh-section {
                 }
             }
             div#table-inrow-1 {
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
+                padding-top: 5% !important;
+                padding-bottom: 5% !important;
                     h2.table-h2 {
                     @include semi-bold($sofia-sans);
                     text-align: left;
@@ -698,8 +699,8 @@ div#section-table.edh-section {
                     }
             }
             div#table-inrow-2 {
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
+                padding-top: 5% !important;
+                padding-bottom: 5% !important;
                 background-color: rgba(255,255,255,0.05);
                 div.left {
                     padding-right: 105px;
@@ -720,8 +721,8 @@ div#section-table.edh-section {
                 }
             }
             div#table-inrow-3 {
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
+                padding-top: 5% !important;
+                padding-bottom: 5% !important;
                 h3.table-h3 {
                     @include semi-bold($sofia-sans);
                     text-align: left;
@@ -742,8 +743,8 @@ div#section-table.edh-section {
             }
             div#table-inrow-4 {
                 background-color: rgba(255,255,255,0.05);
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
+                padding-top: 5% !important;
+                padding-bottom: 5% !important;
                 h3.table-h3 {
                     @include bold($sofia-sans);
                     text-align: left;
@@ -755,8 +756,8 @@ div#section-table.edh-section {
                     }
             }
             div#table-inrow-5 {
-                padding-top: 5% !important;
-                padding-bottom: 3% !important;
+                padding-top: 6% !important;
+                padding-bottom: 5% !important;
                 h4.table-footer {
                     @include bold($sofia-sans);
                     text-align: left;
@@ -787,7 +788,7 @@ div#section-table.edh-section {
 div#section-os.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/os-animation-background-1920x1484.png");
     background-size: 100% !important;
-    height: 1484px;
+    /* height: 1484px; */
     background-position-y: 0px;
     background-position-x: center !important;
     /* background-color: #fff; */
@@ -796,6 +797,7 @@ div#section-os.edh-section {
     top: 0px;
     position: relative;
     z-index: 4;
+    aspect-ratio: 480/371;
     div.edh-col {
         h2.section-subhead {
             @include regular($sofia-sans);
@@ -892,10 +894,10 @@ div#section-needed.edh-section {
     background-size: 100% !important;
     background-position-y: 30px;
     background-position-x: center !important;
-    top: -81px;
+    top: -110px;
     margin: 0px !important;
     background-repeat: no-repeat !important;
-    height: 2807px;
+    /* height: 2807px; */
     background-color: #ffffff;
     margin-bottom: -80px !important;
     div#html-needed {
@@ -1421,22 +1423,22 @@ div#section-needed.edh-section {
 }
 /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
 div#section-qol.edh-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-image: url("/wp-content/themes/conall-child/images/qof-background-1920x719.png");
-        margin: 0 auto !important;
-        width: 100% !important;
-        padding: 0px;
-        position: relative;
-        background-position: center bottom !important;
-        background-repeat: no-repeat !important;
-        background-size: 100% !important;
-        height: 719px;
-        margin-bottom: -36px !important;
-        background-color: #fff;
-        top: -2px;
-        left: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(/wp-content/themes/conall-child/images/qof-background-1920x719.png);
+    margin: 0 auto !important;
+    width: 100% !important;
+    position: relative;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    height: 719px;
+    margin-bottom: -211px !important;
+    background-color: #fff;
+    top: -174px;
+    left: -1px;
+    aspect-ratio: 1920/719;
         div.wpb_wrapper {
             div#html-qol-box {
                 div.grid-container {
