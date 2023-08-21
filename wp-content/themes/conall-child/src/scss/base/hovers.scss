@@ -1,0 +1,14 @@
+@import "../base/colors";
+
+/* div.oas-nav-container,
+div.dlb-nav-container  {
+    transition: background-color 1000ms ease-in-out 150ms;
+} */
+
+div.oas-nav-container:hover,
+div.dlb-nav-container:hover {
+    cursor: pointer;
+    background: $darkpurple !important;
+}
+
+

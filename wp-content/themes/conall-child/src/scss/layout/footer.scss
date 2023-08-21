@@ -3,11 +3,14 @@
 @import "../../../node_modules/rfs/scss";
 
 /* ************ STICKY FOOTER SECTION ************ */
-
 footer {
+    display: none !important;
+}
+div#footer-today  {
     position: fixed !important;
     bottom: -2px;
     z-index: 1000 !important;
+    width: 100%;
     .edgtf-footer-inner > .edgtf-footer-bottom-holder {
         padding: 0 !important;
         .edgtf-three-columns>.edgtf-three-columns-inner {
@@ -38,6 +41,7 @@ footer {
         }
         div#footerblock1,
         div#footerblock3 {
+            width: calc(100% + 1.25px) !important;
             height: 55px;
             position: relative;
             top: 30px;
@@ -49,10 +53,147 @@ footer {
 
         }
         div#footerblock2 {
+            width: calc(100% + 1px) !important;
             height: 85px;
             @include footer-orange-grad-button();
             clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+            a.footer-link {
+                @include rfs(0.188rem, letter-spacing);
+                @include font-size(2rem);
+                position: relative;
+                top: 5px;
+            }
+        }
+        .footer-link {
+            color: $white !important;
+            @include semi-bold($sofia-sans);
+            @include font-size(1.5rem);
+            text-transform: capitalize;
+        }
+  }
+}
+
+div#footer-yesterday {
+    position: fixed !important;
+    bottom: -2px;
+    z-index: 1000 !important;
+    width: 100%;
+    .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+        padding: 0 !important;
+        .edgtf-three-columns>.edgtf-three-columns-inner {
+            margin: 0 !important;
+        }
+    }
+    .edgtf-footer-bottom-holder {
+        background-color: $trans !important;
+        .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+            padding: 0 !important;
+        }
+  }
+  .widget {
+        div.footer-block {
+            background-color: $blugrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div#footerblock2 {
+            clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+        }
+        div#footerblock3 {
+            clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+        }
+        div#footerblock2,
+        div#footerblock3 {
+            width: calc(100% + 1.25px) !important;
+            height: 55px;
+            position: relative;
+            top: 30px;
+            a.footer-link {
+                @include rfs(0.188rem, letter-spacing);
+                position: relative;
+                top: 6px;
+            }
+
+        }
+        div#footerblock1 {
+            width: calc(100% + 1px) !important;
+            height: 85px;
+            @include footer-orange-grad-button();
+            clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+            -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+            a.footer-link {
+                @include rfs(0.188rem, letter-spacing);
+                @include font-size(2rem);
+                position: relative;
+                top: 5px;
+            }
+        }
+        .footer-link {
+            color: $white !important;
+            @include semi-bold($sofia-sans);
+            @include font-size(1.5rem);
+            text-transform: capitalize;
+        }
+  }
+}
+
+div#footer-tomorrow {
+    position: fixed !important;
+    bottom: -2px;
+    z-index: 1000 !important;
+    width: 100%;
+    .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+        padding: 0 !important;
+        .edgtf-three-columns>.edgtf-three-columns-inner {
+            margin: 0 !important;
+        }
+    }
+    .edgtf-footer-bottom-holder {
+        background-color: $trans !important;
+        .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+            padding: 0 !important;
+        }
+  }
+  .widget {
+        div.footer-block {
+            background-color: $blugrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div#footerblock1 {
+            clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+        }
+        div#footerblock2 {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+        }
+        div#footerblock1,
+        div#footerblock2 {
+            width: calc(100% + 1.25px) !important;
+            height: 55px;
+            position: relative;
+            top: 30px;
+            a.footer-link {
+                @include rfs(0.188rem, letter-spacing);
+                position: relative;
+                top: 6px;
+            }
+
+        }
+        div#footerblock3 {
+            width: calc(100% + 1px) !important;
+            height: 85px;
+            @include footer-orange-grad-button();
+            clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+            -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
@@ -88,7 +229,9 @@ footer {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
-    footer {
+    footer#footer-today,
+    footer#footer-tomorrow,
+    footer#footer-yesterday {
         display: none !important;
     }
 }
