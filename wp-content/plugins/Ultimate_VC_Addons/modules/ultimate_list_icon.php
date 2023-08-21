@@ -467,7 +467,7 @@ if ( ! class_exists( 'Ultimate_VC_Addons_List_Icon' ) ) {
 			$icon_animation      = '';
 			$icon_link           = '';
 
-			$output .= '<div class="uavc-list-content" id="' . esc_attr( $list_icon_id ) . '">';
+			$output .= '<div class="uavc-list-content fade-item" id="' . esc_attr( $list_icon_id ) . '">';
 
 			if ( '' !== $ult_icon_list_item_settings['icon'] || '' !== $ult_icon_list_item_settings['icon_img'] ) {
 				if ( 'custom' == $ult_icon_list_item_settings['icon_type'] ) {
