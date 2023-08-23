@@ -1,1 +1,2 @@
 elevar_da_ms_cinemagraph_test.mp4 filter=lfs diff=lfs merge=lfs -text
+elevar_da_ms_4k_animation.mp4 filter=lfs diff=lfs merge=lfs -text
