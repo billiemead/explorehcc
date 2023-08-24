@@ -83,25 +83,47 @@ header.edgtf-mobile-header {
 /* ************ SECTION PAGE WIDTH ************ */
 div.edh-col.col1 {
     margin: 0 auto !important;
-    @include rfs(81.25rem, max-width);
+    @include rfs(82.5rem, max-width);
     float: unset;
     padding: 0 !important;
 }
 div.edh-col.col2 {
     margin: 0 auto !important;
-    max-width: 1485px !important;
+    @include rfs(92.813rem, max-width);
     float: unset;
     padding: 0 !important;
 }
 div.edh-col.col3 {
     margin: 0 auto !important;
-    max-width: 763px !important;
+    max-width: 763px;
     float: unset;
     padding: 0 !important;
 }
 div.edh-col.col-hs {
     margin: 0 auto !important;
-    max-width: 1330px !important;
+    @include rfs(83.125rem, max-width);
+    float: unset;
+    padding: 0 !important;
+    display: flex;
+    margin: 0 auto !important;
+    justify-content: center;
+    align-items: center;
+}
+div.edh-col.col4 {
+    margin: 0 auto !important;
+    @include rfs(84rem, max-width);
+    float: unset;
+    padding: 0 !important;
+}
+div.edh-col.col4 {
+    margin: 0 auto !important;
+    @include rfs(84rem, max-width);
+    float: unset;
+    padding: 0 !important;
+}
+DIV.edh-col.col2.table-box {
+    margin: 0 auto !important;
+    @include rfs(92.813rem, max-width);
     float: unset;
     padding: 0 !important;
 }

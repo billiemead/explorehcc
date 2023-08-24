@@ -841,7 +841,7 @@ if ( ! class_exists( 'Ultimate_VC_Addons' ) ) {
 			self::ultimate_register_style( 'ultimate-vc-addons-animate', 'animate' );
 			self::ultimate_register_style( 'ultimate-vc-addons_hotspot_rtl_css', UAVC_URL . 'assets/min-css/rtl-common' . $ext . '.css', true );
 			self::ultimate_register_style( 'ultimate-vc-addons-style', 'style' );
-			self::ultimate_register_style( 'ultimate-vc-addons-style-min', UAVC_URL . 'assets/min-css/ultimate.min' . $cssext . '.css', true );
+			self::ultimate_register_style( 'ultimate-vc-addons-style-min', UAVC_URL . 'assets/min-css/ultimate.css', true );
 			self::ultimate_register_style( 'ultimate-vc-addons-tooltip', 'tooltip' );
 
 			$ultimate_smooth_scroll = get_option( 'ultimate_smooth_scroll' );
