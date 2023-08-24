@@ -32,6 +32,75 @@ div#section-hero-outer {
         }
 }
 
+div#section-hero-outer-video {
+    z-index: 0;
+    margin: 0px !important;
+    background-size: 100% !important;
+    top: -4px;
+    aspect-ratio: 1920/620;
+    margin-bottom: -226px !important;
+    padding-bottom: 12% !important;
+    video.elevar-animation {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: visible;
+        object-fit: cover;
+        position: absolute;
+        top: -105px;
+        left: 0px;
+    }
+    .wpb_single_image .vc_figure {
+        width: 100%;
+    }
+    div.vc_single_image-wrapper.vc_box_border_grey {
+        width: 100%;
+    }
+    .wpb_single_image img {
+        width: 100%;
+    }
+}
+div#section-hero-cinemagraph {
+        padding-top: 24% !important;
+        padding-bottom: 24% !important;
+        z-index: 0;
+        margin: 0px !important;
+        background-size: 100% !important;
+        position: relative;
+        margin-bottom: -226px !important;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+}
+div#section-hero-outer-yesterday {
+        padding-top: 24% !important;
+        padding-bottom: 24% !important;
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
+        margin: 0px !important;
+        background-position: center -40px !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+        position: relative;
+        margin-bottom: -267px !important;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+}
 div#hero-subhead {
     left: 64%;
     position: fixed;

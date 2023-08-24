@@ -9,7 +9,7 @@ div#section-oas.edh-section { /* section */
     background-image: url("/wp-content/themes/conall-child/images/os-section-background-2-1920x1233.png") !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    background-size: 100% 100%!important;
+    background-size: 100% 100% !important;
     background-color: transparent;
     z-index: 2;
     aspect-ratio: 640/411;
@@ -68,7 +68,7 @@ div#section-oas.edh-section { /* section */
                         flex-direction: row;
                         justify-content: space-around;
                         padding: 0;
-                        max-width: 1260px;
+                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.oas-nav-container {
                             height: 190px;
@@ -142,8 +142,8 @@ div#section-livc.edh-section { /* section */
     background-repeat: no-repeat !important;
     background-position-y: -52px !important;
     background-position-x: center !important;
-    top: -85px;
-    margin-bottom: -133px !important;
+    top: -100px;
+    margin-bottom: -180px !important;
     z-index: 1;
     background-size: 109% 102%;
     div#col-livc { /* section HEADING column */
@@ -625,7 +625,7 @@ div#section-table.edh-section {
     margin-bottom: -120px !important;
     z-index: 2;
     background-size: 100% 100%;
-    aspect-ratio: 960/881;
+    /* aspect-ratio: 960/881; */
         div.edh-col.col2.table-box {
         border: 2px solid $gold2;
         @include rfs(1.25rem, border-radius);
@@ -1509,7 +1509,7 @@ div#section-liverfunct.edh-section {
     margin: 0px !important;
     background-repeat: no-repeat !important;
     z-index: 22;
-    margin-bottom: -65px !important;
+    margin-bottom: -80px !important;
     background-size: cover;
     div#col-liverfunct {
         margin-top: 7% !important;
@@ -1811,7 +1811,19 @@ div#section-liverfunct.edh-section {
 
     }
 }
-
+/* ************ TODAY HS FORM SECTION ************ */
+div#section-hsform-outer.edh-section {
+    background-image: url("/wp-content/themes/conall-child/images/hs-form-section-background-1920x1323.png");
+    background-position-y: 0px;
+    background-position-x: center !important;
+    top: 0px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 25;
+    background-size: cover;
+    margin-bottom: -1px !important;
+}
 /* ***** Grad Box **** */
 div.edh-box-container {
     div.edh-outerbox {

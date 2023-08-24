@@ -2,6 +2,405 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+/* ************ DOUBLE ICON NAV SECTION ************ */
+div#section-dlb-nav.edh-section { /* section */
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 240/91;
+    top: 0px;
+    /* ***** STICKY NAV **** */
+    div#col-dlb-nav /* section column */ {
+        margin-top: 325px !important;
+        div#nav-quadbox {
+            div.edh-outerbox.hs-box {
+                @include rfs(1.875rem, border-radius);
+                border-color: $white;
+                border-width: 2px;
+                max-width: 763px;
+                margin: 0 auto !important;
+                div.edh-innerbox.hs-box {
+                    @include rfs(1.25rem, border-radius);
+                    border: 2px solid $gold;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 0;
+                    /* max-width: 1260px; */
+                    box-sizing: border-box;
+                    div.dlb-nav-container {
+                        height: 190px;
+                        border: none;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(#525D66, #080124);
+                        div.dlb-nav-circle.hs-circle {
+                            border-radius: 100%;
+                            border: 2px solid $gold;
+                            width: 170px;
+                            height: 170px;
+                            background-color: $white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            top: -100px;
+                            aspect-ratio: 1/1;
+                            @include circle-shadow();
+                            img.dlb-icon {
+
+                            }
+                        }
+                        a.dlb-nav {
+                            display: flex;
+                            text-align: center;
+                            @include medium($sofia-sans);
+                            color: $white;
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                            @include font-size(1.125rem);
+                            @include rfs(1.375rem, line-height);
+                            margin-top: 100px;
+                            position: absolute;
+                            max-width: 175px;
+                        }
+                    }
+                    div#dlb-nav1 {
+                        border-top-left-radius: 27px;
+                        border-bottom-left-radius: 27px;
+                        @include form-gradient-white-screen();
+                    }
+                    div#dlb-nav2 {
+                        border-top-right-radius: 27px;
+                        border-bottom-right-radius: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ************ BASECAMP SECTION ************ */
+div#section-basecamp {
+    /* height: 2019px; */
+    background-color: $white;
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/basecamp-background-1920x2019.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    aspect-ratio: 640/673;
+    margin-top: -140px !important;
+    background-position-y: 18px !important;
+    div#col-basecamp {
+        margin-bottom: 6% !important;
+        div#bc-inner-row-copy {
+            div#basecamp-heading {
+                margin-top: 20% !important;
+                h1.section-heading {
+                @include semi-bold($sofia-sans);
+                text-align: left;
+                color: $purple;
+                @include font-size(3.375rem);
+                @include rfs(2.5rem, line-height);
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                margin-bottom: 2% !important;
+                }
+            }
+            div#basecamp-bodycopy {
+                p.basecamp-bodycopy {
+                max-width: 1114px;
+                @include light($sofia-sans);
+                text-align: left;
+                color: $copy;
+                @include font-size(1.5rem);
+                @include rfs(2.375rem, line-height);
+                letter-spacing: 0px;
+                margin-bottom: 2% !important;
+                    span.underline {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            div#basecamp-bodycopy::after {
+                content: "";
+                border: 2px solid $gold;
+                width: 150px;
+                position: relative;
+                left: 0;
+                display: flex;
+            }
+        }
+    }
+    div#col-basecamp-mtn {
+        div.wpb_wrapper {
+            display: flex;
+            flex-direction: column;
+            div.bc-innerrow {
+                display: flex;
+                width: 100%;
+                flex-basis: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10% !important;
+                position: relative;
+                left: -70px;
+                div.edgtf-full-section-inner {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    transition: 300ms;
+                    div.col-inner.left {
+                        min-width: 280px;
+                    }
+                    div.col-inner.left,
+                    div.col-inner.center,
+                    div.col-inner.right {
+                        width: 100%;
+                        height: 168px;
+                        display: flex;
+                        justify-content: center;
+                        align-self: center;
+                        @include form-gradient();
+                        div.basecamp-img {
+                            img {
+
+                            }
+                        }
+                        h3.decimal {
+                            @include bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(2.813rem);
+                            @include rfs(2.5rem, line-height);
+                            letter-spacing: 0;
+                            margin-top: 8px !important;
+                            margin-bottom: 2% !important;
+                                span.month {
+                                    @include font-size(1.5rem);
+                                }
+                                sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                                }
+                        }
+                        h4.mt-approved {
+                            @include regular($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(1.5rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 0;
+                            margin-top: -10px !important;
+                        }
+                    }
+                    div.col-inner-img {
+                        div#basecamp-img1 img{
+                            min-width: 639px;
+                        }
+                        div#basecamp-img2 img {
+                            min-width: 619px;
+                        }
+                        div#basecamp-img3 img {
+                            min-width: 639px;
+                        }
+                    }
+                }
+            }
+            div.bc-innerrow {
+                div.edh-col.col-inner.left {
+                    grid-area: 1 / 1 / 2 / 2;
+                    @include rfs(1.25rem, border-top-left-radius);
+                    @include rfs(1.25rem, border-bottom-left-radius);
+                    width: 217px !important;
+                    justify-self: end;
+                    div.wpb_wrapper {
+                        padding-top: 84px;
+                        padding-bottom: 84px;
+                    }
+                }
+                div.edh-col.col-inner.center {
+                    grid-area: 1 / 2 / 2 / 3;
+                    padding-top: 2.388rem;
+                    padding-bottom: 2.388rem;
+                    min-width: 367px;
+                }
+                div.edh-col.col-inner.right {
+                    grid-area: 1 / 3 / 2 / 4;
+                    @include form-gradient();
+                    @include rfs(1.25rem, border-top-right-radius);
+                    @include rfs(1.25rem, border-bottom-right-radius);
+                    padding-top: 2.388rem;
+                    padding-bottom: 2.388rem;
+                    min-width: 419px;
+                }
+                div.edh-col.col-inner.right::before {
+                    content: "";
+                    border-left: 1px solid $white;
+                    height: 93px;
+                    position: relative;
+                    left: 0;
+                }
+                div.edh-col.col-inner-img {
+                    grid-area: 1 / 1 / 2 / 2;
+                    /*  min-width: 640px; */
+                }
+            }
+            div#bc-inner-row2 {
+                div.edgtf-full-section-inner {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, auto);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                div.col-inner.fullwidth {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                }
+                div#col-basecamp-footnote {
+                    grid-area: 2 / 1 / 3 / 4;
+                    background: none;
+                    p.bc-footnote {
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $copy;
+                        @include font-size(0.875rem);
+                        @include rfs(1.25rem, line-height);
+                        letter-spacing: 0px;
+                        margin-left: 8% !important;
+                        margin-top: 2.5% !important;
+                    }
+                }
+                }
+            }
+            div#bc-inner-row3 {
+                div#inner-col7 {
+
+                }
+                div#inner-col8 {
+
+                }
+                div#inner-col9 {
+
+                }
+            }
+        }
+    }
+}
+
+/* ************ HEM RISK SECTION ************ */
+div#section-hemrisk.edh-section {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 32/14;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5% !important;
+    div#col-hem-risk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div#table-inrow-1 {
+            height: 450px;
+            border: 2px solid $gold;
+            @include rfs(1.25rem, border-radius);
+            @include form-gradient();
+            @include inner-box-shadow();
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 80px !important;
+            div#hem-risk-heading {
+                h1.section-heading {
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $gold;
+                    @include font-size(2.75rem);
+                    @include rfs(3rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+            }
+            div#hem-risk-bodycopy {
+                p.section-bodycopy {
+                    @include regular($sofia-sans);
+                    text-align: left;
+                    color: $white;
+                    @include font-size(1.5rem);
+                    @include rfs(2.375rem, line-height);
+                    letter-spacing: 0px;
+                    margin-bottom: 1.5% !important;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 55% !important;
+                        top: .005ex !important;
+                    }
+                }
+            }
+            div#hem-risk-subheading {
+                h2.section-subheading {
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $gold;
+                    @include font-size(2rem);
+                    @include rfs(2.5rem, line-height);
+                    letter-spacing: 0px;
+                    margin-top: 2% !important;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 60% !important;
+                        top: .005ex !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ************ YESTERDAY HS FORM SECTION ************ */
+div#section-hsform-outer-yes.edh-section {
+    background-image: url("/wp-content/themes/conall-child/images/hs-form-section-background-1920x1323.png");
+    background-position-y: 0px;
+    background-position-x: center !important;
+    top: 0px;
+    margin: 0px !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 25;
+    background-size: cover;
+    margin-top: -125px !important;
+    margin-bottom: -1px !important;
+}
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {

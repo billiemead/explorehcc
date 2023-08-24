@@ -1,4 +1,8 @@
 
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/mp4 .mov
+AddType video/webm .webm
 
 #Begin Really Simple Security
 Options -Indexes
