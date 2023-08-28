@@ -22,7 +22,7 @@ div.edgtf-sticky-header {
         border: 2px solid #F5C75D;
         padding: 0;
         ul#menu-main-navigation-4-icon-today-1 {
-            min-width: 1260px;
+            min-width: 1272px;
             display: flex;
             li.nav-main-links {
                 display: flex;
@@ -30,7 +30,7 @@ div.edgtf-sticky-header {
                 justify-content: space-around;
                 width: 25%;
                 div.oas-nav-container {
-                    height: 170px;
+                    height: 180px;
                     border: none;
                     display: flex;
                     flex-direction: column;
@@ -38,13 +38,13 @@ div.edgtf-sticky-header {
                     justify-content: flex-end;
                     align-items: center;
                     background: linear-gradient(#525D66, #080124);
-                    padding-bottom: 30px !important;
+                    padding-bottom: 20px !important;
                     a.oas-nav {
                         text-align: center;
                         @include medium($sofia-sans);
                         color: $white;
                         text-decoration: underline;
-                        text-transform: uppercase;
+                        /* text-transform: uppercase; */
                         @include font-size(1.125rem);
                         @include rfs(1.375rem, line-height);
                     }
@@ -74,16 +74,18 @@ div.edgtf-sticky-header
         @include rfs(1.25rem, border-radius);
         border: 2px solid #F5C75D;
         padding: 0;
+        left: -1px;
         ul#menu-main-navigation-2-icon-yesterday-1 {
-            min-width: 730px;
+            min-width: 714px;
             display: flex;
+            box-sizing: border-box;
             li.nav-main-links {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 width: 50%;
                 div.oas-nav-container {
-                    height: 170px;
+                    height: 180px;
                     border: none;
                     display: flex;
                     flex-direction: column;
@@ -91,7 +93,7 @@ div.edgtf-sticky-header
                     justify-content: flex-end;
                     align-items: center;
                     background: linear-gradient(#525D66, #080124);
-                    padding-bottom: 30px !important;
+                    padding-bottom: 20px !important;
                     a.oas-nav {
                         text-align: center;
                         @include medium($sofia-sans);
