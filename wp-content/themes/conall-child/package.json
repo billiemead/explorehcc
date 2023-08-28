@@ -10,6 +10,10 @@
     },
     "author": "",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thewhyse/elevar-da-microsite"
+    },
     "devDependencies": {
         "@babel/core": "^7.17.8",
         "@babel/preset-env": "^7.16.11",

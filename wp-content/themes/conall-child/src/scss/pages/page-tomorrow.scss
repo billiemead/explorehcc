@@ -2,6 +2,255 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+/* ************ DOUBLE ICON NAV SECTION ************ */
+div#section-euhcc { /* section */
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 960/341;
+    top: 0px;
+    div#col-euhcc { /* section column */
+        div#euhcc-heading {
+            margin-top: 20% !important;
+            h1.section-heading {
+                @include semi-bold($sofia-sans);
+                text-align: left;
+                color: $gold;
+                @include font-size(3.375rem);
+                @include rfs(2.5rem, line-height);
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 2% !important;
+            }
+        }
+        div#euhcc-bodycopy {
+            p.section-bodycopy {
+            max-width: 1291px;
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $white;
+            @include font-size(1.5rem);
+            @include rfs(2.375rem, line-height);
+            letter-spacing: 0px;
+                sub.subscript {
+                vertical-align: super !important;
+                font-size: 65% !important;
+                top: .005ex !important;
+                }
+            }
+        }
+    }
+}
+
+/* ************ NEXT GEN SECTION ************ */
+div#section-nexgen {
+    background-color: $white;
+    aspect-ratio: 1920/1600;
+    margin-top: -80px !important;
+    div#col-nexgen {
+        div#nextgen-row1 {
+            div#col-nexgen-heading {
+            margin-top: 8% !important;
+                h2.section-heading {
+                    max-width: 1105px;
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    @include font-size(3.375rem);
+                    @include rfs(3.25rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                }
+                h2.section-heading:after {
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                    margin-top: 38px;
+                }
+            }
+        }
+        div#nextgen-row2 {
+            margin-top: -175px !important;
+        }
+        div#nextgen-row3 {
+            margin-top: -200px !important;
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-wrap: wrap;
+                div#col-nexgen-stats-left {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    div#nextgen-grey-arrow {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            transform: translateX(35px);
+                        }
+                    }
+                }
+                div#col-nexgen-stats-right {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    margin-bottom: 1% !important;
+                    transform: translateX(-100px);
+                    div.nexgen-stats {
+
+                    }
+                    p.stats-bodycopy {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            @include font-size(2rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 3px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    p {
+                    text-align: left;
+                        span.stats-percentage {
+                            @include regular($sofia-sans);
+                            text-align: left;
+                            color: $orange1;
+                            @include font-size(6.25rem);
+                            @include rfs(6.25rem, line-height);
+                            letter-spacing: 0;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+                div#col-nexgen-stats-fullwidth {
+                    display: flex;
+                    flex-basis: 100%;
+                    width: 100%;
+                    h3.section-subheading {
+                        @include regular($sofia-sans);
+                        text-align: center;
+                        color: $copy;
+                        @include font-size(2rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 3px;
+                        b.bold {
+                            font-weight: 800 !important;
+                        }
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ************ FUTURE TREATMENT SECTION ************ */
+div#section-future-treat {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/future-treatment-background-1920x1318.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 960/659;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -85px !important;
+    div#col-future-treat {
+        div#table-inrow-1 {
+            max-height: 550px;
+            border: 2px solid $gold;
+            @include rfs(1.25rem, border-radius);
+            @include form-gradient();
+            @include inner-box-shadow();
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 55px 200px 60px 200px !important;
+            margin-top: 6% !important;
+            /* transform: translateX(15px); */
+            div#future-treat-heading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1.section-heading {
+                    @include semi-bold($sofia-sans);
+                    text-align: center;
+                    color: $white;
+                    @include font-size(3.375rem);
+                    @include rfs(3.375rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+                h1.section-heading:after {
+                    margin: 0 auto !important;
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                    margin-top: 30px !important;
+                    margin-bottom: 55px !important;
+                }
+            }
+            div#future-treat-bodycopy {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p.section-bodycopy {
+                    @include semi-bold($sofia-sans);
+                    text-align: center;
+                    color: $white;
+                    @include font-size(1.5rem);
+                    @include rfs(2.375rem, line-height);
+                    letter-spacing: 0px;
+                    margin-bottom: 2.5% !important;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                    span.yellow-copy {
+                        color: $gold;
+                    }
+                }
+            }
+    }
+    }
+}
+
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }
