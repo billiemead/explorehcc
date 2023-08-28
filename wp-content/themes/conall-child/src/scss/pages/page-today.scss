@@ -187,16 +187,23 @@ div#section-livc.edh-section { /* section */
         }
     }
     div#col-livc-stats {
-        div#livc-stats { /* STATS section column */
+        div.livc-stats { /* STATS section column */
             margin: 0 auto !important;
             padding-top: 7% !important;
-            h3.section-stats {
-                color: $purple;
-                @include regular($sofia-sans);
-                text-align: center;
-                @include font-size(6.25rem);
-                @include rfs(6rem, line-height);
-                letter-spacing: 0px;
+            div.aio-icon-top,
+            div.stats-text {
+                display: none !important;
+            }
+            div.stats-desc {
+                div.counter_prefix,
+                div.stats-number {
+                    color: $purple;
+                    @include regular($sofia-sans);
+                    text-align: center;
+                    @include font-size(6.25rem !important);
+                    @include rfs(6rem !important, line-height);
+                    letter-spacing: 0px;
+                }
             }
         }
         div#livc-stats2 {

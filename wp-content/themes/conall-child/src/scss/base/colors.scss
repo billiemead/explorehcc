@@ -31,6 +31,10 @@ $purbox2:#746ba0 ;
 $purbox3:#625894 ;
 $purbox4:#524689 ;
 
+$nexgen-grad1: #5b6770;
+$nexgen-grad2: #32344a;
+$nexgen-grad3: #080124;
+
 @mixin os-anim-text-gradient(){
     text-shadow: 0px 3px 6px rgba(0,0,0,1);
 }
@@ -39,6 +43,13 @@ $purbox4:#524689 ;
 };
 @mixin form-gradient(){
     background: linear-gradient($blugrey, $darkpurple);
+};
+
+@mixin nexgen-form-gradient-top(){
+    background: linear-gradient($nexgen-grad1, $nexgen-grad2) !important;
+};
+@mixin nexgen-form-gradient-bottom(){
+    background: linear-gradient($nexgen-grad2, $nexgen-grad3) !important;
 };
 @mixin form-gradient-white-screen(){
     background: linear-gradient($blugreyscreen, $darkpurplescreen);
