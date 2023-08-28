@@ -62,14 +62,14 @@ div#footer-today  {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
                 position: relative;
-                top: 5px;
+                top: 0px;
             }
         }
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
             @include font-size(1.5rem);
-            text-transform: capitalize;
+            text-transform: none;
         }
   }
 }
@@ -130,14 +130,14 @@ div#footer-yesterday {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
                 position: relative;
-                top: 5px;
+                top: 0px;
             }
         }
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
             @include font-size(1.5rem);
-            text-transform: capitalize;
+            text-transform: none;
         }
   }
 }
@@ -198,14 +198,14 @@ div#footer-tomorrow {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
                 position: relative;
-                top: 5px;
+                top: 0px;
             }
         }
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
             @include font-size(1.5rem);
-            text-transform: capitalize;
+            text-transform: none;
         }
   }
 }

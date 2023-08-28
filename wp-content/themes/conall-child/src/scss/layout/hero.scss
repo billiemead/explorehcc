@@ -107,39 +107,45 @@ div#hero-subhead {
     top: 118px;
     .wpb_wrapper {
         text-align: left !important;
+        max-width: 700px;
     }
 }
 div#hero-subhead div.head-upper {
     color: $black !important;
     @include bold($sofia-sans);
-    font-size: 1.04vw;
-    line-height: 2.85vh;
+    font-size: 1.4vw;
+    line-height: 2.3vh;
     text-transform: uppercase;
     @include rfs(0.125rem, letter-spacing);
+    position: relative;
+    bottom: -7px;
+        span.lower {
+            text-transform: initial;
+        }
 }
 h1#hero-h1-1 {
-    font-size: 3.63vw;
+    font-size: 3.5vw;
     line-height: 4.2vw;
 }
 h1#hero-h1-2 {
     @include extra-bold($sofia-sans);
-    font-size: 5.21vw;
-    line-height: 2.25vw;
+    font-size: 4.77vw;
+    line-height: 3vw;
     @include rfs(0.25rem, letter-spacing);
 }
 h1#hero-h1-2 span.comma {
     @include regular($sofia-sans);
 }
 h1#hero-h1-3 {
-    font-size: 2.60vw;
-    line-height: 3.35vw;
+    font-size: 3.4vw;
+    line-height: 4vw;
     @include rfs(0.094rem, letter-spacing);
     left: 4px;
     position: relative;
 }
 h1#hero-h1-4 {
-    font-size: 4.8vw;
-    line-height: 5vh;
+    font-size: 6.2vw;
+    line-height: 5.75vh;
 }
 .hero-h1 {
     color: $purple !important;
@@ -153,7 +159,7 @@ h1#hero-h1-4 {
 div.toptab-container {
     transform: rotate(270deg);
     position: fixed;
-    left: -173px;
+    left: -181px;
     top: 235px;
 }
 a.toptab-link {

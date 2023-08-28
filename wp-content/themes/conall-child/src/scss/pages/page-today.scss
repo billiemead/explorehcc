@@ -27,18 +27,6 @@ div#section-oas.edh-section { /* section */
                 margin-bottom: 2% !important;
                 }
             }
-            div#oas-subheading {
-                h2.section-subheading {
-                @include regular($sofia-sans);
-                text-align: left;
-                color: $gold;
-                @include font-size(2rem);
-                @include rfs(2.5rem, line-height);
-                @include rfs(0.125rem, letter-spacing);
-                text-transform: uppercase;
-                margin-bottom: 2% !important;
-                }
-            }
             div#oas-bodycopy {
                 p.section-bodycopy {
                     @include regular($sofia-sans);
@@ -210,7 +198,7 @@ div#section-livc.edh-section { /* section */
             margin: 0 auto !important;
             padding-bottom: 40px !important;
             p.section-stats-copy {
-                width: 393px;
+                width: 390px;
                 color: $blugrey;
                 @include bold($sofia-sans);
                 margin: 0 auto !important;
@@ -284,7 +272,7 @@ div#section-livc.edh-section { /* section */
                     background-position-y: 0px !important;
                     background-position-x: 0px !important;
                     top: 0px;
-                    background-size: cover;
+                    background-size: inherit;
                     margin: 0 auto !important;
                     @include tricube-shadow();
                     h4#cube1-h4 {
@@ -294,6 +282,7 @@ div#section-livc.edh-section { /* section */
                         @include font-size(4.563rem);
                         @include rfs(2.688rem, line-height);
                         letter-spacing: 0px;
+                        margin-top: 15px !important;
                     }
                 }
                 div.livc-cube.two { /* quad column 2 */
@@ -305,7 +294,7 @@ div#section-livc.edh-section { /* section */
                     background-position-y: 0px !important;
                     background-position-x: 0px !important;
                     top: 0px;
-                    background-size: cover;
+                    background-size: contain;
                     margin: 0 auto !important;
                     @include tricube-shadow();
                     h4#cube2-h4 {
@@ -330,7 +319,7 @@ div#section-livc.edh-section { /* section */
                     background-position-y: 0px !important;
                     background-position-x: 0px !important;
                     top: 0px;
-                    background-size: cover;
+                    background-size: contain;
                     margin: 0 auto !important;
                     @include tricube-shadow();
                     h4#cube3-h4 {
@@ -1586,7 +1575,7 @@ div#section-liverfunct.edh-section {
         div#col-hemrisk-right {
             div#lvf-photo {
                 img.vc_single_image-img {
-                    max-width: 572px
+                    /* max-width: 572px */
                 }
             }
 
@@ -2118,6 +2107,136 @@ div#section-table.edh-section {
 }
 }
 @media all and (max-width: 1024px) {
+    /* ************ ONLY AS STRONG SECTION ************ */
+div#section-oas.edh-section { /* section */
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/os-section-background-2-1920x1233.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 640/411;
+        div#col-oas { /* section column */
+            margin-top: 275px !important;
+            div#oas-heading {
+                h1.section-heading {
+                @include regular($sofia-sans);
+                text-align: left;
+                color: $gold;
+                @include font-size(3.375rem);
+                @include rfs(2.5rem, line-height);
+                @include rfs(0.25rem, letter-spacing);
+                text-transform: uppercase;
+                margin-bottom: 2% !important;
+                }
+            }
+            div#oas-bodycopy {
+                p.section-bodycopy {
+                    @include regular($sofia-sans);
+                    text-align: left;
+                    color: $white;
+                    @include font-size(1.5rem);
+                    @include rfs(2.375rem, line-height);
+                    letter-spacing: 0px;
+                    padding-bottom: 25px !important;
+                }
+            }
+        }
+        /* ***** STICKY NAV **** */
+        div#col-nav-oas /* section column */ {
+            padding-top: 2% !important;
+            padding-bottom: 20% !important;
+            position: relative;
+            div#nav-quadbox {
+                div.edh-outerbox.hs-box {
+                    @include rfs(1.875rem, border-radius);
+                    border-color: $white;
+                    border-width: 2px;
+                    div.edh-innerbox.hs-box {
+                        @include rfs(1.25rem, border-radius);
+                        border: 2px solid $gold;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 0;
+                        /* max-width: 1260px; */
+                        box-sizing: border-box;
+                        div.oas-nav-container {
+                            /* height: 190px; */
+                            border: none;
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            justify-content: flex-start;
+                            align-items: center;
+                            background: linear-gradient(#525D66, #080124);
+                            padding: 25px 50px !important;
+                            box-sizing: border-box;
+                            div.oas-nav-circle.hs-circle {
+                                border-radius: 100%;
+                                border: 2px solid $gold;
+                                max-width: 125px;
+                                max-height: 125px;
+                                background-color: $white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+                                top: 0px;
+                                aspect-ratio: 1/1;
+                                @include circle-shadow();
+                                img.oas-icon {
+                                    max-width: 75%;
+                                    max-height: 75%;
+                                }
+                            }
+                            a.oas-nav {
+                                display: flex;
+                                text-align: left;
+                                @include medium($sofia-sans);
+                                color: $white;
+                                text-decoration: underline;
+                                /* text-transform: uppercase; */
+                                @include font-size(1.125rem);
+                                @include rfs(1.375rem, line-height);
+                                margin-top: 0px;
+                                position: relative;
+                                margin-left: 50px !important;
+                            }
+                        }
+                        div#oas-nav1 {
+                            border-top-left-radius: 27px;
+                            border-top-right-radius: 27px;
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                            @include form-gradient-white-screen();
+                        }
+                        div#oas-nav2 {
+                            img.oas-icon {
+                                position: relative;
+                                top: -3px;
+                            }
+                        }
+                        div#oas-nav3 {
+                            @include form-gradient-white-screen();
+                            img.oas-icon {
+                                max-width: 60%;
+                                max-height: 60%;
+                            }
+                        }
+                        div#oas-nav4 {
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                            border-bottom-left-radius: 27px;
+                            border-bottom-right-radius: 27px;
+                        }
+                    }
+                }
+            }
+        }
+}
 }
 @media all and (max-width: 960px) {
 }
