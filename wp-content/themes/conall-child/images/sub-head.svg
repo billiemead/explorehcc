@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517" height="383" viewBox="0 0 517 383">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5, .cls-6 {
+        fill: #493d7c;
+        font-weight: 800;
+      }
+
+      .cls-1 {
+        font-size: 74px;
+      }
+
+      .cls-1, .cls-6 {
+        font-family: SofiaSans-ExtraBold, Sofia Sans;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-3 {
+        font-family: SofiaSans-Medium, Sofia Sans;
+        font-weight: 500;
+      }
+
+      .cls-4 {
+        font-size: 53px;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: SofiaSans-Black, Sofia Sans;
+      }
+
+      .cls-5 {
+        font-size: 50px;
+      }
+
+      .cls-6 {
+        font-size: 92px;
+      }
+
+      .cls-7 {
+        font-size: 20px;
+        font-family: SofiaSans-Bold, Sofia Sans;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-8 {
+        filter: url(#To_achieve_peak_OS_every_measure_matters);
+      }
+    </style>
+    <filter id="To_achieve_peak_OS_every_measure_matters" x="0" y="0" width="517" height="172" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_515" data-name="Group 515" transform="translate(-1041 -307)">
+    <text id="To_achieve_peak_OS_every_measure_matters-2" data-name="To achieve peak OS, every measure matters" class="cls-1" transform="translate(1096 531)"><tspan class="cls-2" x="0" y="0">OF PEAK O</tspan><tspan y="0">S</tspan><tspan class="cls-3" y="0">,</tspan></text>
+    <text id="To_achieve_peak_OS_every_measure_matters-3" data-name="To achieve peak OS, every measure matters" class="cls-4" transform="translate(1099 467)"><tspan x="0" y="0">IN THE PURSUIT</tspan></text>
+    <text id="To_achieve_peak_OS_every_measure_matters-4" data-name="To achieve peak OS, every measure matters" class="cls-5" transform="translate(1101 583)"><tspan x="0" y="0">EVERY MEASURE</tspan></text>
+    <text id="To_achieve_peak_OS_every_measure_matters-5" data-name="To achieve peak OS, every measure matters" class="cls-6" transform="translate(1099 662)"><tspan x="0" y="0">MATTERS</tspan></text>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, 1041, 307)">
+      <text id="To_achieve_peak_OS_every_measure_matters-6" data-name="To achieve peak OS, every measure matters" class="cls-7" transform="translate(60 78)"><tspan x="0" y="0">WHEN TREATING UNRESECTABLE </tspan><tspan x="0" y="28">HEPATOCELLULAR CARCINOMA (uHCC)</tspan></text>
+    </g>
+  </g>
+</svg>

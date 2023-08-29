@@ -70,6 +70,7 @@ div#footer-today  {
             @include semi-bold($sofia-sans);
             @include font-size(1.5rem);
             text-transform: none;
+            text-align: center;
         }
   }
 }
@@ -138,6 +139,7 @@ div#footer-yesterday {
             @include semi-bold($sofia-sans);
             @include font-size(1.5rem);
             text-transform: none;
+            text-align: center;
         }
   }
 }

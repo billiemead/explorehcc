@@ -29,68 +29,157 @@ if (!class_exists('ConallEdgeClassMobileNavigationWalker')) {
 			$output .= "$indent</ul>" ."\n";
 		}
 
-		// add main/sub classes to li's and links
-		function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+        // add main/sub classes to li's and links
+        // add main/sub classes to li's and links
+        function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
+        {
 
-			$sub = "";
-			$indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' ); // code indent
-			if($depth >=0 && $args->has_children) :
-				$sub = ' has_sub';
-			endif;
+            $sub = "";
+            $indent = ($depth > 0 ? str_repeat("\t", $depth) : ''); // code indent
+            if ($depth == 0 && $args->has_children) :
+                $sub = ' has_sub';
+            endif;
+            if ($depth == 1 && $args->has_children) :
+                $sub = 'sub';
+            endif;
 
-			// passed classes
-			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
+            // passed classes
+            $classes = empty($item->classes) ? array() : (array) $item->classes;
 
-			$class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
+            $class_names = esc_attr(implode(
+                ' ',
+                apply_filters('nav_menu_css_class', array_filter($classes), $item)
+            ));
 
-			$anchor = '';
-			if($item->anchor != ""){
-				$anchor = '#'.esc_attr($item->anchor);
-			}
+            //menu type class
+            $menu_type = "";
+            if ($depth == 0) {
+                if ($item->type_menu == "wide") {
+                    $menu_type = " wide";
+                } else {
+                    $menu_type = " narrow";
+                }
+            }
 
-			$active = "";
-			// depth dependent classes
-			if ($item->anchor == "" && (($item->current && $depth == 0) ||  ($item->current_item_ancestor && $depth == 0))):
-				$active = 'edgtf-active-item';
-			endif;
+            //wide menu position class
+            $wide_menu_position = "";
+            if ($depth == 0) {
+                if ($item->wide_position == "right") {
+                    $wide_menu_position = " right_position";
+                } elseif ($item->wide_position == "left") {
+                    $wide_menu_position = " left_position";
+                } else {
+                    $wide_menu_position = "";
+                }
+            }
 
-			// build html
-			$output .= $indent . '<li id="mobile-menu-item-'. $item->ID . '" class="' . $class_names . ' ' . $active . $sub .'">';
+            $anchor = '';
+            if ($item->anchor != ""
+            ) {
+                $anchor = '#' . esc_attr($item->anchor);
+                $class_names .= ' anchor-item';
+            }
 
-			$current_a = "";
-			// link attributes
-			$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-			$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-			$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-			$attributes .= ' href="'   . esc_attr( $item->url        ) .$anchor.'"';
-			if (($item->current && $depth == 0) ||  ($item->current_item_ancestor && $depth == 0) ):
-				$current_a .= ' current ';
-			endif;
+            $active = "";
+            // depth dependent classes
+            if ($item->anchor == "" && (($item->current && $depth == 0) || ($item->current_item_ancestor && $depth == 0))) :
+                $active = 'edgtf-active-item';
+            endif;
 
-			$attributes .= ' class="'. $current_a . '"';
-			$item_output = $args->before;
-			if($item->hide == ""){
-				if($item->nolink == ""){
-					$item_output .= '<a'. $attributes .'>';
-				}else{
-					$item_output .= '<h6>';
+            // build html
+            $output .= $indent . '<li id="sticky-nav-menu-item-' . $item->ID . '" class="' . $class_names . ' ' . $active . $sub . $menu_type . $wide_menu_position . '">';
+
+
+            /* ==$icon = '';
+				if($item->icon !== "" && $item->icon !== 'null') {
+					$icon = $item->icon;
 				}
-				$item_output .= $args->link_before .apply_filters( 'the_title', $item->title, $item->ID );
-				$item_output .= $args->link_after;
-				if($item->nolink == ""){
-					$item_output .= '</a>';
-				} else {
-					$item_output .= '</h6>';
+
+				$icon_pack = 'font_awesome';
+
+				if(empty($this->icon_pack)) {
+					$item->icon_pack = $icon_pack;
 				}
 
-				if($args->has_children) {
-					$item_output .= '<span class="mobile_arrow"><i class="edgtf-sub-arrow fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>';
-				}
-			}
-			$item_output .= $args->after;
+				if($icon !== '') {
+					if($item->icon_pack == 'font_awesome') {
+						$icon .= ' fa';
+					}
 
-			// build html
-			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-		}
+					$item_output .= '<span class="menu_icon_wrapper"><i class="menu_icon '.$icon.'"></i></span>';
+				} */
+
+
+
+
+            $current_a = "";
+            // link attributes
+            $attributes  = !empty($item->attr_title) ? ' title="'  . esc_attr($item->attr_title) . '"' : '';
+            $attributes .= !empty($item->target)     ? ' target="' . esc_attr($item->target) . '"' : '';
+            $attributes .= !empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn) . '"' : '';
+            $attributes .= ' href="'   . esc_attr($item->url) . $anchor . '"';
+            if (($item->current && $depth == 0) ||  ($item->current_item_ancestor && $depth == 0)) :
+                $current_a .= ' current ';
+            endif;
+
+            $no_link_class = '';
+            if ($item->nolink != '') {
+                $no_link_class = ' no_link';
+            }
+
+            $attributes .= ' class="' . $current_a . $no_link_class . '"';
+            $item_output = $args->before;
+
+            $item_output .= '<div class="oas-nav-container">';
+            $item_output .= '<div class="oas-nav-circle hs-circle">';
+            /* $item_output .= '<img class="oas-icon"  src="/wp-content/themes/conall-child/images/icon-liver-128x84.png" >'; */
+
+            $featured_icon = '';
+            if ($item->featured_icon !== "") {
+                $featured_icon .= '<img class="oas-icon" src=' . $item->featured_icon . ' />';
+            }
+
+            $item_output .= $featured_icon;
+
+            $item_output .= '</div>';
+
+            if ($item->hide == "") {
+                if ($item->nolink == ""
+                ) {
+                    $item_output .= '<a class="oas-nav"' . $attributes . ' >';
+                } else {
+                    $item_output .= '<a class="oas-nav"' . $attributes . ' style="cursor: default;" onclick="JavaScript: return false;">';
+                }
+
+                /* $item_output .= '<a href="#"  class="oas-nav">'; */
+                $item_output .= apply_filters('the_title', $item->title, $item->ID);
+
+                // $item_output .= '<span class="plus"></span>';
+
+                //append arrow for dropdown
+
+                /* 	if($args->has_children && $depth == 0) {
+					$item_output .= '<i class="edgtf-menu-arrow fa fa-angle-down"></i>';
+				} */
+
+                $item_output .= '</a>';
+            }
+
+            $item_output .= '</div>'; //close div.oas-nav-container
+
+            if ($item->sidebar != "" && $depth > 0
+            ) {
+                ob_start();
+                dynamic_sidebar($item->sidebar);
+                $sidebar_content = ob_get_contents();
+                ob_end_clean();
+                $item_output .= $sidebar_content;
+            }
+
+            $item_output .= $args->after;
+
+            // build html
+            $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
+        }
 	}
 }
