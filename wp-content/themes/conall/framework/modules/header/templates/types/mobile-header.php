@@ -2,20 +2,24 @@
 
 <header class="edgtf-mobile-header">
     <div class="edgtf-mobile-header-inner">
-        <?php do_action( 'conall_edge_after_mobile_header_html_open' ) ?>
+        <?php do_action('conall_edge_after_mobile_header_html_open') ?>
         <div class="edgtf-mobile-header-holder">
             <div class="edgtf-grid">
                 <div class="edgtf-vertical-align-containers">
-                    <?php if($show_navigation_opener) : ?>
+                    <?php if ($show_navigation_opener) : ?>
                         <div class="edgtf-mobile-menu-opener">
                             <a href="javascript:void(0)">
-                    <span class="edgtf-mobile-opener-icon-holder">
-                        <?php echo conall_edge_get_module_part($menu_opener_icon); ?>
-                    </span>
+                                <span class="edgtf-mobile-opener-icon-holder">
+                                    <div class="edh-outerbox hs-box">
+                                        <!--<?php // echo conall_edge_get_module_part($menu_opener_icon);
+                                            ?>-->
+                                        <img class="close-icon" src="/wp-content/themes/conall-child/images/mobile-nav-close-36x36.png" />
+                                    </div>
+                                </span>
                             </a>
                         </div>
                     <?php endif; ?>
-                    <?php if($show_logo) : ?>
+                    <?php if ($show_logo) : ?>
                         <div class="edgtf-position-center">
                             <div class="edgtf-position-center-inner">
                                 <?php conall_edge_get_mobile_logo(); ?>
@@ -24,7 +28,7 @@
                     <?php endif; ?>
                     <div class="edgtf-position-right">
                         <div class="edgtf-position-right-inner">
-                            <?php if(is_active_sidebar('edgtf-right-from-mobile-logo')) {
+                            <?php if (is_active_sidebar('edgtf-right-from-mobile-logo')) {
                                 dynamic_sidebar('edgtf-right-from-mobile-logo');
                             } ?>
                         </div>

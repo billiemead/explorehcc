@@ -1,3 +1,5 @@
 elevar_da_ms_4k_animation.mp4 filter=lfs diff=lfs merge=lfs -text
 elevar_da_ms_4k_animation.ogv filter=lfs diff=lfs merge=lfs -text
 elevar_da_ms_4k_animation.webm filter=lfs diff=lfs merge=lfs -text
+elevar_da_mountain_cinemagraph_1920x600.mp4 filter=lfs diff=lfs merge=lfs -text
+elevar_da_mountain_animation_1920x900.mp4 filter=lfs diff=lfs merge=lfs -text

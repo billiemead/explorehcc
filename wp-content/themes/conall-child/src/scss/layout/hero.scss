@@ -2,6 +2,35 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+/* ************ SIDE TABS ************ */
+div#section-sidetabs {
+    position: relative;
+    z-index: 50;
+    div#col-nav-sidetabs {
+        div.toptab-container {
+            transform: rotate(270deg);
+            position: fixed;
+            left: -181px;
+            top: 235px;
+        }
+        a.toptab-link {
+            color: $white;
+            @include padding(0.5rem 0.938rem);
+            @include semi-bold($sofia-sans);
+            text-transform: uppercase;
+            @include rfs(0.031rem, letter-spacing);
+            @include font-size(1.125rem);
+            background-color: $purple;
+        }
+        a#toptab-link1 {
+            @include rfs(0.625rem, border-bottom-left-radius);
+        }
+        a#toptab-link2 {
+            @include rfs(0.625rem, border-bottom-right-radius);
+        }
+    }
+}
+
 /* ************ HERO ************ */
 div#hero-bottom {
     position: absolute;
@@ -10,6 +39,9 @@ div#hero-bottom {
     width: 100%;
 }
 div#section-hero-outer {
+    z-index: 0;
+}
+/* div#section-hero-outer {
         padding-top: 24% !important;
         padding-bottom: 24% !important;
         background-attachment: fixed;
@@ -30,8 +62,14 @@ div#section-hero-outer {
         .wpb_single_image img {
             width: 100%;
         }
+} */
+div#subhead-svg {
+    position: fixed;
+    width: 432px;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
-
 div#section-hero-outer-video {
     z-index: 0;
     margin: 0px !important;
@@ -155,30 +193,6 @@ h1#hero-h1-4 {
     margin: 0;
 }
 
-/* ************ TOP TAB ************ */
-div.toptab-container {
-    transform: rotate(270deg);
-    position: fixed;
-    left: -181px;
-    top: 235px;
-}
-a.toptab-link {
-    color: $white;
-    @include padding(0.5rem 0.938rem);
-    @include semi-bold($sofia-sans);
-    text-transform: uppercase;
-    @include rfs(0.031rem, letter-spacing);
-    @include font-size(1.125rem);
-    background-color: $purple;
-}
-a#toptab-link1 {
-    @include rfs(0.625rem, border-bottom-left-radius);
-}
-a#toptab-link2 {
-    @include rfs(0.625rem, border-bottom-right-radius);
-}
-
-
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }
@@ -197,6 +211,40 @@ a#toptab-link2 {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    div#subhead-svg {
+        position: fixed;
+        width: 64%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    div#section-sidetabs {
+        display: none;
+    }
+    div#elevar-animation-mov {
+        display: none;
+    }
+    div#section-hero-outer {
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url("/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg");
+        margin: 0px !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative;
+        padding-top: 90% !important;
+        padding-bottom: 90% !important;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+    }
 }
 @media all and (max-width: 960px) {
 }
@@ -205,4 +253,39 @@ a#toptab-link2 {
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
+        div#subhead-svg {
+        position: fixed;
+        width: 64%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    div#section-sidetabs {
+        display: none;
+    }
+    div#elevar-animation-mov {
+        display: none;
+    }
+    div#section-hero-outer {
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url("/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg");
+        margin: 0px !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative;
+        padding-top: 0% !important;
+        padding-bottom: 00% !important;
+        aspect-ratio: 23/39;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+    }
 }

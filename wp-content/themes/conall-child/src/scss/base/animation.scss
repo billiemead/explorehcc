@@ -6,7 +6,9 @@ ul.uavc-list {
     }
 }
 
-
+div.wpb-content-wrapper {
+	scroll-behavior: smooth;
+}
 .fadein {
     animation: fadeIn 0.9s 1;
     animation-fill-mode: forwards;
