@@ -229,9 +229,13 @@ div#section-hsform.edh-section {
         }
     }
 }
-div#section-hsform-outer {
+div#section-hsform-outer,
+div#section-hsform-outer-yes,
+div#section-hsform-outer-tom {
     div#col-hubspot-ref {
-        div#hs-references {
+        div#hs-references,
+        div#hs-references-yesterday,
+        div#hs-references-tomorrow {
             p.section-references {
                 @include regular($sofia-sans);
                 @include font-size(0.75rem);
