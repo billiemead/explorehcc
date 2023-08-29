@@ -2157,7 +2157,7 @@ div#section-needed {
 }
 @media all and (min-width: 959px) {
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) {
     div#col-os-badges {
         display: none;
     }
@@ -2502,7 +2502,7 @@ div#section-table.edh-section {
         z-index: 1;
         background-size: 109% 102%;
         div#col-livc { /* section HEADING column */
-            margin-top: 11% !important;
+            margin-top: 22% !important;
             div#livc-heading {
                 h1.section-heading {
                 @include regular($sofia-sans);
@@ -3202,8 +3202,8 @@ div#section-table.edh-section {
         top: 0px;
         position: relative;
         z-index: 4;
-        aspect-ratio: 138/889;
-        background-position: center top !important;
+        aspect-ratio: 138/389;
+        background-position: center !important;
         background-size: cover !important;
         div.edh-col {
             h2.section-subhead {
@@ -3440,7 +3440,7 @@ div#section-table.edh-section {
             @include font-size(2rem);
             @include rfs(2.375rem, line-height);
             @include rfs(0.188rem, letter-spacing);
-            margin-top: 35%!important;
+            margin-top: 15%!important;
             margin-bottom: 15%!important;
                 span.light {
                 @include light($sofia-sans);
@@ -4050,12 +4050,11 @@ div#section-table.edh-section {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
-    height: 1000px;
     margin-bottom: 0px !important;
     background-color: #fff;
     top: 0px;
     left: -1px;
-    aspect-ratio: 960/407;
+    aspect-ratio: 50/62;
     justify-content: flex-start;
         div.edgtf-full-section-inner {
         display: flex;
@@ -5393,8 +5392,8 @@ div#section-table.edh-section {
         top: 0px;
         position: relative;
         z-index: 4;
-        aspect-ratio: 138/889;
-        background-position: center top !important;
+        aspect-ratio: 138/389;
+        background-position: center !important;
         background-size: cover !important;
         div.edh-col {
             h2.section-subhead {
@@ -6241,12 +6240,11 @@ div#section-table.edh-section {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
-    height: 1000px;
     margin-bottom: 0px !important;
     background-color: #fff;
     top: 0px;
     left: -1px;
-    aspect-ratio: 960/407;
+    aspect-ratio:  50/72;
     justify-content: flex-start;
         div.edgtf-full-section-inner {
         display: flex;
@@ -7116,6 +7114,7 @@ div#section-table.edh-section {
                 }
         }
         div#col-livc-cases {
+            aspect-ratio: 50/61;
             max-width: 870px !important;
             padding-bottom: 11% !important;
             padding-top: 20% !important;
@@ -7226,8 +7225,9 @@ div#section-table.edh-section {
         div#col-livc-people {
             margin-top: 15% !important;
             position: relative;
-            top: 250px;
+            top: 100px;
             div#livc-icon-people-inrow {
+                margin-bottom: 10% !important;
                 margin: 0 auto !important;
             }
                 div#livc-icon-people-col1 {
@@ -7250,8 +7250,8 @@ div#section-table.edh-section {
                         @include semi-bold($sofia-sans);
                         text-align: center;
                         color: $purple;
-                        @include font-size(2.75rem);
-                        @include rfs(6rem, line-height);
+                        font-size: 28px;
+                        line-height: 30px;
                         @include rfs(0.188rem, letter-spacing);
                         text-transform: uppercase;
                             sub.subscript {
@@ -7262,7 +7262,7 @@ div#section-table.edh-section {
                     }
                 }
                 #livc-icon-subheading {
-                    padding-top: 0px !important;
+                    padding-top: 16px !important;
                     padding-bottom: 35px !important;
                     max-width: 1100px !important;
                     margin: 0 auto !important;
@@ -7273,6 +7273,7 @@ div#section-table.edh-section {
                         @include font-size(2rem);
                         @include rfs(2.5rem, line-height);
                         @include rfs(0.125rem, letter-spacing);
+                        text-transform: uppercase;
                             sub.subscript {
                             vertical-align: super !important;
                             font-size: 75% !important;
@@ -7292,8 +7293,8 @@ div#section-table.edh-section {
                 }
         }
         div#col-hepcar { /* HEPATOCELLUALR CARCINOMA section column */
-            margin-top: 15% !important;
-            margin-bottom: 11% !important;
+            margin-top: 30% !important;
+            margin-bottom: 30% !important;
             div#livc-heading2 {
                 h1.section-heading {
                 @include regular($sofia-sans);
@@ -7590,7 +7591,7 @@ div#section-table.edh-section {
         top: 0px;
         position: relative;
         z-index: 4;
-        aspect-ratio: 138/889;
+        aspect-ratio: 138/789;
         background-position: center top !important;
         background-size: cover !important;
         div.edh-col {
@@ -8439,12 +8440,11 @@ div#section-table.edh-section {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
-    height: 1000px;
+    height: 960px;
     margin-bottom: 0px !important;
     background-color: #fff;
     top: 0px;
     left: -1px;
-    aspect-ratio: 960/407;
     justify-content: flex-start;
         div.edgtf-full-section-inner {
         display: flex;
