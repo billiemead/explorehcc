@@ -383,6 +383,15 @@ div#section-hsform-outer-tom {
     form#hsForm_433b63a0-598a-4597-92e2-9a626fc9649e fieldset.form-columns-2 {
         flex-wrap: wrap;
     }
+    div#col-hsform {
+    div.wpb_wrapper {
+            div.hbspt-form {
+                border: 1px solid $bordergrey;
+                padding: 20px;
+                border-radius: 28px;
+            }
+        }
+    }
     .hs-form-field {
         width: 100% !important;
         span {
@@ -464,4 +473,137 @@ div#section-hsform-outer-tom {
 }
 }
 @media all and (max-width: 480px) {
+        div.hs-form-field {
+    padding: 10px;
+    }
+    form#hsForm_433b63a0-598a-4597-92e2-9a626fc9649e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* width: 1110px; */
+    @include form-gradient();
+    border: 1px solid $bordergrey;
+    border-radius: 20px;
+    padding: 20px;
+    @include inner-box-shadow();
+    fieldset.form-columns-2 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: unset !important;
+        text-align: left;
+        margin-bottom: 0;
+        ul.no-list {
+            list-style: none;
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $white;
+            @include font-size(1rem);
+        }
+        input.hs-input,
+        select.hs-input {
+            /* width: 500px; */
+            padding: 0;
+            padding-left: 15px;
+            margin: 0;
+        }
+        select.hs-input {
+            width: 100%;
+        }
+    }
+    fieldset.form-columns-1 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: unset !important;
+        text-align: left;
+        margin-bottom: 20px;
+        ul.no-list {
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $white;
+            @include font-size(1rem);
+            list-style: none;
+        }
+        input.hs-input,
+        select.hs-input {
+            width: 500px;
+            padding: 0;
+            padding-left: 15px;
+            margin: 0;
+        }
+        ul.inputs-list {
+            list-style: none;
+            margin: 0;
+            li.hs-form-booleancheckbox {
+                /* width: 760px; */
+                input {
+                    width: unset;
+                    padding: 0;
+                    height: unset;
+                    margin: 0;
+                    margin-right: 15px;
+                }
+                span {
+                    @include regular($sofia-sans);
+                    text-align: left;
+                    color: $white;
+                    @include font-size(1rem);
+                    text-transform: lowercase;
+                    font-weight: 300 !important;
+                    a {
+                        color: $white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    fieldset.form-columns-3 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: unset !important;
+        text-align: left;
+        margin-bottom: 20px;
+        select#location-38967697-16fc-4ea8-a09a-5d56c0eda12f {
+            width: 125px;
+            margin-left: 25px;
+        }
+        ul.no-list {
+            list-style: none;
+            @include regular($sofia-sans);
+            text-align: left;
+            color: $white;
+            @include font-size(1rem);
+        }
+        input.hs-input,
+        select.hs-input {
+            width: 500px;
+            padding: 0;
+            padding-left: 15px;
+            margin: 0;
+        }
+    }
+    }
+    form#hsForm_433b63a0-598a-4597-92e2-9a626fc9649e fieldset.form-columns-2 {
+        flex-wrap: wrap;
+    }
+    div#col-hsform {
+    div.wpb_wrapper {
+            div.hbspt-form {
+                border: 1px solid $bordergrey;
+                padding: 20px;
+                border-radius: 28px;
+            }
+        }
+    }
+    .hs-form-field {
+        width: 100% !important;
+        span {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
 }

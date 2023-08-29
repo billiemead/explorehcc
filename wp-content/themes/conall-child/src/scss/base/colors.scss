@@ -88,6 +88,13 @@ $nexgen-grad3: #080124;
     box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.75);
 }
+
+@mixin inner-circle-shadow-dark(){
+    -webkit-box-shadow: 10px 10px 10px 6px rgba(0,0,0,35);
+    box-shadow: 10px 10px 10px 6px rgba(0,0,0,35);
+    -moz-box-shadow: 10px 10px 10px 6px rgba(0,0,0,35);
+}
+
 @mixin circle-shadow(){
     -webkit-box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
     box-shadow: 8px 8px 16px 9px rgba(0,0,0,0.8);
