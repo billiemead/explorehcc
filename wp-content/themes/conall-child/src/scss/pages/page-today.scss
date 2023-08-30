@@ -13,6 +13,7 @@ div#section-oas.edh-section { /* section */
     background-color: transparent;
     z-index: 2;
     aspect-ratio: 640/411;
+    transform: translateY(-155px);
         div#col-oas { /* section column */
             margin-top: 275px !important;
             div#oas-heading {
@@ -898,8 +899,11 @@ div#section-os.edh-section {
                             @include rfs(0.156rem, letter-spacing);
                         }
                 }
+                a.os-button-purple:hover {
+                    background-color: #4C3C95;
             }
         }
+    }
     }
 }
 /* ************ NEEDED SECTION ************ */
@@ -3320,9 +3324,9 @@ div#section-table.edh-section {
     }
     /* ************ NEEDED SECTION ************ */
     div#section-needed.edh-section {
-        background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
+        background-image: url("/wp-content/themes/conall-child/images/mob-needed-backg-741x8192.png");
         background-size: 100% !important;
-        background-position-y: 30px;
+        background-position-y: 0px;
         background-position-x: center !important;
         top: 0px;
         margin: 0px !important;
@@ -3331,6 +3335,7 @@ div#section-table.edh-section {
         background-color: #ffffff;
         margin-bottom: 0px !important;
         background-size: cover !important;
+        aspect-ratio: 741/3192;
         div#html-needed {
             padding-top: 22.5% !important;
             max-width: 1072px;
@@ -5443,17 +5448,6 @@ div#section-table.edh-section {
     }
     /* ************ NEEDED SECTION ************ */
     div#section-needed.edh-section {
-        background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
-        background-size: 100% !important;
-        background-position-y: 30px;
-        background-position-x: center !important;
-        top: 0px;
-        margin: 0px !important;
-        background-repeat: no-repeat !important;
-        /* height: 2807px; */
-        background-color: #ffffff;
-        margin-bottom: 0px !important;
-        background-size: cover !important;
         div#html-needed {
             padding-top: 22.5% !important;
             max-width: 1072px;
@@ -7577,17 +7571,7 @@ div#section-table.edh-section {
     }
     /* ************ NEEDED SECTION ************ */
     div#section-needed.edh-section {
-        background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
-        background-size: 100% !important;
-        background-position-y: 30px;
-        background-position-x: center !important;
-        top: 0px;
-        margin: 0px !important;
-        background-repeat: no-repeat !important;
-        /* height: 2807px; */
-        background-color: #ffffff;
-        margin-bottom: 0px !important;
-        background-size: cover !important;
+
         div#html-needed {
             padding-top: 15% !important;
             max-width: 1072px;

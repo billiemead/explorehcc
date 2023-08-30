@@ -6,6 +6,41 @@
 footer {
     display: none !important;
 }
+div#footer-today,
+div#footer-yesterday,
+div#footer-tomorrow {
+    .edgtf-footer-inner>.edgtf-footer-bottom-holder .edgtf-three-columns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edgtf-three-columns-inner {
+        display: flex;
+        width: 100%;
+    }
+
+    .edgtf-three-columns .edgtf-column {
+        display: flex;
+        flex-basis: 33.33%;
+        width: 33.33%;
+    }
+
+    .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+        display: flex;
+        width: 100%;
+
+        .widget_custom_html {
+            display: flex;
+            width: 100%;
+
+            .custom-html-widget {
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+}
 div#footer-today  {
     position: fixed !important;
     bottom: -2px;
@@ -47,6 +82,8 @@ div#footer-today  {
             top: 30px;
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
+                @include rfs(2.25rem, line-height);
+                @include font-size(1.5rem);
                 position: relative;
                 top: 6px;
             }
@@ -61,6 +98,7 @@ div#footer-today  {
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
+                @include rfs(2.25rem, line-height);
                 position: relative;
                 top: 0px;
             }
@@ -68,13 +106,11 @@ div#footer-today  {
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
-            @include font-size(1.5rem);
             text-transform: none;
             text-align: center;
         }
   }
 }
-
 div#footer-yesterday {
     position: fixed !important;
     bottom: -2px;
@@ -116,6 +152,8 @@ div#footer-yesterday {
             top: 30px;
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
+                @include rfs(2.25rem, line-height);
+                @include font-size(1.5rem);
                 position: relative;
                 top: 6px;
             }
@@ -128,22 +166,21 @@ div#footer-yesterday {
             clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
             -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
             a.footer-link {
-                @include rfs(0.188rem, letter-spacing);
-                @include font-size(2rem);
                 position: relative;
                 top: 0px;
+                @include rfs(0.188rem, letter-spacing);
+                @include rfs(2.25rem, line-height);
+                @include font-size(2rem);
             }
         }
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
-            @include font-size(1.5rem);
             text-transform: none;
             text-align: center;
         }
   }
 }
-
 div#footer-tomorrow {
     position: fixed !important;
     bottom: -2px;
@@ -185,6 +222,8 @@ div#footer-tomorrow {
             top: 30px;
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
+                @include rfs(2.25rem, line-height);
+                @include font-size(1.5rem);
                 position: relative;
                 top: 6px;
             }
@@ -199,6 +238,7 @@ div#footer-tomorrow {
             a.footer-link {
                 @include rfs(0.188rem, letter-spacing);
                 @include font-size(2rem);
+                @include rfs(2.25rem, line-height);
                 position: relative;
                 top: 0px;
             }
@@ -206,12 +246,11 @@ div#footer-tomorrow {
         .footer-link {
             color: $white !important;
             @include semi-bold($sofia-sans);
-            @include font-size(1.5rem);
             text-transform: none;
+            text-align: center;
         }
   }
 }
-
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
@@ -231,17 +270,848 @@ div#footer-tomorrow {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
-    div#footer-today,
-    div#footer-tomorrow,
-    div#footer-yesterday {
-        display: none !important;
-    }
 }
 @media all and (max-width: 960px) {
+    div#footer-today  {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock1,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                    line-height: 27px;
+                    font-size: 27px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock2 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 1px;
+                    font-size: 32px;
+                    line-height: 32px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-yesterday {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                    line-height: 27px;
+                    font-size: 27px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock1 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                a.footer-link {
+                    position: relative;
+                    top: 0px;
+                    letter-spacing: 1px;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-tomorrow {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock1,
+            div#footerblock2 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                    line-height: 27px;
+                    font-size: 27px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock3 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 1px;
+                    font-size: 32px;
+                    line-height: 32px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+            }
+    }
+    }
 }
 @media all and (max-width: 768px) {
+    div#footer-today  {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock1,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                   line-height: 22px;
+                    font-size: 22px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock2 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 1px;
+                    font-size: 26px;
+                    line-height: 26px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-yesterday {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                   line-height: 22px;
+                    font-size: 22px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock1 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                a.footer-link {
+                    position: relative;
+                    top: 0px;
+                    letter-spacing: 1px;
+                    line-height: 26px;
+                    font-size: 26px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-tomorrow {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock1,
+            div#footerblock2 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 1px;
+                   line-height: 22px;
+                    font-size: 22px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock3 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 1px;
+                    font-size: 26px;
+                    line-height: 26px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+            }
+    }
+    }
 }
 @media all and (max-width: 576px) {
+    div#footer-today  {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock1,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 0px;
+                    line-height: 19px;
+                    font-size: 19px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock2 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    font-size: 24px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-yesterday {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 0px;
+                    line-height: 19px;
+                    font-size: 19px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock1 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
+                a.footer-link {
+                    position: relative;
+                    top: 0px;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    font-size: 24px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-tomorrow {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock1,
+            div#footerblock2 {
+                width: calc(100% + 1.25px) !important;
+                height: 55px;
+                position: relative;
+                top: 30px;
+                a.footer-link {
+                    letter-spacing: 0px;
+                    line-height: 19px;
+                    font-size: 19px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock3 {
+                width: calc(100% + 1px) !important;
+                height: 85px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
+                a.footer-link {
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    font-size: 24px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+            }
+    }
+    }
 }
 @media all and (max-width: 480px) {
+    div#footer-today  {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 18px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 18px) 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 18px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 18px 13px);
+            }
+            div#footerblock1,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 61px;
+                position: relative;
+                top: 24px;
+                a.footer-link {
+                    letter-spacing: 0px;
+                    line-height: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock2 {
+                width: calc(100% + 1px) !important;
+                height: 87px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
+                -webkit-clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
+                a.footer-link {
+                    letter-spacing: 0.5px;
+                    font-size: 24px;
+                    line-height: 21px;
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-yesterday {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 16px 13px);
+            }
+            div#footerblock3 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2,
+            div#footerblock3 {
+                width: calc(100% + 1.25px) !important;
+                height: 61px;
+                position: relative;
+                top: 24px;
+                a.footer-link {
+                    line-height: 20px;
+                    font-size: 20px;
+                    letter-spacing: 0px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock1 {
+                width: calc(100% + 1px) !important;
+                height: 87px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 0px 0);
+                -webkit-clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 0px 0);
+                a.footer-link {
+                    position: relative;
+                    top: 0px;
+                    letter-spacing: 0.5px;
+                    line-height: 21px;
+                    font-size: 24px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+                text-align: center;
+            }
+    }
+    }
+    div#footer-tomorrow {
+        position: fixed !important;
+        bottom: -2px;
+        z-index: 1000 !important;
+        width: 100%;
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0 !important;
+            .edgtf-three-columns>.edgtf-three-columns-inner {
+                margin: 0 !important;
+            }
+        }
+        .edgtf-footer-bottom-holder {
+            background-color: $trans !important;
+            .edgtf-three-columns .edgtf-column .edgtf-column-inner {
+                padding: 0 !important;
+            }
+    }
+    .widget {
+            div.footer-block {
+                background-color: $blugrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div#footerblock1 {
+                clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+                -webkit-clip-path: polygon(100% 13px, 100% 100%, 0 100%, 0 0, 0 13px);
+            }
+            div#footerblock2 {
+                clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+                -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13px, calc(100% - 16px) 13px);
+            }
+            div#footerblock1,
+            div#footerblock2 {
+                width: calc(100% + 1.25px) !important;
+                height: 61px;
+                position: relative;
+                top: 24px;
+                a.footer-link {
+                    letter-spacing: 0px;
+                    line-height: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    top: 6px;
+                }
+
+            }
+            div#footerblock3 {
+                width: calc(100% + 1px) !important;
+                height: 87px;
+                @include footer-orange-grad-button();
+                clip-path: polygon(100% 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
+                -webkit-clip-path: polygon(100% 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
+                a.footer-link {
+                    position: relative;
+                    top: 0px;
+                    letter-spacing: 0.5px;
+                    line-height: 21px;
+                    font-size: 24px;
+                }
+            }
+            .footer-link {
+                color: $white !important;
+                @include semi-bold($sofia-sans);
+                text-transform: none;
+            }
+    }
+    }
 }

@@ -14,6 +14,7 @@ div#section-euhcc { /* section */
     z-index: 2;
     aspect-ratio: 960/341;
     top: 0px;
+    transform: translateY(-110px);
     div#col-euhcc { /* section column */
         div#euhcc-heading {
             margin-top: 20% !important;
@@ -284,7 +285,75 @@ div#section-hsform-outer-tom.edh-section {
 }
 
 /*** Responsive Max-Width ***/
+@media all and (max-width: 1500px) {
+    /* ************ DOUBLE ICON NAV SECTION ************ */
+    div#section-euhcc { /* section */
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 960/341;
+        top: 0px;
+        transform: translateY(-88px);
+    }
+
+}
+
+    /*** Responsive Max-Width ***/
+@media all and (max-width: 1300px) {
+    /* ************ DOUBLE ICON NAV SECTION ************ */
+    div#section-euhcc { /* section */
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 960/341;
+        top: 0px;
+        transform: translateY(-80px);
+    }
+}
+    /*** Responsive Max-Width ***/
+@media all and (max-width: 1025px) {
+    /* ************ DOUBLE ICON NAV SECTION ************ */
+    div#section-euhcc { /* section */
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 960/341;
+        top: 0px;
+        transform: translateY(-75px);
+    }
+}
+
+/*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    /* ************ DOUBLE ICON NAV SECTION ************ */
+    div#section-euhcc { /* section */
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 960/341;
+        top: 0px;
+        transform: translateY(-110px);
+    }
 }
 @media all and (max-width: 960px) {
 }
