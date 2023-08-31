@@ -2797,6 +2797,14 @@ div#section-qol.edh-section {
         margin-top: -22% !important;
             div#col-oas { /* section column */
                 margin-top: 275px !important;
+                p.hero-footnote {
+                font-size: 14px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                top: -70px;
+                letter-spacing: 1px;
+                }
                 div#oas-heading {
                     h1.section-heading {
                     @include regular($sofia-sans);
@@ -4921,6 +4929,14 @@ div#section-qol.edh-section {
         transform: translateY(0px);
             div#col-oas { /* section column */
                 margin-top: 275px !important;
+                p.hero-footnote {
+                font-size: 14px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                top: -60px;
+                letter-spacing: 1px;
+                }
                 div#oas-heading {
                     h1.section-heading {
                     @include regular($sofia-sans);
@@ -7031,7 +7047,7 @@ div#section-qol.edh-section {
         z-index: 2;
         margin-top: -22% !important;
             div#col-oas { /* section column */
-                margin-top: 275px !important;
+                margin-top: 175px !important;
                 div#oas-heading {
                     h1.section-heading {
                     @include regular($sofia-sans);
