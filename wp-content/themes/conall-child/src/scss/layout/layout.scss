@@ -65,7 +65,6 @@ header.edgtf-mobile-header {
     width: 80px !important;
     height: 80px !important;
     line-height: 73px !important;
-    @include rfs(4.688rem !important, line-height);
     @include font-size(1.875rem !important);
     background-color: $purple !important;
     border: 1px solid $purple !important;
