@@ -839,6 +839,33 @@ div#section-future-treat {
 @media all and (max-width: 960px) {
 }
 @media all and (max-width: 768px) {
+
+div#section-nexgen div#col-nexgen div#nextgen-row1 div#col-nexgen-heading {
+    margin-top: 18% !important;
+}
+        /* ************ DOUBLE ICON NAV SECTION ************ */
+        div#section-nexgen div#col-nexgen div#nextgen-row1 div#col-nexgen-heading h2.section-heading {
+            font-size: 44px;
+    line-height: 44px;
+}
+    div#section-euhcc { /* section */
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-mob-background-414x1093.png") !important;
+        aspect-ratio: 414/1093;
+        top: 0px;
+        transform: translateY(-110px);
+    }
+        div#section-euhcc div#col-euhcc div#euhcc-heading {
+        margin-top: 29% !important;
+        margin-bottom: 10% !important;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
+            font-size: 44px;
+    line-height: 44px;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
+    font-size: 25px;
+    line-height: 43px;
+    }
 }
 @media all and (max-width: 576px) {
 }
