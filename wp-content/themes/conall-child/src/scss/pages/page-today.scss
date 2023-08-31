@@ -1594,79 +1594,81 @@ div#section-needed.edh-section {
         padding-bottom: 18% !important;
     }
 }
-
 /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
 div#section-qol.edh-section {
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
-margin: 0 auto !important;
-position: relative;
-background-position: left !important;
-background-repeat: no-repeat !important;
-height: 815px;
-margin-bottom: 0px !important;
-top: 0px;
-left: 0px;
-justify-content: flex-start;
-aspect-ratio: 960/407;
-background-size: cover !important;
-width: auto !important;
-transform: translateY(-195px);
-    div.edgtf-full-section-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 286px!important;
-    width: 100%;
-    flex-basis: 100%;
-    position: absolute;
-    margin-bottom: 103px;
-        div#col-qol-left {
-            width: 600px !important;
-        }
-        div#col-qol-right {
-                background-color: #fff;
-                height: 409px;
-                justify-content: flex-start;
-                align-items: flex-start;
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
-                width: 950px !important;
-                position: absolute;
-                top: 0px;
-                left: 719px;
-                padding-right: 3% !important;
-                padding-left: 0.5% !important;
-                @include inner-box-shadow();
-            h1.section-heading {
-                @include bold($sofia-sans);
-                text-align: left;
-                color: $purple;
-                font-size: 32px;
-                line-height: 38px;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-                margin-top: 8% !important;
-                margin-bottom: 2% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+        margin: 0 auto !important;
+        position: relative;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        height: 815px;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        background-size: cover !important;
+        width: auto !important;
+        transform: translateY(-195px);
+        div.edgtf-full-section-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 286px!important;
+        width: 100%;
+        flex-basis: 100%;
+        position: absolute;
+        margin-bottom: 103px;
+            div#col-qol-left {
+                width: 600px !important;
             }
-            p.section-copy {
-                @include light($sofia-sans);
-                text-align: left;
-                color: $copy;
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: 0px;
-                sub.subscript {
-                    vertical-align: super !important;
-                    font-size: 65% !important;
-                    top: .005ex !important;
+            div#col-qol-right {
+                    background-color: #fff;
+                    height: 409px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    width: 950px !important;
+                    position: absolute;
+                    top: 0px;
+                    left: 719px;
+                    padding-right: 3% !important;
+                    padding-left: 0.5% !important;
+                    @include inner-box-shadow();
+                h1.section-heading {
+                    @include bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    font-size: 32px;
+                    line-height: 38px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-top: 8% !important;
+                    margin-bottom: 2% !important;
+                }
+                p.section-copy {
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $copy;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+                div#qol-mobile-image {
+                    display: none;
                 }
             }
         }
-    }
 }
 /* ************ LIVER FUNCTION SECTION ************ */
 div#section-liverfunct.edh-section {
@@ -2194,192 +2196,589 @@ div#section-needed {
 /*** Responsive Tablet ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
 }
-
 /*** Responsive Max-Width ***/
-
-@media all and (max-width: 1200px) {
-div#section-table.edh-section {
-    background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
-    background-size: 100% !important;
-    /* height: 1762px; */
-    padding-top: 11.5% !important;
-    padding-bottom: 275px !important;
-    background-position-y: 0px;
-    background-position-x: center !important;
-    background-color: transparent;
-    top: -2px;
-    width: 100%;
-    left: -1px;
-    margin: 0px !important;
-    background-repeat: no-repeat !important;
-   /*  margin-bottom: -100px !important; */
-        div.edh-col.col2.table-box {
-        border: 2px solid $gold2;
-        @include rfs(1.25rem, border-radius);
-        background: linear-gradient(#5a636d, #161030);
-        padding: 0 !important;
-            div.vc_row {
-                display: flex;
-                align-items: center;
-                padding: 0 5% 0 5% !important;
-                border-bottom: 1px solid $white;
-                div.edgtf-full-section-inner {
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
-                    div.vc_col-sm-6.left {
-                        width: 46% !important;
-                        padding-right: 80px;
-                    }
-                    div.vc_col-sm-6.right {
-                        width: 54% !important;
-                    }
-                    div.table-row {
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                            div.table-col-left {
-                                display: flex;
-                                width: 35%;
-                                p.table-percent {
-                                    @include regular($sofia-sans);
-                                    text-align: left;
-                                    color: $orange3;
-                                    @include font-size(4.188rem);
-                                    @include rfs(5rem, line-height);
-                                    letter-spacing: 0px;
-                                }
-                            }
-                            div.table-col-right {
-                                display: flex;
-                                width: 65%;
-                                max-width: 515px;
-                                p.table-copy {
-                                    @include regular($sofia-sans);
-                                    text-align: left;
-                                    color: $white;
-                                    @include font-size(1.5rem);
-                                    @include rfs(2.375rem, line-height);
-                                    letter-spacing: 0px;
-                                        sub.subscript {
-                                        vertical-align: super !important;
-                                        font-size: 75% !important;
-                                        top: .005ex !important;
-                                        }
-                                }
-                            }
-                    }
-
-                }
-                p.table-footnote {
-                    @include medium($sofia-sans);
-                    text-align: left;
-                    color: $white;
-                    @include font-size(1.25rem);
-                    @include rfs(1.5rem, line-height);
-                    letter-spacing: 0px;
-                    margin-top: 20px !important;
-                }
+@media all and (max-width: 1700px) {
+/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+div#section-qol.edh-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+        margin: 0 auto !important;
+        position: relative;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        height: 815px;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        background-size: cover !important;
+        width: auto !important;
+        transform: translateY(-195px);
+        div.edgtf-full-section-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 286px!important;
+        width: 100%;
+        flex-basis: 100%;
+        position: absolute;
+        margin-bottom: 103px;
+            div#col-qol-left {
+                width: 600px !important;
             }
-            div#table-inrow-1 {
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
-                    h2.table-h2 {
-                    @include semi-bold($sofia-sans);
-                    text-align: left;
-                    color: $white;
-                    @include font-size(2.125rem);
-                    @include rfs(3rem, line-height);
-                    letter-spacing: 0px;
-                    padding: 50px 0 50px 0;
-                    }
-            }
-            div#table-inrow-2 {
-                padding-top: 5% !important;
-                padding-bottom: 4% !important;
-                background-color: rgba(255,255,255,0.05);
-                div.left {
-                    padding-right: 105px;
-                }
-                h3.table-h3 {
-                    @include semi-bold($sofia-sans);
-                    text-align: center;
-                    color: $white;
-                    @include font-size(1.875rem);
-                    @include rfs(2.375rem, line-height);
-                    letter-spacing: 0px;
-                    padding: 50px 0 50px 0;
-                }
-                div.right {
-                    p.table-copy {
-                        max-width: 432px
-                    }
-                }
-            }
-            div#table-inrow-3 {
-                padding-top: 4% !important;
-                padding-bottom: 4% !important;
-                h3.table-h3 {
-                    @include semi-bold($sofia-sans);
-                    text-align: left;
-                    color: $white;
-                    @include font-size(1.875rem);
-                    @include rfs(2.375rem, line-height);
-                    letter-spacing: 0px;
-                    padding: 50px 0 50px 0;
-                }
-                div.right {
-                    div.wpb_text_column {
-                        margin-bottom: 3% !important;
-                    }
-                    p.table-copy {
-                        max-width: 515px
-                    }
-                }
-            }
-            div#table-inrow-4 {
-                background-color: rgba(255,255,255,0.05);
-                padding-top: 6% !important;
-                padding-bottom: 3% !important;
-                h3.table-h3 {
+            div#col-qol-right {
+                    background-color: #fff;
+                    height: 409px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    width: 900px !important;
+                    position: absolute;
+                    top: 0px;
+                    left: 719px;
+                    padding-right: 3% !important;
+                    padding-left: 0.5% !important;
+                    @include inner-box-shadow();
+                h1.section-heading {
                     @include bold($sofia-sans);
                     text-align: left;
-                    color: $white;
-                    @include font-size(1.875rem);
-                    @include rfs(2.375rem, line-height);
-                    letter-spacing: 0px;
-                    padding: 50px 0 50px 0 !important;
-                    }
-            }
-            div#table-inrow-5 {
-                padding-top: 3% !important;
-                padding-bottom: 2% !important;
-                h4.table-footer {
-                    @include bold($sofia-sans);
-                    text-align: left;
+                    color: $purple;
+                    font-size: 32px;
+                    line-height: 38px;
+                    letter-spacing: 3px;
                     text-transform: uppercase;
-                    color: $gold2;
-                    @include font-size(2.125rem);
-                    @include rfs(2.375rem, line-height);
-                    letter-spacing: 0px;
-                    padding: 50px 0 50px 0;
-                        sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 75% !important;
-                        top: .005ex !important;
-                        }
+                    margin-top: 8% !important;
+                    margin-bottom: 2% !important;
                 }
-                h5.table-footer {
-                    margin-top: 40px !important;
+                p.section-copy {
                     @include light($sofia-sans);
                     text-align: left;
-                    color: $white;
-                    @include font-size(1.25rem);
-                    @include rfs(1.5rem, line-height);
+                    color: $copy;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+                div#qol-mobile-image {
+                    display: none;
+                }
+            }
+        }
+}
+}
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1600px) {
+/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+div#section-qol.edh-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+        margin: 0 auto !important;
+        position: relative;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        height: 815px;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        background-size: cover !important;
+        width: auto !important;
+        transform: translateY(-195px);
+        div.edgtf-full-section-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 286px!important;
+        width: 100%;
+        flex-basis: 100%;
+        position: absolute;
+        margin-bottom: 103px;
+            div#col-qol-left {
+                width: 600px !important;
+            }
+            div#col-qol-right {
+                    background-color: #fff;
+                    height: 409px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    width: 725px !important;
+                    position: absolute;
+                    top: 0px;
+                    left: 719px;
+                    padding-right: 3% !important;
+                    padding-left: 0.5% !important;
+                    @include inner-box-shadow();
+                h1.section-heading {
+                    @include bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    font-size: 30px;
+                    line-height: 36px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-top: 6% !important;
+                    margin-bottom: 2% !important;
+                }
+                p.section-copy {
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $copy;
+                    font-size: 22px;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+                div#qol-mobile-image {
+                    display: none;
+                }
+            }
+        }
+}
+}
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1500px) {
+    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+    div#section-qol.edh-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+            margin: 0 auto !important;
+            position: relative;
+            background-position: left !important;
+            background-repeat: no-repeat !important;
+            height: 815px;
+            margin-bottom: 0px !important;
+            top: 0px;
+            left: 0px;
+            justify-content: flex-start;
+            aspect-ratio: 960/407;
+            background-size: cover !important;
+            width: auto !important;
+            transform: translateY(-195px);
+            div.edgtf-full-section-inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 286px!important;
+            width: 100%;
+            flex-basis: 100%;
+            position: absolute;
+            margin-bottom: 103px;
+                div#col-qol-left {
+                    width: 600px !important;
+                }
+                div#col-qol-right {
+                        background-color: #fff;
+                        height: 409px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        width: 725px !important;
+                        position: absolute;
+                        top: 0px;
+                        left: 719px;
+                        padding-right: 3% !important;
+                        padding-left: 0.5% !important;
+                        @include inner-box-shadow();
+                    h1.section-heading {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        font-size: 30px;
+                        line-height: 38px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        margin-top: 6% !important;
+                        margin-bottom: 2% !important;
+                    }
+                    p.section-copy {
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $copy;
+                        font-size: 22px;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    div#qol-mobile-image {
+                        display: none;
+                    }
                 }
             }
     }
 }
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1400px) {
+    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+    div#section-qol.edh-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+            margin: 0 auto !important;
+            position: relative;
+            background-position: left !important;
+            background-repeat: no-repeat !important;
+            height: 815px;
+            margin-bottom: 0px !important;
+            top: 0px;
+            left: 0px;
+            justify-content: flex-start;
+            aspect-ratio: 960/407;
+            background-size: cover !important;
+            width: auto !important;
+            transform: translateY(-195px);
+            div.edgtf-full-section-inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 286px!important;
+            width: 100%;
+            flex-basis: 100%;
+            position: absolute;
+            margin-bottom: 103px;
+                div#col-qol-left {
+                    width: 600px !important;
+                }
+                div#col-qol-right {
+                        background-color: #fff;
+                        height: 409px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        width: 640px !important;
+                        position: absolute;
+                        top: 0px;
+                        left: 719px;
+                        padding-right: 3% !important;
+                        padding-left: 0.5% !important;
+                        @include inner-box-shadow();
+                    h1.section-heading {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        font-size: 28px;
+                        line-height: 38px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        margin-top: 4% !important;
+                        margin-bottom: 1% !important;
+                    }
+                    p.section-copy {
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $copy;
+                        font-size: 23px;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    div#qol-mobile-image {
+                        display: none;
+                    }
+                }
+            }
+    }
+}
+@media all and (max-width: 1300px) {
+/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+div#section-qol.edh-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: none;
+        margin: 0 auto !important;
+        position: relative;
+        height: 100%;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        width: auto !important;
+        transform: translateY(-30px);
+        div.edgtf-full-section-inner {
+            margin: 0 !important;
+            position: relative;
+            div#col-qol-left {
+                display: none;
+            }
+            div#col-qol-right {
+            width: 100% !important;
+            padding: 0 !important;
+            height: 100% !important;
+            left: 0;
+            position: relative;
+            border-radius: 0;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            -moz-box-shadow: none;
+                h1.section-heading {
+                    @include bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    font-size: 28px;
+                    line-height: 34px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-top: 8% !important;
+                    margin-bottom: 2% !important;
+                }
+                p.section-copy {
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $copy;
+                    font-size: 24px;
+                    line-height: 38px;
+                    letter-spacing: 0px;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 65% !important;
+                        top: .005ex !important;
+                    }
+                }
+                div#qol-mobile-image {
+                    display: flex;
+                    width: 100%;
+                    figure.wpb_wrapper.vc_figure {
+                        width: 100%;
+                        div.vc_single_image-wrapper.vc_box_border_grey {
+                            width: 100%;
+                            img.vc_single_image-img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                div.wpb_text_column.wpb_content_element  {
+                    div.wpb_wrapper {
+                            padding-left: 15% !important;
+                            padding-right: 15% !important;
+                    }
+                }
+            }
+        }
+}
+}
+@media all and (max-width: 1200px) {
+    div#section-table.edh-section {
+        background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
+        background-size: 100% !important;
+        /* height: 1762px; */
+        padding-top: 11.5% !important;
+        padding-bottom: 275px !important;
+        background-position-y: 0px;
+        background-position-x: center !important;
+        background-color: transparent;
+        top: -2px;
+        width: 100%;
+        left: -1px;
+        margin: 0px !important;
+        background-repeat: no-repeat !important;
+    /*  margin-bottom: -100px !important; */
+            div.edh-col.col2.table-box {
+            border: 2px solid $gold2;
+            @include rfs(1.25rem, border-radius);
+            background: linear-gradient(#5a636d, #161030);
+            padding: 0 !important;
+                div.vc_row {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 5% 0 5% !important;
+                    border-bottom: 1px solid $white;
+                    div.edgtf-full-section-inner {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        div.vc_col-sm-6.left {
+                            width: 46% !important;
+                            padding-right: 80px;
+                        }
+                        div.vc_col-sm-6.right {
+                            width: 54% !important;
+                        }
+                        div.table-row {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                                div.table-col-left {
+                                    display: flex;
+                                    width: 35%;
+                                    p.table-percent {
+                                        @include regular($sofia-sans);
+                                        text-align: left;
+                                        color: $orange3;
+                                        @include font-size(4.188rem);
+                                        @include rfs(5rem, line-height);
+                                        letter-spacing: 0px;
+                                    }
+                                }
+                                div.table-col-right {
+                                    display: flex;
+                                    width: 65%;
+                                    max-width: 515px;
+                                    p.table-copy {
+                                        @include regular($sofia-sans);
+                                        text-align: left;
+                                        color: $white;
+                                        @include font-size(1.5rem);
+                                        @include rfs(2.375rem, line-height);
+                                        letter-spacing: 0px;
+                                            sub.subscript {
+                                            vertical-align: super !important;
+                                            font-size: 75% !important;
+                                            top: .005ex !important;
+                                            }
+                                    }
+                                }
+                        }
+
+                    }
+                    p.table-footnote {
+                        @include medium($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.25rem);
+                        @include rfs(1.5rem, line-height);
+                        letter-spacing: 0px;
+                        margin-top: 20px !important;
+                    }
+                }
+                div#table-inrow-1 {
+                    padding-top: 4% !important;
+                    padding-bottom: 4% !important;
+                        h2.table-h2 {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(2.125rem);
+                        @include rfs(3rem, line-height);
+                        letter-spacing: 0px;
+                        padding: 50px 0 50px 0;
+                        }
+                }
+                div#table-inrow-2 {
+                    padding-top: 5% !important;
+                    padding-bottom: 4% !important;
+                    background-color: rgba(255,255,255,0.05);
+                    div.left {
+                        padding-right: 105px;
+                    }
+                    h3.table-h3 {
+                        @include semi-bold($sofia-sans);
+                        text-align: center;
+                        color: $white;
+                        @include font-size(1.875rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        padding: 50px 0 50px 0;
+                    }
+                    div.right {
+                        p.table-copy {
+                            max-width: 432px
+                        }
+                    }
+                }
+                div#table-inrow-3 {
+                    padding-top: 4% !important;
+                    padding-bottom: 4% !important;
+                    h3.table-h3 {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.875rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        padding: 50px 0 50px 0;
+                    }
+                    div.right {
+                        div.wpb_text_column {
+                            margin-bottom: 3% !important;
+                        }
+                        p.table-copy {
+                            max-width: 515px
+                        }
+                    }
+                }
+                div#table-inrow-4 {
+                    background-color: rgba(255,255,255,0.05);
+                    padding-top: 6% !important;
+                    padding-bottom: 3% !important;
+                    h3.table-h3 {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.875rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        padding: 50px 0 50px 0 !important;
+                        }
+                }
+                div#table-inrow-5 {
+                    padding-top: 3% !important;
+                    padding-bottom: 2% !important;
+                    h4.table-footer {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        text-transform: uppercase;
+                        color: $gold2;
+                        @include font-size(2.125rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        padding: 50px 0 50px 0;
+                            sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 75% !important;
+                            top: .005ex !important;
+                            }
+                    }
+                    h5.table-footer {
+                        margin-top: 40px !important;
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.25rem);
+                        @include rfs(1.5rem, line-height);
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1025) {
+
 }
 @media all and (max-width: 1024px) {
     div#livc-purple-box-desktop {
@@ -2518,7 +2917,7 @@ div#section-table.edh-section {
     /* ************ LIVER CANCER SECTION ************ */
     div#section-livc.edh-section { /* section */
         /* height: 3347px; */
-        background-image: url("/wp-content/themes/conall-child/images/livc-backg-pattern-1920x3695.png");
+        background-image: url("/wp-content/themes/conall-child/images/mob-needed-backg-741x8192.png");
         background-color: $white !important;
         margin: 0px !important;
         padding: 0px !important;
@@ -3709,7 +4108,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -3971,7 +4369,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -4067,79 +4464,7 @@ div#section-table.edh-section {
             padding-bottom: 18% !important;
         }
     }
-    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
-    div#section-qol.edh-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
-    margin: 0 auto !important;
-    position: relative;
-    background-position: left !important;
-    background-repeat: no-repeat !important;
-    height: 815px;
-    margin-bottom: 0px !important;
-    top: 0px;
-    left: 0px;
-    justify-content: flex-start;
-    aspect-ratio: 960/407;
-    background-size: cover !important;
-    width: auto !important;
-    transform: translateY(-195px);
-        div.edgtf-full-section-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 286px!important;
-        width: 100%;
-        flex-basis: 100%;
-        position: absolute;
-        margin-bottom: 103px;
-            div#col-qol-left {
-                width: 600px !important;
-            }
-            div#col-qol-right {
-                    background-color: #fff;
-                    height: 409px;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    border-top-right-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                    width: 950px !important;
-                    position: absolute;
-                    top: 0px;
-                    left: 719px;
-                    padding-right: 3% !important;
-                    padding-left: 0.5% !important;
-                    @include inner-box-shadow();
-                h1.section-heading {
-                    @include bold($sofia-sans);
-                    text-align: left;
-                    color: $purple;
-                    font-size: 32px;
-                    line-height: 38px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    margin-top: 8% !important;
-                    margin-bottom: 2% !important;
-                }
-                p.section-copy {
-                    @include light($sofia-sans);
-                    text-align: left;
-                    color: $copy;
-                    font-size: 24px;
-                    line-height: 32px;
-                    letter-spacing: 0px;
-                    sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 65% !important;
-                        top: .005ex !important;
-                    }
-                }
-            }
-        }
-    }
+
     /* ************ LIVER FUNCTION SECTION ************ */
     div#section-liverfunct.edh-section {
         /* height: 2352px; */
@@ -4482,7 +4807,6 @@ div#section-table.edh-section {
                                             align-items: center;
                                             /* @include form-gradient(); */
                                             h4.qb-year {
-                                            /* order:2; */
                                             @include bold($sofia-sans);
                                             color: $white;
                                             font-size: 34px;
@@ -4594,6 +4918,7 @@ div#section-table.edh-section {
         background-color: transparent;
         z-index: 2;
         margin-top: -22% !important;
+        transform: translateY(0px);
             div#col-oas { /* section column */
                 margin-top: 275px !important;
                 div#oas-heading {
@@ -4716,17 +5041,17 @@ div#section-table.edh-section {
     /* ************ LIVER CANCER SECTION ************ */
     div#section-livc.edh-section { /* section */
         /* height: 3347px; */
-        background-image: url("/wp-content/themes/conall-child/images/livc-backg-pattern-1920x3695.png");
+        /* background-image: url("/wp-content/themes/conall-child/images/livc-backg-pattern-1920x3695.png"); */
         background-color: $white !important;
         margin: 0px !important;
         padding: 0px !important;
-        background-repeat: no-repeat !important;
+        background-repeat: repeat !important;
         background-position-y: -52px !important;
         background-position-x: center !important;
         top: 0px;
-        margin-bottom: -180px !important;
+        margin-bottom: 0px !important;
         z-index: 1;
-        background-size: 109% 102%;
+        background-size: 100%;
         div#col-livc { /* section HEADING column */
             margin-top: 11% !important;
             div#livc-heading {
@@ -5067,7 +5392,7 @@ div#section-table.edh-section {
         div#col-livc-people {
             margin-top: 15% !important;
             position: relative;
-            top: 200px;
+            top: 100px;
             div#livc-icon-people-inrow {
                 margin: 0 auto !important;
             }
@@ -5091,8 +5416,8 @@ div#section-table.edh-section {
                         @include semi-bold($sofia-sans);
                         text-align: center;
                         color: $purple;
-                        @include font-size(2.75rem);
-                        @include rfs(6rem, line-height);
+                        font-size: 32px;
+                        line-height: 34px;
                         @include rfs(0.188rem, letter-spacing);
                         text-transform: uppercase;
                             sub.subscript {
@@ -5133,7 +5458,7 @@ div#section-table.edh-section {
                 }
         }
         div#col-hepcar { /* HEPATOCELLUALR CARCINOMA section column */
-            margin-top: 15% !important;
+            margin-top: 150px !important;
             margin-bottom: 11% !important;
             div#livc-heading2 {
                 h1.section-heading {
@@ -5437,8 +5762,7 @@ div#section-table.edh-section {
                 line-height: 28px;
                 text-align: center;
                 letter-spacing: 3px;
-                text-transform: uppercase;
-                text-transform: uppercase;
+                /* text-transform: uppercase; */
                     sub.subscript {
                         vertical-align: super !important;
                         font-size: 55% !important;
@@ -5892,7 +6216,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -6154,7 +6477,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -6267,6 +6589,7 @@ div#section-table.edh-section {
         margin-bottom: -110px !important;
         margin-top: -65px !important;
         background-size: cover;
+        transform: translateY(-30px);
         div#col-liverfunct {
             margin-top: 20% !important;
             div#lvf-heading1 {
@@ -6595,7 +6918,6 @@ div#section-table.edh-section {
                                             align-items: center;
                                             /* @include form-gradient(); */
                                             h4.qb-year {
-                                            /* order:2; */
                                             @include bold($sofia-sans);
                                             color: $white;
                                             font-size: 34px;
@@ -6691,6 +7013,7 @@ div#section-table.edh-section {
         z-index: 25;
         background-size: cover;
         margin-bottom: -1px !important;
+        transform: translateY(0);
     }
 }
 @media all and (max-width: 576px) {
@@ -6700,7 +7023,7 @@ div#section-table.edh-section {
     div#section-oas.edh-section { /* section */
         margin: 0px !important;
         padding: 0px !important;
-        background-image: url("/wp-content/themes/conall-child/images/oas-mobile-backg-1242x4728.png") !important;
+        /* background-image: url("/wp-content/themes/conall-child/images/oas-mobile-backg-1242x4728.png") !important; */
         background-position: top !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
@@ -8016,7 +8339,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -8278,7 +8600,6 @@ div#section-table.edh-section {
                                             /* @include form-gradient(); */
 
                                             h4.qb-year {
-                                            order:2;
                                             @include regular($sofia-sans);
                                             color: $white;
                                             font-size: 18px;
@@ -8716,7 +9037,6 @@ div#section-table.edh-section {
                                             align-items: center;
                                             /* @include form-gradient(); */
                                             h4.qb-year {
-                                            /* order:2; */
                                             @include bold($sofia-sans);
                                             color: $white;
                                             font-size: 34px;

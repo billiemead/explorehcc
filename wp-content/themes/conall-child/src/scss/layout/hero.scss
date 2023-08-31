@@ -59,7 +59,6 @@ div#section-hero-outer {
         object-fit: cover;
         position: absolute;
         width: 100vw;
-        top: -2px;
         left: 0px;
         aspect-ratio: 1920/900;
         min-width: 100%;
@@ -87,9 +86,12 @@ div#section-hero-outer-video {
         object-fit: cover;
         position: absolute;
         width: 100vw;
-        top: -2px;
         left: 0px;
         aspect-ratio: 1920/920;
+        min-width: 100%;
+        position: fixed;
+        top:0;
+        z-index: -999;
     }
 }
 
@@ -200,11 +202,7 @@ div#hero-subhead div.head-upper {
 }
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
-    div#subhead-svg {
-        img.vc_single_image-img {
-            display: none;
-        }
-    }
+
     div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
