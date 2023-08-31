@@ -15,9 +15,10 @@ div#section-euhcc { /* section */
     aspect-ratio: 960/341;
     top: 0px;
     transform: translateY(-110px);
+    margin-bottom: -225px !important;
     div#col-euhcc { /* section column */
         div#euhcc-heading {
-            margin-top: 20% !important;
+            margin-top: 18% !important;
             h1.section-heading {
                 @include semi-bold($sofia-sans);
                 text-align: left;
@@ -58,7 +59,7 @@ div#section-nexgen {
             div#col-nexgen-heading {
             margin-top: 8% !important;
                 h2.section-heading {
-                    max-width: 1105px;
+                    max-width: 1090px;
                     @include semi-bold($sofia-sans);
                     text-align: left;
                     color: $purple;
@@ -248,6 +249,27 @@ div#section-future-treat {
                     }
                 }
             }
+            .learn-more-btn {
+                @include orange-grad-button();
+                @include button-shadow();
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 75px;
+                width: 235px;
+                border-radius: 15px;
+                margin: 0 auto !important;
+                span {
+                color: $white !important;
+                @include bold($sofia-sans);
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+                letter-spacing: 0;
+                }
+            }
     }
     }
 }
@@ -283,73 +305,423 @@ div#section-hsform-outer-tom.edh-section {
 /*** Responsive Tablet ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
 }
-
+/*** Responsive Max-Width ***/
+@media all and (max-width: 1600px) {
+    /* ************ DOUBLE ICON NAV SECTION ************ */
+    div#section-euhcc { /* section */
+        div#col-euhcc {
+            div#euhcc-heading {
+                margin-top: 15% !important;
+            }
+        }
+    }
+}
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1500px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-euhcc { /* section */
-        margin: 0px !important;
-        padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-color: transparent;
-        z-index: 2;
         aspect-ratio: 960/341;
         top: 0px;
         transform: translateY(-88px);
+        div#col-euhcc {
+            div#euhcc-heading {
+                margin-top: 11% !important;
+            }
+        }
     }
+    div#section-nexgen {
+    background-color: $white;
+    aspect-ratio: 1920/1600;
+    margin-top: 100px !important;
+    div#col-nexgen {
+        div#nextgen-row1 {
+            div#col-nexgen-heading {
+            margin-top: 8% !important;
+                h2.section-heading {
+                    max-width: 1090px;
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    @include font-size(3.375rem);
+                    @include rfs(3.25rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                }
+                h2.section-heading:after {
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                    margin-top: 38px;
+                }
+            }
+        }
+        div#nextgen-row2 {
+            margin-top: -175px !important;
+        }
+        div#nextgen-row3 {
+            margin-top: -200px !important;
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-wrap: wrap;
+                div#col-nexgen-stats-left {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    div#nextgen-grey-arrow {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            transform: translateX(35px);
+                        }
+                    }
+                }
+                div#col-nexgen-stats-right {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    margin-bottom: 1% !important;
+                    transform: translateX(-100px);
+                    div.nexgen-stats {
 
+                    }
+                    p.stats-bodycopy {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            @include font-size(2rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 3px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    p {
+                    text-align: left;
+                        span.stats-percentage {
+                            @include regular($sofia-sans);
+                            text-align: left;
+                            color: $orange1;
+                            @include font-size(6.25rem);
+                            @include rfs(6.25rem, line-height);
+                            letter-spacing: 0;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+                div#col-nexgen-stats-fullwidth {
+                    display: flex;
+                    flex-basis: 100%;
+                    width: 100%;
+                    h3.section-subheading {
+                        @include regular($sofia-sans);
+                        text-align: center;
+                        color: $copy;
+                        @include font-size(2rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 3px;
+                        b.bold {
+                            font-weight: 800 !important;
+                        }
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
+}
     /*** Responsive Max-Width ***/
 @media all and (max-width: 1300px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-euhcc { /* section */
-        margin: 0px !important;
-        padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-color: transparent;
-        z-index: 2;
         aspect-ratio: 960/341;
         top: 0px;
         transform: translateY(-80px);
     }
+    div#section-euhcc div#col-euhcc div#euhcc-heading {
+    margin-top: 14% !important;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
+        font-size: 2.5rem;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    div#section-nexgen {
+    background-color: $white;
+    aspect-ratio: 1920/1600;
+    margin-top: 120px !important;
+    div#col-nexgen {
+        div#nextgen-row1 {
+            div#col-nexgen-heading {
+            margin-top: 8% !important;
+                h2.section-heading {
+                    max-width: 1090px;
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    @include font-size(3.375rem);
+                    @include rfs(3.25rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                }
+                h2.section-heading:after {
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                    margin-top: 38px;
+                }
+            }
+        }
+        div#nextgen-row2 {
+            margin-top: -175px !important;
+        }
+        div#nextgen-row3 {
+            margin-top: -200px !important;
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-wrap: wrap;
+                div#col-nexgen-stats-left {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    div#nextgen-grey-arrow {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            transform: translateX(35px);
+                        }
+                    }
+                }
+                div#col-nexgen-stats-right {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    margin-bottom: 1% !important;
+                    transform: translateX(-100px);
+                    div.nexgen-stats {
+
+                    }
+                    p.stats-bodycopy {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            @include font-size(2rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 3px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    p {
+                    text-align: left;
+                        span.stats-percentage {
+                            @include regular($sofia-sans);
+                            text-align: left;
+                            color: $orange1;
+                            @include font-size(6.25rem);
+                            @include rfs(6.25rem, line-height);
+                            letter-spacing: 0;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+                div#col-nexgen-stats-fullwidth {
+                    display: flex;
+                    flex-basis: 100%;
+                    width: 100%;
+                    h3.section-subheading {
+                        @include regular($sofia-sans);
+                        text-align: center;
+                        color: $copy;
+                        @include font-size(2rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 3px;
+                        b.bold {
+                            font-weight: 800 !important;
+                        }
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }
     /*** Responsive Max-Width ***/
 @media all and (max-width: 1025px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-euhcc { /* section */
-        margin: 0px !important;
-        padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-color: transparent;
-        z-index: 2;
         aspect-ratio: 960/341;
         top: 0px;
         transform: translateY(-75px);
     }
+    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
+        font-size: 1.75rem;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    div#section-nexgen {
+    background-color: $white;
+    aspect-ratio: 1920/1600;
+    margin-top: 150px !important;
+    div#col-nexgen {
+        div#nextgen-row1 {
+            div#col-nexgen-heading {
+            margin-top: 8% !important;
+                h2.section-heading {
+                    max-width: 1090px;
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    @include font-size(3.375rem);
+                    @include rfs(3.25rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                }
+                h2.section-heading:after {
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                    margin-top: 38px;
+                }
+            }
+        }
+        div#nextgen-row2 {
+            margin-top: -175px !important;
+        }
+        div#nextgen-row3 {
+            margin-top: -200px !important;
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-wrap: wrap;
+                div#col-nexgen-stats-left {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    div#nextgen-grey-arrow {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            transform: translateX(35px);
+                        }
+                    }
+                }
+                div#col-nexgen-stats-right {
+                    display: flex;
+                    flex-basis: 50%;
+                    width: 50%;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    margin-bottom: 1% !important;
+                    transform: translateX(-100px);
+                    div.nexgen-stats {
+
+                    }
+                    p.stats-bodycopy {
+                            @include bold($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            @include font-size(2rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 3px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    p {
+                    text-align: left;
+                        span.stats-percentage {
+                            @include regular($sofia-sans);
+                            text-align: left;
+                            color: $orange1;
+                            @include font-size(6.25rem);
+                            @include rfs(6.25rem, line-height);
+                            letter-spacing: 0;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+                div#col-nexgen-stats-fullwidth {
+                    display: flex;
+                    flex-basis: 100%;
+                    width: 100%;
+                    h3.section-subheading {
+                        @include regular($sofia-sans);
+                        text-align: center;
+                        color: $copy;
+                        @include font-size(2rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 3px;
+                        b.bold {
+                            font-weight: 800 !important;
+                        }
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-euhcc { /* section */
-        margin: 0px !important;
-        padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-color: transparent;
-        z-index: 2;
         aspect-ratio: 960/341;
         top: 0px;
         transform: translateY(-110px);
