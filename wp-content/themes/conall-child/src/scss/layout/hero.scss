@@ -65,6 +65,10 @@ div#section-hero-outer {
         top: -2px;
         left: 0px;
         aspect-ratio: 1920/900;
+        min-width: 100%;
+        position: fixed;
+        top:0;
+        z-index: -999;
     }
 }
 div#section-hero-outer-video {
@@ -271,9 +275,6 @@ h1#hero-h1-4 {
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    }
-    div#section-sidetabs {
-        display: none;
     }
     div#elevar-animation-mov {
         display: none;
