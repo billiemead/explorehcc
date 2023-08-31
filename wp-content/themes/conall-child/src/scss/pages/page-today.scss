@@ -17,6 +17,13 @@ div#section-oas.edh-section { /* section */
     margin-bottom: -150px !important;
         div#col-oas { /* section column */
             margin-top: 275px !important;
+            p.hero-footnote {
+                font-size: 13px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                top: -145px;
+            }
             div#oas-heading {
                 h1.section-heading {
                 @include regular($sofia-sans);
