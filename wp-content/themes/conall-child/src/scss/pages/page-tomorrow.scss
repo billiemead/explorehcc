@@ -88,24 +88,11 @@ div#section-nexgen {
             div.edgtf-full-section-inner {
                 display: flex;
                 flex-wrap: wrap;
-                div#col-nexgen-stats-left {
-                    display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    div#nextgen-grey-arrow {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        img {
-                            transform: translateX(35px);
-                        }
-                    }
-                }
                 div#col-nexgen-stats-right {
                     display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    justify-content: flex-start;
+                    flex-basis: 100%;
+                    width: 100%;
+                    justify-content: flex-end;
                     align-items: flex-end;
                     margin-bottom: 1% !important;
                     transform: translateX(-100px);
@@ -370,24 +357,11 @@ div#section-hsform-outer-tom.edh-section {
             div.edgtf-full-section-inner {
                 display: flex;
                 flex-wrap: wrap;
-                div#col-nexgen-stats-left {
-                    display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    div#nextgen-grey-arrow {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        img {
-                            transform: translateX(35px);
-                        }
-                    }
-                }
                 div#col-nexgen-stats-right {
                     display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    justify-content: flex-start;
+                    flex-basis: 100%;
+                    width: 100%;
+                    justify-content: flex-end;
                     align-items: flex-end;
                     margin-bottom: 1% !important;
                     transform: translateX(-100px);
@@ -506,24 +480,11 @@ div#section-hsform-outer-tom.edh-section {
             div.edgtf-full-section-inner {
                 display: flex;
                 flex-wrap: wrap;
-                div#col-nexgen-stats-left {
-                    display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    div#nextgen-grey-arrow {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        img {
-                            transform: translateX(35px);
-                        }
-                    }
-                }
                 div#col-nexgen-stats-right {
                     display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    justify-content: flex-start;
+                    flex-basis: 100%;
+                    width: 100%;
+                    justify-content: flex-end;
                     align-items: flex-end;
                     margin-bottom: 1% !important;
                     transform: translateX(-200px);
@@ -746,24 +707,11 @@ div#section-future-treat {
             div.edgtf-full-section-inner {
                 display: flex;
                 flex-wrap: wrap;
-                div#col-nexgen-stats-left {
-                    display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    div#nextgen-grey-arrow {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        img {
-                            transform: translateX(35px);
-                        }
-                    }
-                }
                 div#col-nexgen-stats-right {
                     display: flex;
-                    flex-basis: 50%;
-                    width: 50%;
-                    justify-content: flex-start;
+                    flex-basis: 100%;
+                    width: 100%;
+                    justify-content: flex-end;
                     align-items: flex-end;
                     margin-bottom: 1% !important;
                     transform: translateX(-200px);
