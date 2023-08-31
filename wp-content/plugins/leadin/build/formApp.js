@@ -648,7 +648,7 @@ var getAppOptions = function getAppOptions(app, refreshToken) {
       options = new IntegratedAppOptions();
   }
 
-  options = options.setRefreshToken(refreshToken).setLocale(_constants_leadinConfig__WEBPACK_IMPORTED_MODULE_1__.locale);
+  options = options.setRefreshToken(refreshToken).setLocale(_constants_leadinConfig__WEBPACK_IMPORTED_MODULE_1__.locale).setDeviceId(_constants_leadinConfig__WEBPACK_IMPORTED_MODULE_1__.deviceId);
   var queryParams = new URLSearchParams(location.search);
   var route = queryParams.get('leadin_route[0]');
 
