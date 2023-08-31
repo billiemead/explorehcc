@@ -202,12 +202,23 @@ div#hero-subhead div.head-upper {
 }
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    div#section-hero {
+        div.wpb_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div#subhead-svg {
+                display: flex;
+                left: unset;
+            }
+        }
+    }
     div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
             position: fixed;
             width: 64%;
-            top: 25%;
+            top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -225,8 +236,9 @@ div#hero-subhead div.head-upper {
         background-repeat: no-repeat !important;
         background-size: cover !important;
         position: relative;
-        padding-top: 90% !important;
-        padding-bottom: 90% !important;
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
+        aspect-ratio: 23/50;
         .wpb_single_image .vc_figure {
             width: 100%;
         }
@@ -292,7 +304,7 @@ div#hero-subhead div.head-upper {
         background-size: cover !important;
         position: relative;
         padding-top: 0% !important;
-        padding-bottom: 00% !important;
+        padding-bottom: 0% !important;
         aspect-ratio: 23/39;
         .wpb_single_image .vc_figure {
             width: 100%;

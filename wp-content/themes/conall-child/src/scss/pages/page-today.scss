@@ -7156,13 +7156,14 @@ div#section-qol.edh-section {
         background-color: $white !important;
         margin: 0px !important;
         padding: 0px !important;
-        background-repeat: no-repeat !important;
+        background-repeat: repeat !important;
         background-position-y: -52px !important;
         background-position-x: center !important;
         top: 0px;
         margin-bottom: -150px !important;
         z-index: 1;
-        background-size: 109% 102%;
+        background-size: 100%;
+        background-position-y: -31px !important;
         div#col-livc { /* section HEADING column */
             margin-top: 11% !important;
             div#livc-heading {
