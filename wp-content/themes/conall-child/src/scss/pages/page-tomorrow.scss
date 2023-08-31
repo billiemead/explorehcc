@@ -26,7 +26,7 @@ div#section-euhcc { /* section */
                 @include font-size(3.375rem);
                 @include rfs(2.5rem, line-height);
                 letter-spacing: 3px;
-                text-transform: uppercase;
+                /* text-transform: uppercase; */
                 margin-bottom: 2% !important;
             }
         }

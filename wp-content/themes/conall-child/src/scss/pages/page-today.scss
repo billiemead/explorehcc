@@ -2,6 +2,7 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+
 /* ************ ONLY AS STRONG SECTION ************ */
 div#section-oas.edh-section { /* section */
     margin: 0px !important;
@@ -18,11 +19,12 @@ div#section-oas.edh-section { /* section */
         div#col-oas { /* section column */
             margin-top: 275px !important;
             p.hero-footnote {
-                font-size: 13px;
+                font-size: 14px;
                 color: #fff;
                 text-align: right;
                 position: absolute;
-                top: -145px;
+                top: -60px;
+                letter-spacing: 1px;
             }
             div#oas-heading {
                 h1.section-heading {
@@ -581,6 +583,7 @@ div#section-livc.edh-section { /* section */
                 .icon-bottom {
 
                 }
+
                 p.icon-bullet-copy {
                     color: $copy !important;
                     @include medium($sofia-sans) ;
