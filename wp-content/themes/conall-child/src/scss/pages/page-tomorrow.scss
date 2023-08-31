@@ -165,7 +165,7 @@ div#section-future-treat {
     background-color: transparent;
     z-index: 2;
     aspect-ratio: 960/659;
-    top: 0px;
+    top: -3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -783,6 +783,114 @@ div#section-future-treat {
         top: 0px;
         transform: translateY(-110px);
     }
+    div#section-future-treat {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/future-treat-mob-backgnd-415X1277.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 415/1277;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+
+        div#col-future-treat {
+                margin-top: 10% !important;
+            margin-bottom: 17% !important;
+                div#table-inrow-1 {
+                    /* max-height: 550px; */
+                    border: 2px solid $gold;
+                    @include rfs(1.25rem, border-radius);
+                    @include form-gradient();
+                    @include inner-box-shadow();
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 55px 100px 60px 100px !important;
+                    margin-top: 6% !important;
+                    /* transform: translateX(15px); */
+                    div#future-treat-heading {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        h1.section-heading {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(3.375rem);
+                            @include rfs(3.375rem, line-height);
+                            letter-spacing: 0px;
+                            text-transform: uppercase;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                        h1.section-heading:after {
+                            margin: 0 auto !important;
+                            content: "";
+                            border: 2px solid $gold;
+                            width: 150px;
+                            position: relative;
+                            left: 0;
+                            display: flex;
+                            margin-top: 30px !important;
+                            margin-bottom: 55px !important;
+                        }
+                    }
+                    div#future-treat-bodycopy {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p.section-bodycopy {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(1.5rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 0px;
+                            margin-bottom: 2.5% !important;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                            span.yellow-copy {
+                                color: $gold;
+                            }
+                        }
+                    }
+                    .learn-more-btn {
+                        @include orange-grad-button();
+                        @include button-shadow();
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 75px;
+                        width: 235px;
+                        border-radius: 15px;
+                        margin: 0 auto !important;
+                        span {
+                        color: $white !important;
+                        @include bold($sofia-sans);
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 28px;
+                        margin: 0;
+                        padding: 0;
+                        letter-spacing: 0;
+                        }
+                    }
+            }
+        }
+    }
 }
 @media all and (max-width: 960px) {
 }
@@ -814,8 +922,255 @@ div#section-nexgen div#col-nexgen div#nextgen-row1 div#col-nexgen-heading {
     font-size: 25px;
     line-height: 43px;
     }
+        div#section-future-treat {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/future-treat-mob-backgnd-415X1277.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    /* aspect-ratio: 960/659; */
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+        div#col-future-treat {
+                margin-top: 10% !important;
+            margin-bottom: 17% !important;
+                div#table-inrow-1 {
+                    /* max-height: 550px; */
+                    border: 2px solid $gold;
+                    @include rfs(1.25rem, border-radius);
+                    @include form-gradient();
+                    @include inner-box-shadow();
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 55px 100px 60px 100px !important;
+                    margin-top: 6% !important;
+                    /* transform: translateX(15px); */
+                    div#future-treat-heading {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        h1.section-heading {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(3.375rem);
+                            @include rfs(3.375rem, line-height);
+                            letter-spacing: 0px;
+                            text-transform: uppercase;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                        h1.section-heading:after {
+                            margin: 0 auto !important;
+                            content: "";
+                            border: 2px solid $gold;
+                            width: 150px;
+                            position: relative;
+                            left: 0;
+                            display: flex;
+                            margin-top: 30px !important;
+                            margin-bottom: 55px !important;
+                        }
+                    }
+                    div#future-treat-bodycopy {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p.section-bodycopy {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(1.5rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 0px;
+                            margin-bottom: 2.5% !important;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                            span.yellow-copy {
+                                color: $gold;
+                            }
+                        }
+                    }
+                    .learn-more-btn {
+                        @include orange-grad-button();
+                        @include button-shadow();
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 75px;
+                        width: 235px;
+                        border-radius: 15px;
+                        margin: 0 auto !important;
+                        span {
+                        color: $white !important;
+                        @include bold($sofia-sans);
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 28px;
+                        margin: 0;
+                        padding: 0;
+                        letter-spacing: 0;
+                        }
+                    }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+        div#section-future-treat {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/future-treat-mob-backgnd-415X1277.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 415/777;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+        div#col-future-treat {
+                margin-top: 10% !important;
+            margin-bottom: 17% !important;
+                div#table-inrow-1 {
+                    /* max-height: 550px; */
+                    border: 2px solid $gold;
+                    @include rfs(1.25rem, border-radius);
+                    @include form-gradient();
+                    @include inner-box-shadow();
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 55px 50px 60px 50px !important;
+                    margin-top: 6% !important;
+                    /* transform: translateX(15px); */
+                    div#future-treat-heading {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        h1.section-heading {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(3.375rem);
+                            @include rfs(3.375rem, line-height);
+                            letter-spacing: 0px;
+                            text-transform: uppercase;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                        h1.section-heading:after {
+                            margin: 0 auto !important;
+                            content: "";
+                            border: 2px solid $gold;
+                            width: 150px;
+                            position: relative;
+                            left: 0;
+                            display: flex;
+                            margin-top: 30px !important;
+                            margin-bottom: 55px !important;
+                        }
+                    }
+                    div#future-treat-bodycopy {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p.section-bodycopy {
+                            @include semi-bold($sofia-sans);
+                            text-align: center;
+                            color: $white;
+                            @include font-size(1.5rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 0px;
+                            margin-bottom: 2.5% !important;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                            span.yellow-copy {
+                                color: $gold;
+                            }
+                        }
+                    }
+                    .learn-more-btn {
+                        @include orange-grad-button();
+                        @include button-shadow();
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 75px;
+                        width: 235px;
+                        border-radius: 15px;
+                        margin: 0 auto !important;
+                        span {
+                        color: $white !important;
+                        @include bold($sofia-sans);
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 28px;
+                        margin: 0;
+                        padding: 0;
+                        letter-spacing: 0;
+                        }
+                    }
+            }
+        }
+    }
+    div.edh-col.stats-center {
+    margin-top: 50px !important;
+    margin-bottom: 80px !important;
+    }
 }
 @media all and (max-width: 480px) {
+    div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-fullwidth h3.section-subheading {
+        font-size: 32px;
+        line-height: 38px;
+        max-width: 90%;
+        margin: 0 auto !important;
+    }
+    div#section-future-treat {
+        aspect-ratio: 415/1077;
+    }
+    div.edh-col.stats-center {
+    margin-top: 50px !important;
+    margin-bottom: 80px !important;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 {
+    max-height: 100%;
+    padding: 55px 40px 60px 40px!important;
+    margin-top: 6%!important;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 .learn-more-btn {
+    height: 82px;
+    width: 232px;
+    margin-top: 25px;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 div#future-treat-heading h1.section-heading {
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    }
 }

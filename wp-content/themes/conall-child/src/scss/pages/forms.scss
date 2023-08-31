@@ -96,6 +96,7 @@ form#hsForm_433b63a0-598a-4597-92e2-9a626fc9649e {
                     text-align: left;
                     color: $white;
                     @include font-size(1rem);
+                    text-transform: inherit;
                     a {
                         color: $white;
                         text-decoration: underline;
@@ -346,6 +347,7 @@ div#section-hsform-outer-tom {
                     text-align: left;
                     color: $white;
                     @include font-size(1rem);
+                    text-transform: inherit;
                     a {
                         color: $white;
                         text-decoration: underline;
@@ -551,7 +553,7 @@ div#section-hsform-outer-tom {
                     text-align: left;
                     color: $white;
                     @include font-size(1rem);
-                    text-transform: lowercase;
+                    text-transform: inherit;
                     font-weight: 300 !important;
                     a {
                         color: $white;
