@@ -73,8 +73,8 @@ header.edgtf-mobile-header {
 }
 #edgtf-back-to-top {
     width: 50px !important;
-    right: 66px !important;
-    bottom: 94px !important;
+    right: 85px !important;
+    bottom: 217px !important;
 }
 /* ************ SECTION PAGE WIDTH ************ */
 div.edh-col.col-inner,
@@ -180,7 +180,15 @@ div.edh-col.col1.bottom {
     top: -1px;
     display: flex;
 }
-
+div.edh-col.qol {
+    max-width: 100% !important;
+    float: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    bottom: 0;
+    display: flex;
+    width: 611px !important;
+}
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
 }
