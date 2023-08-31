@@ -958,8 +958,356 @@ div#section-hsform-outer-yes.edh-section {
 @media all and (max-width: 960px) {
 }
 @media all and (max-width: 768px) {
+    div#section-dlb-nav.edh-section { /* section */
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 240/91;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-126px);
+    margin-bottom: -246px !important;
+        /* ***** STICKY NAV **** */
+        div#col-dlb-nav /* section column */ {
+            margin-top: 8% !important;
+            div#nav-quadbox {
+                div.edh-outerbox.hs-box {
+                    @include rfs(1.875rem, border-radius);
+                    border-color: $white;
+                    border-width: 2px;
+                    max-width: 763px;
+                    margin: 0 auto !important;
+                    margin-top: 8% !important;
+                    margin-bottom: 8% !important;
+                    div.edh-innerbox.hs-box {
+                        @include rfs(1.25rem, border-radius);
+                        border: 2px solid $gold;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 0;
+                        /* max-width: 1260px; */
+                        box-sizing: border-box;
+                        div.dlb-nav-container {
+                            height: 150px;
+                            border: none;
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            background: linear-gradient(#525D66, #080124);
+                            div.dlb-nav-circle.hs-circle {
+                                border-radius: 100%;
+                                border: 2px solid $gold;
+                                width: 150px;
+                                height: 150px;
+                                background-color: $white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+                                top: -100px;
+                                aspect-ratio: 1/1;
+                                @include circle-shadow();
+                                img.dlb-icon {
+
+                                }
+                            }
+                            a.dlb-nav {
+                                display: flex;
+                                text-align: center;
+                                @include medium($sofia-sans);
+                                color: $white;
+                                text-decoration: underline;
+                                text-transform: uppercase;
+                                @include font-size(1.125rem);
+                                @include rfs(1.375rem, line-height);
+                                margin-top: 100px;
+                                position: absolute;
+                                max-width: 175px;
+                            }
+                        }
+                        div#dlb-nav1 {
+                            border-top-left-radius: 27px;
+                            border-bottom-left-radius: 27px;
+                            @include form-gradient-white-screen();
+                        }
+                        div#dlb-nav2 {
+                            border-top-right-radius: 27px;
+                            border-bottom-right-radius: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ************ HEM RISK SECTION ************ */
+    div#section-hemrisk.edh-section {
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 32/34;
+        top: -25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2.5% !important;
+        div#col-hem-risk {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div#table-inrow-1 {
+                /* height: 450px; */
+                border: 2px solid $gold;
+                @include rfs(1.25rem, border-radius);
+                @include form-gradient();
+                @include inner-box-shadow();
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 40px !important;
+                div#hem-risk-heading {
+                    h1.section-heading {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $gold;
+                        @include font-size(2.75rem);
+                        @include rfs(3rem, line-height);
+                        letter-spacing: 0px;
+                        /* text-transform: uppercase; */
+                        margin-bottom: 2% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+                div#hem-risk-bodycopy {
+                    p.section-bodycopy {
+                        @include regular($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.5rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        margin-bottom: 1.5% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 55% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+                div#hem-risk-subheading {
+                    h2.section-subheading {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $gold;
+                        @include font-size(2rem);
+                        @include rfs(2.5rem, line-height);
+                        letter-spacing: 0px;
+                        margin-top: 2% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 60% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
+        div#section-dlb-nav.edh-section { /* section */
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent;
+    z-index: 2;
+    aspect-ratio: 240/91;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-126px);
+    margin-bottom: -246px !important;
+        /* ***** STICKY NAV **** */
+        div#col-dlb-nav /* section column */ {
+            margin-top: 8% !important;
+            div#nav-quadbox {
+                div.edh-outerbox.hs-box {
+                    @include rfs(1.875rem, border-radius);
+                    border-color: $white;
+                    border-width: 2px;
+                    max-width: 763px;
+                    margin: 0 auto !important;
+                    margin-top: 8% !important;
+                    margin-bottom: 8% !important;
+                    div.edh-innerbox.hs-box {
+                        @include rfs(1.25rem, border-radius);
+                        border: 2px solid $gold;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 0;
+                        /* max-width: 1260px; */
+                        box-sizing: border-box;
+                        div.dlb-nav-container {
+                            height: 120px;
+                            border: none;
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            background: linear-gradient(#525D66, #080124);
+                            div.dlb-nav-circle.hs-circle {
+                                border-radius: 100%;
+                                border: 2px solid $gold;
+                                width: 120px;
+                                height: 120px;
+                                background-color: $white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+                                top: -100px;
+                                aspect-ratio: 1/1;
+                                @include circle-shadow();
+                                img.dlb-icon {
+
+                                }
+                            }
+                            a.dlb-nav {
+                                display: flex;
+                                text-align: center;
+                                @include medium($sofia-sans);
+                                color: $white;
+                                text-decoration: underline;
+                                text-transform: uppercase;
+                                @include font-size(1.125rem);
+                                @include rfs(1.375rem, line-height);
+                                margin-top: 100px;
+                                position: absolute;
+                                max-width: 175px;
+                            }
+                        }
+                        div#dlb-nav1 {
+                            border-top-left-radius: 27px;
+                            border-bottom-left-radius: 27px;
+                            @include form-gradient-white-screen();
+                        }
+                        div#dlb-nav2 {
+                            border-top-right-radius: 27px;
+                            border-bottom-right-radius: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ************ HEM RISK SECTION ************ */
+    div#section-hemrisk.edh-section {
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 32/34;
+        top: -25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2.5% !important;
+        div#col-hem-risk {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div#table-inrow-1 {
+                /* height: 450px; */
+                border: 2px solid $gold;
+                @include rfs(1.25rem, border-radius);
+                @include form-gradient();
+                @include inner-box-shadow();
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 40px !important;
+                div#hem-risk-heading {
+                    h1.section-heading {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $gold;
+                        @include font-size(2.75rem);
+                        @include rfs(3rem, line-height);
+                        letter-spacing: 0px;
+                        /* text-transform: uppercase; */
+                        margin-bottom: 2% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+                div#hem-risk-bodycopy {
+                    p.section-bodycopy {
+                        @include regular($sofia-sans);
+                        text-align: left;
+                        color: $white;
+                        @include font-size(1.5rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        margin-bottom: 1.5% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 55% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+                div#hem-risk-subheading {
+                    h2.section-subheading {
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $gold;
+                        @include font-size(2rem);
+                        @include rfs(2.5rem, line-height);
+                        letter-spacing: 0px;
+                        margin-top: 2% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 60% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

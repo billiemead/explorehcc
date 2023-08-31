@@ -1100,8 +1100,8 @@ div#section-nexgen div#col-nexgen div#nextgen-row1 div#col-nexgen-heading {
                             @include semi-bold($sofia-sans);
                             text-align: center;
                             color: $white;
-                            @include 24px;
-                            @include 38px;
+                            font-size: 24px;
+                            line-height: 38px;
                             letter-spacing: 0px;
                             margin-bottom: 10% !important;
                             sub.subscript {
