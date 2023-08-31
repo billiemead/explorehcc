@@ -30,7 +30,6 @@ div#section-sidetabs {
         }
     }
 }
-
 /* ************ HERO ************ */
 div#hero-bottom {
     position: absolute;
@@ -48,9 +47,9 @@ div#section-hero-outer {
     aspect-ratio: 1920/900;
     div#subhead-svg {
         position: fixed;
-        width: 350px;
-        top: 210px;
-        left: 69%;
+        width: 433px;
+        top: 169px;
+        left: 58%;
         transform: translate(-70%, -50%);
     }
     video.elevar-animation {
@@ -73,12 +72,12 @@ div#section-hero-outer-video {
     z-index: 0;
     margin: 0px !important;
     background-size: 100% !important;
-    aspect-ratio: 1920/600;
+    aspect-ratio: 1920/920;
     div#subhead-svg {
         position: fixed;
-        width: 350px;
-        top: 210px;
-        left: 72%;
+        width: 433px;
+        top: 169px;
+        left: 58%;
         transform: translate(-70%, -50%);
     }
     video.elevar-animation {
@@ -90,49 +89,10 @@ div#section-hero-outer-video {
         width: 100vw;
         top: -2px;
         left: 0px;
-        aspect-ratio: 1920/600;
+        aspect-ratio: 1920/920;
     }
 }
-div#section-hero-cinemagraph {
-        padding-top: 24% !important;
-        padding-bottom: 24% !important;
-        z-index: 0;
-        margin: 0px !important;
-        background-size: 100% !important;
-        position: relative;
-        margin-bottom: -226px !important;
-        .wpb_single_image .vc_figure {
-            width: 100%;
-        }
-        div.vc_single_image-wrapper.vc_box_border_grey {
-            width: 100%;
-        }
-        .wpb_single_image img {
-            width: 100%;
-        }
-}
-div#section-hero-outer-yesterday {
-        padding-top: 24% !important;
-        padding-bottom: 24% !important;
-        background-attachment: fixed;
-        z-index: 0;
-        background-image: url("/wp-content/themes/conall-child/images/mth-hero-1920x934.jpg");
-        margin: 0px !important;
-        background-position: center -40px !important;
-        background-repeat: no-repeat !important;
-        background-size: 100% !important;
-        position: relative;
-        margin-bottom: -267px !important;
-        .wpb_single_image .vc_figure {
-            width: 100%;
-        }
-        div.vc_single_image-wrapper.vc_box_border_grey {
-            width: 100%;
-        }
-        .wpb_single_image img {
-            width: 100%;
-        }
-}
+
 div#hero-subhead {
     left: 64%;
     position: fixed;
@@ -154,30 +114,6 @@ div#hero-subhead div.head-upper {
         span.lower {
             text-transform: initial;
         }
-}
-h1#hero-h1-1 {
-    font-size: 3.5vw;
-    line-height: 4.2vw;
-}
-h1#hero-h1-2 {
-    @include extra-bold($sofia-sans);
-    font-size: 4.77vw;
-    line-height: 3vw;
-    @include rfs(0.25rem, letter-spacing);
-}
-h1#hero-h1-2 span.comma {
-    @include regular($sofia-sans);
-}
-h1#hero-h1-3 {
-    font-size: 3.4vw;
-    line-height: 4vw;
-    @include rfs(0.094rem, letter-spacing);
-    left: 4px;
-    position: relative;
-}
-h1#hero-h1-4 {
-    font-size: 6.2vw;
-    line-height: 5.75vh;
 }
 .hero-h1 {
     color: $purple !important;
@@ -206,30 +142,29 @@ h1#hero-h1-4 {
     div#section-hero-outer-video {
         div#subhead-svg {
             position: fixed;
-            width: 300px;
-            top: 210px;
-            left: 69%;
+            width: 380px;
+            top: 169px;
+            left: 58%;
             transform: translate(-50%, -50%);
         }
     }
     div#section-hero-outer {
         div#subhead-svg {
             position: fixed;
-            width: 300px;
-            top: 210px;
-            left: 67%;
+            width: 380px;
+            top:169px;
+            left: 58%;
             transform: translate(-50%, -50%);
         }
     }
 }
-
 @media all and (max-width: 1300px) {
-        div#section-hero-outer-video {
+    div#section-hero-outer-video {
         div#subhead-svg {
             position: fixed;
-            width: 275px;
-            top: 210px;
-            left: 69%;
+            width: 330px;
+            top: 169px;
+            left: 58%;
             transform: translate(-50%, -50%);
         }
     }
@@ -244,12 +179,12 @@ h1#hero-h1-4 {
     }
 }
 @media all and (max-width: 1025px) {
-        div#section-hero-outer-video {
+    div#section-hero-outer-video {
         div#subhead-svg {
             position: fixed;
             width: 250px;
-            top: 210px;
-            left: 69%;
+            top: 125px;
+            left: 59%;
             transform: translate(-50%, -50%);
         }
     }
@@ -265,6 +200,12 @@ h1#hero-h1-4 {
 }
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    div#subhead-svg {
+        img.vc_single_image-img {
+            display: none;
+        }
+    }
+    div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
             position: fixed;
@@ -277,7 +218,8 @@ h1#hero-h1-4 {
     div#elevar-animation-mov {
         display: none;
     }
-    div#section-hero-outer {
+    div#section-hero-outer,
+    div#section-hero-outer-video {
         background-attachment: fixed;
         z-index: 0;
         background-image: url("/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg");
@@ -296,6 +238,34 @@ h1#hero-h1-4 {
         }
         .wpb_single_image img {
             width: 100%;
+        }
+    }
+    /* ************ SIDE TABS ************ */
+    div#section-sidetabs {
+        position: relative;
+        z-index: 50;
+        div#col-nav-sidetabs {
+            div.toptab-container {
+                transform: rotate(270deg);
+                position: fixed;
+                left: -120px;
+                top: 170px;
+            }
+            a.toptab-link {
+                color: $white;
+                @include padding(0.35rem 0.5rem);
+                @include semi-bold($sofia-sans);
+                text-transform: uppercase;
+                @include rfs(0.031rem, letter-spacing);
+                @include font-size(0.75rem);
+                background-color: $purple;
+            }
+            a#toptab-link1 {
+                @include rfs(0.525rem, border-bottom-left-radius);
+            }
+            a#toptab-link2 {
+                @include rfs(0.525rem, border-bottom-right-radius);
+            }
         }
     }
 }

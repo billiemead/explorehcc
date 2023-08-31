@@ -17,7 +17,8 @@ div#section-dlb-nav.edh-section { /* section */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateY(-110px);
+    transform: translateY(-126px);
+    margin-bottom: -246px !important;
     /* ***** STICKY NAV **** */
     div#col-dlb-nav /* section column */ {
         margin-top: 8% !important;

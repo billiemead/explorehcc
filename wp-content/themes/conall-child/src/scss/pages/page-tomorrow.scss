@@ -604,7 +604,7 @@ div#section-future-treat {
             margin-top: 10% !important;
     margin-bottom: 17% !important;
         div#table-inrow-1 {
-            max-height: 550px;
+            max-height: 100%;
             border: 2px solid $gold;
             @include rfs(1.25rem, border-radius);
             @include form-gradient();

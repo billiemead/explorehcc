@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
-import { hubspotBaseUrl, portalId, locale } from '../constants/leadinConfig';
+import {
+  hubspotBaseUrl,
+  portalId,
+  locale,
+  deviceId,
+} from '../constants/leadinConfig';
 import { fetchRefreshToken } from '../api/wordpressApiClient';
 import Raven from '../lib/Raven';
 import { Apps, AppType } from '../iframe/constants';
@@ -25,7 +30,10 @@ const getAppOptions = (app: AppType, refreshToken: string) => {
       options = new IntegratedAppOptions();
   }
 
-  options = options.setRefreshToken(refreshToken).setLocale(locale);
+  options = options
+    .setRefreshToken(refreshToken)
+    .setLocale(locale)
+    .setDeviceId(deviceId);
 
   const queryParams = new URLSearchParams(location.search);
   const route = queryParams.get('leadin_route[0]');
