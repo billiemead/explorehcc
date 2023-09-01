@@ -528,6 +528,7 @@ div#footer-tomorrow {
                     font-size: 22px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -543,6 +544,7 @@ div#footer-tomorrow {
                     line-height: 26px;
                     position: relative;
                     top: 0px;
+                    max-width: 100px;
                 }
             }
             .footer-link {
@@ -550,6 +552,7 @@ div#footer-tomorrow {
                 @include semi-bold($sofia-sans);
                 text-transform: none;
                 text-align: center;
+                max-width: 100px;
             }
     }
     }
@@ -598,6 +601,7 @@ div#footer-tomorrow {
                     font-size: 22px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -613,6 +617,7 @@ div#footer-tomorrow {
                     letter-spacing: 1px;
                     line-height: 26px;
                     font-size: 26px;
+                    max-width: 100px;
                 }
             }
             .footer-link {
@@ -620,6 +625,7 @@ div#footer-tomorrow {
                 @include semi-bold($sofia-sans);
                 text-transform: none;
                 text-align: center;
+                max-width: 100px;
             }
     }
     }
@@ -668,6 +674,7 @@ div#footer-tomorrow {
                     font-size: 22px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -683,12 +690,14 @@ div#footer-tomorrow {
                     line-height: 26px;
                     position: relative;
                     top: 0px;
+                    max-width: 100px;
                 }
             }
             .footer-link {
                 color: $white !important;
                 @include semi-bold($sofia-sans);
                 text-transform: none;
+                max-width: 100px;
             }
     }
     }
@@ -739,6 +748,7 @@ div#footer-tomorrow {
                     font-size: 19px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -754,6 +764,7 @@ div#footer-tomorrow {
                     font-size: 24px;
                     position: relative;
                     top: 0px;
+                    max-width: 100px;
                 }
             }
             .footer-link {
@@ -809,6 +820,7 @@ div#footer-tomorrow {
                     font-size: 19px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -832,6 +844,7 @@ div#footer-tomorrow {
                 @include semi-bold($sofia-sans);
                 text-transform: none;
                 text-align: center;
+                max-width: 100px;
             }
     }
     }
@@ -880,6 +893,7 @@ div#footer-tomorrow {
                     font-size: 19px;
                     position: relative;
                     top: 6px;
+                    max-width: 100px;
                 }
 
             }
@@ -895,6 +909,7 @@ div#footer-tomorrow {
                     font-size: 24px;
                     position: relative;
                     top: 0px;
+                    max-width: 100px;
                 }
             }
             .footer-link {
