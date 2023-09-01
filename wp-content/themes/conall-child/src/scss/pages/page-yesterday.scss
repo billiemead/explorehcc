@@ -136,6 +136,11 @@ div#section-basecamp {
                     span.underline {
                         text-decoration: underline;
                     }
+                    sub.subscript {
+                    vertical-align: super !important;
+                    font-size: 35% !important;
+                    top: .005ex !important;
+                    }
                 }
             }
             div#basecamp-bodycopy::after {
