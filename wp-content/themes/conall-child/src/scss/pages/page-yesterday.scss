@@ -1004,16 +1004,16 @@ div#section-hsform-outer-yes.edh-section {
         }
     }
     div#section-basecamp {
-    background-color: $white;
-    margin: 0px !important;
-    padding: 0px !important;
-    background-image: url("/wp-content/themes/conall-child/images/basecamp-background-1920x2019.png") !important;
-    background-position: center !important;
-    background-repeat: repeat !important;
-    background-size: 100% !important;
-    aspect-ratio: 640/673;
-    margin-top: 115px !important;
-    background-position-y: 18px !important;
+        background-color: $white;
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/basecamp-background-1920x2019.png") !important;
+        background-position: center !important;
+        background-repeat: repeat !important;
+        background-size: 100% !important;
+        aspect-ratio: 640/673;
+        margin-top: 115px !important;
+        background-position-y: 18px !important;
     div#col-basecamp {
         margin-bottom: 6% !important;
         div#bc-inner-row-copy {
@@ -1221,8 +1221,8 @@ div#section-hsform-outer-yes.edh-section {
 
 
 @media all and (max-width: 960px) {
-        div#section-dlb-nav.edh-section { /* section */
-        margin: 0px !important;
+    div#section-dlb-nav.edh-section { /* section */
+        /* margin: 0px !important; */
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
@@ -1327,7 +1327,7 @@ div#section-hsform-outer-yes.edh-section {
 }
 @media all and (max-width: 768px) {
     div#section-dlb-nav.edh-section { /* section */
-        margin: 0px !important;
+        /* margin: 0px !important; */
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
@@ -1515,7 +1515,7 @@ div#section-hsform-outer-yes.edh-section {
 }
 @media all and (max-width: 480px) {
         div#section-dlb-nav.edh-section { /* section */
-        margin: 0px !important;
+       /*  margin: 0px !important; */
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
