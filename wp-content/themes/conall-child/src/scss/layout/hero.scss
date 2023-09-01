@@ -23,7 +23,7 @@ div#section-hero-footnote {
                 left: 0;
                 display: flex;
                 justify-content: center;
-                height: calc(100vh * .7);
+                height: calc(100vh * .85);
                 align-items: flex-end;
                 text-shadow: 4px 4px 13px rgba(0,0,0,0.85);
         }
@@ -203,6 +203,7 @@ div#section-hero-outer-video {
             left: 50%;
         }
     }
+    div#elevar-animation-mov,
     video.elevar-animation {
         display: none;
     }

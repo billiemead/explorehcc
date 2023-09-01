@@ -789,9 +789,12 @@ div#section-hsform-outer-tom.edh-section {
 
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
+    div#section-euhcc div#col-euhcc div#euhcc-heading {
+    margin-top: 17% !important;
+    }
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x640.png") !important;
         aspect-ratio: 960/341;
         top: 0px;
         transform: translateY(-155px);
@@ -1092,6 +1095,7 @@ div#section-hsform-outer-tom.edh-section {
         height: 100%;
         align-items: flex-start;
         padding-bottom: 10% !important;
+        margin-top: -18% !important;
     }
         div#section-euhcc div#col-euhcc div#euhcc-heading {
         margin-top: 29% !important;
@@ -1213,7 +1217,7 @@ div#section-hsform-outer-tom.edh-section {
 }
 @media all and (max-width: 576px) {
     div#section-euhcc {
-    transform: translateY(-130px);
+    transform: translateY(0px);
     width: 100%;
     height: 100%;
     }
