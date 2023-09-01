@@ -2,6 +2,19 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+/* ************ HERO FOOTNOTE ************ */
+div#section-hero-footnote {
+    div#hero-footnote-column {
+        p.hero-footnote {
+                font-size: 14px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                top: -60px;
+                letter-spacing: 1px;
+        }
+    }
+}
 
 /* ************ ONLY AS STRONG SECTION ************ */
 div#section-oas.edh-section { /* section */
@@ -18,14 +31,6 @@ div#section-oas.edh-section { /* section */
     margin-bottom: -150px !important;
         div#col-oas { /* section column */
             margin-top: 275px !important;
-            p.hero-footnote {
-                font-size: 14px;
-                color: #fff;
-                text-align: right;
-                position: absolute;
-                top: -60px;
-                letter-spacing: 1px;
-            }
             div#oas-heading {
                 h1.section-heading {
                 @include regular($sofia-sans);
@@ -2784,6 +2789,19 @@ div#section-qol.edh-section {
     div#livc-purple-box-desktop {
         display: none;
     }
+    /* ************ HERO FOOTNOTE ************ */
+    div#section-hero-footnote {
+        div#hero-footnote-column {
+            p.hero-footnote {
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: right;
+                    position: absolute;
+                    top: -60px;
+                    letter-spacing: 1px;
+            }
+        }
+    }
     /* ************ ONLY AS STRONG SECTION ************ */
     div#section-oas.edh-section { /* section */
         margin: 0px !important;
@@ -2797,14 +2815,6 @@ div#section-qol.edh-section {
         margin-top: -22% !important;
             div#col-oas { /* section column */
                 margin-top: 275px !important;
-                p.hero-footnote {
-                font-size: 14px;
-                color: #fff;
-                text-align: right;
-                position: absolute;
-                top: -70px;
-                letter-spacing: 1px;
-                }
                 div#oas-heading {
                     h1.section-heading {
                     @include regular($sofia-sans);
@@ -4915,6 +4925,19 @@ div#section-qol.edh-section {
 @media all and (max-width: 960px) {
 }
 @media all and (max-width: 768px) {
+    /* ************ HERO FOOTNOTE ************ */
+        div#section-hero-footnote {
+            div#hero-footnote-column {
+                p.hero-footnote {
+                        font-size: 14px;
+                        color: #fff;
+                        text-align: right;
+                        position: absolute;
+                        top: -60px;
+                        letter-spacing: 1px;
+                }
+            }
+        }
         /* ************ ONLY AS STRONG SECTION ************ */
     div#section-oas.edh-section { /* section */
         margin: 0px !important;
@@ -4929,14 +4952,6 @@ div#section-qol.edh-section {
         transform: translateY(0px);
             div#col-oas { /* section column */
                 margin-top: 275px !important;
-                p.hero-footnote {
-                font-size: 14px;
-                color: #fff;
-                text-align: right;
-                position: absolute;
-                top: -60px;
-                letter-spacing: 1px;
-                }
                 div#oas-heading {
                     h1.section-heading {
                     @include regular($sofia-sans);
@@ -7035,6 +7050,19 @@ div#section-qol.edh-section {
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
+    /* ************ HERO FOOTNOTE ************ */
+div#section-hero-footnote {
+    div#hero-footnote-column {
+        p.hero-footnote {
+                font-size: 14px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                top: -60px;
+                letter-spacing: 1px;
+        }
+    }
+}
     .uavc-list-content {
     margin-bottom: 15px;
     }

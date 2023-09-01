@@ -23,11 +23,3 @@ function elevar_assets()
     wp_enqueue_script('elevar_js', get_theme_file_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'elevar_assets');
-
-// Force WP to default to WebM first, MP4 and OGV last
-$array = apply_filters( 'wp_video_extensions', $array );
-
-function filter_wp_video_extensions( $array ) {
-    return array( 'webm', 'mp4', 'm4v', 'ogv', 'wmv', 'flv' );
-   }
-add_filter( 'wp_video_extensions', 'filter_wp_video_extensions', 10, 1 );

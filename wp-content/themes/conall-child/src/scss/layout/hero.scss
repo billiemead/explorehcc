@@ -207,18 +207,14 @@ div#hero-subhead div.head-upper {
             display: flex;
             justify-content: center;
             align-items: center;
-            div#subhead-svg {
-                display: flex;
-                left: unset;
-            }
         }
     }
     div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
             position: fixed;
-            width: 64%;
-            top: 10%;
+            width: 300px;
+            top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -230,9 +226,9 @@ div#hero-subhead div.head-upper {
     div#section-hero-outer-video {
         background-attachment: fixed;
         z-index: 0;
-        background-image: url("/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg");
+        background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
         margin: 0px !important;
-        background-position: top !important;
+        background-position-Y: -400px !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         position: relative;
@@ -281,8 +277,54 @@ div#hero-subhead div.head-upper {
 @media all and (max-width: 960px) {
 }
 @media all and (max-width: 768px) {
+        div#section-hero-outer,
+    div#section-hero-outer-video {
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
+        margin: 0px !important;
+        background-position-Y: -450px !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative;
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
+        aspect-ratio: 23/50;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+    }
 }
 @media all and (max-width: 576px) {
+        div#section-hero-outer,
+    div#section-hero-outer-video {
+        background-attachment: fixed;
+        z-index: 0;
+        background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
+        margin: 0px !important;
+        background-position-Y: -200px !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative;
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
+        aspect-ratio: 23/35;
+        .wpb_single_image .vc_figure {
+            width: 100%;
+        }
+        div.vc_single_image-wrapper.vc_box_border_grey {
+            width: 100%;
+        }
+        .wpb_single_image img {
+            width: 100%;
+        }
+    }
 }
 @media all and (max-width: 480px) {
     div#section-hero-outer {

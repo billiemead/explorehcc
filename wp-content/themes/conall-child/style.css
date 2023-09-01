@@ -14,3 +14,6 @@ Template: conall
 /*        ALL STYLES WITHIN SCSS DIRECTORY      */
 
 /*      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        */
+#nex-gen-img2 {
+    display: none !important;
+}
