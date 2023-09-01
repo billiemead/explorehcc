@@ -919,7 +919,7 @@ div#section-hsform-outer-yes.edh-section {
         flex-direction: column;
         justify-content: center;
         transform: translateY(-126px);
-        margin-bottom: -246px !important;
+        margin-bottom: -264px !important;
         /* ***** STICKY NAV **** */
         div#col-dlb-nav /* section column */ {
             margin-top: 8% !important;
@@ -1012,7 +1012,7 @@ div#section-hsform-outer-yes.edh-section {
     background-repeat: repeat !important;
     background-size: 100% !important;
     aspect-ratio: 640/673;
-    margin-top: 140px !important;
+    margin-top: 115px !important;
     background-position-y: 18px !important;
     div#col-basecamp {
         margin-bottom: 6% !important;
@@ -1320,6 +1320,9 @@ div#section-hsform-outer-yes.edh-section {
                 }
             }
         }
+    }
+    div#section-basecamp {
+    margin-top: 0 !important;
     }
 }
 @media all and (max-width: 768px) {
