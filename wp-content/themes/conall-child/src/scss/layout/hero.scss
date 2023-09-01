@@ -2,6 +2,35 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+
+/* ************ HERO FOOTNOTE ************ */
+div#section-hero-footnote {
+    div#hero-footnote-column {
+        margin: 0 !important;
+        padding: 0 !important;
+        top: 0;
+        display: flex;
+        height: 100vh;
+        background-color: transparent;
+        position: absolute;
+        p.hero-footnote {
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                top: 0;
+                letter-spacing: 1px;
+                width: 100%;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                height: calc(100vh * .75);
+                align-items: flex-end;
+                text-shadow: 4px 4px 13px rgba(0,0,0,0.85);
+        }
+    }
+}
+
 /* ************ SIDE TABS ************ */
 div#section-sidetabs {
     position: relative;
@@ -282,7 +311,7 @@ div#hero-subhead div.head-upper {
     div#section-hero-outer-video {
         background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
         background-position-Y: -300px !important;
-        aspect-ratio: 23/40;
+        aspect-ratio: 23/30;
     }
 }
 @media all and (max-width: 768px) {
@@ -294,7 +323,7 @@ div#hero-subhead div.head-upper {
     }
     div#section-hero-outer-video {
         background-position-Y: -200px !important;
-        aspect-ratio: 23/40;
+        aspect-ratio: 23/35;
     }
 }
 @media all and (max-width: 576px) {
