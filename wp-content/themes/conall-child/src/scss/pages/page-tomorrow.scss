@@ -16,6 +16,12 @@ div#section-euhcc { /* section */
     top: 0px;
     transform: translateY(-110px);
     margin-bottom: -225px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 682px;
+    width: 100%;
+    padding-bottom: 10% !important;
     div#col-euhcc { /* section column */
         div#euhcc-heading {
             margin-top: 18% !important;
@@ -36,8 +42,8 @@ div#section-euhcc { /* section */
             @include regular($sofia-sans);
             text-align: left;
             color: $white;
-            @include font-size(1.5rem);
-            @include rfs(2.375rem, line-height);
+            font-size: 32px;
+            line-height: 38px;
             letter-spacing: 0px;
                 sub.subscript {
                 vertical-align: super !important;
@@ -346,28 +352,16 @@ div#section-hsform-outer-tom.edh-section {
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1600px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
-    div#section-euhcc { /* section */
+/*     div#section-euhcc {
         div#col-euhcc {
             div#euhcc-heading {
                 margin-top: 15% !important;
             }
         }
-    }
+    } */
 }
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1500px) {
-    /* ************ DOUBLE ICON NAV SECTION ************ */
-    div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        aspect-ratio: 960/341;
-        top: 0px;
-        transform: translateY(-88px);
-        div#col-euhcc {
-            div#euhcc-heading {
-                margin-top: 11% !important;
-            }
-        }
-    }
     div#section-nexgen {
     background-color: $white;
     aspect-ratio: 1920/2500;
@@ -475,250 +469,221 @@ div#section-hsform-outer-tom.edh-section {
 }
     /*** Responsive Max-Width ***/
 @media all and (max-width: 1300px) {
-    /* ************ DOUBLE ICON NAV SECTION ************ */
-    div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        aspect-ratio: 960/341;
-        top: 0px;
-        transform: translateY(-80px);
-    }
-    div#section-euhcc div#col-euhcc div#euhcc-heading {
-    margin-top: 14% !important;
-    }
-    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
-        font-size: 2.5rem;
-    }
-    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
-        line-height: 2rem;
-        font-size: 1rem;
-    }
+
     div#section-nexgen {
     background-color: $white;
     aspect-ratio: 1920/2500;
     margin-top: 0px !important;
-    div#col-nexgen {
-        div#nextgen-row1 {
-            div#col-nexgen-heading {
-            margin-top: 8% !important;
-                h2.section-heading {
-                    max-width: 1090px;
-                    @include semi-bold($sofia-sans);
-                    text-align: left;
-                    color: $purple;
-                    @include font-size(3.375rem);
-                    @include rfs(3.25rem, line-height);
-                    letter-spacing: 0px;
-                    text-transform: uppercase;
-                    margin-bottom: 2% !important;
-                }
-                h2.section-heading:after {
-                    content: "";
-                    border: 2px solid $gold;
-                    width: 150px;
-                    position: relative;
-                    left: 0;
-                    display: flex;
-                    margin-top: 38px;
+        div#col-nexgen {
+            div#nextgen-row1 {
+                div#col-nexgen-heading {
+                margin-top: 8% !important;
+                    h2.section-heading {
+                        max-width: 1090px;
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        @include font-size(3.375rem);
+                        @include rfs(3.25rem, line-height);
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        margin-bottom: 2% !important;
+                    }
+                    h2.section-heading:after {
+                        content: "";
+                        border: 2px solid $gold;
+                        width: 150px;
+                        position: relative;
+                        left: 0;
+                        display: flex;
+                        margin-top: 38px;
+                    }
                 }
             }
-        }
-        div#nextgen-row2 {
-            margin-top: 0px !important;
-        }
-        div#nextgen-row3 {
-            margin-top: 0px !important;
-            div.edgtf-full-section-inner {
-                display: flex;
-                flex-wrap: wrap;
-                div#col-nexgen-stats-right {
+            div#nextgen-row2 {
+                margin-top: 0px !important;
+            }
+            div#nextgen-row3 {
+                margin-top: 0px !important;
+                div.edgtf-full-section-inner {
                     display: flex;
-                    flex-basis: 100%;
-                    width: 100%;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    margin-bottom: 1% !important;
-                    transform: translateX(0px);
-                    div.nexgen-stats {
+                    flex-wrap: wrap;
+                    div#col-nexgen-stats-right {
+                        display: flex;
+                        flex-basis: 100%;
+                        width: 100%;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        margin-bottom: 1% !important;
+                        transform: translateX(0px);
+                        div.nexgen-stats {
 
+                        }
+                        p.stats-bodycopy {
+                                @include bold($sofia-sans);
+                                text-align: left;
+                                color: $copy;
+                                @include font-size(2rem);
+                                @include rfs(2.375rem, line-height);
+                                letter-spacing: 3px;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                        p {
+                        text-align: left;
+                            span.stats-percentage {
+                                @include regular($sofia-sans);
+                                text-align: left;
+                                color: $orange1;
+                                @include font-size(6.25rem);
+                                @include rfs(6.25rem, line-height);
+                                letter-spacing: 0;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            }
+                        }
                     }
-                    p.stats-bodycopy {
-                            @include bold($sofia-sans);
-                            text-align: left;
+                    div#col-nexgen-stats-fullwidth {
+                        display: flex;
+                        flex-basis: 100%;
+                        width: 100%;
+                        h3.section-subheading {
+                            @include regular($sofia-sans);
+                            text-align: center;
                             color: $copy;
                             @include font-size(2rem);
                             @include rfs(2.375rem, line-height);
                             letter-spacing: 3px;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                        sub.subscript {
-                            vertical-align: super !important;
-                            font-size: 65% !important;
-                            top: .005ex !important;
-                        }
-                    }
-                    p {
-                    text-align: left;
-                        span.stats-percentage {
-                            @include regular($sofia-sans);
-                            text-align: left;
-                            color: $orange1;
-                            @include font-size(6.25rem);
-                            @include rfs(6.25rem, line-height);
-                            letter-spacing: 0;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                        }
-                    }
-                }
-                div#col-nexgen-stats-fullwidth {
-                    display: flex;
-                    flex-basis: 100%;
-                    width: 100%;
-                    h3.section-subheading {
-                        @include regular($sofia-sans);
-                        text-align: center;
-                        color: $copy;
-                        @include font-size(2rem);
-                        @include rfs(2.375rem, line-height);
-                        letter-spacing: 3px;
-                        b.bold {
-                            font-weight: 800 !important;
-                        }
-                        sub.subscript {
-                            vertical-align: super !important;
-                            font-size: 65% !important;
-                            top: .005ex !important;
+                            b.bold {
+                                font-weight: 800 !important;
+                            }
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-div#section-future-treat {
-    margin: 0px !important;
-    padding: 0px !important;
-    background-image: url("/wp-content/themes/conall-child/images/future-treatment-background-1920x1318.png") !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-color: transparent;
-    z-index: 2;
-    aspect-ratio: 960/659;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -85px !important;
-    div#col-future-treat {
-            margin-top: 10% !important;
-    margin-bottom: 17% !important;
-        div#table-inrow-1 {
-            max-height: 100%;
-            border: 2px solid $gold;
-            @include rfs(1.25rem, border-radius);
-            @include form-gradient();
-            @include inner-box-shadow();
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 55px 200px 60px 200px !important;
-            margin-top: 6% !important;
-            /* transform: translateX(15px); */
-            div#future-treat-heading {
+    div#section-future-treat {
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/future-treatment-background-1920x1318.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        aspect-ratio: 960/659;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -85px !important;
+        div#col-future-treat {
+                margin-top: 10% !important;
+        margin-bottom: 17% !important;
+            div#table-inrow-1 {
+                max-height: 100%;
+                border: 2px solid $gold;
+                @include rfs(1.25rem, border-radius);
+                @include form-gradient();
+                @include inner-box-shadow();
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                h1.section-heading {
-                    @include semi-bold($sofia-sans);
-                    text-align: center;
-                    color: $white;
-                    @include font-size(3.375rem);
-                    @include rfs(3.375rem, line-height);
-                    letter-spacing: 0px;
-                    text-transform: uppercase;
-                    sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 65% !important;
-                        top: .005ex !important;
-                    }
-                }
-                h1.section-heading:after {
-                    margin: 0 auto !important;
-                    content: "";
-                    border: 2px solid $gold;
-                    width: 150px;
-                    position: relative;
-                    left: 0;
+                padding: 55px 200px 60px 200px !important;
+                margin-top: 6% !important;
+                /* transform: translateX(15px); */
+                div#future-treat-heading {
                     display: flex;
-                    margin-top: 30px !important;
-                    margin-bottom: 55px !important;
+                    justify-content: center;
+                    align-items: center;
+                    h1.section-heading {
+                        @include semi-bold($sofia-sans);
+                        text-align: center;
+                        color: $white;
+                        @include font-size(3.375rem);
+                        @include rfs(3.375rem, line-height);
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    h1.section-heading:after {
+                        margin: 0 auto !important;
+                        content: "";
+                        border: 2px solid $gold;
+                        width: 150px;
+                        position: relative;
+                        left: 0;
+                        display: flex;
+                        margin-top: 30px !important;
+                        margin-bottom: 55px !important;
+                    }
                 }
-            }
-            div#future-treat-bodycopy {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p.section-bodycopy {
-                    @include semi-bold($sofia-sans);
+                div#future-treat-bodycopy {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p.section-bodycopy {
+                        @include semi-bold($sofia-sans);
+                        text-align: center;
+                        color: $white;
+                        @include font-size(1.5rem);
+                        @include rfs(2.375rem, line-height);
+                        letter-spacing: 0px;
+                        margin-bottom: 2.5% !important;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 65% !important;
+                            top: .005ex !important;
+                        }
+                        span.yellow-copy {
+                            color: $gold;
+                        }
+                    }
+                }
+                .learn-more-btn {
+                    @include orange-grad-button();
+                    @include button-shadow();
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 75px;
+                    width: 235px;
+                    border-radius: 15px;
+                    margin: 0 auto !important;
+                    span {
+                    color: $white !important;
+                    @include bold($sofia-sans);
+                    text-transform: uppercase;
                     text-align: center;
-                    color: $white;
-                    @include font-size(1.5rem);
-                    @include rfs(2.375rem, line-height);
-                    letter-spacing: 0px;
-                    margin-bottom: 2.5% !important;
-                    sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 65% !important;
-                        top: .005ex !important;
-                    }
-                    span.yellow-copy {
-                        color: $gold;
+                    font-size: 28px;
+                    margin: 0;
+                    padding: 0;
+                    letter-spacing: 0;
                     }
                 }
-            }
-            .learn-more-btn {
-                @include orange-grad-button();
-                @include button-shadow();
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 75px;
-                width: 235px;
-                border-radius: 15px;
-                margin: 0 auto !important;
-                span {
-                color: $white !important;
-                @include bold($sofia-sans);
-                text-transform: uppercase;
-                text-align: center;
-                font-size: 28px;
-                margin: 0;
-                padding: 0;
-                letter-spacing: 0;
-                }
-            }
+        }
+        }
     }
-    }
-}
 }
     /*** Responsive Max-Width ***/
 @media all and (max-width: 1025px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
-    div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
-        aspect-ratio: 960/341;
-        top: 0px;
-        transform: translateY(-75px);
-    }
-    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
-        font-size: 1.75rem;
-    }
-    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
-        line-height: 1.5rem;
-        font-size: 1rem;
-    }
     div#section-nexgen {
     background-color: $white;
     aspect-ratio: 920/3000;
@@ -832,9 +797,142 @@ div#section-future-treat {
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-1920x682.png") !important;
         aspect-ratio: 960/341;
         top: 0px;
-        transform: translateY(-110px);
+        transform: translateY(-155px);
+        padding-bottom: 5% !important;
     }
+    #nex-gen_forcefullwidth {
+        display: none !important;
+    }
+    div#section-nexgen {
+    background-color: $white;
+    aspect-ratio: 1920/2500;
+    margin-top: 0px !important;
+    margin-bottom: 5% !important;
+        div#col-nexgen {
+            div#nextgen-row1 {
+                div#col-nexgen-heading {
+                margin-top: 8% !important;
+                    h2.section-heading {
+                        max-width: 1090px;
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        @include font-size(3.375rem);
+                        @include rfs(3.25rem, line-height);
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        margin-bottom: 2% !important;
+                    }
+                    h2.section-heading:after {
+                        content: "";
+                        border: 2px solid $gold;
+                        width: 150px;
+                        position: relative;
+                        left: 0;
+                        display: flex;
+                        margin-top: 38px;
+                    }
+                }
+            }
+            div#nextgen-row2 {
+                margin-top: 0px !important;
+                background-image: url(https://dev-elevar-da-microsite.pantheonsite.io/wp-content/uploads/2023/08/nexgen-mob-wave-414x814-1.png?id=347) !important;
+                background-size: 100% 100% !important;
+                div#nex-gen-img1 {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    img.vc_single_image-img {
+                        width: 75%;
+                    }
+                }
+                div#nex-gen-img2 {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    img.vc_single_image-img {
+                        width: 75%;
+                    }
+                }
+                div#nex-gen-img3 {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    img.vc_single_image-img {
+                        width: 75%;
+                    }
+                }
+            }
+            div#nextgen-row3 {
+                margin-top: 0px !important;
+                div.edgtf-full-section-inner {
+                    display: flex;
+                    flex-wrap: wrap;
+                    div#col-nexgen-stats-right {
+                        display: flex;
+                        flex-basis: 100%;
+                        width: 100%;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        margin-bottom: 1% !important;
+                        transform: translateX(0px);
+                        div.nexgen-stats {
 
+                        }
+                        p.stats-bodycopy {
+                                @include bold($sofia-sans);
+                                text-align: left;
+                                color: $copy;
+                                @include font-size(2rem);
+                                @include rfs(2.375rem, line-height);
+                                letter-spacing: 3px;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                        p {
+                        text-align: left;
+                            span.stats-percentage {
+                                @include regular($sofia-sans);
+                                text-align: left;
+                                color: $orange1;
+                                @include font-size(6.25rem);
+                                @include rfs(6.25rem, line-height);
+                                letter-spacing: 0;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            }
+                        }
+                    }
+                    div#col-nexgen-stats-fullwidth {
+                        display: flex;
+                        flex-basis: 100%;
+                        width: 100%;
+                        h3.section-subheading {
+                            @include regular($sofia-sans);
+                            text-align: center;
+                            color: $copy;
+                            @include font-size(2rem);
+                            @include rfs(2.375rem, line-height);
+                            letter-spacing: 3px;
+                            b.bold {
+                                font-weight: 800 !important;
+                            }
+                            sub.subscript {
+                                vertical-align: super !important;
+                                font-size: 65% !important;
+                                top: .005ex !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     div#section-future-treat {
     margin: 0px !important;
     padding: 0px !important;
@@ -943,6 +1041,26 @@ div#section-future-treat {
     }
 }
 @media all and (max-width: 960px) {
+        div#section-euhcc {
+        background-image: url("/wp-content/themes/conall-child/images/euhcc-mob-background-414x1093.png") !important;
+        aspect-ratio: 414/1093;
+        transform: translateY(-375px);
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading {
+        margin-top: 29% !important;
+        margin-bottom: 10% !important;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
+            font-size: 44px;
+    line-height: 44px;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-bodycopy p.section-bodycopy {
+    font-size: 25px;
+    line-height: 43px;
+    }
 }
 @media all and (max-width: 768px) {
     div#section-nexgen div#col-nexgen div#nextgen-row1 div#col-nexgen-heading {
@@ -954,10 +1072,12 @@ div#section-future-treat {
         line-height: 44px;
     }
     div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-mob-background-414x1093.png") !important;
         aspect-ratio: 414/1093;
         top: 0px;
-        transform: translateY(-110px);
+        transform: translateY(-250px);
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
     }
         div#section-euhcc div#col-euhcc div#euhcc-heading {
         margin-top: 29% !important;
@@ -1078,6 +1198,11 @@ div#section-future-treat {
     }
 }
 @media all and (max-width: 576px) {
+    div#section-euhcc {
+    transform: translateY(-130px);
+    width: 100%;
+    height: 100%;
+    }
         div#section-future-treat {
     margin: 0px !important;
     padding: 0px !important;
@@ -1190,6 +1315,48 @@ div#section-future-treat {
     }
 }
 @media all and (max-width: 480px) {
+    div#section-euhcc {
+    transform: translateY(-125px);
+    width: 100%;
+    height: 100%;
+    }
+    div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-fullwidth h3.section-subheading {
+        font-size: 32px;
+        line-height: 38px;
+        max-width: 90%;
+        margin: 0 auto !important;
+    }
+    div#section-future-treat {
+        aspect-ratio: 415/1077;
+    }
+    div.edh-col.stats-center {
+    margin-top: 50px !important;
+    margin-bottom: 80px !important;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 {
+    max-height: 100%;
+    padding: 55px 30px 60px 30px!important;
+    margin-top: 6%!important;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 .learn-more-btn {
+    height: 82px;
+    width: 232px;
+    margin-top: 25px;
+    }
+    div#section-future-treat div#col-future-treat div#table-inrow-1 div#future-treat-heading h1.section-heading {
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    }
+}
+
+@media all and (max-width: 480px) {
+    div#section-euhcc {
+    transform: translateY(-125px);
+    width: 100%;
+    height: 100%;
+    }
     div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-fullwidth h3.section-subheading {
         font-size: 32px;
         line-height: 38px;
