@@ -4195,25 +4195,6 @@ div#section-qol.edh-section {
                                             justify-content: center;
                                             align-items: center;
                                             /* @include form-gradient(); */
-
-                                            h4.qb-year {
-                                            @include bold($sofia-sans);
-                                            color: $white;
-                                            font-size: 34px;
-                                            line-height: 24px;
-
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            @include rfs(-0.016rem, letter-spacing);
-                                            }
-                                            p.qb-program {
-                                            font-size: 18px;
-                                            @include rfs(1.5rem, line-height);
-                                            @include regular($sofia-sans);
-                                            color: $white;
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            }
                                         }
                                     }
                                 }
@@ -4461,24 +4442,6 @@ div#section-qol.edh-section {
                                             justify-content: center;
                                             align-items: center;
                                             /* @include form-gradient(); */
-
-                                            h4.qb-year {
-                                            @include regular($sofia-sans);
-                                            color: $white;
-                                            font-size: 18px;
-                                            @include rfs(1.5rem, line-height);
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            @include rfs(-0.016rem, letter-spacing);
-                                            }
-                                            p.qb-program {
-                                            @include bold($sofia-sans);
-                                            color: $white;
-                                            font-size: 34px;
-                                            line-height: 24px;
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            }
                                         }
                                     }
                                 }
@@ -4904,7 +4867,7 @@ div#section-qol.edh-section {
                                             justify-content: center;
                                             align-items: center;
                                             /* @include form-gradient(); */
-                                            h4.qb-year {
+/*                                             h4.qb-year {
                                             @include bold($sofia-sans);
                                             color: $white;
                                             font-size: 34px;
@@ -4920,7 +4883,7 @@ div#section-qol.edh-section {
                                             @include rfs(1.5rem, line-height);
                                             text-align: center;
                                             text-transform: uppercase;
-                                            }
+                                            } */
                                         }
                                     }
                                 }
@@ -6004,13 +5967,13 @@ div#section-qol.edh-section {
         div.needed-outerbox.hs-box {
             border: 1px solid $copy;
             @include rfs(1.875rem, border-radius);
--webkit-border-radius: 1.875rem;
+            -webkit-border-radius: 1.875rem;
             padding: 20px;
             aspect-ratio: 1/1;
             div.needed-innerbox.hs-box {
                 background-color: $ltgrey1;
                 @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
+                -webkit-border-radius: 1.25rem;
                 padding: 20%;
                 @include white-box-shadow();
                 aspect-ratio: 1/1;
@@ -6584,6 +6547,9 @@ div#section-qol.edh-section {
                                             width: 100%;
                                             justify-content: center;
                                             align-items: center;
+                                            h4.qb-year {
+                                                font-size: 24px;
+                                            }
                                         }
                                     }
                                 }
@@ -6667,8 +6633,6 @@ div#section-qol.edh-section {
             padding-bottom: 18% !important;
         }
     }
-
-
 
     /* ************ LIVER FUNCTION SECTION ************ */
     div#section-liverfunct.edh-section {
@@ -7011,6 +6975,9 @@ div#section-qol.edh-section {
                                             width: 100%;
                                             justify-content: center;
                                             align-items: center;
+                                                                                        h4.qb-year {
+                                                font-size: 24px;
+                                            }
                                         }
                                     }
                                 }
