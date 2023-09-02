@@ -294,6 +294,13 @@ div#section-hero-outer-video {
             a#toptab-link2 {
                 @include rfs(0.525rem, border-bottom-right-radius);
             }
+            div.toptab-container.cine {
+                width: 295px;
+                left: -130px;
+            a#toptab-link1 {
+                @include rfs(0.625rem, border-bottom-left-radius);
+            }
+            }
         }
     }
 }
