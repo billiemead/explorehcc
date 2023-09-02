@@ -20,7 +20,7 @@ div#section-oas.edh-section { /* section */
         div#col-oas { /* section column */
             margin-top: 275px !important;
             div#oas-heading {
-                margin-top: 70px !important;
+                margin-top: 0px !important;
                 h1.section-heading {
                 @include regular($sofia-sans);
                 text-align: left;
@@ -7251,7 +7251,7 @@ div#section-qol.edh-section {
         background-size: cover !important;
         background-color: transparent;
         z-index: 2;
-        margin-top: -22% !important;
+        margin-top: -30% !important;
             div#col-oas { /* section column */
                 margin-top: 175px !important;
                 div#oas-heading {
