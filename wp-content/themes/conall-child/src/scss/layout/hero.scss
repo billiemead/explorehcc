@@ -221,17 +221,23 @@ div#section-hero-outer-video {
     }
     div#section-hero-outer,
     div#section-hero-outer-video {
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         z-index: 0;
         background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
         margin: 0px !important;
         background-position-Y: -500px !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         position: relative;
         padding-top: 0% !important;
         padding-bottom: 0% !important;
         aspect-ratio: 23/27;
+        left:0;
+        top:0;
     }
     /* ************ SIDE TABS ************ */
     div#section-sidetabs {
