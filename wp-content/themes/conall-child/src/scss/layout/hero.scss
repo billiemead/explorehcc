@@ -45,6 +45,13 @@ div#section-sidetabs {
         align-items: center;
         transform: rotate(270deg);
         }
+        div.toptab-container.cine {
+            width: 400px;
+            left: -183px;
+            a#toptab-link1 {
+                @include rfs(0.625rem, border-bottom-left-radius);
+            }
+        }
         a.toptab-link,
         a#toptab-link3 {
             color: $white;
@@ -230,7 +237,7 @@ div#section-hero-outer-video {
             left: 50%;
         }
     }
-    
+
     div#elevar-animation-mov,
     video.elevar-animation {
         display: none;
