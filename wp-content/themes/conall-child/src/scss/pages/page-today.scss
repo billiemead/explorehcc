@@ -52,10 +52,13 @@ div#section-oas.edh-section { /* section */
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
                     @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
+                    -webkit-border-radius: 1.875rem;
                     border-color: $white;
                     border-width: 2px;
                     div.edh-innerbox.hs-box {
                         @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                         border: 2px solid $gold;
                         display: flex;
                         flex-direction: row;
@@ -74,6 +77,7 @@ div#section-oas.edh-section { /* section */
                             background: transparent;
                             div.oas-nav-circle.hs-circle {
                                 border-radius: 100%;
+-webkit-border-radius: 100%;
                                 border: 2px solid $gold;
                                 width: 170px;
                                 height: 170px;
@@ -104,7 +108,9 @@ div#section-oas.edh-section { /* section */
                         }
                         div#oas-nav1 {
                             border-top-left-radius: 27px;
+-webkit-border-top-left-radius: 27px;
                             border-bottom-left-radius: 27px;
+-webkit-border-bottom-left-radius: 27px;
                            background: rgba(255, 255, 255, 0.1);
                         }
                         div#oas-nav2 {
@@ -118,7 +124,9 @@ div#section-oas.edh-section { /* section */
                         }
                         div#oas-nav4 {
                             border-top-right-radius: 27px;
+-webkit-border-top-right-radius: 27px;
                             border-bottom-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
                         }
                     }
                 }
@@ -257,6 +265,7 @@ div#section-livc.edh-section { /* section */
                     padding: 0px !important;
                     aspect-ratio: 137 / 99;
                     @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
 
                     p.cube-copy {
                         margin-top: 20px !important;
@@ -351,6 +360,7 @@ div#section-livc.edh-section { /* section */
                 width: 100%;
                 height: 100px;
                 @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                 border: 1px solid $purple;
                 background-color: $purple;
                 margin: 0 auto !important;
@@ -385,6 +395,7 @@ div#section-livc.edh-section { /* section */
                     background-color: $white;
                     border: 2px solid $bordergreylight;
                     border-radius: 100%;
+-webkit-border-radius: 100%;
                     position: relative;
                     z-index: 210;
                     box-sizing: border-box;
@@ -399,6 +410,7 @@ div#section-livc.edh-section { /* section */
                     background-color: $white;
                     border: 2px solid $gold;
                     border-radius: 100%;
+-webkit-border-radius: 100%;
                     @include circle-shadow-light();
                     box-sizing: border-box;
                     aspect-ratio: 1 / 1;
@@ -417,6 +429,7 @@ div#section-livc.edh-section { /* section */
             flex-wrap: nowrap;
             background-color: #E8E8E8;
             border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
             padding: 0 !important;
             position: relative;
             margin-top: 6% !important;
@@ -639,6 +652,7 @@ div#section-table.edh-section {
         div.edh-col.col2.table-box {
         border: 2px solid $gold2;
         @include rfs(1.25rem, border-radius);
+        -webkit-border-radius: 1.25rem;
         background: linear-gradient(#5a636d, #161030);
         padding: 0 !important;
             div.vc_row {
@@ -829,7 +843,7 @@ div#section-os.edh-section {
             @include rfs(0.188rem, letter-spacing);
                 sub.subscript {
                     vertical-align: super !important;
-                    font-size: 55% !important;
+                    font-size: 65% !important;
                     top: .005ex !important;
                 }
             }
@@ -932,10 +946,12 @@ div#section-needed.edh-section {
     div.needed-outerbox.hs-box {
         border: 1px solid $copy;
         @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
         padding: 20px;
         div.needed-innerbox.hs-box {
             background-color: $ltgrey1;
             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
             padding: 38px 70px 38px 70px;
             @include white-box-shadow();
                 h4.needed {
@@ -973,7 +989,7 @@ div#section-needed.edh-section {
             }
             sub.subscript {
             vertical-align: super !important;
-            font-size: 55% !important;
+            font-size: 65% !important;
             top: .005ex !important;
             }
         }
@@ -1028,7 +1044,7 @@ div#section-needed.edh-section {
             }
             sub.subscript {
             vertical-align: super !important;
-            font-size: 55% !important;
+            font-size: 65% !important;
             top: .005ex !important;
             }
         }
@@ -1107,7 +1123,7 @@ div#section-needed.edh-section {
                             color: $copy;
                                 sub.subscript {
                                     vertical-align: super !important;
-                                    font-size: 55% !important;
+                                    font-size: 65% !important;
                                     top: .005ex !important;
                                 }
                             }
@@ -1263,13 +1279,17 @@ div#section-needed.edh-section {
                         }
                         div#html-quadbox-a {
                             div.edh-outerbox {
-                                border-top-right-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 padding-right: 0;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1277,13 +1297,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-b {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1291,13 +1314,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-c {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1305,12 +1331,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-d {
                             div.edh-outerbox {
                                 border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 div.edh-innerbox.hs-box {
                                     border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                     border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1357,7 +1387,7 @@ div#section-needed.edh-section {
                             color: $copy;
                                 sub.subscript {
                                     vertical-align: super !important;
-                                    font-size: 55% !important;
+                                    font-size: 65% !important;
                                     top: .005ex !important;
                                 }
                             }
@@ -1514,13 +1544,17 @@ div#section-needed.edh-section {
                         }
                         div#html-quadbox-e {
                             div.edh-outerbox {
-                                border-top-right-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 padding-right: 0;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1528,13 +1562,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-f {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1542,13 +1579,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-g {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1556,12 +1596,16 @@ div#section-needed.edh-section {
                         div#html-quadbox-h {
                             div.edh-outerbox {
                                 border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 div.edh-innerbox.hs-box {
                                     border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                     border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -1626,7 +1670,9 @@ div#section-qol.edh-section {
                     justify-content: flex-start;
                     align-items: flex-start;
                     border-top-right-radius: 20px;
+-webkit-border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
                     width: 950px !important;
                     position: absolute;
                     top: 0px;
@@ -1843,7 +1889,7 @@ div#section-liverfunct.edh-section {
                             color: $copy;
                                 sub.subscript {
                                     vertical-align: super !important;
-                                    font-size: 55% !important;
+                                    font-size: 65% !important;
                                     top: .005ex !important;
                                 }
                             }
@@ -1999,13 +2045,17 @@ div#section-liverfunct.edh-section {
                         }
                         div#html-quadbox-i {
                             div.edh-outerbox {
-                                border-top-right-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 padding-right: 0;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
-                                    border-top-right-radius: 0;
+                                    border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -2013,12 +2063,14 @@ div#section-liverfunct.edh-section {
                         div#html-quadbox-j {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
                                     border-radius: 0;
+-webkit-border-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -2026,12 +2078,14 @@ div#section-liverfunct.edh-section {
                         div#html-quadbox-k {
                             div.edh-outerbox {
                                 border-radius: 0;
+-webkit-border-radius: 0;
                                 padding-right: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 border-right: none;
                                 div.edh-innerbox.hs-box {
                                     border-radius: 0;
+-webkit-border-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -2039,12 +2093,16 @@ div#section-liverfunct.edh-section {
                         div#html-quadbox-l {
                             div.edh-outerbox {
                                 border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 padding-left: 0;
                                 border-left: none;
                                 div.edh-innerbox.hs-box {
                                     border-top-left-radius: 0;
+-webkit-border-top-left-radius: 0;
                                     border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                     width: 100%;
                                 }
                             }
@@ -2090,6 +2148,7 @@ div.edh-box-container {
         @include form-gradient;
 
         @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
         padding: 15px;
         box-sizing: border-box;
         div.edh-innerbox {
@@ -2114,6 +2173,7 @@ div.edh-circle-container {
         border: 2px solid $white;
         background-color: transparent;
         border-radius: 100%;
+-webkit-border-radius: 100%;
         padding: 16px;
         display: flex;
         flex-direction: column;
@@ -2128,6 +2188,7 @@ div.edh-circle-container {
             background-color: $white;
             border: 2px solid $gold2;
             border-radius: 100%;
+-webkit-border-radius: 100%;
             padding: 0 !important;
             @include inner-circle-shadow-dark();
             width: 100%;
@@ -2144,6 +2205,7 @@ div#section-needed {
             border: 1px solid $bordergrey;
             background-color: transparent;
             border-radius: 100%;
+-webkit-border-radius: 100%;
             padding: 16px;
             display: flex;
             flex-direction: column;
@@ -2158,6 +2220,7 @@ div#section-needed {
                 background-color: $white;
                 border: 2px solid $gold2;
                 border-radius: 100%;
+-webkit-border-radius: 100%;
                 padding: 0 !important;
                 @include inner-circle-shadow();
                 width: 100%;
@@ -2230,7 +2293,9 @@ div#section-qol.edh-section {
                     justify-content: flex-start;
                     align-items: flex-start;
                     border-top-right-radius: 20px;
+-webkit-border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
                     width: 900px !important;
                     position: absolute;
                     top: 0px;
@@ -2309,7 +2374,9 @@ div#section-qol.edh-section {
                     justify-content: flex-start;
                     align-items: flex-start;
                     border-top-right-radius: 20px;
+-webkit-border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
                     width: 725px !important;
                     position: absolute;
                     top: 0px;
@@ -2388,7 +2455,9 @@ div#section-qol.edh-section {
                         justify-content: flex-start;
                         align-items: flex-start;
                         border-top-right-radius: 20px;
+-webkit-border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
                         width: 725px !important;
                         position: absolute;
                         top: 0px;
@@ -2467,7 +2536,9 @@ div#section-qol.edh-section {
                         justify-content: flex-start;
                         align-items: flex-start;
                         border-top-right-radius: 20px;
+-webkit-border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
                         width: 640px !important;
                         position: absolute;
                         top: 0px;
@@ -2536,6 +2607,7 @@ div#section-qol.edh-section {
             left: 0;
             position: relative;
             border-radius: 0;
+-webkit-border-radius: 0;
             justify-content: center;
             align-items: center;
             box-shadow: none;
@@ -2606,6 +2678,7 @@ div#section-qol.edh-section {
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -2824,10 +2897,12 @@ div#section-qol.edh-section {
                 div#nav-quadbox {
                     div.edh-outerbox.hs-box {
                         @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
                         border-color: $white;
                         border-width: 2px;
                         div.edh-innerbox.hs-box {
                             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                             border: 2px solid $gold;
                             display: flex;
                             flex-direction: column;
@@ -2843,11 +2918,12 @@ div#section-qol.edh-section {
                                 width: 100%;
                                 justify-content: flex-start;
                                 align-items: center;
-                                ackground: transparent;
+                                background: transparent;
                                 padding: 25px 50px !important;
                                 box-sizing: border-box;
                                 div.oas-nav-circle.hs-circle {
                                     border-radius: 100%;
+-webkit-border-radius: 100%;
                                     border: 2px solid $gold;
                                     max-width: 125px;
                                     max-height: 125px;
@@ -2880,9 +2956,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav1 {
                                 border-top-left-radius: 27px;
+-webkit-border-top-left-radius: 27px;
                                 border-top-right-radius: 27px;
+-webkit-border-top-right-radius: 27px;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 background: rgba(255, 255, 255, 0.1);
                             }
                             div#oas-nav2 {
@@ -2900,9 +2980,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav4 {
                                 border-top-left-radius: 0;
-                                border-top-right-radius: 0;
+-webkit-border-top-left-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-left-radius: 27px;
+-webkit-border-bottom-left-radius: 27px;
                                 border-bottom-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
                             }
                         }
                     }
@@ -3048,6 +3132,7 @@ div#section-qol.edh-section {
                         padding: 0px !important;
                         aspect-ratio: 137 / 99;
                         @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                         margin-bottom: 7% !important;
                         z-index: 6;
                         p.cube-copy {
@@ -3143,6 +3228,7 @@ div#section-qol.edh-section {
                     width: 100%;
                     height: 100px;
                     @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                     border: 1px solid $purple;
                     background-color: $purple;
                     margin: 0 auto !important;
@@ -3183,6 +3269,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $bordergreylight;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         position: relative;
                         z-index: 210;
                         box-sizing: border-box;
@@ -3198,6 +3285,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $gold;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         @include circle-shadow-light();
                         box-sizing: border-box;
                         aspect-ratio: 1 / 1;
@@ -3216,6 +3304,7 @@ div#section-qol.edh-section {
                 flex-wrap: nowrap;
                 background-color: #E8E8E8;
                 border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                 padding: 0 !important;
                 position: relative;
                 margin-top: -84% !important;
@@ -3446,6 +3535,7 @@ div#section-qol.edh-section {
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -3640,7 +3730,7 @@ div#section-qol.edh-section {
                 text-transform: uppercase;
                     sub.subscript {
                         vertical-align: super !important;
-                        font-size: 55% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                     }
                 }
@@ -3768,11 +3858,13 @@ div#section-qol.edh-section {
         div.needed-outerbox.hs-box {
             border: 1px solid $copy;
             @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
             padding: 20px;
             aspect-ratio: 1/1;
             div.needed-innerbox.hs-box {
                 background-color: $ltgrey1;
                 @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                 padding: 20%;
                 @include white-box-shadow();
                 aspect-ratio: 1/1;
@@ -3814,7 +3906,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -3870,7 +3962,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -3969,7 +4061,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -4127,6 +4219,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-a {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4138,6 +4231,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-b {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4149,6 +4243,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-c {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4160,6 +4255,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-d {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4230,7 +4326,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -4388,6 +4484,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-e {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4399,6 +4496,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-f {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4410,6 +4508,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-g {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4421,6 +4520,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-h {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4673,7 +4773,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -4826,6 +4926,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-i {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4837,6 +4938,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-j {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4848,6 +4950,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-k {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4859,6 +4962,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-l {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -4953,10 +5057,12 @@ div#section-qol.edh-section {
                 div#nav-quadbox {
                     div.edh-outerbox.hs-box {
                         @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
                         border-color: $white;
                         border-width: 2px;
                         div.edh-innerbox.hs-box {
                             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                             border: 2px solid $gold;
                             display: flex;
                             flex-direction: column;
@@ -4977,6 +5083,7 @@ div#section-qol.edh-section {
                                 box-sizing: border-box;
                                 div.oas-nav-circle.hs-circle {
                                     border-radius: 100%;
+-webkit-border-radius: 100%;
                                     border: 2px solid $gold;
                                     max-width: 125px;
                                     max-height: 125px;
@@ -5009,9 +5116,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav1 {
                                 border-top-left-radius: 27px;
+-webkit-border-top-left-radius: 27px;
                                 border-top-right-radius: 27px;
+-webkit-border-top-right-radius: 27px;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 background: rgba(255, 255, 255, 0.1);
                             }
                             div#oas-nav2 {
@@ -5029,9 +5140,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav4 {
                                 border-top-left-radius: 0;
-                                border-top-right-radius: 0;
+-webkit-border-top-left-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-left-radius: 27px;
+-webkit-border-bottom-left-radius: 27px;
                                 border-bottom-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
                             }
                         }
                     }
@@ -5177,6 +5292,7 @@ div#section-qol.edh-section {
                         padding: 0px !important;
                         aspect-ratio: 137 / 99;
                         @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                         margin-bottom: 7% !important;
                         z-index: 6;
                         p.cube-copy {
@@ -5272,6 +5388,7 @@ div#section-qol.edh-section {
                     width: 100%;
                     height: 100px;
                     @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                     border: 1px solid $purple;
                     background-color: $purple;
                     margin: 0 auto !important;
@@ -5311,6 +5428,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $bordergreylight;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         position: relative;
                         z-index: 210;
                         box-sizing: border-box;
@@ -5326,6 +5444,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $gold;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         @include circle-shadow-light();
                         box-sizing: border-box;
                         aspect-ratio: 1 / 1;
@@ -5344,6 +5463,7 @@ div#section-qol.edh-section {
                 flex-wrap: nowrap;
                 background-color: #E8E8E8;
                 border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                 padding: 0 !important;
                 position: relative;
                 margin-top: -84% !important;
@@ -5572,6 +5692,7 @@ div#section-qol.edh-section {
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -5765,7 +5886,7 @@ div#section-qol.edh-section {
                 text-transform: inherit;
                     sub.subscript {
                         vertical-align: super !important;
-                        font-size: 55% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                     }
                 }
@@ -5881,11 +6002,13 @@ div#section-qol.edh-section {
         div.needed-outerbox.hs-box {
             border: 1px solid $copy;
             @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
             padding: 20px;
             aspect-ratio: 1/1;
             div.needed-innerbox.hs-box {
                 background-color: $ltgrey1;
                 @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                 padding: 20%;
                 @include white-box-shadow();
                 aspect-ratio: 1/1;
@@ -5927,7 +6050,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -5983,7 +6106,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -6082,7 +6205,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -6239,6 +6362,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-a {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6250,6 +6374,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-b {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6261,6 +6386,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-c {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6272,6 +6398,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-d {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6342,7 +6469,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -6500,6 +6627,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-e {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6511,6 +6639,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-f {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6522,6 +6651,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-g {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6533,6 +6663,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-h {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6788,7 +6919,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -6941,6 +7072,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-i {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6952,6 +7084,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-j {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6963,6 +7096,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-k {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -6974,6 +7108,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-l {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -7062,10 +7197,12 @@ div#section-qol.edh-section {
                 div#nav-quadbox {
                     div.edh-outerbox.hs-box {
                         @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
                         border-color: $white;
                         border-width: 2px;
                         div.edh-innerbox.hs-box {
                             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                             border: 2px solid $gold;
                             display: flex;
                             flex-direction: column;
@@ -7086,6 +7223,7 @@ div#section-qol.edh-section {
                                 box-sizing: border-box;
                                 div.oas-nav-circle.hs-circle {
                                     border-radius: 100%;
+-webkit-border-radius: 100%;
                                     border: 2px solid $gold;
                                     max-width: 85px;
                                     max-height: 85px;
@@ -7118,9 +7256,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav1 {
                                 border-top-left-radius: 27px;
+-webkit-border-top-left-radius: 27px;
                                 border-top-right-radius: 27px;
+-webkit-border-top-right-radius: 27px;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 background: rgba(255, 255, 255, 0.1);
                             }
                             div#oas-nav2 {
@@ -7138,9 +7280,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav4 {
                                 border-top-left-radius: 0;
-                                border-top-right-radius: 0;
+-webkit-border-top-left-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-left-radius: 27px;
+-webkit-border-bottom-left-radius: 27px;
                                 border-bottom-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
                             }
                         }
                     }
@@ -7197,10 +7343,12 @@ div#section-qol.edh-section {
                 div#nav-quadbox {
                     div.edh-outerbox.hs-box {
                         @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
                         border-color: $white;
                         border-width: 2px;
                         div.edh-innerbox.hs-box {
                             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                             border: 2px solid $gold;
                             display: flex;
                             flex-direction: column;
@@ -7221,6 +7369,7 @@ div#section-qol.edh-section {
                                 box-sizing: border-box;
                                 div.oas-nav-circle.hs-circle {
                                     border-radius: 100%;
+-webkit-border-radius: 100%;
                                     border: 2px solid $gold;
                                     max-width: 85px;
                                     max-height: 85px;
@@ -7253,9 +7402,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav1 {
                                 border-top-left-radius: 27px;
+-webkit-border-top-left-radius: 27px;
                                 border-top-right-radius: 27px;
+-webkit-border-top-right-radius: 27px;
                                 border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
                                 border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
                                 background: rgba(255, 255, 255, 0.1);
                             }
                             div#oas-nav2 {
@@ -7273,9 +7426,13 @@ div#section-qol.edh-section {
                             }
                             div#oas-nav4 {
                                 border-top-left-radius: 0;
-                                border-top-right-radius: 0;
+-webkit-border-top-left-radius: 0;
+                                border-radius: 0;
+-webkit-border-top-right-radius: 0;
                                 border-bottom-left-radius: 27px;
+-webkit-border-bottom-left-radius: 27px;
                                 border-bottom-right-radius: 27px;
+-webkit-border-bottom-right-radius: 27px;
                             }
                         }
                     }
@@ -7422,6 +7579,7 @@ div#section-qol.edh-section {
                         padding: 0px !important;
                         aspect-ratio: 137 / 99;
                         @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                         margin-bottom: 7% !important;
                         z-index: 6;
                         p.cube-copy {
@@ -7517,6 +7675,7 @@ div#section-qol.edh-section {
                     width: 100%;
                     height: 100px;
                     @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                     border: 1px solid $purple;
                     background-color: $purple;
                     margin: 0 auto !important;
@@ -7557,6 +7716,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $bordergreylight;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         position: relative;
                         z-index: 210;
                         box-sizing: border-box;
@@ -7572,6 +7732,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $gold;
                         border-radius: 100%;
+-webkit-border-radius: 100%;
                         @include circle-shadow-light();
                         box-sizing: border-box;
                         aspect-ratio: 1 / 1;
@@ -7590,6 +7751,7 @@ div#section-qol.edh-section {
                 flex-wrap: nowrap;
                 background-color: #E8E8E8;
                 border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                 padding: 0 !important;
                 position: relative;
                 margin-top: -84% !important;
@@ -7826,6 +7988,7 @@ div#section-qol.edh-section {
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -8019,7 +8182,7 @@ div#section-qol.edh-section {
                 text-transform: inherit;
                     sub.subscript {
                         vertical-align: super !important;
-                        font-size: 55% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                     }
                 }
@@ -8137,11 +8300,13 @@ div#section-qol.edh-section {
         div.needed-outerbox.hs-box {
             border: 1px solid $copy;
             @include rfs(1.875rem, border-radius);
+-webkit-border-radius: 1.875rem;
             padding: 20px;
             aspect-ratio: 1/1;
             div.needed-innerbox.hs-box {
                 background-color: $ltgrey1;
                 @include rfs(1.25rem, border-radius);
+-webkit-border-radius: 1.25rem;
                 padding: 20%;
                 @include white-box-shadow();
                 aspect-ratio: 1/1;
@@ -8183,7 +8348,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -8239,7 +8404,7 @@ div#section-qol.edh-section {
                 }
                 sub.subscript {
                 vertical-align: super !important;
-                font-size: 55% !important;
+                font-size: 65% !important;
                 top: .005ex !important;
                 }
             }
@@ -8338,7 +8503,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -8495,6 +8660,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-a {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8506,6 +8672,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-b {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8517,6 +8684,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-c {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                         border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8528,6 +8696,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-d {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8598,7 +8767,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -8756,6 +8925,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-e {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8767,6 +8937,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-f {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8778,6 +8949,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-g {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -8789,6 +8961,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-h {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -9040,7 +9213,7 @@ div#section-qol.edh-section {
                                 color: $copy;
                                     sub.subscript {
                                         vertical-align: super !important;
-                                        font-size: 55% !important;
+                                        font-size: 65% !important;
                                         top: .005ex !important;
                                     }
                                 }
@@ -9193,6 +9366,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-i {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -9204,6 +9378,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-j {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -9215,6 +9390,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-k {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {
@@ -9226,6 +9402,7 @@ div#section-qol.edh-section {
                             div#html-quadbox-l {
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
+-webkit-border-radius: 1.25rem;
                                     padding: 15px;
                                     border: 1px solid #707070;
                                     div.edh-innerbox.hs-box {

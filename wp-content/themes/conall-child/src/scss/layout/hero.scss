@@ -36,27 +36,39 @@ div#section-sidetabs {
     z-index: 50;
     div#col-nav-sidetabs {
         div.toptab-container {
-            transform: rotate(270deg);
-            position: fixed;
-            left: -181px;
-            top: 235px;
+        position: fixed;
+        left: -212px;
+        top: 255px;
+        display: flex;
+        width: 460px;
+        justify-content: space-between;
+        align-items: center;
+        transform: rotate(270deg);
         }
         a.toptab-link {
             color: $white;
-            @include padding(0.5rem 0.938rem);
+            padding: 0;
             @include semi-bold($sofia-sans);
             text-transform: uppercase;
             @include rfs(0.031rem, letter-spacing);
             @include font-size(1.125rem);
             background-color: $purple;
+            display: flex;
+            padding: 0 14px;
+            height: 37px;
+            justify-content: center;
+            align-items: center;
+                img {
+                    transform: rotate(90deg);
+                }
+            }
         }
-        a#toptab-link1 {
+        a#toptab-link3 {
             @include rfs(0.625rem, border-bottom-left-radius);
         }
         a#toptab-link2 {
             @include rfs(0.625rem, border-bottom-right-radius);
         }
-    }
 }
 /* ************ HERO ************ */
 div#hero-bottom {
@@ -229,19 +241,19 @@ div#section-hero-outer-video {
             div.toptab-container {
                 transform: rotate(270deg);
                 position: fixed;
-                left: -120px;
-                top: 170px;
+                left: -157px;
+                top: 235px;
+                width: 350px;
             }
             a.toptab-link {
                 color: $white;
-                @include padding(0.35rem 0.5rem);
                 @include semi-bold($sofia-sans);
                 text-transform: uppercase;
                 @include rfs(0.031rem, letter-spacing);
                 @include font-size(0.75rem);
                 background-color: $purple;
             }
-            a#toptab-link1 {
+            a#toptab-link3 {
                 @include rfs(0.525rem, border-bottom-left-radius);
             }
             a#toptab-link2 {

@@ -138,7 +138,7 @@ div#section-basecamp {
                     }
                     sub.subscript {
                     vertical-align: super !important;
-                    font-size: 35% !important;
+                    font-size: 65% !important;
                     top: .005ex !important;
                     }
                 }
@@ -204,7 +204,7 @@ div#section-basecamp {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                font-size: 35% !important;
+                                font-size: 65% !important;
                                 top: .005ex !important;
                                 }
                         }
@@ -383,7 +383,7 @@ div#section-hemrisk.edh-section {
                     margin-bottom: 1.5% !important;
                     sub.subscript {
                         vertical-align: super !important;
-                        font-size: 55% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                     }
                 }
@@ -399,7 +399,7 @@ div#section-hemrisk.edh-section {
                     margin-top: 2% !important;
                     sub.subscript {
                         vertical-align: super !important;
-                        font-size: 60% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                     }
                 }
@@ -553,7 +553,7 @@ div#section-hsform-outer-yes.edh-section {
                     margin-bottom: 2% !important;
                         sub.subscript {
                         vertical-align: super !important;
-                        font-size: 75% !important;
+                        font-size: 65% !important;
                         top: .005ex !important;
                         }
                         span.underline {
@@ -622,7 +622,7 @@ div#section-hsform-outer-yes.edh-section {
                                     }
                                     sub.subscript {
                                     vertical-align: super !important;
-                                    font-size: 35% !important;
+                                    font-size: 65% !important;
                                     top: .005ex !important;
                                     }
                             }
@@ -1112,7 +1112,7 @@ div#section-hsform-outer-yes.edh-section {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                font-size: 35% !important;
+                                font-size: 65% !important;
                                 top: .005ex !important;
                                 }
                         }
@@ -1173,20 +1173,6 @@ div#section-hsform-outer-yes.edh-section {
                     padding-bottom: 2.388rem;
                     min-width: 100%;
                 }
-                div.edh-col.col-inner.right::before {
-                    content: "";
-                    border-top: 1px solid #ffffff;
-                    width: auto;
-                    height: 1px;
-                    position: absolute;
-                    bottom: 100%;
-                    margin-left: 50% !important;
-                    margin-right: 50% !important;
-                    display: flex;
-                    min-width: 165px;
-                    border-left: none;
-                    left: unset;
-                }
                 div.edh-col.col-inner-img {
                     grid-area: 1 / 1 / 2 / 2;
                 }
@@ -1240,7 +1226,6 @@ div#section-hsform-outer-yes.edh-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateY(0);
         margin-top: -10% !important;
         margin-bottom: -246px !important;
         /* ***** STICKY NAV **** */
@@ -1346,7 +1331,6 @@ div#section-hsform-outer-yes.edh-section {
         flex-direction: column;
         justify-content: center;
         margin-top: -17% !important;
-        transform: translateY(0);
         /* ***** STICKY NAV **** */
         div#col-dlb-nav /* section column */ {
             margin-top: 8% !important;
@@ -1491,7 +1475,7 @@ div#section-hsform-outer-yes.edh-section {
                         margin-bottom: 1.5% !important;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 55% !important;
+                            font-size: 65% !important;
                             top: .005ex !important;
                         }
                     }
@@ -1507,7 +1491,7 @@ div#section-hsform-outer-yes.edh-section {
                         margin-top: 2% !important;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 60% !important;
+                            font-size: 65% !important;
                             top: .005ex !important;
                         }
                     }
@@ -1676,7 +1660,7 @@ div#section-hsform-outer-yes.edh-section {
                         margin-bottom: 1.5% !important;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 55% !important;
+                            font-size: 65% !important;
                             top: .005ex !important;
                         }
                     }
@@ -1692,7 +1676,7 @@ div#section-hsform-outer-yes.edh-section {
                         margin-top: 2% !important;
                         sub.subscript {
                             vertical-align: super !important;
-                            font-size: 60% !important;
+                            font-size: 65% !important;
                             top: .005ex !important;
                         }
                     }
