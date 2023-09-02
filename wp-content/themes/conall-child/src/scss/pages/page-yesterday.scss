@@ -204,7 +204,8 @@ div#section-basecamp {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                font-size: 65% !important;
+                                @include font-size(65%);
+                                /* font-size: 65% !important; */
                                 top: .005ex !important;
                                 }
                         }
@@ -622,7 +623,7 @@ div#section-hsform-outer-yes.edh-section {
                                     }
                                     sub.subscript {
                                     vertical-align: super !important;
-                                    font-size: 65% !important;
+                                    /* font-size: 65% !important; */
                                     top: .005ex !important;
                                     }
                             }
@@ -923,7 +924,7 @@ div#section-hsform-outer-yes.edh-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateY(-126px);
+        transform: translateY(-15px);
         margin-bottom: -264px !important;
         /* ***** STICKY NAV **** */
         div#col-dlb-nav /* section column */ {
@@ -1112,7 +1113,7 @@ div#section-hsform-outer-yes.edh-section {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                font-size: 65% !important;
+                                /* font-size: 65% !important; */
                                 top: .005ex !important;
                                 }
                         }

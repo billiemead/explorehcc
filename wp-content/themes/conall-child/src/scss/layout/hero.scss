@@ -23,7 +23,7 @@ div#section-hero-footnote {
                 left: 0;
                 display: flex;
                 justify-content: center;
-                height: calc(100vh * .85);
+                height: calc(100vh * .80);
                 align-items: flex-end;
                 text-shadow: 4px 4px 13px rgba(0,0,0,0.85);
         }
@@ -45,7 +45,8 @@ div#section-sidetabs {
         align-items: center;
         transform: rotate(270deg);
         }
-        a.toptab-link {
+        a.toptab-link,
+        a#toptab-link3 {
             color: $white;
             padding: 0;
             @include semi-bold($sofia-sans);
@@ -58,17 +59,24 @@ div#section-sidetabs {
             height: 37px;
             justify-content: center;
             align-items: center;
-                img {
-                    transform: rotate(90deg);
-                }
-            }
         }
         a#toptab-link3 {
+            padding-right: 17px;
             @include rfs(0.625rem, border-bottom-left-radius);
+        }
+        a#toptab-link3::before {
+            transform: rotate(90deg);
         }
         a#toptab-link2 {
             @include rfs(0.625rem, border-bottom-right-radius);
         }
+        #toptab-link3::before {
+            content:  url('/wp-content/themes/conall-child/images/vol_on_icon_25x23.png');
+        }
+        #toptab-link3.muted::before {
+            content:  url('/wp-content/themes/conall-child/images/vol_off_icon_25x23.png');
+        }
+    }
 }
 /* ************ HERO ************ */
 div#hero-bottom {
@@ -199,6 +207,12 @@ div#section-hero-outer-video {
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
 
+    div#section-sidetabs div#col-nav-sidetabs a#toptab-link3 {
+        display: none;
+    }
+    div#section-sidetabs div#col-nav-sidetabs a#toptab-link1 {
+        border-bottom-left-radius: 0.525rem;
+    }
     div#section-hero-outer-video,
     div#section-hero {
         div.wpb_wrapper {
@@ -210,11 +224,13 @@ div#section-hero-outer-video {
     div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
+            position: relative;
             width: 350px;
             top: 250px;
             left: 50%;
         }
     }
+    
     div#elevar-animation-mov,
     video.elevar-animation {
         display: none;
@@ -250,13 +266,12 @@ div#section-hero-outer-video {
         z-index: 50;
         div#col-nav-sidetabs {
             div.toptab-container {
-                transform: rotate(270deg);
-                position: fixed;
-                left: -157px;
-                top: 235px;
-                width: 350px;
+                left: -130px;
+                top: 192px;
+                width: 294px;
             }
-            a.toptab-link {
+            a.toptab-link,
+            a.muted {
                 color: $white;
                 @include semi-bold($sofia-sans);
                 text-transform: uppercase;
@@ -264,7 +279,8 @@ div#section-hero-outer-video {
                 @include font-size(0.75rem);
                 background-color: $purple;
             }
-            a#toptab-link3 {
+            a#toptab-link3,
+            a.muted {
                 @include rfs(0.525rem, border-bottom-left-radius);
             }
             a#toptab-link2 {
