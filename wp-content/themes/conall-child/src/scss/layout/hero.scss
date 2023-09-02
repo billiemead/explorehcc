@@ -121,6 +121,7 @@ div#section-hero-outer {
         position: fixed;
         top:0;
         z-index: -999;
+        height: auto;
     }
 }
 div#section-hero-outer-video {
@@ -231,7 +232,7 @@ div#section-hero-outer-video {
     div#section-hero-outer-video,
     div#section-hero-outer {
         div#subhead-svg {
-            position: relative;
+            position: absolute;
             width: 350px;
             top: 250px;
             left: 50%;

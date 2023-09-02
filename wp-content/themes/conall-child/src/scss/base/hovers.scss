@@ -5,13 +5,35 @@ div.dlb-nav-container  {
     transition: background-color 1000ms ease-in-out 150ms;
 } */
 
+input.hs-button.primary.large:hover {
+    background-color: #25156F !important;
+}
+a:hover {
+    color: #25156F;
+}
 div.oas-nav-container:hover,
 div.dlb-nav-container:hover {
     cursor: pointer;
     background: $darkpurple !important;
 }
 div#section-os.edh-section div#col-os-buttons div.vc_column-inner div.wpb_wrapper a.os-button-purple:hover {
-    background-color: #4c3c95 !important;
+    background-color: #25156F !important;
 }
 
+#edgtf-back-to-top>span:hover {
+    background-color: #25156F !important;
+    border: 1px solid #25156F !important;
+}
 
+a#toptab-link1:hover,
+a#toptab-link2:hover,
+a#toptab-link3:hover {
+    background-color: #25156F !important;
+}
+
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
+    border-color: #25156F !important;
+}
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-bg):hover {
+    background-color: #25156F !important;
+}

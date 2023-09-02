@@ -1087,8 +1087,6 @@ div#section-hsform-outer-tom.edh-section {
         line-height: 44px;
     }
     div#section-euhcc { /* section */
-        background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
-        aspect-ratio: 414/414;
         top: 0px;
         transform: translateY(0px);
         width: 100%;
@@ -1343,9 +1341,21 @@ div#section-hsform-outer-tom.edh-section {
 }
 @media all and (max-width: 480px) {
     div#section-euhcc {
-    transform: translateY(-125px);
+    background-image: url("/wp-content/themes/conall-child/images/euhcc-mob-background-414x1093.png") !important;
+    aspect-ratio: 414/1093;
+    transform: translateY(0px);
     width: 100%;
     height: 100%;
+    margin-top: -25% !important;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading {
+    margin-top: 29% !important;
+    margin-bottom: 0% !important;
+    }
+    div#section-euhcc div#col-euhcc div#euhcc-heading h1.section-heading {
+    font-size: 44px;
+    line-height: 44px;
+    transform: translateY(0px);
     }
     div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-fullwidth h3.section-subheading {
         font-size: 32px;
@@ -1376,46 +1386,9 @@ div#section-hsform-outer-tom.edh-section {
     letter-spacing: 0;
     text-transform: uppercase;
     }
-        div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-right p.stats-bodycopy,
+    div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-right p.stats-bodycopy,
     div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-right p span.stats-percentage {
     transform: translateX(50%);
     width: 70%;
-    }
-}
-
-@media all and (max-width: 480px) {
-    div#section-euhcc {
-    transform: translateY(-125px);
-    width: 100%;
-    height: 100%;
-    }
-    div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-fullwidth h3.section-subheading {
-        font-size: 32px;
-        line-height: 38px;
-        max-width: 90%;
-        margin: 0 auto !important;
-    }
-    div#section-future-treat {
-        aspect-ratio: 415/1077;
-    }
-    div.edh-col.stats-center {
-    margin-top: 50px !important;
-    margin-bottom: 80px !important;
-    }
-    div#section-future-treat div#col-future-treat div#table-inrow-1 {
-    max-height: 100%;
-    padding: 55px 30px 60px 30px!important;
-    margin-top: 6%!important;
-    }
-    div#section-future-treat div#col-future-treat div#table-inrow-1 .learn-more-btn {
-    height: 82px;
-    width: 232px;
-    margin-top: 25px;
-    }
-    div#section-future-treat div#col-future-treat div#table-inrow-1 div#future-treat-heading h1.section-heading {
-    font-size: 55px;
-    line-height: 55px;
-    letter-spacing: 0;
-    text-transform: uppercase;
     }
 }

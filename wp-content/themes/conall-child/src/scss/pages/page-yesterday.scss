@@ -204,9 +204,8 @@ div#section-basecamp {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                @include font-size(65%);
-                                /* font-size: 65% !important; */
-                                top: .005ex !important;
+                                @include font-size(35%);
+                                top: 0.8ex !important;
                                 }
                         }
                         h4.mt-approved {
@@ -623,8 +622,6 @@ div#section-hsform-outer-yes.edh-section {
                                     }
                                     sub.subscript {
                                     vertical-align: super !important;
-                                    /* font-size: 65% !important; */
-                                    top: .005ex !important;
                                     }
                             }
                             h4.mt-approved {
@@ -835,7 +832,7 @@ div#section-hsform-outer-yes.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
     aspect-ratio: 240/91;
     top: 0px;
-    transform: translateY(-75px);
+    /* transform: translateY(-75px); */
                 /* ***** STICKY NAV **** */
         div#col-dlb-nav /* section column */ {
             margin-top: 8% !important;
@@ -924,7 +921,7 @@ div#section-hsform-outer-yes.edh-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateY(-15px);
+        /* transform: translateY(-15px); */
         margin-bottom: -264px !important;
         /* ***** STICKY NAV **** */
         div#col-dlb-nav /* section column */ {
@@ -1113,8 +1110,6 @@ div#section-hsform-outer-yes.edh-section {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                /* font-size: 65% !important; */
-                                top: .005ex !important;
                                 }
                         }
                         h4.mt-approved {
@@ -1529,7 +1524,7 @@ div#section-hsform-outer-yes.edh-section {
                     border-width: 2px;
                     max-width: 763px;
                     margin: 0 auto !important;
-                    margin-top: 8% !important;
+                    margin-top: 13% !important;
                     margin-bottom: 8% !important;
                     div.edh-innerbox.hs-box {
                         @include rfs(1.25rem, border-radius);
