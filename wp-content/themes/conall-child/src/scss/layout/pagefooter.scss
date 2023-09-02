@@ -77,7 +77,7 @@ div#section-outer-page-footer {
                     text-align: center;
                     p {
                         @include font-size(0.75rem);
-                        @include rfs(1.5rem, line-height);
+                        @include rfs(0.85rem, line-height);
                         margin: 0 !important;
                     }
                 }
@@ -216,7 +216,7 @@ div#section-outer-page-footer {
                     text-align: center;
                     p {
                         @include font-size(0.75rem);
-                        @include rfs(1.5rem, line-height);
+                        @include rfs(0.85rem, line-height);
                         margin: 0 !important;
                     }
                 }
