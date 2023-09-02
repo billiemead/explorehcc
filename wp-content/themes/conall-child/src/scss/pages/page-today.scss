@@ -928,16 +928,15 @@ div#section-os.edh-section {
 /* ************ NEEDED SECTION ************ */
 div#section-needed.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/needed-section-pattern-backg-1920x2922.png");
-    background-size: 100% !important;
     background-position-y: 30px;
     background-position-x: center !important;
-    top: 0px;
+    top: -1px;
     margin: 0px !important;
     background-repeat: no-repeat !important;
-    /* height: 2807px; */
     background-color: #ffffff;
     margin-bottom: 0 !important;
     background-size: cover !important;
+    margin-bottom: -50px !important;
     div#html-needed {
         padding-top: 15% !important;
         max-width: 1072px;

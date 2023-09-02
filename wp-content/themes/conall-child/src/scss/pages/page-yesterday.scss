@@ -204,7 +204,7 @@ div#section-basecamp {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                @include font-size(40%);
+                                font-size: 40% !important;
                                 top: 0.8ex !important;
                                 }
                         }

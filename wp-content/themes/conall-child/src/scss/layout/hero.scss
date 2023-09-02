@@ -45,13 +45,6 @@ div#section-sidetabs {
         align-items: center;
         transform: rotate(270deg);
         }
-        div.toptab-container.cine {
-            width: 400px;
-            left: -183px;
-            a#toptab-link1 {
-                @include rfs(0.625rem, border-bottom-left-radius);
-            }
-        }
         a.toptab-link,
         a#toptab-link3 {
             color: $white;
@@ -68,7 +61,7 @@ div#section-sidetabs {
             align-items: center;
         }
         a#toptab-link3 {
-            padding-right: 17px;
+            padding-right: 20px;
             @include rfs(0.625rem, border-bottom-left-radius);
         }
         a#toptab-link3::before {
@@ -78,10 +71,10 @@ div#section-sidetabs {
             @include rfs(0.625rem, border-bottom-right-radius);
         }
         #toptab-link3::before {
-            content:  url('/wp-content/themes/conall-child/images/vol_on_icon_25x23.png');
+            content:  url('/wp-content/themes/conall-child/images/vol_off_icon_25x23.png');
         }
         #toptab-link3.muted::before {
-            content:  url('/wp-content/themes/conall-child/images/vol_off_icon_25x23.png');
+            content:  url('/wp-content/themes/conall-child/images/vol_on_icon_25x23.png');
         }
     }
 }
@@ -215,12 +208,6 @@ div#section-hero-outer-video {
 /*** Responsive Max-Width ***/
 @media all and (max-width: 1024px) {
 
-    div#section-sidetabs div#col-nav-sidetabs a#toptab-link3 {
-        display: none;
-    }
-    div#section-sidetabs div#col-nav-sidetabs a#toptab-link1 {
-        border-bottom-left-radius: 0.525rem;
-    }
     div#section-hero-outer-video,
     div#section-hero {
         div.wpb_wrapper {
@@ -274,9 +261,9 @@ div#section-hero-outer-video {
         z-index: 50;
         div#col-nav-sidetabs {
             div.toptab-container {
-                left: -130px;
+                left: -162px;
                 top: 192px;
-                width: 294px;
+                width: 356px;
             }
             a.toptab-link,
             a.muted {
@@ -294,15 +281,8 @@ div#section-hero-outer-video {
             a#toptab-link2 {
                 @include rfs(0.525rem, border-bottom-right-radius);
             }
-            div.toptab-container.cine {
-                width: 295px;
-                left: -130px;
-            a#toptab-link1 {
-                @include rfs(0.625rem, border-bottom-left-radius);
-            }
             }
         }
-    }
 }
 @media all and (max-width: 960px) {
     div#section-hero-outer,
