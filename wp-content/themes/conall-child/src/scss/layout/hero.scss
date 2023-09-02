@@ -223,11 +223,14 @@ div#section-hero-outer-video {
     div#section-hero-outer-video {
         background-attachment: scroll;
         z-index: 0;
-        background-image: url(/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg);
+        background-image:url('/wp-content/themes/conall-child/images/hero-mobile-backg-828x1800.jpg');
         margin: 0px !important;
         background-position-Y: -500px !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size:cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
