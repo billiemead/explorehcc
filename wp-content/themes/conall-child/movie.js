@@ -1,17 +1,5 @@
 window.onload = () => {
 
-    function toggleMute() {
-        var button = document.getElementById("toptab-link3")
-        var video = document.getElementById("elevarVideo")
-
-        if (video.muted) {
-            video.muted = false;
-        } else {
-            video.muted = true;
-        }
-        button.classList.toggle('muted');
-    }
-
     if (window.matchMedia("(min-width: 1024px)").matches) {
         /* HTML5 element created with JS */
             var video = document.createElement("video");
