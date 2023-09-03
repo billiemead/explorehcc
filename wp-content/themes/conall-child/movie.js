@@ -19,7 +19,7 @@ window.onload = () => {
         video.setAttribute("webkit-playsinline", "");
         video.setAttribute("playsinline", "");
         video.setAttribute("poster", "/wp-content/uploads/videos/hero-video-poster-image1920x900.jpg");
-        /* video.setAttribute("muted", "muted"); */
+        video.setAttribute("muted", "muted");
         video.setAttribute("loop", "loop");
         video.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.mp4");
         video.setAttribute("width", "100vw");
