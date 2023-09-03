@@ -22,3 +22,19 @@ div.wpb-content-wrapper {
         opacity: 1;
     }
 }
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+div#col-nexgen-stats-right {
+    div.vc_column-inner {
+        background-position: 0px 0px !important;
+        animation: animatedBackground 5s linear infinite alternate;
+    }
+}

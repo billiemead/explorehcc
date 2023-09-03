@@ -21,7 +21,7 @@ $purple: #493D7C;
 $red: #C45131;
 $trans: transparent;
 $white: #ffffff;
-
+$orangehover: #6E2916;
 $orgbox1:#d5846e ;
 $orgbox2:#cf735a ;
 $orgbox3:#c96245 ;
@@ -62,6 +62,9 @@ $nexgen-grad3: #080124;
 };
 @mixin footer-orange-grad-button(){
     background: linear-gradient($orange2, $orange4);
+};
+@mixin footer-orange-grad-button2(){
+    background: linear-gradient(rgba(0,0,0,0), $orange4);
 };
 @mixin button-shadow(){
     -webkit-box-shadow: 14px 14px 14px -4px rgba(0,0,0,0.65);

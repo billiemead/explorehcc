@@ -7,10 +7,12 @@ div.dlb-nav-container  {
 
 div#col-hepcar a.livc-purple-btn:hover {
     background-color: #25156F !important;
+    border: #25156F !important;
 }
 
 input.hs-button.primary.large:hover {
     background-color: #25156F !important;
+    border: #25156F !important;
 }
 a:hover {
     color: #25156F;
@@ -19,25 +21,69 @@ div.oas-nav-container:hover,
 div.dlb-nav-container:hover {
     cursor: pointer;
     background: $darkpurple !important;
+    border: $darkpurple !important;
 }
 div#section-os.edh-section div#col-os-buttons div.vc_column-inner div.wpb_wrapper a.os-button-purple:hover {
     background-color: #25156F !important;
+    border: #25156F !important;
 }
 
 #edgtf-back-to-top>span:hover {
     background-color: #25156F !important;
     border: 1px solid #25156F !important;
+
 }
 
 a#toptab-link1:hover,
 a#toptab-link2:hover,
 a#toptab-link3:hover {
     background-color: #25156F !important;
+    border: #25156F !important;
 }
 
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
     border-color: #25156F !important;
+    border: #25156F !important;
 }
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-bg):hover {
     background-color: #25156F !important;
+    border: #25156F !important;
+}
+div#footer-tomorrow .widget div#footerblock1:hover,
+div#footer-tomorrow .widget div#footerblock2:hover,
+div#footer-today .widget div#footerblock1:hover,
+div#footer-today .widget div#footerblock3:hover,
+div#footer-yesterday .widget div#footerblock2:hover,
+div#footer-yesterday .widget div#footerblock3:hover,
+div#footer-tomorrow .widget div#footerblock1,
+div#footer-tomorrow .widget div#footerblock2,
+div#footer-today .widget div#footerblock1,
+div#footer-today .widget div#footerblock3,
+div#footer-yesterday .widget div#footerblock2,
+div#footer-yesterday .widget div#footerblock3 {
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+div#footer-tomorrow .widget div#footerblock3:hover,
+div#footer-today .widget div#footerblock2:hover,
+div#footer-yesterday .widget div#footerblock1:hover {
+    -webkit-transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -o-transition: all 0.75s ease-out;
+    transition: all 0.75s ease-out;
+}
+div#footer-tomorrow .widget div#footerblock1:hover,
+div#footer-tomorrow .widget div#footerblock2:hover,
+div#footer-today .widget div#footerblock1:hover,
+div#footer-today .widget div#footerblock3:hover,
+div#footer-yesterday .widget div#footerblock2:hover,
+div#footer-yesterday .widget div#footerblock3:hover {
+    background-color: $darkpurple !important;
+}
+div#footer-tomorrow .widget div#footerblock3:hover,
+div#footer-today .widget div#footerblock2:hover,
+div#footer-yesterday .widget div#footerblock1:hover {
+    background: linear-gradient($orangehover, $orangehover);
 }
