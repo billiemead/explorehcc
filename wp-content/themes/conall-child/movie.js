@@ -12,48 +12,51 @@ window.onload = () => {
         button.classList.toggle('muted');
     }
 
-    function Main() {
-        if (window.matchMedia("(min-width: 1024px)").matches) {
-            /* HTML5 element created with JS */
-            this.video = document.createElement("video");
-            this.video.setAttribute("class", "elevar-animation");
-            this.video.setAttribute("id", "elevarVideo");
-            this.video.setAttribute("width", "100vw");
-            this.video.setAttribute("height", "100vh");
-            this.video.setAttribute("webkit-playsinline", "");
-            this.video.setAttribute("playsinline", "");
-            this.video.setAttribute("muted", "muted");
-            // this.video.setAttribute("loop", "loop");
-            // this.video.setAttribute("autoplay", "autoplay");
-            this.video.setAttribute("data-v-767e84ec", "");
-            this.video.setAttribute("poster", "/wp-content/uploads/videos/hero-video-poster-image1920x900.jpg");
-            this.video.controls = false;
-            this.video.autoplay = true;
-            this.video.loop = true;
-            this.video.muted = true;
-
-            this.source1 = document.createElement("source");
-            this.source1.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.webm");
-            this.source1.setAttribute("type", "video/webm");
-            this.video.appendChild(this.source1);
-
-            this.source2 = document.createElement("source");
-            this.source2.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.mp4");
-            this.source2.setAttribute("type", "video/mp4");
-            this.video.appendChild(this.source2);
-
-            this.source3 = document.createElement("source");
-            this.source3.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.ogv");
-            this.source3.setAttribute("type", "video/ogg");
-            this.video.appendChild(this.source3);
-
-            // get the newly created video element and append the source element
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+        /* HTML5 element created with JS */
+            var video = document.createElement("video");
+            video = document.createElement("video");
+            video.setAttribute("class", "elevar-animation");
+            video.setAttribute("id", "elevarVideo");
+            video.setAttribute("width", "100vw");
+            video.setAttribute("height", "100vh");
+            video.setAttribute("webkit-playsinline", "");
+            video.setAttribute("playsinline", "");
+            video.setAttribute("muted", "muted");
+            // video.setAttribute("loop", "loop");
+            // video.setAttribute("autoplay", "autoplay");
+            video.setAttribute("data-v-767e84ec", "");
+            video.setAttribute("poster", "/wp-content/uploads/videos/hero-video-poster-image1920x900.jpg");
+            video.controls = false;
+            video.autoplay = true;
+            video.loop = true;
+            video.muted = true;
+            // get the existing video container and append the new video element
             var videoContainer = document.querySelector('.video-wrap');
-            videoContainer.appendChild(this.video);
-            // document.body.appendChild(this.video);
-        }
+            videoContainer.appendChild(video);
     }
+    var videoElement = document.getElementById("elevarVideo");
+    if (videoElement) {
+            var source1 = document.createElement("source1");
+            source1 = document.createElement("source");
+            source1.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.webm");
+            source1.setAttribute("type", "video/webm");
+            var sourceContainer1 = document.querySelector('.elevar-animation');
+            sourceContainer1.appendChild(source1);
 
-    var main = new Main();
+            var source2 = document.createElement("source2");
+            source2 = document.createElement("source");
+            source2.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.mp4");
+            source2.setAttribute("type", "video/mp4");
+            var sourceContainer2 = document.querySelector('.elevar-animation');
+            sourceContainer2.appendChild(source2);
+
+            var source3 = document.createElement("source1");
+            source3 = document.createElement("source");
+            source3.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.ogv");
+            source3.setAttribute("type", "video/ogg");
+            var sourceContainer3 = document.querySelector('.elevar-animation');
+            sourceContainer3.appendChild(source3);
+    }
 
 }
