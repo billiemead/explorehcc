@@ -176,15 +176,6 @@ div#section-hero-outer-video {
             transform: translate(-50%, -50%);
         }
     }
-    div#section-hero-outer {
-        div#subhead-svg {
-            position: fixed;
-            width: 380px;
-            top:169px;
-            left: 58%;
-            transform: translate(-50%, -50%);
-        }
-    }
 }
 @media all and (max-width: 1300px) {
     div#section-hero-outer,
@@ -326,7 +317,7 @@ div#section-hero-outer-video {
             top: 165px;
         }
     }
-        div#section-hero-outer,
+    div#section-hero-outer,
     div#section-hero-outer-video {
         background-attachment: scroll;
         z-index: 0;
