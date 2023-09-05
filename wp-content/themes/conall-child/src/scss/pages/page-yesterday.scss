@@ -1158,11 +1158,11 @@ div#section-hsform-outer-yes.edh-section {
                 @include semi-bold($sofia-sans);
                 text-align: left;
                 color: $purple;
-                @include font-size(3.375rem);
-                @include rfs(2.5rem, line-height);
-                letter-spacing: 0px;
+                font-size: 44px;
+                line-height: 44px;
+                letter-spacing: 4px;
                 text-transform: uppercase;
-                margin-bottom: 2% !important;
+                margin-bottom: 15% !important;
                 }
             }
             div#basecamp-bodycopy {
@@ -1171,8 +1171,8 @@ div#section-hsform-outer-yes.edh-section {
                 @include light($sofia-sans);
                 text-align: left;
                 color: $copy;
-                @include font-size(1.5rem);
-                @include rfs(2.375rem, line-height);
+                font-size: 24px;
+                line-height: 38px;
                 letter-spacing: 0px;
                 margin-bottom: 2% !important;
                     span.underline {
@@ -1187,6 +1187,7 @@ div#section-hsform-outer-yes.edh-section {
                 position: relative;
                 left: 0;
                 display: flex;
+                margin-top: 18% !important;
             }
         }
     }
