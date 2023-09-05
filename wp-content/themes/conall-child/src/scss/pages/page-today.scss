@@ -1591,8 +1591,8 @@ div#section-needed.edh-section {
             width: 939px;
             text-align: center;
             color: $copy;
-            @include font-size(1.25rem);
-            @include rfs(1.5rem, line-height);
+            font-size: 16px !important;
+            line-height: 18px !important;
             letter-spacing: 0px;
             margin-top: 50px !important;
             span.top-p {
@@ -4418,8 +4418,8 @@ div#section-qol.edh-section {
                 width: 100%;
                 text-align: center;
                 color: $copy;
-                font-size: 15px;
-                @include rfs(1.5rem, line-height);
+                font-size: 16px !important;
+                line-height: 18px !important;
                 letter-spacing: 0px;
                 margin-top: 50px !important;
                 p.needed-footnote {
@@ -6479,8 +6479,8 @@ div#section-qol.edh-section {
                 width: 100%;
                 text-align: center;
                 color: $copy;
-                font-size: 15px;
-                @include rfs(1.5rem, line-height);
+                font-size: 16px !important;
+                line-height: 18px !important;
                 letter-spacing: 0px;
                 margin-top: 50px !important;
                 p.needed-footnote {
@@ -8709,7 +8709,7 @@ div#section-qol.edh-section {
                 width: 100%;
                 text-align: center;
                 color: $copy;
-                font-size: 15px;
+                font-size: 16px !important;
                 line-height: 18px !important;
                 letter-spacing: 0px;
                 margin-top: 50px !important;
@@ -8718,7 +8718,7 @@ div#section-qol.edh-section {
                 width: 100%;
                 text-align: center;
                 color: $copy;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 18px  !important;
                 letter-spacing: 0px;
                 span.top-p {
