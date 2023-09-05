@@ -6492,7 +6492,7 @@ div#section-qol.edh-section {
                 line-height: 18px;
                 letter-spacing: 0px;
                 span.top-p {
-                    @include rfs(2.188rem, line-height);
+                    line-height: 18px;
                 }
             }
         }
