@@ -13,19 +13,21 @@ div#section-hero-footnote {
         background-color: transparent;
         position: absolute;
         p.hero-footnote {
-                font-size: 16px;
+                font-size: 20px;
                 color: #fff;
                 text-align: center;
+                @include semi-bold($sofia-sans);
                 position: relative;
                 top: 0;
                 letter-spacing: 1px;
                 width: 100%;
                 left: 0;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 height: calc(100vh * .80);
                 align-items: flex-end;
                 text-shadow: 4px 4px 13px rgba(0,0,0,0.85);
+                transform: translateX(-5%);
         }
     }
 }
@@ -61,6 +63,7 @@ div#section-sidetabs {
             align-items: center;
             white-space: nowrap;
         }
+
         a#toptab-link3 {
             padding-right: 20px;
             @include rfs(0.625rem, border-bottom-left-radius);
@@ -79,6 +82,7 @@ div#section-sidetabs {
         }
     }
 }
+
 /* ************ HERO ************ */
 div#hero-bottom {
     position: absolute;

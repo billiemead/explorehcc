@@ -18,26 +18,21 @@ div#footer-tomorrow {
         display: flex;
         flex-direction: column;
     }
-
     .edgtf-three-columns-inner {
         display: flex;
         width: 100%;
     }
-
     .edgtf-three-columns .edgtf-column {
         display: flex;
         flex-basis: 33.33%;
         width: 33.33%;
     }
-
     .edgtf-three-columns .edgtf-column .edgtf-column-inner {
         display: flex;
         width: 100%;
-
         .widget_custom_html {
             display: flex;
             width: 100%;
-
             .custom-html-widget {
                 display: flex;
                 width: 100%;
@@ -168,7 +163,7 @@ div#footer-yesterday {
             width: calc(100% + 1px) !important;
             height: 85px;
             @include footer-orange-grad-button2();
-background-color: $orange2;
+            background-color: $orange2;
             clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
             -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
             a.footer-link {
@@ -239,7 +234,7 @@ div#footer-tomorrow {
             width: calc(100% + 1px) !important;
             height: 85px;
             @include footer-orange-grad-button2();
-background-color: $orange2;
+            background-color: $orange2;
             clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
             a.footer-link {
@@ -331,7 +326,7 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
@@ -396,13 +391,12 @@ background-color: $orange2;
                     position: relative;
                     top: 6px;
                 }
-
             }
             div#footerblock1 {
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 a.footer-link {
@@ -473,7 +467,7 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
@@ -546,7 +540,7 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
@@ -620,7 +614,7 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 a.footer-link {
@@ -694,7 +688,7 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
@@ -769,16 +763,17 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
                     letter-spacing: 0;
-                    line-height: 21px;
+                    line-height: 18px;
                     font-size: 24px;
                     position: relative;
                     top: 0px;
                     max-width: 115px;
+                    padding-top: 10px !important;
                 }
             }
             .footer-link {
@@ -842,16 +837,17 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 0px 0);
                 a.footer-link {
                     position: relative;
                     top: 0px;
                     letter-spacing: 0;
-                    line-height: 21px;
+                    line-height: 18px;
                     font-size: 24px;
                     max-width: 115px;
+                    padding-top: 10px !important;
                 }
             }
             .footer-link {
@@ -916,16 +912,17 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 85px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 -webkit-clip-path: polygon(100% 0, 100% 30px, 100% 100%, 0 100%, 0 30px, 40px 0);
                 a.footer-link {
                     letter-spacing: 0;
-                    line-height: 22px;
+                    line-height: 18px;
                     font-size: 20px;
                     position: relative;
                     top: 0px;
                     max-width: 115px;
+                    padding-top: 10px !important;
                 }
             }
             .footer-link {
@@ -978,7 +975,7 @@ background-color: $orange2;
                 top: 24px;
                 a.footer-link {
                     letter-spacing: 0px;
-                    line-height: 16px;
+                    line-height: 17px;
                     font-size: 17px;
                     position: relative;
                     top: 6px;
@@ -989,15 +986,16 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 87px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
                 -webkit-clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
                 a.footer-link {
                     letter-spacing: 0.5px;
                     font-size: 20px;
-                    line-height: 22px;
+                    line-height: 20px;
                     position: relative;
                     top: 0px;
+                    padding-top: 0 !important;
                 }
             }
             .footer-link {
@@ -1048,7 +1046,7 @@ background-color: $orange2;
                 position: relative;
                 top: 24px;
                 a.footer-link {
-                    line-height: 16px;
+                    line-height: 17px;
                     font-size: 17px;
                     letter-spacing: 0px;
                     position: relative;
@@ -1060,15 +1058,16 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 87px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 0px 0);
                 -webkit-clip-path: polygon(calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 0px 0);
                 a.footer-link {
                     position: relative;
                     top: 0px;
                     letter-spacing: 0.5px;
-                    line-height: 22px;
+                    line-height: 20px;
                     font-size: 20px;
+                    padding-top: 0 !important;
                 }
             }
             .footer-link {
@@ -1120,7 +1119,7 @@ background-color: $orange2;
                 top: 24px;
                 a.footer-link {
                     letter-spacing: 0px;
-                    line-height: 16px;
+                    line-height: 17px;
                     font-size: 17px;
                     position: relative;
                     top: 6px;
@@ -1131,15 +1130,16 @@ background-color: $orange2;
                 width: calc(100% + 1px) !important;
                 height: 87px;
                 @include footer-orange-grad-button2();
-background-color: $orange2;
+                background-color: $orange2;
                 clip-path: polygon(100% 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
                 -webkit-clip-path: polygon(100% 0, 100% 24px, 100% 100%, 0 100%, 0 24px, 24px 0);
                 a.footer-link {
                     position: relative;
                     top: 0px;
                     letter-spacing: 0.5px;
-                    line-height: 22px;
+                    line-height: 20px;
                     font-size: 20px;
+                    padding-top: 0 !important;
                 }
             }
             .footer-link {

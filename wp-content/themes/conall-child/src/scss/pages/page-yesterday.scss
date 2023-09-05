@@ -2,6 +2,7 @@
 @import '../base/font.scss';
 @import "../../../node_modules/rfs/scss";
 
+
 /* ************ DOUBLE ICON NAV SECTION ************ */
 div#section-dlb-nav.edh-section { /* section */
     margin: 0px !important;
@@ -62,9 +63,6 @@ div#section-dlb-nav.edh-section { /* section */
                             top: -100px;
                             aspect-ratio: 1/1;
                             @include circle-shadow();
-                            img.dlb-nav-icon {
-
-                            }
                         }
                         a.dlb-nav {
                             display: flex;
@@ -125,7 +123,7 @@ div#section-basecamp {
             }
             div#basecamp-bodycopy {
                 p.basecamp-bodycopy {
-                max-width: 1114px;
+                max-width: 980px;
                 @include light($sofia-sans);
                 text-align: left;
                 color: $copy;
@@ -185,11 +183,6 @@ div#section-basecamp {
                         justify-content: center;
                         align-self: center;
                         @include form-gradient();
-                        div.basecamp-img {
-                            img {
-
-                            }
-                        }
                         h3.decimal {
                             @include bold($sofia-sans);
                             text-align: center;
@@ -204,7 +197,7 @@ div#section-basecamp {
                                 }
                                 sub.subscript {
                                 vertical-align: super !important;
-                                font-size: 40% !important;
+                                font-size: 25% !important;
                                 top: 0.8ex !important;
                                 }
                         }
@@ -305,17 +298,6 @@ div#section-basecamp {
                         margin-top: 2.5% !important;
                     }
                 }
-                }
-            }
-            div#bc-inner-row3 {
-                div#inner-col7 {
-
-                }
-                div#inner-col8 {
-
-                }
-                div#inner-col9 {
-
                 }
             }
         }
@@ -482,9 +464,6 @@ div#section-hsform-outer-yes.edh-section {
                                 top: -100px;
                                 aspect-ratio: 1/1;
                                 @include circle-shadow();
-                                img.dlb-nav-icon {
-
-                                }
                             }
                             a.dlb-nav {
                                 display: flex;
@@ -543,7 +522,7 @@ div#section-hsform-outer-yes.edh-section {
                 }
                 div#basecamp-bodycopy {
                     p.basecamp-bodycopy {
-                    max-width: 1114px;
+                    max-width: 980px;
                     @include light($sofia-sans);
                     text-align: left;
                     color: $copy;
@@ -603,11 +582,6 @@ div#section-hsform-outer-yes.edh-section {
                             justify-content: center;
                             align-self: center;
                             @include form-gradient();
-                            div.basecamp-img {
-                                img {
-
-                                }
-                            }
                             h3.decimal {
                                 @include bold($sofia-sans);
                                 text-align: center;
@@ -678,9 +652,6 @@ div#section-hsform-outer-yes.edh-section {
                         padding-top: 1.388rem;
                         padding-bottom: 1.388rem;
                         min-width: 300px;
-                        div.wpb_wrapper {
-
-                        }
                     }
                     div.edh-col.col-inner.right {
                         grid-area: 1 / 3 / 2 / 4;
@@ -690,9 +661,6 @@ div#section-hsform-outer-yes.edh-section {
                         padding-top: 1.388rem;
                         padding-bottom: 1.388rem;
                         min-width: 375px;
-                        div.wpb_wrapper {
-
-                        }
                     }
                     div.edh-col.col-inner.right::before {
                         content: "";
@@ -733,17 +701,6 @@ div#section-hsform-outer-yes.edh-section {
                             margin-top: 2.5% !important;
                         }
                     }
-                    }
-                }
-                div#bc-inner-row3 {
-                    div#inner-col7 {
-
-                    }
-                    div#inner-col8 {
-
-                    }
-                    div#inner-col9 {
-
                     }
                 }
             }
@@ -794,9 +751,6 @@ div#section-hsform-outer-yes.edh-section {
                                 top: -100px;
                                 aspect-ratio: 1/1;
                                 @include circle-shadow();
-                                img.dlb-nav-icon {
-
-                                }
                             }
                             a.dlb-nav {
                                 display: flex;
@@ -871,9 +825,6 @@ div#section-hsform-outer-yes.edh-section {
                             top: -100px;
                             aspect-ratio: 1/1;
                             @include circle-shadow();
-                            img.dlb-nav-icon {
-
-                            }
                         }
                         a.dlb-nav {
                             display: flex;
@@ -1035,7 +986,7 @@ div#section-hsform-outer-yes.edh-section {
             }
             div#basecamp-bodycopy {
                 p.basecamp-bodycopy {
-                max-width: 1114px;
+                max-width: 980px;
                 @include light($sofia-sans);
                 text-align: left;
                 color: $copy;
@@ -1073,6 +1024,7 @@ div#section-hsform-outer-yes.edh-section {
                 margin-bottom: 10% !important;
                 position: relative;
                 left: 0;
+                margin-top: 10% !important;
                 div.edgtf-full-section-inner {
                     display: grid;
                     grid-template-rows: repeat(3, auto);
@@ -1091,11 +1043,6 @@ div#section-hsform-outer-yes.edh-section {
                         display: flex;
                         justify-content: center;
                         align-self: center;
-                        div.basecamp-img {
-                            img {
-
-                            }
-                        }
                         h3.decimal {
                             @include bold($sofia-sans);
                             text-align: center;
@@ -1168,6 +1115,20 @@ div#section-hsform-outer-yes.edh-section {
                     padding-top: 2.388rem;
                     padding-bottom: 2.388rem;
                     min-width: 100%;
+                }
+                div.edh-col.col-inner.right::before {
+                    content: "";
+                    border-top: 1px solid #ffffff;
+                    width: auto;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 100%;
+                    margin-left: 50% !important;
+                    margin-right: 50% !important;
+                    display: flex;
+                    min-width: 165px;
+                    border-left: none;
+                    left: unset;
                 }
                 div.edh-col.col-inner-img {
                     grid-area: 1 / 1 / 2 / 2;
@@ -1468,7 +1429,8 @@ div#section-hsform-outer-yes.edh-section {
                         @include font-size(1.5rem);
                         @include rfs(2.375rem, line-height);
                         letter-spacing: 0px;
-                        margin-bottom: 1.5% !important;
+                        margin-bottom: 10% !important;
+                        margin-top: 10% !important;
                         sub.subscript {
                             vertical-align: super !important;
                             font-size: 40% !important;

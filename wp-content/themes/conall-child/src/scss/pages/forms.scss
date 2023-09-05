@@ -54,9 +54,6 @@ form#hsForm_433b63a0-598a-4597-92e2-9a626fc9649e {
             padding-left: 15px;
             margin: 0;
         }
-        select.hs-input {
-
-        }
     }
     fieldset.form-columns-1 {
         display: flex;
@@ -160,6 +157,7 @@ div.hs_submit.hs-submit {
             min-width: 308px;
             height: 60px;
             border: none;
+            cursor: pointer;
         }
     }
 }
@@ -304,9 +302,6 @@ div#section-hsform-outer-tom {
             padding: 0;
             padding-left: 15px;
             margin: 0;
-        }
-        select.hs-input {
-
         }
     }
     fieldset.form-columns-1 {
@@ -471,6 +466,7 @@ div#section-hsform-outer-tom {
             min-width: 200px;
             height: 60px;
             border: none;
+            cursor: pointer;
         }
     }
 }

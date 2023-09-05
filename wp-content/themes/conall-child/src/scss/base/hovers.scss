@@ -4,6 +4,9 @@
 div.dlb-nav-container  {
     transition: background-color 1000ms ease-in-out 150ms;
 } */
+.edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
+    border-color: #25156F !important;
+}
 
 div#col-hepcar a.livc-purple-btn:hover {
     background-color: #25156F !important;
