@@ -4,7 +4,7 @@
 
 
 /* ************ DOUBLE ICON NAV SECTION ************ */
-div#section-dlb-nav.edh-section { /* section */
+div#section-dlb-nav.edh-section {
     margin: 0px !important;
     padding: 0px !important;
     background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
@@ -21,7 +21,7 @@ div#section-dlb-nav.edh-section { /* section */
     transform: translateY(-126px);
     margin-bottom: -246px !important;
     /* ***** STICKY NAV **** */
-    div#col-dlb-nav /* section column */ {
+    div#col-dlb-nav  {
         margin-top: 8% !important;
         div#nav-quadbox {
             div.edh-outerbox.hs-box {
@@ -39,7 +39,6 @@ div#section-dlb-nav.edh-section { /* section */
                     flex-direction: row;
                     justify-content: space-around;
                     padding: 0;
-                    /* max-width: 1260px; */
                     box-sizing: border-box;
                     div.dlb-nav-container {
                         height: 190px;
@@ -268,7 +267,6 @@ div#section-basecamp {
                 }
                 div.edh-col.col-inner-img {
                     grid-area: 1 / 1 / 2 / 2;
-                    /*  min-width: 640px; */
                 }
             }
             div#bc-inner-row2 {
@@ -326,7 +324,6 @@ div#section-hemrisk.edh-section {
         justify-content: center;
         align-items: center;
         div#table-inrow-1 {
-            /* height: 450px; */
             border: 2px solid $gold;
             @include rfs(1.25rem, border-radius);
             @include form-gradient();
@@ -345,7 +342,6 @@ div#section-hemrisk.edh-section {
                     @include font-size(2.75rem);
                     @include rfs(3rem, line-height);
                     letter-spacing: 0px;
-                    /* text-transform: uppercase; */
                     margin-bottom: 2% !important;
                     sub.subscript {
                         vertical-align: super !important;
@@ -405,29 +401,16 @@ div#section-hsform-outer-yes.edh-section {
     margin-bottom: 0 !important;
 }
 
-/*** Responsive Min-Width ***/
-@media all and (min-width: 479px) {
-}
-@media all and (min-width: 575px) {
-}
-@media all and (min-width: 767px) {
-}
-@media all and (min-width: 959px) {
-}
-@media all and (min-width: 1023px) {
-}
-
 /*** Responsive Tablet ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
 }
 @media all and (max-width: 1500px) {
-    div#section-dlb-nav.edh-section { /* section */
+    div#section-dlb-nav.edh-section {
         background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
         aspect-ratio: 240/91;
         top: 0px;
         transform: translateY(-110px);
-            /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -440,7 +423,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: row;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 190px;
@@ -651,7 +633,7 @@ div#section-hsform-outer-yes.edh-section {
                         grid-area: 1 / 2 / 2 / 3;
                         padding-top: 1.388rem;
                         padding-bottom: 1.388rem;
-                        min-width: 300px;
+                        /* min-width: 300px; */
                     }
                     div.edh-col.col-inner.right {
                         grid-area: 1 / 3 / 2 / 4;
@@ -671,7 +653,6 @@ div#section-hsform-outer-yes.edh-section {
                     }
                     div.edh-col.col-inner-img {
                         grid-area: 1 / 1 / 2 / 2;
-                        /*  min-width: 640px; */
                     }
                 }
                 div#bc-inner-row2 {
@@ -708,13 +689,12 @@ div#section-hsform-outer-yes.edh-section {
     }
 }
 @media all and (max-width: 1300px) {
-    div#section-dlb-nav.edh-section { /* section */
+    div#section-dlb-nav.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
     aspect-ratio: 240/91;
     top: 0px;
     transform: translateY(-87px);
-                /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -727,7 +707,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: row;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 150px;
@@ -780,15 +759,225 @@ div#section-hsform-outer-yes.edh-section {
             }
         }
     }
+        div#section-basecamp {
+        background-color: $white;
+        margin: 0px !important;
+        padding: 0px !important;
+        background-image: url("/wp-content/themes/conall-child/images/basecamp-background-1920x2019.png") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
+        aspect-ratio: 640/673;
+        margin-top: -140px !important;
+        background-position-y: 18px !important;
+        div#col-basecamp {
+            margin-bottom: 6% !important;
+            div#bc-inner-row-copy {
+                div#basecamp-heading {
+                    margin-top: 20% !important;
+                    h1.section-heading {
+                    @include semi-bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    @include font-size(3.375rem);
+                    @include rfs(2.5rem, line-height);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom: 2% !important;
+                    }
+                }
+                div#basecamp-bodycopy {
+                    p.basecamp-bodycopy {
+                    max-width: 980px;
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $copy;
+                    @include font-size(1.5rem);
+                    @include rfs(2.375rem, line-height);
+                    letter-spacing: 0px;
+                    margin-bottom: 2% !important;
+                        sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 40% !important;
+                        top: .005ex !important;
+                        }
+                        span.underline {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                div#basecamp-bodycopy::after {
+                    content: "";
+                    border: 2px solid $gold;
+                    width: 150px;
+                    position: relative;
+                    left: 0;
+                    display: flex;
+                }
+            }
+        }
+        div#col-basecamp-mtn {
+            div.wpb_wrapper {
+                display: flex;
+                flex-direction: column;
+                div.bc-innerrow {
+                    display: flex;
+                    width: 100%;
+                    flex-basis: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10% !important;
+                    position: relative;
+                    left: unset;
+                    div.edgtf-full-section-inner {
+                        display: grid;
+                        grid-template-columns: repeat(3, auto);
+                        grid-template-rows: auto;
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        transition: 300ms;
+                        div.col-inner.left {
+                            min-width: 200px;
+                        }
+                        div.col-inner.left,
+                        div.col-inner.center,
+                        div.col-inner.right {
+                            width: 100%;
+                            height: 135px;
+                            display: flex;
+                            justify-content: center;
+                            align-self: center;
+                            @include form-gradient();
+                            h3.decimal {
+                                @include bold($sofia-sans);
+                                text-align: center;
+                                color: $white;
+                                font-size: 30px;
+                                @include rfs(2.5rem, line-height);
+                                letter-spacing: 0;
+                                margin-top: 8px !important;
+                                margin-bottom: 2% !important;
+                                    span.month {
+                                        @include font-size(1.5rem);
+                                    }
+                                    sub.subscript {
+                                    vertical-align: super !important;
+                                    }
+                            }
+                            h4.mt-approved {
+                                @include regular($sofia-sans);
+                                text-align: center;
+                                color: $white;
+                                font-size: 20px;
+                                @include rfs(2.375rem, line-height);
+                                letter-spacing: 0;
+                                margin-top: -10px !important;
+                            }
+                        }
+                        div.col-inner-img {
+                            div#basecamp-img1,
+                            div#basecamp-img2,
+                            div#basecamp-img3 {
+                                text-align: center;
+                            }
+                            div#basecamp-img1 img{
+                                min-width: 350px;
+                                max-width: 400px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            div#basecamp-img2 img {
+                                min-width: 350px;
+                                max-width: 400px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            div#basecamp-img3 img {
+                                min-width: 350px;
+                                max-width: 400px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                div.bc-innerrow {
+                    div.edh-col.col-inner.left {
+                        grid-area: 1 / 1 / 2 / 2;
+                        @include rfs(1.25rem, border-top-left-radius);
+                        @include rfs(1.25rem, border-bottom-left-radius);
+                        width: 217px !important;
+                        justify-self: end;
+                        div.wpb_wrapper {
+                            padding-top: 84px;
+                            padding-bottom: 84px;
+                        }
+                    }
+                    div.edh-col.col-inner.center {
+                        grid-area: 1 / 2 / 2 / 3;
+                        padding-top: 1.388rem;
+                        padding-bottom: 1.388rem;
+                        min-width: 300px;
+                    }
+                    div.edh-col.col-inner.right {
+                        grid-area: 1 / 3 / 2 / 4;
+                        @include form-gradient();
+                        @include rfs(1.25rem, border-top-right-radius);
+                        @include rfs(1.25rem, border-bottom-right-radius);
+                        padding-top: 1.388rem;
+                        padding-bottom: 1.388rem;
+                        min-width: 325px;
+                    }
+                    div.edh-col.col-inner.right::before {
+                        content: "";
+                        border-left: 1px solid $white;
+                        height: 93px;
+                        position: relative;
+                        left: 0;
+                    }
+                    div.edh-col.col-inner-img {
+                        grid-area: 1 / 1 / 2 / 2;
+                    }
+                }
+                div#bc-inner-row2 {
+                    div.edgtf-full-section-inner {
+                        display: grid;
+                        grid-template-columns: repeat(3, auto);
+                        grid-template-rows: repeat(2, auto);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                    div.col-inner.fullwidth {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-self: center;
+                    }
+                    div#col-basecamp-footnote {
+                        grid-area: 2 / 1 / 3 / 4;
+                        background: none;
+                        p.bc-footnote {
+                            @include light($sofia-sans);
+                            text-align: left;
+                            color: $copy;
+                            @include font-size(0.875rem);
+                            @include rfs(1.25rem, line-height);
+                            letter-spacing: 0px;
+                            margin-left: 8% !important;
+                            margin-top: 2.5% !important;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 1025px) {
-    div#section-dlb-nav.edh-section { /* section */
+    div#section-dlb-nav.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/two-icon-section-background-1920x728.png") !important;
     aspect-ratio: 240/91;
     top: 0px;
-    /* transform: translateY(-75px); */
-                /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -801,7 +990,6 @@ div#section-hsform-outer-yes.edh-section {
                     flex-direction: row;
                     justify-content: space-around;
                     padding: 0;
-                    /* max-width: 1260px; */
                     box-sizing: border-box;
                     div.dlb-nav-container {
                         height: 150px;
@@ -855,10 +1043,10 @@ div#section-hsform-outer-yes.edh-section {
         }
     }
 }
-/*** Responsive Max-Width ***/
+
 @media all and (max-width: 1024px) {
 
-    div#section-dlb-nav.edh-section { /* section */
+    div#section-dlb-nav.edh-section {
         margin: 0px !important;
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
@@ -872,10 +1060,8 @@ div#section-hsform-outer-yes.edh-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* transform: translateY(-15px); */
         margin-bottom: -264px !important;
-        /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -893,7 +1079,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: column;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 100%;
@@ -961,13 +1146,9 @@ div#section-hsform-outer-yes.edh-section {
         background-color: $white;
         margin: 0px !important;
         padding: 0px !important;
-        background-image: url("/wp-content/themes/conall-child/images/basecamp-background-1920x2019.png") !important;
-        background-position: center !important;
-        background-repeat: repeat !important;
-        background-size: 100% !important;
+        background-image: none !important;
         aspect-ratio: 640/673;
         margin-top: 115px !important;
-        background-position-y: 18px !important;
     div#col-basecamp {
         margin-bottom: 6% !important;
         div#bc-inner-row-copy {
@@ -1157,7 +1338,7 @@ div#section-hsform-outer-yes.edh-section {
                         @include font-size(0.875rem);
                         @include rfs(1.25rem, line-height);
                         letter-spacing: 0px;
-                        margin: 0 !important;
+                        margin-top: 2.5% !important;
                     }
                 }
                 }
@@ -1165,12 +1346,21 @@ div#section-hsform-outer-yes.edh-section {
         }
     }
     }
+    /* ************ HEM RISK SECTION ************ */
+    div#section-hemrisk.edh-section {
+        background-position-y: 45px !important;
+        div#col-hem-risk {
+            background-image: url("/wp-content/themes/conall-child/images/section-hemrisk-mob-backg-top.svg") !important;
+            background-position: top !important;
+            background-repeat: no-repeat !important;
+            background-size: 100% auto !important;
+            margin: 0px !important;
+
+        }
+    }
 }
-
-
 @media all and (max-width: 960px) {
-    div#section-dlb-nav.edh-section { /* section */
-        /* margin: 0px !important; */
+    div#section-dlb-nav.edh-section {
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
@@ -1185,8 +1375,7 @@ div#section-hsform-outer-yes.edh-section {
         justify-content: center;
         margin-top: -10% !important;
         margin-bottom: -246px !important;
-        /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -1204,7 +1393,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: column;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 100%;
@@ -1268,13 +1456,9 @@ div#section-hsform-outer-yes.edh-section {
             }
         }
     }
-    div#section-basecamp {
-        background-position-y: -8px !important;
-    }
 }
 @media all and (max-width: 768px) {
-    div#section-dlb-nav.edh-section { /* section */
-        /* margin: 0px !important; */
+    div#section-dlb-nav.edh-section {
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
@@ -1288,8 +1472,7 @@ div#section-hsform-outer-yes.edh-section {
         flex-direction: column;
         justify-content: center;
         margin-top: -17% !important;
-        /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -1307,7 +1490,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: column;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 100%;
@@ -1376,7 +1558,6 @@ div#section-hsform-outer-yes.edh-section {
         margin: 0px !important;
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
-        background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-color: transparent;
@@ -1392,10 +1573,9 @@ div#section-hsform-outer-yes.edh-section {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-                padding-top: 5% !important;
+            padding-top: 5% !important;
     padding-bottom: 10% !important;
             div#table-inrow-1 {
-                /* height: 450px; */
                 border: 2px solid $gold;
                 @include rfs(1.25rem, border-radius);
                 @include form-gradient();
@@ -1446,7 +1626,7 @@ div#section-hsform-outer-yes.edh-section {
                         @include font-size(2rem);
                         @include rfs(2.5rem, line-height);
                         letter-spacing: 0px;
-                        margin-top: 2% !important;
+                        margin-top: 10% !important;
                         sub.subscript {
                             vertical-align: super !important;
                             font-size: 40% !important;
@@ -1461,8 +1641,7 @@ div#section-hsform-outer-yes.edh-section {
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
-        div#section-dlb-nav.edh-section { /* section */
-       /*  margin: 0px !important; */
+        div#section-dlb-nav.edh-section {
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/euhcc-background-mob-960x960.png") !important;
         background-position: center !important;
@@ -1476,8 +1655,7 @@ div#section-hsform-outer-yes.edh-section {
         flex-direction: column;
         justify-content: center;
         margin-top: -75px !important;
-        /* ***** STICKY NAV **** */
-        div#col-dlb-nav /* section column */ {
+        div#col-dlb-nav  {
             margin-top: 8% !important;
             div#nav-quadbox {
                 div.edh-outerbox.hs-box {
@@ -1495,7 +1673,6 @@ div#section-hsform-outer-yes.edh-section {
                         flex-direction: column;
                         justify-content: space-around;
                         padding: 0;
-                        /* max-width: 1260px; */
                         box-sizing: border-box;
                         div.dlb-nav-container {
                             height: 100%;
@@ -1564,24 +1741,22 @@ div#section-hsform-outer-yes.edh-section {
         margin: 0px !important;
         padding: 0px !important;
         background-image: url("/wp-content/themes/conall-child/images/hemrisk-section-background-1920x780.png") !important;
-        background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-color: transparent;
         z-index: 2;
         aspect-ratio: 32/34;
-        top: -25px;
+        top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 2.5% !important;
+        padding-bottom: 15% !important;
         div#col-hem-risk {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             div#table-inrow-1 {
-                /* height: 450px; */
                 border: 2px solid $gold;
                 @include rfs(1.25rem, border-radius);
                 @include form-gradient();
@@ -1590,6 +1765,7 @@ div#section-hsform-outer-yes.edh-section {
                 flex-direction: column;
                 justify-content: center;
                 padding: 40px 40px !important;
+                margin-top: 15% !important;
                 div#hem-risk-heading {
                     h1.section-heading {
                         @include semi-bold($sofia-sans);
@@ -1598,7 +1774,6 @@ div#section-hsform-outer-yes.edh-section {
                         @include font-size(2.75rem);
                         @include rfs(3rem, line-height);
                         letter-spacing: 0px;
-                        /* text-transform: uppercase; */
                         margin-bottom: 2% !important;
                         sub.subscript {
                             vertical-align: super !important;
@@ -1631,7 +1806,6 @@ div#section-hsform-outer-yes.edh-section {
                         @include font-size(2rem);
                         @include rfs(2.5rem, line-height);
                         letter-spacing: 0px;
-                        margin-top: 2% !important;
                         sub.subscript {
                             vertical-align: super !important;
                             font-size: 40% !important;

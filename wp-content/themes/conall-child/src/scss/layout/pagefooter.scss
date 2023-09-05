@@ -12,6 +12,7 @@ div#section-outer-page-footer {
         height: 260px;
         padding: 56px 75px 0 75px!important;
         margin: 0 auto !important;
+        top: -1px;
         div.clearfix.edgtf-full-section-inner {
             width: 100% !important;
             margin: 0 !important;
@@ -280,16 +281,21 @@ div#section-outer-page-footer {
                                 color: $white;
                                 text-decoration: underline;
                                 @include font-size(1.25rem);
-                                @include rfs(2.5rem, line-height);
+                                line-height: 50px;
                             }
                             }
-                            ul > li:not(:last-child)::after {
+                            ul > li:not(:last-child):after {
                                 content: "|";
                                 color: $white;
                                 padding: 0 8px 0 8px;
                             }
+                            ul > li:nth-child(2):after {
+                                display: none;
+                            }
+                            
                     }
                 }
+
                 div#pg-footer-copyright {
                     text-align: center;
                     p {
