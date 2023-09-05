@@ -73,7 +73,7 @@ div#section-oas.edh-section {
                             background: transparent;
                             div.oas-nav-circle.hs-circle {
                                 border-radius: 100%;
--webkit-border-radius: 100%;
+                                -webkit-border-radius: 100%;
                                 border: 2px solid $gold;
                                 width: 170px;
                                 height: 170px;
@@ -100,9 +100,9 @@ div#section-oas.edh-section {
                         }
                         div#oas-nav1 {
                             border-top-left-radius: 27px;
--webkit-border-top-left-radius: 27px;
+                            -webkit-border-top-left-radius: 27px;
                             border-bottom-left-radius: 27px;
--webkit-border-bottom-left-radius: 27px;
+                            -webkit-border-bottom-left-radius: 27px;
                            background: rgba(255, 255, 255, 0.1);
                         }
                         div#oas-nav2 {
@@ -116,9 +116,9 @@ div#section-oas.edh-section {
                         }
                         div#oas-nav4 {
                             border-top-right-radius: 27px;
--webkit-border-top-right-radius: 27px;
+                            -webkit-border-top-right-radius: 27px;
                             border-bottom-right-radius: 27px;
--webkit-border-bottom-right-radius: 27px;
+                            -webkit-border-bottom-right-radius: 27px;
                         }
                     }
                 }
@@ -256,8 +256,7 @@ div#section-livc.edh-section {
                     padding: 0px !important;
                     aspect-ratio: 137 / 99;
                     @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
-
+                    -webkit-border-radius: 1.25rem;
                     p.cube-copy {
                         margin-top: 20px !important;
                         color: $white;
@@ -5140,7 +5139,7 @@ div#section-qol.edh-section {
                         padding: 0px !important;
                         aspect-ratio: 137 / 99;
                         @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
+            -webkit-border-radius: 1.25rem;
                         margin-bottom: 7% !important;
                         z-index: 6;
                         p.cube-copy {
@@ -5236,7 +5235,7 @@ div#section-qol.edh-section {
                     width: 100%;
                     height: 100px;
                     @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
+        -webkit-border-radius: 1.25rem;
                     border: 1px solid $purple;
                     background-color: $purple;
                     margin: 0 auto !important;
@@ -5276,7 +5275,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $bordergreylight;
                         border-radius: 100%;
--webkit-border-radius: 100%;
+            -webkit-border-radius: 100%;
                         position: relative;
                         z-index: 210;
                         box-sizing: border-box;
@@ -5292,7 +5291,7 @@ div#section-qol.edh-section {
                         background-color: $white;
                         border: 2px solid $gold;
                         border-radius: 100%;
--webkit-border-radius: 100%;
+                -webkit-border-radius: 100%;
                         @include circle-shadow-light();
                         box-sizing: border-box;
                         aspect-ratio: 1 / 1;
@@ -5311,7 +5310,7 @@ div#section-qol.edh-section {
                 flex-wrap: nowrap;
                 background-color: #E8E8E8;
                 border-radius: 1.25rem;
--webkit-border-radius: 1.25rem;
+            -webkit-border-radius: 1.25rem;
                 padding: 0 !important;
                 position: relative;
                 margin-top: -84% !important;
@@ -5532,7 +5531,7 @@ div#section-qol.edh-section {
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
+            -webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -6510,7 +6509,7 @@ div#section-qol.edh-section {
         margin: 0px !important;
         background-repeat: no-repeat !important;
         z-index: 22;
-        margin-bottom: -110px !important;
+        margin-bottom: -120px !important;
         margin-top: -65px !important;
         background-size: cover;
         transform: translateY(-30px);
