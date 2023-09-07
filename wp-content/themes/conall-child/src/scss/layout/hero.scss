@@ -206,6 +206,17 @@ div#section-hero-outer-video {
         }
     }
 }
+@media all and (max-width: 1299px) and (min-width: 1026px){
+    /* ************ HERO FOOTNOTE ************ */
+    div#section-hero-footnote {
+        div#hero-footnote-column {
+            p.hero-footnote {
+                font-size: 14px;
+                height: calc(100vh * .82);
+            }
+        }
+    }
+}
 @media all and (max-width: 1025px) {
     div#section-hero-outer,
     div#section-hero-outer-video {
