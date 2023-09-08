@@ -206,12 +206,23 @@ div#section-hero-outer-video {
         }
     }
 }
-@media all and (max-width: 1299px) and (min-width: 1026px){
+@media all and (max-width: 1299px) and (min-width: 1186px){
     /* ************ HERO FOOTNOTE ************ */
     div#section-hero-footnote {
         div#hero-footnote-column {
             p.hero-footnote {
                 height: calc(100vh * .82);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1185px){
+    /* ************ HERO FOOTNOTE ************ */
+    div#section-hero-footnote {
+        div#hero-footnote-column {
+            p.hero-footnote {
+                height: calc(100vh * .72);
             }
         }
     }
