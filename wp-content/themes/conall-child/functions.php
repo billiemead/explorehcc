@@ -54,3 +54,15 @@ function elevar_add_favicon()
     <meta name="msapplication-square310x310logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-310x310.png" />
 <?php }
 add_action('wp_head', 'elevar_add_favicon');
+
+
+// Add HubSpot script to page head
+function hubspot_javascript() {
+    ?>
+        <!-- Start of HubSpot Embed Code -->
+            <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script>
+        <!-- End of HubSpot Embed Code -->
+        
+    <?php
+}
+add_action('wp_head', 'hubspot_javascript');
