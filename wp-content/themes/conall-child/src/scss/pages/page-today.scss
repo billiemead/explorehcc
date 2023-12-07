@@ -764,7 +764,7 @@ div#section-table.edh-section {
                     @include font-size(1.875rem);
                     @include rfs(2.375rem, line-height);
                     letter-spacing: 0px;
-                    /* padding: 50px 0 50px 0 !important; */
+
                     }
             }
             div#table-inrow-5 {
@@ -1109,6 +1109,7 @@ div#section-needed.edh-section {
                             top: -78px;
                             position: relative;
                             margin: 0 auto !important;
+                            padding: 11px;
                             p.circle-percentage {
                                 @include font-size(2.125rem);
                                 @include rfs(2rem, line-height);
@@ -1130,6 +1131,7 @@ div#section-needed.edh-section {
                             margin: 0 auto !important;
                             top: -144px;
                             position: relative;
+                            padding: 12px;
                             p.circle-percentage {
                                 @include font-size(2.625rem);
                                 @include rfs(2.438rem, line-height);
@@ -1151,6 +1153,7 @@ div#section-needed.edh-section {
                             margin: 0 auto !important;
                             top: -125px;
                             position: relative;
+                            padding: 12px;
                                 p.circle-percentage {
                                     @include font-size(2.25rem);
                                     @include rfs(2.063rem, line-height);
@@ -1172,6 +1175,7 @@ div#section-needed.edh-section {
                             margin: 0 auto !important;
                             top: -26px;
                             position: relative;
+                            padding: 10px;
                             p.circle-percentage {
                                 @include font-size(2.125rem);
                                 @include rfs(2rem, line-height);
@@ -1366,12 +1370,13 @@ div#section-needed.edh-section {
                             }
                         }
                         div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                            max-width: 131px;
-                            max-height: 131px;
+                            max-width: 132px;
+                            max-height: 132px;
                             margin: 0 auto !important;
-                            top: -18px;
+                            top: -20px;
                             position: relative;
                             text-transform: uppercase;
+                            padding: 9px;
                             p.circle-percentage {
                                 @include font-size(1.625rem);
                                 @include rfs(1.5rem, line-height);
@@ -1388,46 +1393,48 @@ div#section-needed.edh-section {
                             bottom: -20px;
                         }
                         div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                            max-width: 215px;
-                            max-height: 215px;
+                            max-width: 170px;
+                            max-height: 170px;
                             margin: 0 auto !important;
-                            top: -131px;
+                            top: -31px;
                             position: relative;
+                            padding: 11px;
                             p.circle-percentage {
-                                @include font-size(2.875rem);
-                                @include rfs(2.438rem, line-height);
+                                @include font-size(2.25rem);
+                                @include rfs(2.25rem, line-height);
                             }
                             div.edh-innercircle.hs-circle {
-                                height: 185px;
+                                height: 146px;
                             }
                         }
                         div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
                             content: "";
                             border: 1px solid #aaa;
-                            height: 130px;
+                            height: 30px;
                             position: absolute;
-                            bottom: -132px;
+                            bottom: -32px;
                         }
                         div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                            max-width: 183px;
-                            max-height: 183px;
+                            max-width: 205px;
+                            max-height: 205px;
                             margin: 0 auto !important;
-                            top: -35px;
+                            top: -90px;
                             position: relative;
-                                p.circle-percentage {
-                                    @include font-size(2.125rem);
-                                    @include rfs(2.125rem, line-height);
-                                }
+                            padding: 13px;
+                            p.circle-percentage {
+                                @include font-size(2.563rem);
+                                @include rfs(2.563rem, line-height);
+                            }
                             div.edh-innercircle.hs-circle {
-                                height: 157px;
+                                height: 176px;
                             }
                         }
                         div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
                             content: "";
                             border: 1px solid #aaa;
-                            height: 34px;
+                            height: 90px;
                             position: absolute;
-                            bottom: -36px;
+                            bottom: -92px;
                         }
                         div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
                             max-width: 173px;
@@ -1435,20 +1442,21 @@ div#section-needed.edh-section {
                             margin: 0 auto !important;
                             top: -31px;
                             position: relative;
+                            padding: 12px;
                             p.circle-percentage {
-                                @include font-size(2.063rem);
-                                @include rfs(2.063rem, line-height);
+                                @include font-size(2.25rem);
+                                @include rfs(2.25rem, line-height);
                             }
                             div.edh-innercircle.hs-circle {
-                                height: 148px;
+                                height: 150px;
                             }
                         }
                         div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
                             content: "";
                             border: 1px solid #aaa;
-                            height: 31px;
+                            height: 30px;
                             position: absolute;
-                            bottom: -34px;
+                            bottom: -32px;
                         }
                         div.edh-box-container {
                             display: flex;
@@ -1861,12 +1869,13 @@ div#section-liverfunct.edh-section {
                             margin: 0 auto !important;
                             position: relative;
                             top: -158px;
+                            padding: 13px;
                     p.circle-percentage {
                         @include font-size(2.625rem);
                         @include rfs(2.438rem, line-height);
                     }
                     div.edh-innercircle.hs-circle {
-                        height: 171px;
+                        height: 173px;
                     }
                         }
                         div#html-lvf-circle1 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
@@ -1882,6 +1891,7 @@ div#section-liverfunct.edh-section {
                             margin: 0 auto !important;
                             top: -118px;
                             position: relative;
+                            padding: 12px;
                             p.circle-percentage {
                                 @include font-size(2.25rem);
                                 @include rfs(2.063rem, line-height);
@@ -1903,6 +1913,7 @@ div#section-liverfunct.edh-section {
                             margin: 0 auto !important;
                             top: -32px;
                             position: relative;
+                            padding: 11px;
                                 p.circle-percentage {
                                     @include font-size(1.688rem);
                                     @include rfs(1.5rem, line-height);
@@ -1919,17 +1930,18 @@ div#section-liverfunct.edh-section {
                             bottom: -34px;
                         }
                         div#html-lvf-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                            max-width: 154px;
-                            max-height: 154px;
+                            max-width: 155px;
+                            max-height: 155px;
                             margin: 0 auto !important;
                             top: -56px;
                             position: relative;
+                            padding: 11px;
                             p.circle-percentage {
                                 @include font-size(1.938rem);
                                 @include rfs(1.813rem, line-height);
                             }
                             div.edh-innercircle.hs-circle {
-                                height: 133px;
+                                height: 132px;
                             }
                         }
                         div#html-lvf-circle4 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
@@ -1996,7 +2008,7 @@ div#section-liverfunct.edh-section {
                                 }
                             }
                         }
-                        
+
                         div#html-quadbox-i {
                             div.edh-outerbox {
                                 border-top-right-radius: 0;
@@ -2193,10 +2205,9 @@ div#section-needed {
     width: auto !important;
     }
 }
-/*** Responsive Max-Width ***/
 @media all and (max-width: 1700px) {
-/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
-div#section-qol.edh-section {
+    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+    div#section-qol.edh-section {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -2215,148 +2226,66 @@ div#section-qol.edh-section {
         width: auto !important;
         transform: translateY(-195px);
         div.edgtf-full-section-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 286px!important;
-        width: 100%;
-        flex-basis: 100%;
-        position: absolute;
-        margin-bottom: 103px;
-            div#col-qol-left {
-                width: 600px !important;
-            }
-            div#col-qol-right {
-                    background-color: #fff;
-                    height: 409px;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    border-top-right-radius: 20px;
--webkit-border-top-right-radius: 20px;
-                    border-bottom-right-radius: 20px;
--webkit-border-bottom-right-radius: 20px;
-                    width: 900px !important;
-                    position: absolute;
-                    top: 0px;
-                    left: 719px;
-                    padding-right: 3% !important;
-                    padding-left: 0.5% !important;
-                    @include inner-box-shadow();
-                h1.section-heading {
-                    @include bold($sofia-sans);
-                    text-align: left;
-                    color: $purple;
-                    font-size: 32px;
-                    line-height: 38px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    margin-top: 8% !important;
-                    margin-bottom: 2% !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 286px!important;
+            width: 100%;
+            flex-basis: 100%;
+            position: absolute;
+            margin-bottom: 103px;
+                div#col-qol-left {
+                    width: 600px !important;
                 }
-                p.section-copy {
-                    @include light($sofia-sans);
-                    text-align: left;
-                    color: $copy;
-                    font-size: 24px;
-                    line-height: 32px;
-                    letter-spacing: 0px;
-                    sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 40% !important;
-                        top: .005ex !important;
+                div#col-qol-right {
+                        background-color: #fff;
+                        height: 409px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        border-top-right-radius: 20px;
+            -webkit-border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+            -webkit-border-bottom-right-radius: 20px;
+            width: 900px !important;
+            position: absolute;
+            top: 0px;
+            left: 719px;
+            padding-right: 3% !important;
+            padding-left: 0.5% !important;
+            @include inner-box-shadow();
+                    h1.section-heading {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        font-size: 32px;
+                        line-height: 38px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        margin-top: 8% !important;
+                        margin-bottom: 2% !important;
+                    }
+                    p.section-copy {
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $copy;
+                        font-size: 24px;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 40% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    div#qol-mobile-image {
+                        display: none;
                     }
                 }
-                div#qol-mobile-image {
-                    display: none;
-                }
-            }
         }
+    }
 }
-}
-/*** Responsive Max-Width ***/
 @media all and (max-width: 1600px) {
-/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
-div#section-qol.edh-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
-        margin: 0 auto !important;
-        position: relative;
-        background-position: left !important;
-        background-repeat: no-repeat !important;
-        height: 815px;
-        margin-bottom: 0px !important;
-        top: 0px;
-        left: 0px;
-        justify-content: flex-start;
-        aspect-ratio: 960/407;
-        background-size: cover !important;
-        width: auto !important;
-        transform: translateY(-195px);
-        div.edgtf-full-section-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 286px!important;
-        width: 100%;
-        flex-basis: 100%;
-        position: absolute;
-        margin-bottom: 103px;
-            div#col-qol-left {
-                width: 600px !important;
-            }
-            div#col-qol-right {
-                    background-color: #fff;
-                    height: 409px;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    border-top-right-radius: 20px;
--webkit-border-top-right-radius: 20px;
-                    border-bottom-right-radius: 20px;
--webkit-border-bottom-right-radius: 20px;
-                    width: 725px !important;
-                    position: absolute;
-                    top: 0px;
-                    left: 719px;
-                    padding-right: 3% !important;
-                    padding-left: 0.5% !important;
-                    @include inner-box-shadow();
-                h1.section-heading {
-                    @include bold($sofia-sans);
-                    text-align: left;
-                    color: $purple;
-                    font-size: 30px;
-                    line-height: 36px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    margin-top: 6% !important;
-                    margin-bottom: 2% !important;
-                }
-                p.section-copy {
-                    @include light($sofia-sans);
-                    text-align: left;
-                    color: $copy;
-                    font-size: 22px;
-                    line-height: 32px;
-                    letter-spacing: 0px;
-                    sub.subscript {
-                        vertical-align: super !important;
-                        font-size: 40% !important;
-                        top: .005ex !important;
-                    }
-                }
-                div#qol-mobile-image {
-                    display: none;
-                }
-            }
-        }
-}
-}
-/*** Responsive Max-Width ***/
-@media all and (max-width: 1500px) {
     /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
     div#section-qol.edh-section {
             display: flex;
@@ -2395,9 +2324,9 @@ div#section-qol.edh-section {
                         justify-content: flex-start;
                         align-items: flex-start;
                         border-top-right-radius: 20px;
--webkit-border-top-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
--webkit-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
                         width: 725px !important;
                         position: absolute;
                         top: 0px;
@@ -2410,7 +2339,7 @@ div#section-qol.edh-section {
                         text-align: left;
                         color: $purple;
                         font-size: 30px;
-                        line-height: 38px;
+                        line-height: 36px;
                         letter-spacing: 3px;
                         text-transform: uppercase;
                         margin-top: 6% !important;
@@ -2436,28 +2365,27 @@ div#section-qol.edh-section {
             }
     }
 }
-/*** Responsive Max-Width ***/
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1500px) {
     /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
     div#section-qol.edh-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
-            margin: 0 auto !important;
-            position: relative;
-            background-position: left !important;
-            background-repeat: no-repeat !important;
-            height: 815px;
-            margin-bottom: 0px !important;
-            top: 0px;
-            left: 0px;
-            justify-content: flex-start;
-            aspect-ratio: 960/407;
-            background-size: cover !important;
-            width: auto !important;
-            transform: translateY(-195px);
-            div.edgtf-full-section-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+        margin: 0 auto !important;
+        position: relative;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        height: 815px;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        background-size: cover !important;
+        width: auto !important;
+        transform: translateY(-195px);
+        div.edgtf-full-section-inner {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -2467,108 +2395,42 @@ div#section-qol.edh-section {
             flex-basis: 100%;
             position: absolute;
             margin-bottom: 103px;
-                div#col-qol-left {
-                    width: 600px !important;
-                }
-                div#col-qol-right {
-                        background-color: #fff;
-                        height: 409px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        border-top-right-radius: 20px;
--webkit-border-top-right-radius: 20px;
-                        border-bottom-right-radius: 20px;
--webkit-border-bottom-right-radius: 20px;
-                        width: 640px !important;
-                        position: absolute;
-                        top: 0px;
-                        left: 719px;
-                        padding-right: 3% !important;
-                        padding-left: 0.5% !important;
-                        @include inner-box-shadow();
-                    h1.section-heading {
-                        @include bold($sofia-sans);
-                        text-align: left;
-                        color: $purple;
-                        font-size: 28px;
-                        line-height: 38px;
-                        letter-spacing: 3px;
-                        text-transform: uppercase;
-                        margin-top: 4% !important;
-                        margin-bottom: 1% !important;
-                    }
-                    p.section-copy {
-                        @include light($sofia-sans);
-                        text-align: left;
-                        color: $copy;
-                        font-size: 23px;
-                        line-height: 32px;
-                        letter-spacing: 0px;
-                        sub.subscript {
-                            vertical-align: super !important;
-                            font-size: 40% !important;
-                            top: .005ex !important;
-                        }
-                    }
-                    div#qol-mobile-image {
-                        display: none;
-                    }
-                }
-            }
-    }
-}
-@media all and (max-width: 1300px) {
-/* ************ QUALITY OF LIFE (QOL) SECTION ************ */
-div#section-qol.edh-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-image: none;
-        margin: 0 auto !important;
-        position: relative;
-        height: auto;
-        margin-bottom: 0px !important;
-        top: 0px;
-        left: 0px;
-        justify-content: flex-start;
-        aspect-ratio: 960/407;
-        width: 100vw !important;
-        transform: translateY(-30px);
-        div.edgtf-full-section-inner {
-            margin: 0 !important;
-            position: relative;
             div#col-qol-left {
-                display: none;
+                width: 600px !important;
             }
             div#col-qol-right {
-            width: 100% !important;
-            padding: 0 !important;
-            height: 100% !important;
-            left: 0;
-            position: relative;
-            border-radius: 0;
--webkit-border-radius: 0;
-            justify-content: center;
-            align-items: center;
-            box-shadow: none;
-            -moz-box-shadow: none;
+                background-color: #fff;
+                height: 409px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border-top-right-radius: 20px;
+                -webkit-border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                -webkit-border-bottom-right-radius: 20px;
+                width: 725px !important;
+                position: absolute;
+                top: 0px;
+                left: 719px;
+                padding-right: 3% !important;
+                padding-left: 0.5% !important;
+                @include inner-box-shadow();
                 h1.section-heading {
                     @include bold($sofia-sans);
                     text-align: left;
                     color: $purple;
-                    font-size: 28px;
-                    line-height: 34px;
+                    font-size: 30px;
+                    line-height: 38px;
                     letter-spacing: 3px;
                     text-transform: uppercase;
-                    margin-top: 8% !important;
+                    margin-top: 6% !important;
                     margin-bottom: 2% !important;
                 }
                 p.section-copy {
                     @include light($sofia-sans);
                     text-align: left;
                     color: $copy;
-                    font-size: 24px;
-                    line-height: 38px;
+                    font-size: 22px;
+                    line-height: 32px;
                     letter-spacing: 0px;
                     sub.subscript {
                         vertical-align: super !important;
@@ -2577,33 +2439,178 @@ div#section-qol.edh-section {
                     }
                 }
                 div#qol-mobile-image {
-                    display: flex;
-                    width: 100%;
-                    figure.wpb_wrapper.vc_figure {
-                        width: 100%;
-                        div.vc_single_image-wrapper.vc_box_border_grey {
-                            width: 100%;
-                            img.vc_single_image-img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-                div.wpb_text_column.wpb_content_element  {
-                    div.wpb_wrapper {
-                            padding-left: 15% !important;
-                            padding-right: 15% !important;
-                    }
+                    display: none;
                 }
             }
         }
+    }
 }
+@media all and (max-width: 1400px) {
+    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+    div#section-qol.edh-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(/wp-content/themes/conall-child/images/qol-section-background-3-1920x814.png);
+        margin: 0 auto !important;
+        position: relative;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        height: 815px;
+        margin-bottom: 0px !important;
+        top: 0px;
+        left: 0px;
+        justify-content: flex-start;
+        aspect-ratio: 960/407;
+        background-size: cover !important;
+        width: auto !important;
+        transform: translateY(-195px);
+        div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 286px!important;
+                width: 100%;
+                flex-basis: 100%;
+                position: absolute;
+                margin-bottom: 103px;
+                    div#col-qol-left {
+                        width: 600px !important;
+                    }
+                    div#col-qol-right {
+                            background-color: #fff;
+                            height: 409px;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            border-top-right-radius: 20px;
+                -webkit-border-top-right-radius: 20px;
+                                        border-bottom-right-radius: 20px;
+                -webkit-border-bottom-right-radius: 20px;
+                    width: 640px !important;
+                    position: absolute;
+                    top: 0px;
+                    left: 719px;
+                    padding-right: 3% !important;
+                    padding-left: 0.5% !important;
+                    @include inner-box-shadow();
+                h1.section-heading {
+                    @include bold($sofia-sans);
+                    text-align: left;
+                    color: $purple;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-top: 4% !important;
+                    margin-bottom: 1% !important;
+                }
+                p.section-copy {
+                    @include light($sofia-sans);
+                    text-align: left;
+                    color: $copy;
+                    font-size: 23px;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    sub.subscript {
+                        vertical-align: super !important;
+                        font-size: 40% !important;
+                        top: .005ex !important;
+                    }
+                }
+                div#qol-mobile-image {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1300px) {
+    /* ************ QUALITY OF LIFE (QOL) SECTION ************ */
+    div#section-qol.edh-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-image: none;
+            margin: 0 auto !important;
+            position: relative;
+            height: auto;
+            margin-bottom: 0px !important;
+            top: 0px;
+            left: 0px;
+            justify-content: flex-start;
+            aspect-ratio: 960/407;
+            width: 100vw !important;
+            transform: translateY(-30px);
+            div.edgtf-full-section-inner {
+                margin: 0 !important;
+                position: relative;
+                div#col-qol-left {
+                    display: none;
+                }
+                div#col-qol-right {
+                width: 100% !important;
+                padding: 0 !important;
+                height: 100% !important;
+                left: 0;
+                position: relative;
+                border-radius: 0;
+    -webkit-border-radius: 0;
+                justify-content: center;
+                align-items: center;
+                box-shadow: none;
+                -moz-box-shadow: none;
+                    h1.section-heading {
+                        @include bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        font-size: 28px;
+                        line-height: 34px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        margin-top: 8% !important;
+                        margin-bottom: 2% !important;
+                    }
+                    p.section-copy {
+                        @include light($sofia-sans);
+                        text-align: left;
+                        color: $copy;
+                        font-size: 24px;
+                        line-height: 38px;
+                        letter-spacing: 0px;
+                        sub.subscript {
+                            vertical-align: super !important;
+                            font-size: 40% !important;
+                            top: .005ex !important;
+                        }
+                    }
+                    div#qol-mobile-image {
+                        display: flex;
+                        width: 100%;
+                        figure.wpb_wrapper.vc_figure {
+                            width: 100%;
+                            div.vc_single_image-wrapper.vc_box_border_grey {
+                                width: 100%;
+                                img.vc_single_image-img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    div.wpb_text_column.wpb_content_element  {
+                        div.wpb_wrapper {
+                                padding-left: 15% !important;
+                                padding-right: 15% !important;
+                        }
+                    }
+                }
+            }
+    }
 }
 @media all and (max-width: 1200px) {
     div#section-table.edh-section {
         background-image: url("/wp-content/themes/conall-child/images/needed-table-backg-1920x1762.png");
         background-size: cover !important;
-        /* height: 1762px; */
         padding-top: 11.5% !important;
         padding-bottom: 275px !important;
         background-position-y: 0px;
@@ -2614,11 +2621,10 @@ div#section-qol.edh-section {
         left: -1px;
         margin: 0px !important;
         background-repeat: no-repeat !important;
-    /*  margin-bottom: -100px !important; */
             div.edh-col.col2.table-box {
             border: 2px solid $gold2;
             @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
+            -webkit-border-radius: 1.25rem;
             background: linear-gradient(#5a636d, #161030);
             padding: 0 !important;
                 div.vc_row {
@@ -2711,7 +2717,6 @@ div#section-qol.edh-section {
                         @include font-size(1.875rem);
                         @include rfs(2.375rem, line-height);
                         letter-spacing: 0px;
-                        /* padding: 50px 0 50px 0 !important; */
                     }
                     div.right {
                         p.table-copy {
@@ -2729,7 +2734,6 @@ div#section-qol.edh-section {
                         @include font-size(1.875rem);
                         @include rfs(2.375rem, line-height);
                         letter-spacing: 0px;
-                        /* padding: 50px 0 50px 0 !important; */
                     }
                     div.right {
                         div.wpb_text_column {
@@ -2751,7 +2755,6 @@ div#section-qol.edh-section {
                         @include font-size(1.875rem);
                         @include rfs(2.375rem, line-height);
                         letter-spacing: 0px;
-                        /* padding: 50px 0 50px 0 !important; */
                         }
                 }
                 div#table-inrow-5 {
@@ -2861,74 +2864,74 @@ div#section-qol.edh-section {
                                 box-sizing: border-box;
                                 div.oas-nav-circle.hs-circle {
                                     border-radius: 100%;
--webkit-border-radius: 100%;
-                                    border: 2px solid $gold;
-                                    max-width: 125px;
-                                    max-height: 125px;
-                                    background-color: $white;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    position: relative;
-                                    top: 0px;
-                                    aspect-ratio: 1/1;
-                                    @include circle-shadow();
-                                    img.oas-icon {
-                                        max-width: 75%;
-                                        max-height: 75%;
+        -webkit-border-radius: 100%;
+                                            border: 2px solid $gold;
+                                            max-width: 125px;
+                                            max-height: 125px;
+                                            background-color: $white;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            position: relative;
+                                            top: 0px;
+                                            aspect-ratio: 1/1;
+                                            @include circle-shadow();
+                                            img.oas-icon {
+                                                max-width: 75%;
+                                                max-height: 75%;
+                                            }
+                                        }
+                                        a.oas-nav {
+                                            display: flex;
+                                            text-align: left;
+                                            @include medium($sofia-sans);
+                                            color: $white;
+                                            text-decoration: underline;
+                                            @include font-size(1.125rem);
+                                            @include rfs(1.375rem, line-height);
+                                            margin-top: 0px;
+                                            position: relative;
+                                            margin-left: 50px !important;
+                                        }
+                                    }
+                                    div#oas-nav1 {
+                                        border-top-left-radius: 27px;
+        -webkit-border-top-left-radius: 27px;
+                                        border-top-right-radius: 27px;
+        -webkit-border-top-right-radius: 27px;
+                                        border-bottom-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+                                        border-bottom-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+                                        background: rgba(255, 255, 255, 0.1);
+                                    }
+                                    div#oas-nav2 {
+                                        img.oas-icon {
+                                            position: relative;
+                                            top: -3px;
+                                        }
+                                    }
+                                    div#oas-nav3 {
+                                        background: rgba(255, 255, 255, 0.1);
+                                        img.oas-icon {
+                                            max-width: 60%;
+                                            max-height: 60%;
+                                        }
+                                    }
+                                    div#oas-nav4 {
+                                        border-top-left-radius: 0;
+        -webkit-border-top-left-radius: 0;
+                                        border-radius: 0;
+        -webkit-border-top-right-radius: 0;
+                                        border-bottom-left-radius: 27px;
+        -webkit-border-bottom-left-radius: 27px;
+                                        border-bottom-right-radius: 27px;
+        -webkit-border-bottom-right-radius: 27px;
                                     }
                                 }
-                                a.oas-nav {
-                                    display: flex;
-                                    text-align: left;
-                                    @include medium($sofia-sans);
-                                    color: $white;
-                                    text-decoration: underline;
-                                    @include font-size(1.125rem);
-                                    @include rfs(1.375rem, line-height);
-                                    margin-top: 0px;
-                                    position: relative;
-                                    margin-left: 50px !important;
-                                }
-                            }
-                            div#oas-nav1 {
-                                border-top-left-radius: 27px;
--webkit-border-top-left-radius: 27px;
-                                border-top-right-radius: 27px;
--webkit-border-top-right-radius: 27px;
-                                border-bottom-left-radius: 0;
--webkit-border-bottom-left-radius: 0;
-                                border-bottom-right-radius: 0;
--webkit-border-bottom-right-radius: 0;
-                                background: rgba(255, 255, 255, 0.1);
-                            }
-                            div#oas-nav2 {
-                                img.oas-icon {
-                                    position: relative;
-                                    top: -3px;
-                                }
-                            }
-                            div#oas-nav3 {
-                                background: rgba(255, 255, 255, 0.1);
-                                img.oas-icon {
-                                    max-width: 60%;
-                                    max-height: 60%;
-                                }
-                            }
-                            div#oas-nav4 {
-                                border-top-left-radius: 0;
--webkit-border-top-left-radius: 0;
-                                border-radius: 0;
--webkit-border-top-right-radius: 0;
-                                border-bottom-left-radius: 27px;
--webkit-border-bottom-left-radius: 27px;
-                                border-bottom-right-radius: 27px;
--webkit-border-bottom-right-radius: 27px;
                             }
                         }
                     }
-                }
-            }
     }
     /* ************ LIVER CANCER SECTION ************ */
     div#section-livc.edh-section {
@@ -3068,111 +3071,111 @@ div#section-qol.edh-section {
                         padding: 0px !important;
                         aspect-ratio: 137 / 99;
                         @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
-                        margin-bottom: 7% !important;
-                        z-index: 6;
-                        p.cube-copy {
-                            margin-top: 20px !important;
-                            color: $white;
-                            @include bold($sofia-sans);
-                            text-align: center;
-                            font-size: 18px !important;
-                            line-height: 20px !important;
-                            letter-spacing: 0px;
-                            text-transform: uppercase;
-                            @include rfs(0.031rem, letter-spacing);
-                                sub.subscript {
-                                vertical-align: super !important;
-                                font-size: 40% !important;
-                                top: .005ex !important;
+        -webkit-border-radius: 1.25rem;
+                                margin-bottom: 7% !important;
+                                z-index: 6;
+                                p.cube-copy {
+                                    margin-top: 20px !important;
+                                    color: $white;
+                                    @include bold($sofia-sans);
+                                    text-align: center;
+                                    font-size: 18px !important;
+                                    line-height: 20px !important;
+                                    letter-spacing: 0px;
+                                    text-transform: uppercase;
+                                    @include rfs(0.031rem, letter-spacing);
+                                        sub.subscript {
+                                        vertical-align: super !important;
+                                        font-size: 40% !important;
+                                        top: .005ex !important;
+                                        }
                                 }
+                            }
+                            div.livc-cube.one { /* quad column 1 */
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg1-195x139.png");
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg1-195x139.png"),linear-gradient($orange1, $orange2);
+                                margin: 0px !important;
+                                padding: 0px !important;
+                                background-repeat: no-repeat !important;
+                                background-position-y: 0px !important;
+                                background-position-x: 0px !important;
+                                top: 0px;
+                                background-size: inherit;
+                                margin: 0 auto !important;
+                                @include tricube-shadow();
+                                h4#cube1-h4 {
+                                    color: $white;
+                                    @include bold($sofia-sans);
+                                    text-align: center;
+                                    @include font-size(4.563rem);
+                                    @include rfs(2.688rem, line-height);
+                                    letter-spacing: 0px;
+                                    margin-top: 15px !important;
+                                }
+                            }
+                            div.livc-cube.two { /* quad column 2 */
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg2-262x123.png");
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg2-262x123.png"),linear-gradient($orange1, $orange2);
+                                margin: 0px !important;
+                                padding: 0px !important;
+                                background-repeat: no-repeat !important;
+                                background-position-y: 0px !important;
+                                background-position-x: 0px !important;
+                                top: 0px;
+                                background-size: contain;
+                                margin: 0 auto !important;
+                                @include tricube-shadow();
+                                h4#cube2-h4 {
+                                    color: $white;
+                                    @include bold($sofia-sans);
+                                    text-align: center;
+                                    @include font-size(2.563rem);
+                                    @include rfs(2.25rem, line-height);
+                                    letter-spacing: 0px;
+                                    text-transform: uppercase;
+                                }
+                                .cube-copy {
+                                    margin-top: 7px !important;
+                                }
+                            }
+                            div.livc-cube.three { /* quad column 3 */
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg3-238x198.png");
+                                background-image: url("/wp-content/themes/conall-child/images/tricube-backg3-238x198.png"),linear-gradient($orange1, $orange2);
+                                margin: 0px !important;
+                                padding: 0px !important;
+                                background-repeat: no-repeat !important;
+                                background-position-y: 0px !important;
+                                background-position-x: 0px !important;
+                                top: 0px;
+                                background-size: contain;
+                                margin: 0 auto !important;
+                                @include tricube-shadow();
+                                h4#cube3-h4 {
+                                    color: $white;
+                                    @include bold($sofia-sans);
+                                    text-align: center;
+                                    @include font-size(4.563rem);
+                                    @include rfs(1.813rem, line-height);
+                                    letter-spacing: 0px;
+                                }
+                                .cube-copy {
+                                    margin-top: 28px !important;
+                                }
+                            }
                         }
-                    }
-                    div.livc-cube.one { /* quad column 1 */
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg1-195x139.png");
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg1-195x139.png"),linear-gradient($orange1, $orange2);
-                        margin: 0px !important;
-                        padding: 0px !important;
-                        background-repeat: no-repeat !important;
-                        background-position-y: 0px !important;
-                        background-position-x: 0px !important;
-                        top: 0px;
-                        background-size: inherit;
-                        margin: 0 auto !important;
-                        @include tricube-shadow();
-                        h4#cube1-h4 {
-                            color: $white;
-                            @include bold($sofia-sans);
-                            text-align: center;
-                            @include font-size(4.563rem);
-                            @include rfs(2.688rem, line-height);
-                            letter-spacing: 0px;
-                            margin-top: 15px !important;
-                        }
-                    }
-                    div.livc-cube.two { /* quad column 2 */
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg2-262x123.png");
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg2-262x123.png"),linear-gradient($orange1, $orange2);
-                        margin: 0px !important;
-                        padding: 0px !important;
-                        background-repeat: no-repeat !important;
-                        background-position-y: 0px !important;
-                        background-position-x: 0px !important;
-                        top: 0px;
-                        background-size: contain;
-                        margin: 0 auto !important;
-                        @include tricube-shadow();
-                        h4#cube2-h4 {
-                            color: $white;
-                            @include bold($sofia-sans);
-                            text-align: center;
-                            @include font-size(2.563rem);
-                            @include rfs(2.25rem, line-height);
-                            letter-spacing: 0px;
-                            text-transform: uppercase;
-                        }
-                        .cube-copy {
-                            margin-top: 7px !important;
-                        }
-                    }
-                    div.livc-cube.three { /* quad column 3 */
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg3-238x198.png");
-                        background-image: url("/wp-content/themes/conall-child/images/tricube-backg3-238x198.png"),linear-gradient($orange1, $orange2);
-                        margin: 0px !important;
-                        padding: 0px !important;
-                        background-repeat: no-repeat !important;
-                        background-position-y: 0px !important;
-                        background-position-x: 0px !important;
-                        top: 0px;
-                        background-size: contain;
-                        margin: 0 auto !important;
-                        @include tricube-shadow();
-                        h4#cube3-h4 {
-                            color: $white;
-                            @include bold($sofia-sans);
-                            text-align: center;
-                            @include font-size(4.563rem);
-                            @include rfs(1.813rem, line-height);
-                            letter-spacing: 0px;
-                        }
-                        .cube-copy {
-                            margin-top: 28px !important;
-                        }
-                    }
-                }
-                div.livc-purple-box {
-                    width: 100%;
-                    height: 100px;
-                    @include rfs(1.25rem, border-radius);
--webkit-border-radius: 1.25rem;
-                    border: 1px solid $purple;
-                    background-color: $purple;
-                    margin: 0 auto !important;
-                    top: -70px;
-                    position: relative;
-                    width: 350px;
-                    z-index: 5;
-                }
+                        div.livc-purple-box {
+                            width: 100%;
+                            height: 100px;
+                            @include rfs(1.25rem, border-radius);
+        -webkit-border-radius: 1.25rem;
+            border: 1px solid $purple;
+            background-color: $purple;
+            margin: 0 auto !important;
+            top: -70px;
+            position: relative;
+            width: 350px;
+            z-index: 5;
+        }
         }
         div#col-livc-cases {
             max-width: 870px !important;
@@ -4028,7 +4031,7 @@ div#section-qol.edh-section {
                             div#html-needed-circle2 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
                                 content: "";
                                 border: 1px solid #aaa;
-                                height: 25px;
+                                height: 23px;
                                 position: absolute;
                                 bottom: -25px;
                             }
@@ -4078,6 +4081,7 @@ div#section-qol.edh-section {
                                 display: flex;
                                 width: 100%;
                                 flex-basis: 100%;
+                                margin-bottom: 7% !important;
                                 div.edh-outerbox {
                                     background: #fff;
                                     border: 1px solid $bordergrey;
@@ -4157,6 +4161,7 @@ div#section-qol.edh-section {
                                 }
                             }
                             div#html-quadbox-d {
+                                margin-bottom: 0 !important;
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
                                     -webkit-border-radius: 1.25rem;
@@ -4213,10 +4218,10 @@ div#section-qol.edh-section {
                                 min-height: 154px;
                             }
                             div#html-needed-circle6 {
-                                min-height: 239px;
+                                min-height: 194px;
                             }
                             div#html-needed-circle7 {
-                                min-height: 207px;
+                                min-height: 225px;
                             }
                             div#html-needed-circle8 {
                                 min-height: 206px;
@@ -4231,8 +4236,8 @@ div#section-qol.edh-section {
                                 }
                             }
                             div#html-needed-circle5 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                                max-width: 131px;
-                                max-height: 131px;
+                                max-width: 132px;
+                                max-height: 132px;
                                 margin: 0 auto !important;
                                 top: 0;
                                 position: relative;
@@ -4253,17 +4258,17 @@ div#section-qol.edh-section {
                                 bottom: -25px;
                             }
                             div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                                max-width: 215px;
-                                max-height: 215px;
+                                max-width: 170px;
+                                max-height: 170px;
                                 margin: 0 auto !important;
                                 top: 0;
                                 position: relative;
                                 p.circle-percentage {
-                                    @include font-size(2.875rem);
-                                    @include rfs(2.438rem, line-height);
+                                    @include font-size(2.25rem);
+                                    @include rfs(2.25rem, line-height);
                                 }
                                 div.edh-innercircle.hs-circle {
-                                    height: 185px;
+                                    height: 146px;
                                 }
                             }
                             div#html-needed-circle6 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
@@ -4274,17 +4279,17 @@ div#section-qol.edh-section {
                                 bottom: -25px;
                             }
                             div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle {
-                                max-width: 183px;
-                                max-height: 183px;
+                                max-width: 205px;
+                                max-height: 205px;
                                 margin: 0 auto !important;
                                 top: 0;
                                 position: relative;
                                     p.circle-percentage {
-                                        @include font-size(2.125rem);
-                                        @include rfs(2.125rem, line-height);
+                                        @include font-size(2.563rem);
+                                        @include rfs(2.563rem, line-height);
                                     }
                                 div.edh-innercircle.hs-circle {
-                                    height: 157px;
+                                    height: 176px;
                                 }
                             }
                             div#html-needed-circle7 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
@@ -4301,11 +4306,11 @@ div#section-qol.edh-section {
                                 top: 0;
                                 position: relative;
                                 p.circle-percentage {
-                                    @include font-size(2.063rem);
-                                    @include rfs(2.063rem, line-height);
+                                    @include font-size(2.25rem);
+                                    @include rfs(2.25rem, line-height);
                                 }
                                 div.edh-innercircle.hs-circle {
-                                    height: 148px;
+                                    height: 150px;
                                 }
                             }
                             div#html-needed-circle8 > div.wpb_wrapper > div.edh-outercircle.hs-circle::after {
@@ -4319,6 +4324,7 @@ div#section-qol.edh-section {
                                 display: flex;
                                 width: 100%;
                                 flex-basis: 100%;
+                                margin-bottom: 7% !important;
                                 div.edh-outerbox {
                                     background: #fff;
                                     border: 1px solid $bordergrey;
@@ -4398,6 +4404,7 @@ div#section-qol.edh-section {
                                 }
                             }
                             div#html-quadbox-h {
+                                margin-bottom: 0 !important;
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
                                     -webkit-border-radius: 1.25rem;
@@ -4736,6 +4743,7 @@ div#section-qol.edh-section {
                                 display: flex;
                                 width: 100%;
                                 flex-basis: 100%;
+                                margin-bottom: 7% !important;
                                 div.edh-outerbox {
                                     background: #080124;
                                     border: 1px solid $bordergrey;
@@ -4812,6 +4820,7 @@ div#section-qol.edh-section {
                                 }
                             }
                             div#html-quadbox-l {
+                                margin-bottom: 0 !important;
                                 div.edh-outerbox {
                                     border-radius: 1.25rem;
                                     -webkit-border-radius: 1.25rem;
