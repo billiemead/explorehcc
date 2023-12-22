@@ -770,6 +770,7 @@ div#section-table.edh-section {
             div#table-inrow-5 {
                 padding-top: 6% !important;
                 padding-bottom: 5% !important;
+                border-bottom: none;
                 h4.table-footer {
                     @include bold($sofia-sans);
                     text-align: left;
