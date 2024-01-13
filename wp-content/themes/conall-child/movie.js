@@ -27,21 +27,21 @@ window.onload = () => {
     if (videoElement) {
             var source1 = document.createElement("source1");
             source1 = document.createElement("source");
-            source1.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.webm");
+            source1.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900-2024.webm");
             source1.setAttribute("type", "video/webm");
             var sourceContainer1 = document.querySelector('.elevar-animation');
             sourceContainer1.appendChild(source1);
 
             var source2 = document.createElement("source2");
             source2 = document.createElement("source");
-            source2.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.mp4");
+            source2.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900-2024.mp4");
             source2.setAttribute("type", "video/mp4");
             var sourceContainer2 = document.querySelector('.elevar-animation');
             sourceContainer2.appendChild(source2);
 
-            var source3 = document.createElement("source1");
+            var source3 = document.createElement("source3");
             source3 = document.createElement("source");
-            source3.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900.ogv");
+            source3.setAttribute("src", "/wp-content/uploads/videos/elevar_da_mountain_animation_1920x900-2024.ogv");
             source3.setAttribute("type", "video/ogg");
             var sourceContainer3 = document.querySelector('.elevar-animation');
             sourceContainer3.appendChild(source3);

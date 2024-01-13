@@ -55,7 +55,6 @@ function elevar_add_favicon()
 <?php }
 add_action('wp_head', 'elevar_add_favicon');
 
-
 // Add HubSpot script to page head
 function hubspot_javascript()
 {
