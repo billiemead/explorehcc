@@ -63,6 +63,7 @@ abstract class EXMAGE_Background_Process extends WP_Background_Process {
 		if ( ! $this->is_queue_empty() ) {
 			$this->delete_all_batches();
 			wp_clear_scheduled_hook( $this->cron_hook_identifier );
+			update_site_option( $this->action . '_kill_process', true );
 		}
 	}
 
@@ -140,4 +141,53 @@ abstract class EXMAGE_Background_Process extends WP_Background_Process {
 
 		return $is_late;
 	}
+
+	protected function handle() {
+		if ( get_site_option( $this->action . '_kill_process' ) ) {
+			delete_site_option( $this->action . '_kill_process' );
+			$this->delete_all_batches();
+			$this->complete();
+			wp_die();
+		}
+
+		$this->lock_process();
+
+		do {
+			$batch = $this->get_batch();
+
+			foreach ( $batch->data as $key => $value ) {
+				$task = $this->task( $value );
+
+				if ( false !== $task ) {
+					$batch->data[ $key ] = $task;
+				} else {
+					unset( $batch->data[ $key ] );
+				}
+
+				if ( $this->time_exceeded() || $this->memory_exceeded() ) {
+					// Batch limits reached.
+					break;
+				}
+			}
+
+			// Update or delete current batch.
+			if ( ! empty( $batch->data ) ) {
+				$this->update( $batch->key, $batch->data );
+			} else {
+				$this->delete( $batch->key );
+			}
+		} while ( ! $this->time_exceeded() && ! $this->memory_exceeded() && ! $this->is_queue_empty() );
+
+		$this->unlock_process();
+
+		// Start next batch or complete process.
+		if ( ! $this->is_queue_empty() ) {
+			$this->dispatch();
+		} else {
+			$this->complete();
+		}
+
+		wp_die();
+	}
+
 }

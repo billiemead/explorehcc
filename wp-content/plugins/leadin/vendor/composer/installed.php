@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'hubspot/leadin-wordpress-plugin',
-        'pretty_version' => '10.2.3',
-        'version' => '10.2.3.0',
-        'reference' => '8a12b6064862ce75ac7977e726a017dfe7297d61',
+        'pretty_version' => '11.0.4',
+        'version' => '11.0.4.0',
+        'reference' => '361f80a1f575a58ea38a6b27a80bc5c5e0695d9b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'hubspot/leadin-wordpress-plugin' => array(
-            'pretty_version' => '10.2.3',
-            'version' => '10.2.3.0',
-            'reference' => '8a12b6064862ce75ac7977e726a017dfe7297d61',
+            'pretty_version' => '11.0.4',
+            'version' => '11.0.4.0',
+            'reference' => '361f80a1f575a58ea38a6b27a80bc5c5e0695d9b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

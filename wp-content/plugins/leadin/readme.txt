@@ -3,10 +3,10 @@ Contributors: HubSpotDev, leadin
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: CRM, Marketing, Live Chat, Forms, Analytics, popups, newsletter, contact management, chat, contact form, marketing automation
-Requires at least: 5.4
-Tested up to: 6.2
+Requires at least: 5.8
+Tested up to: 6.4.1
 Requires PHP: 7.2
-Stable tag: 10.2.3
+Stable tag: 11.0.4
 
 The CRM, Sales, and Marketing WordPress plugin to grow your business better.
 
@@ -418,12 +418,12 @@ Please visit the <a href="https://community.hubspot.com/?utm_source=wordpress-pl
 == Changelog ==
 
 <a href="http://plugins.svn.wordpress.org/leadin/trunk/changelog.txt" target="_blank">Full changelog here</a>
-- Current version: 10.2.3
-- Version release date: 2023-08-23
+- Current version: 11.0.4
+- Version release date: 2024-02-26
 
-= 10.2.3 (2023-08-23) =
-* Sets device id in embedder options
+= 11.0.4 (2024-02-26) =
+* Adds version info to leadin config
 
-= 10.2.0 (2023-08-09) =
-* Live chat app embedder
+= 11.0.3 (2024-02-20) =
+* Remove unnecessary "type" attribute from javascript resources
 

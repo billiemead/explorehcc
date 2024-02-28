@@ -3,19 +3,20 @@
  * Plugin Name: EXMAGE - WordPress Image Links
  * Plugin URI: https://villatheme.com/extensions/exmage-wordpress-image-links/
  * Description: Save storage by using external image URLs.
- * Version: 1.0.15
+ * Version: 1.0.16
  * Author: VillaTheme(villatheme.com)
  * Author URI: https://villatheme.com
  * Text Domain: exmage-wp-image-links
  * Copyright 2021-2023 VillaTheme.com. All rights reserved.
- * Tested up to: 6.2
+ * Tested up to: 6.3
  * Requires PHP: 7.0
  **/
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'EXMAGE_WP_IMAGE_LINKS_VERSION', '1.0.15' );
+define( 'EXMAGE_WP_IMAGE_LINKS_VERSION', '1.0.16' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 define( 'EXMAGE_WP_IMAGE_LINKS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'EXMAGE_WP_IMAGE_LINKS_INCLUDES', EXMAGE_WP_IMAGE_LINKS_DIR . "includes" . DIRECTORY_SEPARATOR );
@@ -31,16 +32,12 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 		public function __construct() {
 			add_action( 'plugins_loaded', array( $this, 'background_process' ) );
 			add_action( 'init', array( $this, 'init' ) );
+			add_action( 'admin_init', array( $this, 'admin_init' ) );
 			add_action( 'admin_notices', array( $this, 'admin_notices' ) );
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ), PHP_INT_MAX );
 			add_action( 'wp_enqueue_media', array( $this, 'wp_enqueue_media' ), PHP_INT_MAX );
 			/*Short link to Add new media*/
-			add_filter(
-				'plugin_action_links_exmage-wp-image-links/exmage-wp-image-links.php', array(
-					$this,
-					'settings_link'
-				)
-			);
+			add_filter( 'plugin_action_links_exmage-wp-image-links/exmage-wp-image-links.php', array( $this, 'settings_link' ) );
 			/*wp.media*/
 			add_action( 'post-upload-ui', array( $this, 'post_upload_ui' ), 20 );
 			add_action( 'print_media_templates', array( $this, 'override_media_template_attachment_detail' ) );
@@ -60,10 +57,7 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 			/*Jetpack - Photon CDN*/
 			add_filter( 'jetpack_photon_skip_image', array( $this, 'jetpack_photon_skip_image' ), 10, 3 );
 			/*WPML*/
-			add_action( 'wpml_after_duplicate_attachment', array(
-				$this,
-				'wpml_after_duplicate_attachment'
-			), 10, 2 );
+			add_action( 'wpml_after_duplicate_attachment', array( $this, 'wpml_after_duplicate_attachment' ), 10, 2 );
 
 			add_action( 'woocommerce_product_import_before_process_item', function () {
 				remove_action( 'pre_get_posts', [ $this, 'search_exmage_url_when_import_product' ] );
@@ -88,15 +82,27 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 			}
 		}
 
+		public function stop_processing_button() {
+			$href = add_query_arg( [ 'exmage_stop_processing' => 1, 'exmage_nonce' => wp_create_nonce( 'exmage_stop_processing' ) ] );
+			printf( "<a href='%s' class='button' style='vertical-align: middle;'>%s</a>", esc_url( $href ), esc_html__( 'Stop processing', 'exmage-wp-image-links' ) );
+		}
+
 		/**
 		 * Show status of background processing
 		 */
 		public function admin_notices() {
+			if ( get_site_option( 'exmage_background_process_image_kill_process' ) ) {
+				return;
+			}
+
 			if ( self::$background_process->is_downloading() ) {
 				?>
                 <div class="updated">
                     <h4>
-						<?php printf( esc_html__( 'EXMAGE - WordPress Image Links: %s URLs are being processed in the background.', 'exmage-wp-image-links' ), self::$background_process->get_items_left() ) ?>
+						<?php
+						printf( esc_html__( 'EXMAGE - WordPress Image Links: %s URLs are being processed in the background.', 'exmage-wp-image-links' ), self::$background_process->get_items_left() );
+						$this->stop_processing_button();
+						?>
                     </h4>
                 </div>
 				<?php
@@ -104,7 +110,10 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 				?>
                 <div class="updated">
                     <h4>
-						<?php printf( esc_html__( 'EXMAGE - WordPress Image Links: %s URLs are in the queue.', 'exmage-wp-image-links' ), self::$background_process->get_items_left() ) ?>
+						<?php
+						printf( esc_html__( 'EXMAGE - WordPress Image Links: %s URLs are in the queue.', 'exmage-wp-image-links' ), self::$background_process->get_items_left() );
+						$this->stop_processing_button();
+						?>
                     </h4>
                 </div>
 				<?php
@@ -117,6 +126,17 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
                     </p>
                 </div>
 				<?php
+			}
+		}
+
+		public function admin_init() {
+			if ( isset( $_GET['exmage_stop_processing'], $_GET['exmage_nonce'] ) && wp_verify_nonce( $_GET['exmage_nonce'], 'exmage_stop_processing' ) ) {
+				if ( ! empty( self::$background_process ) ) {
+					self::$background_process->kill_process();
+					$url = remove_query_arg( [ 'exmage_stop_processing', 'exmage_nonce' ] );
+					wp_safe_redirect( $url );
+					die;
+				}
 			}
 		}
 

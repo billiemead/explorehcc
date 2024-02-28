@@ -19,6 +19,7 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 		'save_update',
 		'screen_size',
 		'custom_css',
+		'seo',
 	);
 	/**
 	 * @var string
@@ -27,7 +28,7 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 	/**
 	 * @var string
 	 */
-	protected $brand_url = 'https://wpbakery.com/?utm_campaign=VCplugin&utm_source=vc_user&utm_medium=frontend_editor';
+	protected $brand_url = 'https://wpbakery.com/?utm_source=wpb-plugin&utm_medium=frontend-editor&utm_campaign=info&utm_content=logo';
 
 	/**
 	 * @var string
@@ -40,6 +41,7 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 	public function getControlScreenSize() {
 		$disable_responsive = vc_settings()->get( 'not_responsive_css' );
 		if ( '1' !== $disable_responsive ) {
+            // phpcs:ignore
 			$screen_sizes = apply_filters( 'wpb_navbar_getControlScreenSize', array(
 				array(
 					'title' => esc_html__( 'Desktop', 'js_composer' ),
@@ -100,7 +102,7 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 				</a>
 				<ul class="vc_dropdown-list">
 					<li class="vc_dropdown-list-item">
-						<a href="<?php echo get_edit_post_link( $post ); ?>"><?php esc_html_e( 'Backend Editor', 'js_composer' ); ?></a>
+						<a href="<?php echo get_edit_post_link( $post ) . '&wpb-backend-editor'; ?>"><?php esc_html_e( 'Backend Editor', 'js_composer' ); ?></a>
 					</li>
 					<li class="vc_dropdown-list-item">
 						<a href="<?php echo get_permalink( $post ); ?>"><?php esc_html_e( 'View Page', 'js_composer' ); ?></a>
@@ -152,5 +154,12 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 	 */
 	public function getControlViewPost() {
 		return '<li class="vc_pull-right">' . '<a href="' . esc_url( get_permalink( $this->post() ) ) . '" class="vc_icon-btn vc_back-button"' . ' title="' . esc_attr__( 'Exit WPBakery Page Builder edit mode', 'js_composer' ) . '"><i class="vc-composer-icon vc-c-icon-close"></i></a>' . '</li>';
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getControlSeo() {
+		return '<li class="vc_pull-right"><a href="javascript:;" class="vc_icon-btn vc_seo-button" id="vc_seo-button" title="' . esc_attr__( 'WPBakery SEO', 'js_composer' ) . '"><i class="vc-composer-icon vc-c-icon-seo"></i></a></li>';
 	}
 }

@@ -16,7 +16,7 @@ $taxonomies = array_map( 'get_taxonomy', $taxonomies );
 			<ul class="tf_clearfix">
 				<li><a href="#visibility-tab-general"><?php _e( 'General', 'themify-cm' ) ?></a></li>
 				<li><a href="#visibility-tab-pages" class="themify_cm_load_ajax" data-type="post_type:page"><?php _e( 'Pages', 'themify-cm' ) ?></a></li>
-				<li><a href="#visibility-tab-categories-singles" class="themify_cm_load_ajax"><?php _e( 'In Categories', 'themify-cm' ) ?></a></li>
+				<li><a href="#visibility-tab-categories-singles" class="themify_cm_load_ajax"><?php _e( 'Has Term', 'themify-cm' ) ?></a></li>
 				<li><a href="#visibility-tab-categories" class="themify_cm_load_ajax" data-type="tax:category"><?php _e( 'Categories', 'themify-cm' ) ?></a></li>
 				<li><a href="#visibility-tab-post-types" class="themify_cm_load_ajax"><?php _e( 'Post Types', 'themify-cm' ) ?></a></li>
 				<li><a href="#visibility-tab-taxonomies" class="themify_cm_load_ajax"><?php _e( 'Taxonomies', 'themify-cm' ) ?></a></li>
@@ -66,12 +66,12 @@ $taxonomies = array_map( 'get_taxonomy', $taxonomies );
 				<div id="themify-visibility-category-single-inner-tabs" class="themify-visibility-inner-tabs">
 					<ul class="inline-tabs tf_clearfix">
 						<?php foreach( $taxonomies as $key => $tax ) : ?>
-							<li><a href="#visibility-tab-<?php echo $key ?>" data-type="in_tax:<?php echo $key ?>"><?php echo $tax->label ?></a></li>
+							<li><a href="#visibility-tab-in_tax-<?php echo $key ?>" data-type="in_tax:<?php echo $key ?>"><?php echo $tax->label ?></a></li>
 						<?php endforeach; ?>
 					</ul>
 					<div class="themify-visibility-type-options tf_clearfix">
 						<?php foreach( $taxonomies as $key => $tax ) : ?>
-							<div id="visibility-tab-<?php echo $key ?>" class="themify-visibility-inner-tab">
+							<div id="visibility-tab-in_tax-<?php echo $key ?>" class="themify-visibility-inner-tab">
 								<div class="themify-visibility-items-inner"></div>
 							</div>
 						<?php endforeach; ?>

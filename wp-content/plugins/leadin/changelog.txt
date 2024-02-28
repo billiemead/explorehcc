@@ -1,3 +1,26 @@
+= 11.0.4 (2024-02-26) =
+* Adds version info to leadin config
+
+= 11.0.3 (2024-02-20) =
+* Remove unnecessary "type" attribute from javascript resources
+
+= 11.0.0 (2024-02-13) =
+* Fix locale bug
+* Integrated Plugin App embedder
+* Remove 3rd party cookies dependency
+
+= 10.2.23 (2024-01-24) =
+* Update link of the review survey
+
+= 10.2.17 (2023-12-13) =
+* Change minimum required version in plugin listing
+
+= 10.2.14 (2023-11-15) =
+* Remove deprecated block_categories method
+
+= 10.2.13 (2023-11-13) =
+* Bump WP tested version and fix feedback banner show up condition
+
 = 10.2.3 (2023-08-23) =
 * Sets device id in embedder options
 
@@ -284,26 +307,4 @@
 = 8.0.140 (2021-05-17) =
 * Set required "hublet" property when connecting the plugin
 * Add plugin's version to error monitoring
-
-= 8.0.1 (2021-04-22) =
-* Fix undefined website name in the authorisation screen
-
-= 8.0.0 (2021-04-22) =
-* Created OAuth2 flows to authorize the plugin.
-* Enabled OAuth2 authorization flows for users with third party cookies disabled.
-
-= 7.52.168 (2021-04-12) =
-* Generates an array with the query parameters needed for the signup instead of a URL
-
-= 7.52.105 (2021-03-26) =
-* Updated the query parameters sent to the UI. These parameters will be used for OAuth2 authorisation flow.
-
-= 7.52.0 (2021-03-08) =
-* Updated getting started checklist to use OAuth2 API's
-
-= 7.51.201 (2021-03-08) =
-* Added translations to the disconnect feedback form.
-
-= 7.51.155 (2021-03-01) =
-* Allow the UI to make requests to the HubSpot proxy
 

@@ -22,7 +22,7 @@ if ( ! defined( 'WPB_VC_VERSION' ) ) {
  * @since 4.2
  * vc_filter: vc_wpb_getimagesize - to override output of this function
  */
-function wpb_getImageBySize( $params = array() ) {
+function wpb_getImageBySize( $params = array() ) { // phpcs:ignore
 	$params = array_merge( array(
 		'post_id' => null,
 		'attach_id' => null,
@@ -97,15 +97,16 @@ function wpb_getImageBySize( $params = array() ) {
 					$alt = $title;
 				}
 				if ( $p_img ) {
-
-					$attributes = vc_stringify_attributes( array(
+					$attributes = array(
 						'class' => $thumb_class,
 						'src' => $p_img['url'],
 						'width' => $p_img['width'],
 						'height' => $p_img['height'],
 						'alt' => $alt,
 						'title' => $title,
-					) );
+					);
+
+					$attributes = vc_stringify_attributes( vc_add_lazy_loading_attribute( $attributes ) );
 
 					$thumbnail = '<img ' . $attributes . ' />';
 				}
@@ -119,6 +120,76 @@ function wpb_getImageBySize( $params = array() ) {
 		'thumbnail' => $thumbnail,
 		'p_img_large' => $p_img_large,
 	), $attach_id, $params );
+}
+
+/**
+ * Get image data by source where image obtained from.
+ *
+ * @since 7.4
+ * @param string $source
+ * @param int $post_id
+ * @param int $image_id
+ * @param string $img_size
+ * @return array
+ */
+function wpb_get_image_data_by_source( $source, $post_id, $image_id, $img_size ) {
+	$image_src = '';
+	switch ( $source ) {
+		case 'media_library':
+		case 'featured_image':
+			if ( 'featured_image' === $source ) {
+				if ( $post_id && has_post_thumbnail( $post_id ) ) {
+					$img_id = get_post_thumbnail_id( $post_id );
+				} else {
+					$img_id = 0;
+				}
+			} else {
+				$img_id = preg_replace( '/[^\d]/', '', $image_id );
+			}
+
+			if ( ! $img_size ) {
+				$img_size = 'thumbnail';
+			}
+
+			if ( $img_id ) {
+				$image_src = wp_get_attachment_image_src( $img_id, $img_size );
+				if ( $image_src ) {
+					$image_src = $image_src[0];
+				}
+			}
+			$alt_text = get_post_meta( $img_id, '_wp_attachment_image_alt', true );
+
+			break;
+
+		case 'external_link':
+			if ( ! empty( $params['custom_src'] ) ) {
+				$image_src = $params['custom_src'];
+			}
+			$alt_text = '';
+			break;
+	}
+
+	return [
+		'image_src' => $image_src,
+		'image_alt' => $alt_text,
+	];
+}
+
+/**
+ * Add `loading` attribute with param lazy to attribute list.
+ *
+ * @param array $attributes
+ * @return array
+ * @since 7.1
+ */
+function vc_add_lazy_loading_attribute( $attributes ) {
+	if ( ! is_array( $attributes ) ) {
+		$attributes = [];
+	}
+
+	$attributes['loading'] = 'lazy';
+
+	return $attributes;
 }
 
 /**
@@ -173,7 +244,7 @@ function vc_get_image_by_size( $id, $size ) {
  * @return string
  * @since 4.2
  */
-function wpb_translateColumnWidthToFractional( $width ) {
+function wpb_translateColumnWidthToFractional( $width ) { // phpcs:ignore
 	switch ( $width ) {
 		case 'vc_col-sm-2':
 			$w = '1/6';
@@ -210,7 +281,7 @@ function wpb_translateColumnWidthToFractional( $width ) {
  * @return bool|string
  * @since 4.2
  */
-function wpb_translateColumnWidthToSpan( $width ) {
+function wpb_translateColumnWidthToSpan( $width ) { // phpcs:ignore
 	$output = $width;
 	preg_match( '/(\d+)\/(\d+)/', $width, $matches );
 
@@ -282,7 +353,7 @@ if ( ! function_exists( 'vc_siteAttachedImages' ) ) {
 	 * @return string
 	 * @since 4.11
 	 */
-	function vc_siteAttachedImages( $att_ids = array() ) {
+	function vc_siteAttachedImages( $att_ids = array() ) { // phpcs:ignore
 		$output = '';
 
 		$limit = (int) apply_filters( 'vc_site_attached_images_query_limit', - 1 );
@@ -342,7 +413,7 @@ function vc_field_attached_images( $images = array() ) {
  * @return array
  * @since 4.2
  */
-function wpb_removeNotExistingImgIDs( $param_value ) {
+function wpb_removeNotExistingImgIDs( $param_value ) { // phpcs:ignore
 	$tmp = explode( ',', $param_value );
 	$return_ar = array();
 	foreach ( $tmp as $id ) {
@@ -730,7 +801,7 @@ function wpb_vc_get_column_width_indent( $width ) {
  * @return string
  * @since 4.2
  */
-function vc_colorCreator( $colour, $per = 10 ) {
+function vc_colorCreator( $colour, $per = 10 ) { // phpcs:ignore
 	require_once 'class-vc-color-helper.php';
 	$color = $colour;
 	if ( stripos( $colour, 'rgba(' ) !== false ) {
@@ -1448,4 +1519,69 @@ function wpb_check_wordpress_com_env() {
 function wpb_get_name_post_custom_layout() {
 	$layout_manager = new Vc_PostCustomLayout();
 	return $layout_manager->getCustomLayoutName();
+}
+
+if ( ! function_exists( 'wpb_add_ai_to_text_field' ) ) {
+	/**
+	 * Add AI icon to text field.
+	 *
+	 * @param string $type
+	 * @param string $field_id
+	 * @since 7.4
+	 */
+	function wpb_add_ai_icon_to_text_field( $type, $field_id ) {
+		if ( ! vc_user_access()->part( 'text_ai' )->can()->get() ) {
+			return;
+
+		}
+		wpb_get_ai_icon_template( $type, $field_id );
+	}
+}
+
+if ( ! function_exists( 'wpb_add_ai_to_code_field' ) ) {
+	/**
+	 * Add AI icon to code field.
+	 *
+	 * @param string $type
+	 * @param string $field_id
+	 * @since 7.4
+	 */
+	function wpb_add_ai_icon_to_code_field( $type, $field_id ) {
+		if ( ! vc_user_access()->part( 'code_ai' )->can()->get() ) {
+			return;
+		}
+		wpb_get_ai_icon_template( $type, $field_id );
+	}
+}
+
+if ( ! function_exists( 'wpb_get_ai_icon_template' ) ) {
+	/**
+	 * Get AI icon.
+	 *
+	 * @param string $type
+	 * @param string $field_id
+	 * @since 7.4
+	 *
+	 * @return mixed
+	 */
+	function wpb_get_ai_icon_template( $type, $field_id, $is_include = true ) {
+		$template = apply_filters( 'wpb_get_ai_icon_template', 'editors/partials/icon-ai.tpl.php', $type, $field_id );
+		if ( $is_include ) {
+			vc_include_template(
+				$template,
+				[
+					'type' => $type,
+					'field_id' => $field_id,
+				]
+			);
+		} else {
+			return vc_get_template(
+				$template,
+				[
+					'type' => $type,
+					'field_id' => $field_id,
+				]
+			);
+		}
+	}
 }

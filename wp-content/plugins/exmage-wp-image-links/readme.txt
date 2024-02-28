@@ -3,7 +3,7 @@ Contributors: villatheme, mrt3vn
 Donate link: http://www.villatheme.com/donate
 Tags: ecommerce, elementor gallery with links, elementor image carousel link, woocommerce, woocommerce product image external url, wordpress, wordpress gallery custom links, wordpress gallery link, wordpress gallery with links, wordpress image links
 Requires at least: 5.0.0
-Tested up to: 6.1
+Tested up to: 6.3
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -159,6 +159,9 @@ if(class_exists( 'EXMAGE_WP_IMAGE_LINKS' )){
 2. Add single image URL
 
 == Changelog ==
+
+/**1.0.16 - 2023.09.06**/
+- Updated: Add stop processing button
 
 /**1.0.15 - 2023.05.12**/
 - Updated: Keep exmage link of product when import product from csv

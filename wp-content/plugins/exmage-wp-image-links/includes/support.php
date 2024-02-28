@@ -7,12 +7,13 @@ if ( ! class_exists( 'VillaTheme_Support' ) ) {
 
 	/**
 	 * Class VillaTheme_Support
-	 * 1.1.7
+	 * 1.1.8
 	 */
 	class VillaTheme_Support {
 		protected $plugin_base_name;
 		protected $ads_data;
-		protected $version = '1.1.7';
+		protected $version = '1.1.8';
+		protected $data = [];
 
 		public function __construct( $data ) {
 			$this->data               = array();
@@ -701,7 +702,7 @@ if ( ! class_exists( 'VillaTheme_Support' ) ) {
 			$warning = 'return confirm("VillaTheme toolbar helps you access all VillaTheme items quickly, do you want to hide it anyway?")';
 			$wp_admin_bar->add_node( array(
 				'id'     => 'villatheme_hide_toolbar',
-				'title'  => '<span style="font-family:dashicons" class="dashicons dashicons-dismiss"></span><span class="villatheme-hide-toolbar-button-title">Hide VillaTheme toolbar</span>',
+				'title'  => '<span class="dashicons dashicons-dismiss"></span><span class="villatheme-hide-toolbar-button-title">Hide VillaTheme toolbar</span>',
 				'parent' => 'villatheme',
 				'href'   => add_query_arg( array( '_villatheme_nonce' => wp_create_nonce( 'villatheme_hide_toolbar' ) ) ),
 				'meta'   => array(
@@ -937,6 +938,158 @@ if ( ! class_exists( 'VillaTheme_Support' ) ) {
                 }(jQuery));
             </script>
 			<?php
+		}
+	}
+}
+
+if ( ! class_exists( 'VillaTheme_Require_Environment' ) ) {
+	class VillaTheme_Require_Environment {
+
+		protected $args;
+		protected $plugin_name;
+		protected $notices = [];
+
+		public function __construct( $args ) {
+			if ( ! did_action( 'plugins_loaded' ) ) {
+				_doing_it_wrong( 'VillaTheme_Require_Environment', sprintf(
+				/* translators: %s: plugins_loaded */
+					__( 'VillaTheme_Require_Environment should not be run before the %s hook.' ),
+					'<code>plugins_loaded</code>'
+				), '6.2.0' );
+			}
+
+			$args = wp_parse_args( $args, [
+				'plugin_name'     => '',
+				'php_version'     => '',
+				'wp_version'      => '',
+				'wc_verison'      => '',
+				'require_plugins' => [],
+			] );
+
+			$this->plugin_name = $args['plugin_name'];
+
+			$this->check( $args );
+
+			add_action( 'admin_notices', [ $this, 'notice' ] );
+		}
+
+		protected function check( $args ) {
+			if ( ! function_exists( 'install_plugin_install_status' ) ) {
+				require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+			}
+
+			if ( ! function_exists( 'is_plugin_active' ) ) {
+				require_once ABSPATH . 'wp-admin/includes/plugin.php';
+			}
+
+			if ( ! empty( $args['php_version'] ) ) {
+				$compatible_php = is_php_version_compatible( $args['php_version'] );
+				if ( ! $compatible_php ) {
+					$this->notices[] = sprintf( "PHP version at least %s.", esc_html( $args['php_version'] ) );
+				}
+			}
+
+			if ( ! empty( $args['wp_version'] ) ) {
+				$compatible_wp = is_wp_version_compatible( $args['wp_version'] );
+				if ( ! $compatible_wp ) {
+					$this->notices[] = sprintf( "WordPress version at least %s.", esc_html( $args['wp_version'] ) );
+				}
+			}
+
+			if ( ! empty( $args['require_plugins'] ) ) {
+				foreach ( $args['require_plugins'] as $plugin ) {
+					if ( empty( $plugin['version'] ) ) {
+						$plugin['version'] = '';
+					}
+
+					$status              = install_plugin_install_status( $plugin );
+					$require_plugin_name = $plugin['name'] ?? '';
+
+					$requires_php = isset( $plugin['requires_php'] ) ? $plugin['requires_php'] : null;
+					$requires_wp  = isset( $plugin['requires'] ) ? $plugin['requires'] : null;
+
+					$compatible_php = is_php_version_compatible( $requires_php );
+					$compatible_wp  = is_wp_version_compatible( $requires_wp );
+
+					if ( ! $compatible_php || ! $compatible_wp ) {
+						continue;
+					}
+
+					switch ( $status['status'] ) {
+
+						case 'install':
+							$this->notices[] = sprintf( "%s to be installed. <br><a href='%s' target='_blank' class='button button-primary' style='vertical-align: middle; margin-top: 5px;'>Install %s</a>",
+								esc_html( $require_plugin_name ),
+								esc_url( ! empty( $status['url'] ) ? $status['url'] : '#' ),
+								esc_html( $require_plugin_name ) );
+
+							break;
+
+						default:
+
+							if ( ! is_plugin_active( $status['file'] ) && current_user_can( 'activate_plugin', $status['file'] ) ) {
+								$activate_url = add_query_arg(
+									[
+										'_wpnonce' => wp_create_nonce( 'activate-plugin_' . $status['file'] ),
+										'action'   => 'activate',
+										'plugin'   => $status['file'],
+									],
+									network_admin_url( 'plugins.php' )
+								);
+
+								$this->notices[] = sprintf( "%s is installed and activated. <br> <a href='%s' target='_blank' class='button button-primary' style='vertical-align: middle; margin-top: 5px;'>Active %s</a>",
+									esc_html( $require_plugin_name ),
+									esc_url( $activate_url ),
+									esc_html( $require_plugin_name ) );
+
+							}
+
+							if ( $plugin['slug'] == 'woocommerce' && ! empty( $args['wc_version'] ) && is_plugin_active( $status['file'] ) ) {
+								$wc_current_version = get_option( 'woocommerce_version' );
+								if ( ! version_compare( $wc_current_version, $args['wc_version'], '>=' ) ) {
+									$this->notices[] = sprintf( "WooCommerce version at least %s.", esc_html( $args['wc_version'] ) );
+								}
+							}
+
+							break;
+					}
+				}
+			}
+		}
+
+		public function notice() {
+			$screen = get_current_screen();
+
+			if ( ! current_user_can( 'manage_options' ) || $screen->id === 'update' ) {
+				return;
+			}
+
+			if ( ! empty( $this->notices ) ) {
+				?>
+                <div class="error">
+					<?php
+					if ( count( $this->notices ) > 1 ) {
+						printf( "<p>%s requires:</p>", esc_html( $this->plugin_name ) );
+						?>
+                        <ol>
+							<?php
+							foreach ( $this->notices as $notice ) {
+								printf( "<li>%s</li>", wp_kses_post( $notice ) );
+							}
+							?>
+                        </ol>
+						<?php
+					} else {
+						printf( "<p>%s requires %s</p>", esc_html( $this->plugin_name ), wp_kses_post( current( $this->notices ) ) );
+					}
+					?>
+                </div>
+				<?php
+			}
+		}
+
+		public function has_error() {
+			return ! empty( $this->notices );
 		}
 	}
 }

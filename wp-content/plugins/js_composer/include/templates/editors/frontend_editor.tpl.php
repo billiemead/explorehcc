@@ -16,6 +16,8 @@ $form_action = 'editpost';
 $menu = array();
 $plugin_page = 'js_composer';
 $title = __( 'Frontend Editor', 'js_composer' );
+// we use it in case to repair editor if iframe url has redirect
+$editor->setFrontendEditorTransient( $post_ID );
 add_thickbox();
 wp_enqueue_media( array( 'post' => $editor->post_id ) );
 require_once $editor->adminFile( 'admin-header.php' );
@@ -43,7 +45,7 @@ $nav_bar->render();
 
 ?>
 <div id="vc_no-content-helper"
-	 class="vc_welcome vc_select-post-custom-layout-frontend-editor vc_ui-font-open-sans <?php echo wpb_get_name_post_custom_layout() ? 'vc_post-custom-layout-selected' : ''; ?>">
+	class="vc_welcome vc_select-post-custom-layout-frontend-editor vc_ui-font-open-sans <?php echo wpb_get_name_post_custom_layout() ? 'vc_post-custom-layout-selected' : ''; ?>">
 	<?php
 	vc_include_template(
 		'editors/partials/start-logo.tpl.php'
@@ -59,40 +61,13 @@ $nav_bar->render();
 </div>
 
 <div id="vc_inline-frame-wrapper" class="<?php echo wpb_get_name_post_custom_layout() ? 'vc_post-custom-layout-selected' : ''; ?> vc_selected-post-custom-layout-visible-e"></div>
+
 <?php
-// [add element popup/box]
-require_once vc_path_dir( 'EDITORS_DIR', 'popups/class-vc-add-element-box.php' );
-$add_element_box = new Vc_Add_Element_Box();
-$add_element_box->render();
-// [/add element popup/box]
-
-// [shortcodes edit form panel render]
-wpbakery()->editForm()->render();
-// [/shortcodes edit form panel render]
-
-// [templates panel editor render]
-if ( vc_user_access()->part( 'templates' )->can()->get() ) {
-	wpbakery()->templatesPanelEditor()->renderUITemplate();
-}
-// [/templates panel editor render]
-
-// [preset panel editor render]
-wpbakery()->presetPanelEditor()->renderUIPreset();
-// [/preset panel editor render]
-
-// [post settings panel render]
-if ( vc_user_access()->part( 'post_settings' )->can()->get() ) {
-	require_once vc_path_dir( 'EDITORS_DIR', 'popups/class-vc-post-settings.php' );
-	$post_settings = new Vc_Post_Settings( $editor );
-	$post_settings->renderUITemplate();
-}
-// [/post settings panel render]
-
-// [panel edit layout render]
-require_once vc_path_dir( 'EDITORS_DIR', 'popups/class-vc-edit-layout.php' );
-$edit_layout = new Vc_Edit_Layout();
-$edit_layout->renderUITemplate();
-// [/panel edit layout render]
+vc_include_template( 'editors/partials/footer.tpl.php',
+	[
+		'editor' => $editor,
+	]
+);
 
 // fe controls
 vc_include_template( 'editors/partials/frontend_controls.tpl.php' );
@@ -108,21 +83,21 @@ if ( vc_user_access()->part( 'presets' )->can()->get() ) {
 }
 // [/shortcodes presets data]
 
+vc_include_template(
+	'editors/partials/vc_post_custom_meta.tpl.php',
+	[ 'editor' => $editor ]
+);
 ?>
-	<input type="hidden" name="vc_post_custom_css" id="vc_post-custom-css" value="<?php echo esc_attr( $editor->post_custom_css ); ?>" autocomplete="off"/>
-	<input type="hidden" name="vc_post_custom_js_header" id="vc_post-custom-js-header" value="<?php echo esc_attr( $editor->post_custom_js_header ); ?>" autocomplete="off"/>
-	<input type="hidden" name="vc_post_custom_js_footer" id="vc_post-custom-js-footer" value="<?php echo esc_attr( $editor->post_custom_js_footer ); ?>" autocomplete="off"/>
-	<input type="hidden" name="vc_post_custom_layout" id="vc_post-custom-layout" value="<?php echo esc_attr( $editor->post_custom_layout ); ?>" autocomplete="off"/>
-	<<?php echo esc_attr( $custom_tag ); ?>>
-		window.vc_user_mapper = <?php echo wp_json_encode( WPBMap::getUserShortCodes() ); ?>;
-		window.vc_mapper = <?php echo wp_json_encode( WPBMap::getShortCodes() ); ?>;
-		window.vc_vendor_settings_presets = <?php echo wp_json_encode( $vc_vendor_settings_presets ); ?>;
-		window.vc_all_presets = <?php echo wp_json_encode( $vc_all_presets ); ?>;
-		window.vc_roles = [];
-		window.vcAdminNonce = '<?php echo esc_js( vc_generate_nonce( 'vc-admin-nonce' ) ); ?>';
-		window.wpb_js_google_fonts_save_nonce = '<?php echo esc_js( wp_create_nonce( 'wpb_js_google_fonts_save' ) ); ?>';
-		window.vc_post_id = <?php echo esc_js( $post_ID ); ?>;
-	</<?php echo esc_attr( $custom_tag ); ?>>
+<<?php echo esc_attr( $custom_tag ); ?>>
+	window.vc_user_mapper = <?php echo wp_json_encode( WPBMap::getUserShortCodes() ); ?>;
+	window.vc_mapper = <?php echo wp_json_encode( WPBMap::getShortCodes() ); ?>;
+	window.vc_vendor_settings_presets = <?php echo wp_json_encode( $vc_vendor_settings_presets ); ?>;
+	window.vc_all_presets = <?php echo wp_json_encode( $vc_all_presets ); ?>;
+	window.vc_roles = [];
+	window.vcAdminNonce = '<?php echo esc_js( vc_generate_nonce( 'vc-admin-nonce' ) ); ?>';
+	window.wpb_js_google_fonts_save_nonce = '<?php echo esc_js( wp_create_nonce( 'wpb_js_google_fonts_save' ) ); ?>';
+	window.vc_post_id = <?php echo esc_js( $post_ID ); ?>;
+</<?php echo esc_attr( $custom_tag ); ?>>
 
 <?php vc_include_template( 'editors/partials/vc_settings-image-block.tpl.php' ); ?>
 <!-- BC for older plugins 5.5 !-->

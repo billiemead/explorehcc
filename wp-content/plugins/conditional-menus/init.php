@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Conditional Menus
 Plugin URI:   https://themify.me/conditional-menus
-Version:      1.2.2
+Version:      1.2.5 
 Author:       Themify
 Author URI:   https://themify.me/
 Description:  This plugin enables you to set conditional menus per posts, pages, categories, archive pages, etc.
@@ -202,7 +202,7 @@ class Themify_Conditional_Menus {
 
 	public function admin_enqueue() {
 		global $_wp_registered_nav_menus;
-		$version='1.2.2';
+		$version='1.2.3';
 		self::themify_enque_style( 'themify-conditional-menus', THEMIFY_CM_URI . 'assets/admin.css', null, $version );
 		wp_enqueue_script( 'themify-conditional-menus', self::themify_enque(THEMIFY_CM_URI . 'assets/admin.js'), array( 'jquery', 'jquery-ui-tabs' ), $version, true );
 		wp_localize_script( 'themify-conditional-menus', 'themify_cm', array(
