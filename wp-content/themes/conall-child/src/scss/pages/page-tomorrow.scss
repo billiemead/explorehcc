@@ -14,8 +14,7 @@ div#section-euhcc { /* section */
     z-index: 2;
     aspect-ratio: 960/341;
     top: 0px;
-    transform: translateY(-120px);
-    /* margin-bottom: -225px !important; */
+    transform: translateY(-140px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +31,6 @@ div#section-euhcc { /* section */
                 @include font-size(3.375rem);
                 @include rfs(2.5rem, line-height);
                 letter-spacing: 3px;
-                /* text-transform: uppercase; */
                 margin-bottom: 2% !important;
             }
         }
@@ -54,9 +52,7 @@ div#section-euhcc { /* section */
         }
     }
 }
-
 /* ************ NEXT GEN SECTION ************ */
-
 
 div#section-nexgen {
     background-color: $white;
@@ -207,7 +203,6 @@ div#section-nexgen {
         }
     }
 }
-
 /* ************ FUTURE TREATMENT SECTION ************ */
 div#section-future-treat {
     margin: 0px !important;
@@ -240,7 +235,6 @@ div#section-future-treat {
             justify-content: center;
             padding: 55px 200px 60px 200px !important;
             margin-top: 6% !important;
-            /* transform: translateX(15px); */
             div#future-treat-heading {
                 display: flex;
                 justify-content: center;
@@ -317,7 +311,87 @@ div#section-future-treat {
     }
     }
 }
+/* ************ PATIENT VIDEO MARCH 2024 SECTION ************ */
+div.vp-flex {
+    max-width: 1080px;
+    height: 610px;
+}
+.YouTubePopUp-Close:before {
+    font-size: 50px;
+    left: -20px;
+    color: #C25131;
+    position: relative;
+    font-weight: bold !important;
+}
+.YouTubePopUp-Wrap {
+    background-color: rgba(0,0,0,0.9);
+}
+div#section-patient-video {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8.25%;
+    padding-bottom: 9%;
+    div#patient--video-row {
+        div#col-patient-video-heading {
+            margin-top: 8% !important;
+            justify-content: center;
+            align-items: center;
+            div.vc_column-inner {
+                text-align: center;
+                div.wpb_text_column.wpb_content_element {
+                    text-align: center;
+                    h2.section-heading {
+                        max-width: 1090px;
+                        @include semi-bold($sofia-sans);
+                        text-align: left;
+                        color: $purple;
+                        @include font-size(3.375rem);
+                        @include rfs(3.25rem, line-height);
+                        letter-spacing: 0px;
+                        text-transform: uppercase;
+                        margin-bottom: 2% !important;
+                        margin: 0 auto !important;
+                    }
+                    h2.section-heading::after {
+                        content: "";
+                        border: 2px solid $gold;
+                        width: 150px;
+                        position: relative;
+                        left: 0;
+                        display: flex;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        div#col-patient-video-copy {
+            margin-top: 6% !important;
+            margin-bottom: 5% !important;
+            h3.section-subheading {
+                max-width: 1090px;
+                @include semi-bold($sofia-sans);
+                text-align: center;
+                color: $copy;
+                font-size:32px;
+                line-height: 38px;
+                letter-spacing: 0px;
+                margin: 0 auto !important;
+            }
+        }
+        div#col-patient-video {
+            p.vp-img-paragraph {
+                a.vp-a.vp-mp4-type {
+                    img.vp-img {
 
+                    }
+                }
+            }
+        }
+    }
+}
 /* ************ TOMORROW HS FORM SECTION ************ */
 div#section-hsform-outer-tom.edh-section {
     background-image: url("/wp-content/themes/conall-child/images/hs-form-section-background-1920x1323.png");
@@ -329,10 +403,9 @@ div#section-hsform-outer-tom.edh-section {
     position: relative;
     z-index: 25;
     background-size: cover;
-    margin-top: -250px !important;
+    margin-top: -5% !important;
     margin-bottom: 0 !important;
 }
-
 
 /*** Responsive Min-Width ***/
 @media all and (min-width: 479px) {
@@ -364,7 +437,6 @@ div#section-hsform-outer-tom.edh-section {
 @media all and (max-width: 1500px) {
     div#section-nexgen {
     background-color: $white;
-    /* aspect-ratio: 1920/2500; */
     padding-top: 100px !important;
     div#col-nexgen {
         div#nextgen-row1 {
@@ -595,7 +667,6 @@ div#section-hsform-outer-tom.edh-section {
                 justify-content: center;
                 padding: 55px 200px 60px 200px !important;
                 margin-top: 6% !important;
-                /* transform: translateX(15px); */
                 div#future-treat-heading {
                     display: flex;
                     justify-content: center;
@@ -678,7 +749,6 @@ div#section-hsform-outer-tom.edh-section {
     /* ************ DOUBLE ICON NAV SECTION ************ */
     div#section-nexgen {
     background-color: $white;
-    /* aspect-ratio: 920/3000; */
     top: -20px;
     div#col-nexgen {
         div#nextgen-row1 {
@@ -922,108 +992,144 @@ div#section-hsform-outer-tom.edh-section {
         }
     }
     div#section-future-treat {
-    margin: 0px !important;
-    padding: 0px !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-color: transparent;
-    z-index: 2;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        z-index: 2;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px !important;
 
-        div#col-future-treat {
-                margin-top: 10% !important;
-            margin-bottom: 17% !important;
-                div#table-inrow-1 {
-                    /* max-height: 550px; */
-                    border: 2px solid $gold;
-                    @include rfs(1.25rem, border-radius);
-                    @include form-gradient();
-                    @include inner-box-shadow();
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding: 55px 100px 60px 100px !important;
-                    margin-top: 6% !important;
-                    /* transform: translateX(15px); */
-                    div#future-treat-heading {
+            div#col-future-treat {
+                    margin-top: 10% !important;
+                margin-bottom: 17% !important;
+                    div#table-inrow-1 {
+                        border: 2px solid $gold;
+                        @include rfs(1.25rem, border-radius);
+                        @include form-gradient();
+                        @include inner-box-shadow();
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
-                        align-items: center;
-                        h1.section-heading {
-                            @include semi-bold($sofia-sans);
-                            text-align: center;
-                            color: $white;
-                            @include font-size(3.375rem);
-                            @include rfs(3.375rem, line-height);
-                            letter-spacing: 0px;
-                            text-transform: uppercase;
-                            sub.subscript {
-                                vertical-align: super !important;
-                                font-size: 40% !important;
-                                top: .005ex !important;
-                            }
-                        }
-                        h1.section-heading::after {
-                            margin: 0 auto !important;
-                            content: "";
-                            border: 2px solid $gold;
-                            width: 150px;
-                            position: relative;
-                            left: 0;
+                        padding: 55px 100px 60px 100px !important;
+                        margin-top: 6% !important;
+                        div#future-treat-heading {
                             display: flex;
-                            margin-top: 30px !important;
-                            margin-bottom: 55px !important;
+                            justify-content: center;
+                            align-items: center;
+                            h1.section-heading {
+                                @include semi-bold($sofia-sans);
+                                text-align: center;
+                                color: $white;
+                                @include font-size(3.375rem);
+                                @include rfs(3.375rem, line-height);
+                                letter-spacing: 0px;
+                                text-transform: uppercase;
+                                sub.subscript {
+                                    vertical-align: super !important;
+                                    font-size: 40% !important;
+                                    top: .005ex !important;
+                                }
+                            }
+                            h1.section-heading::after {
+                                margin: 0 auto !important;
+                                content: "";
+                                border: 2px solid $gold;
+                                width: 150px;
+                                position: relative;
+                                left: 0;
+                                display: flex;
+                                margin-top: 30px !important;
+                                margin-bottom: 55px !important;
+                            }
                         }
-                    }
-                    div#future-treat-bodycopy {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        p.section-bodycopy {
-                            @include semi-bold($sofia-sans);
+                        div#future-treat-bodycopy {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p.section-bodycopy {
+                                @include semi-bold($sofia-sans);
+                                text-align: center;
+                                color: $white;
+                                @include font-size(1.5rem);
+                                @include rfs(2.375rem, line-height);
+                                letter-spacing: 0px;
+                                margin-bottom: 2.5% !important;
+                                sub.subscript {
+                                    vertical-align: super !important;
+                                    font-size: 40% !important;
+                                    top: .005ex !important;
+                                }
+                                span.yellow-copy {
+                                    color: $gold;
+                                }
+                            }
+                        }
+                        .learn-more-btn {
+                            @include orange-grad-button();
+                            @include button-shadow();
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 75px;
+                            width: 235px;
+                            border-radius: 15px;
+                            margin: 0 auto !important;
+                            span {
+                            color: $white !important;
+                            @include bold($sofia-sans);
+                            text-transform: uppercase;
                             text-align: center;
-                            color: $white;
-                            @include font-size(1.5rem);
-                            @include rfs(2.375rem, line-height);
-                            letter-spacing: 0px;
-                            margin-bottom: 2.5% !important;
-                            sub.subscript {
-                                vertical-align: super !important;
-                                font-size: 40% !important;
-                                top: .005ex !important;
-                            }
-                            span.yellow-copy {
-                                color: $gold;
+                            font-size: 28px;
+                            margin: 0;
+                            padding: 0;
+                            letter-spacing: 0;
                             }
                         }
-                    }
-                    .learn-more-btn {
-                        @include orange-grad-button();
-                        @include button-shadow();
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 75px;
-                        width: 235px;
-                        border-radius: 15px;
-                        margin: 0 auto !important;
-                        span {
-                        color: $white !important;
-                        @include bold($sofia-sans);
-                        text-transform: uppercase;
-                        text-align: center;
-                        font-size: 28px;
-                        margin: 0;
-                        padding: 0;
-                        letter-spacing: 0;
+            }
+        }
+    }
+    /* ************ PATIENT VIDEO MARCH 2024 SECTION ************ */
+    div.vp-flex {
+        max-width: 800px;
+        height: 450px;
+    }
+    div#section-patient-video {
+        div#patient--video-row {
+            div#col-patient-video-heading {
+                margin-top: 2% !important;
+                div.vc_column-inner {
+                    div.wpb_text_column.wpb_content_element {
+                        h2.section-heading {
+                            text-align: center;
+                            max-width: 700px;
+                        }
+                        h2.section-heading::after {
+                            margin-top: 50px;
                         }
                     }
+                }
+            }
+            div#col-patient-video-copy {
+                margin-bottom: 8% !important;
+                h3.section-subheading {
+                    max-width: 740px;
+                }
+            }
+            div#col-patient-video {
+                p.vp-img-paragraph {
+                    a.vp-a.vp-mp4-type {
+                        img.vp-img {
+
+                        }
+                    }
+                }
             }
         }
     }
@@ -1120,7 +1226,6 @@ div#section-hsform-outer-tom.edh-section {
                 margin-top: 10% !important;
             margin-bottom: 17% !important;
                 div#table-inrow-1 {
-                    /* max-height: 550px; */
                     border: 2px solid $gold;
                     @include rfs(1.25rem, border-radius);
                     @include form-gradient();
@@ -1326,6 +1431,53 @@ div#section-hsform-outer-tom.edh-section {
             }
         }
     }
+    /* ************ PATIENT VIDEO MARCH 2024 SECTION ************ */
+    .YouTubePopUp-Close:before {
+        font-size: 35px;
+        left: -6px;
+    }
+    div#section-patient-video {
+        margin-top: -10%;
+        div#patient--video-row {
+            div#col-patient-video-heading {
+                margin-top: 0 !important;
+                div.vc_column-inner {
+                    div.wpb_text_column.wpb_content_element {
+                        h2.section-heading {
+                            text-align: left;
+                            font-size: 44px;
+                            line-height: 44px;
+                            max-width: 74%;
+                            margin: unset !important;
+                        }
+                        h2.section-heading::after {
+                            margin: unset;
+                            margin-top: 15%;
+                        }
+                    }
+                }
+            }
+            div#col-patient-video-copy {
+                margin-top: 15% !important;
+                margin-bottom: 10% !important;
+                h3.section-subheading {
+                    font-size: 24px;
+                    line-height: 38px;
+                    max-width: 100%;
+                    text-align: left;
+                }
+            }
+            div#col-patient-video {
+                p.vp-img-paragraph {
+                    a.vp-a.vp-mp4-type {
+                        img.vp-img {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
     div.edh-col.stats-center {
     margin-top: 50px !important;
     margin-bottom: 80px !important;
@@ -1399,5 +1551,35 @@ div#section-hsform-outer-tom.edh-section {
     div#section-nexgen div#col-nexgen div#nextgen-row3 div.edgtf-full-section-inner div#col-nexgen-stats-right p span.stats-percentage {
     transform: translateX(50%);
     width: 70%;
+    }
+    /* ************ PATIENT VIDEO MARCH 2024 SECTION ************ */
+    div#section-patient-video {
+        div#patient--video-row {
+            div#col-patient-video-heading {
+                div.vc_column-inner {
+                    div.wpb_text_column.wpb_content_element {
+                        h2.section-heading {
+                        }
+                        h2.section-heading::after {
+
+                        }
+                    }
+                }
+            }
+            div#col-patient-video-copy {
+                h3.section-subheading {
+                    max-width: 80%;
+                }
+            }
+            div#col-patient-video {
+                p.vp-img-paragraph {
+                    a.vp-a.vp-mp4-type {
+                        img.vp-img {
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
