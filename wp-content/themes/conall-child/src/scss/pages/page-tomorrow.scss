@@ -333,6 +333,7 @@ div#section-patient-video {
     align-items: center;
     margin-top: -9.5%;
     padding-bottom: 9%;
+    transform: translateY(-50px);
     div#patient--video-row {
         div#col-patient-video-heading {
             margin-top: 8% !important;
@@ -743,7 +744,11 @@ div#section-hsform-outer-tom.edh-section {
         }
         }
     }
+    div#section-patient-video {
+        margin-top: -12%;
+    }
 }
+
     /*** Responsive Max-Width ***/
 @media all and (max-width: 1025px) {
     /* ************ DOUBLE ICON NAV SECTION ************ */
@@ -1101,6 +1106,7 @@ div#section-hsform-outer-tom.edh-section {
         height: 450px;
     }
     div#section-patient-video {
+        transform: unset;
         div#patient--video-row {
             div#col-patient-video-heading {
                 margin-top: 2% !important;
@@ -1568,7 +1574,6 @@ div#section-hsform-outer-tom.edh-section {
             }
             div#col-patient-video-copy {
                 h3.section-subheading {
-                    max-width: 80%;
                 }
             }
             div#col-patient-video {
