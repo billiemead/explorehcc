@@ -541,6 +541,7 @@ div#section-hsform-outer-tom.edh-section {
     div#section-nexgen {
     background-color: $white;
     aspect-ratio: 1920/2500;
+    margin-top: -20% !important;
         div#col-nexgen {
             div#nextgen-row1 {
                 div#col-nexgen-heading {
@@ -653,9 +654,10 @@ div#section-hsform-outer-tom.edh-section {
         justify-content: center;
         align-items: center;
         margin-bottom: -85px !important;
+        margin-top: -8% !important;
         div#col-future-treat {
-                margin-top: 10% !important;
-        margin-bottom: 17% !important;
+            margin-top: 10% !important;
+            margin-bottom: 17% !important;
             div#table-inrow-1 {
                 max-height: 100%;
                 border: 2px solid $gold;
@@ -744,7 +746,7 @@ div#section-hsform-outer-tom.edh-section {
         }
     }
     div#section-patient-video {
-        margin-top: 7%;
+        margin-top: 5%;
     }
 }
 
@@ -869,10 +871,10 @@ div#section-hsform-outer-tom.edh-section {
         display: none !important;
     }
     div#section-nexgen {
-    background-color: $white;
-    aspect-ratio: 1920/2500;
-    margin-top: -15% !important;
-    margin-bottom: 5% !important;
+        background-color: $white;
+        aspect-ratio: 1920/2500;
+        margin-top: -15% !important;
+        margin-bottom: 5% !important;
         div#col-nexgen {
             div#nextgen-row1 {
                 div#col-nexgen-heading {
@@ -1009,7 +1011,7 @@ div#section-hsform-outer-tom.edh-section {
         justify-content: center;
         align-items: center;
         margin-bottom: 0px !important;
-
+        margin-top: -12% !important;
             div#col-future-treat {
                     margin-top: 10% !important;
                 margin-bottom: 17% !important;
@@ -1227,6 +1229,7 @@ div#section-hsform-outer-tom.edh-section {
     justify-content: center;
     align-items: center;
     margin-bottom: 0px !important;
+    margin-top: -20% !important;
         div#col-future-treat {
                 margin-top: 10% !important;
             margin-bottom: 17% !important;
