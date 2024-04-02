@@ -61,6 +61,11 @@ header.edgtf-mobile-header {
     margin: 0 !important;
     padding: 0 !important;
 }
+img.email-icon {
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
 #edgtf-back-to-top>span {
     width: 80px !important;
     height: 80px !important;
@@ -225,6 +230,11 @@ div.edh-col.qol {
     }
 }
 @media all and (max-width: 1024px) {
+    img.email-icon {
+        width: 18px;
+        padding-left: 8px;
+        padding-right: 0px;
+    }
     div.edh-col.col1,
     div.edh-col.col2,
     div.edh-col.col3,
